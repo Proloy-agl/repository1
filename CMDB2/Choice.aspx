@@ -200,7 +200,7 @@ body{
 
         <div>
             <fieldset class="form-content">
-            <legend class="heading1">Please check all the boxes applicable for your CR</legend>
+            <legend class="heading1"> &nbsp;Please check all the boxes applicable for your CR</legend>
 
 
             <div class="box-area">
@@ -214,7 +214,7 @@ body{
 
                     <li>
                         <asp:CheckBox ID="CheckBox3" runat="server" value="1" />
-                        <asp:Label ID="Label3" runat="server" Text="Application to Infrastructure relationship"></asp:Label>
+                        <asp:Label ID="Label3" runat="server" Text="Application to Infrastructure Relationship"></asp:Label>
                     </li>
                     <li>
                         <asp:CheckBox ID="CheckBox2" runat="server" value="1" />
@@ -222,7 +222,7 @@ body{
                     </li>
                     <li>
                         <asp:CheckBox ID="CheckBox4" runat="server" value="1" />
-                        <asp:Label ID="Label4" runat="server" Text="Infrastructure to Infrastructure relationship"></asp:Label>
+                        <asp:Label ID="Label4" runat="server" Text="Infrastructure to Infrastructure Relationship"></asp:Label>
                     </li>
 
                     <li>

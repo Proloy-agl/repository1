@@ -168,6 +168,12 @@ body{
     animation: animate 16s ease-in-out infinite;
     
 }
+/*.text1 .textP
+{
+    padding:15px 0;
+    font-weight:normal!important;
+    color:#ccc!important;
+}*/
 
 @keyframes animate {
     0%{
@@ -199,9 +205,10 @@ body{
     <div class="text1">
 
         <p>Welcome User</p>
-        <div>Your CR will now be audited to ensure you updated the impacted Configuration item properly in CMDB. Please select the type of Impact that is applicable for your change<br />
-            <br />
-            You may select options as applicable.</div>
+        <div>Your CR will now be audited to ensure you updated the impacted Configuration item properly in CMDB. Please select the type of Impact that is applicable for your changes.<br />
+            
+       You may select options as applicable.
+         </div>
     </div>
    
 

@@ -247,9 +247,9 @@
         }
 
         .heading12 {
-            margin: 12px 0 10px 0;
+            margin: 18px 0 2px 20px;
             font-weight: bold;
-            padding-left: 15px;
+ 
             font-size: 14px;
         }
 
@@ -258,7 +258,7 @@
             padding: 16px;
             list-style: none;
             border-radius: 6px;
-            margin: 12px;
+            margin:20px;
             border: 1px solid #ccc;
             width: 92%;
             padding-right: 0;
@@ -375,7 +375,16 @@
         {
             float:left;
             width:40%;
-            margin-left:10%;
+            margin:0%;
+            margin:15px 0 5px 25px;
+            min-height:60px;
+            border:1px solid #00DFED;
+            font-weight:normal;
+            font-size:15px;
+        }
+        .modal-body
+        {
+            padding:0px;
         }
     </style>
 </head>
@@ -470,7 +479,7 @@
                     </div>
 
                     <p class="heading12">Please enter the details for Application</p>
-                    <br />
+                    
 
                     <div class="modal-containt">
 
@@ -771,7 +780,7 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Please complete the Infrastructure attribute details</p>
-                    <br />
+                    
 
                     <div class="modal-containt">
                         <ul>
@@ -1147,7 +1156,7 @@
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Application to Infrastructure Relationship</p>
-                    <br />
+                   
 
                     <div class="modal-body">
                         <div class="modal-containt">
@@ -1185,7 +1194,7 @@
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Infrastructure to Infrastructure Relationship</p>
-                    <br />
+                   
 
                     <div class="modal-body">
                         <div class="modal-containt">
@@ -1227,7 +1236,7 @@
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Type of Decommission being done</p>
-                    <br />
+                   
 
                     <div class="modal-body">
                         <div class="modal-containt">
@@ -1270,8 +1279,8 @@
                         Magneto
    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <p class="heading12">Please select the category of application details to be updated</p>
-                    <br />
+                    <p class="heading12">Please select the category of application/Infrastructure/Relationship details to be updated</p>
+                    
                     <div class="modal-body">
                         <div class="modal-containt">
                             <div class="button-new">

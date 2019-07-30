@@ -92,11 +92,13 @@ body{
     margin-top:0;
     font-weight:bold;
     line-height:40px;
+    margin-left:2px;
 }
 .box-area
 {
-    background:#EFF0F4;
-    padding:16px;
+    background:#0075cc;
+     /*background-image: linear-gradient(#EFF0F4, #D6D9E0);*/
+    padding:30px 20px;
     list-style:none;
     border-radius: 6px;
 }
@@ -108,16 +110,21 @@ body{
 .box-area ul li{
     float:left;
     width:50%;
-    margin-bottom:13px;
+    margin-bottom:17px;
     font-size:16px;
+    color:#fff;
 
+}
+.box-area ul li span{
+    padding-left:10px;
 }
 
 .button1{
     border-radius:7px;
     padding: 7px 14px;
     font-size: 16px;
-    background-color: #0075CC;
+   
+    background-image: linear-gradient(#0075CC, #00DFED);
     margin:15px 0px 10px 0;
     float:right;
     height: 40px;
@@ -126,15 +133,15 @@ body{
     box-shadow:0;
     font-weight:bold;
     cursor:pointer;
-    background-image:none;
-    background-color: #0075CC;
+
     border:0;
 }
 
 .button1:hover {
 
     color: white;
-    background-image: linear-gradient(#0075CC, #00DFED);
+     background-image:none;
+    background-color: #0075CC;
     border:0;
 }
 
@@ -200,7 +207,7 @@ body{
 
         <div>
             <fieldset class="form-content">
-            <legend class="heading1"> &nbsp;Please check all the boxes applicable for your CR</legend>
+            <legend class="heading1">Please check all the boxes applicable for your CR</legend>
 
 
             <div class="box-area">

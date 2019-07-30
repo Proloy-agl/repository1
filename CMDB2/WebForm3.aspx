@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     <style>
         html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
         del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -21,7 +22,6 @@
             border: 0;
             margin: 0;
             padding: 0;
-            vertical-align: baseline;
             list-style: none;
             font-weight: normal;
             word-wrap: break-word;
@@ -30,7 +30,7 @@
         }
 
         body {
-            font-family: 'Titillium Web', sans-serif;
+            font-family:"Titillium Web",sans-serif;
             padding: 0;
             margin: 0;
             background: #ccc;
@@ -133,75 +133,51 @@
         .button-box ul {
             list-style: none;
             list-style-type: none;
-            margin-bottom: 30px;
+            margin-bottom:10px;
         }
 
 
 
-            /*.button-box ul li {
-                    float: left;
-                    width: 28%;
-                    min-height:80px;
-                    margin-bottom: 25px;
-                    font-size: 15px;
-                    margin-right: 2%;
-                    background: #fff;
-                    box-shadow: 0px 3px 4px 0px #999;
-                    border:1px solid #0075CC;
-                    padding: 12px;
-                    border-radius: 6px;
-                    text-align:center;
-                    cursor:pointer;
-                     background-image: linear-gradient(#0075CC, #fff);
-                     background-image: linear-gradient(to right, #00DFED, #fff);
-                      background:#0075cc;
-                     color:#fff;
-                }*/
-
             .button-box ul li {
                 float: left;
-                width: 23%;
-                min-height: 80px;
+                width: 31%;
+                height: 170px;
                 margin-bottom: 25px;
                 font-size: 15px;
                 margin-right: 2%;
                 background: #fff;
-                border: 1px solid #0075CC;
+                /*border: 1px solid #0075CC;*/
                 padding: 12px;
-                border-radius: 6px;
+                border-radius:8px;
                 text-align: center;
                 cursor: pointer;
-                background: #0075cc;
+                /*background: #0075cc;*/
                 color: #fff;
+                position:relative;
+
             }
+
+                .button-box ul li img{
+                    width:100%;
+                    height:100%;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    border-radius:8px;
+                    z-index:1;
+                }
 
 
                 .button-box ul li:hover {
-                    /*background: #0075CC;*/
+                    /*background: #0075CC;
                     box-shadow: 0px 3px 4px 0px #00DFED inset;
                     color: #fff;
-                    /*cursor:pointer;*/
+                    cursor:pointer;*/
                 }
 
+             
+
                 /*.button-box ul li .button {
-                    background: none;
-                    box-shadow: none;
-                    border: 0;
-                    font-size: 18px;
-                    word-break: break-word;
-                    overflow-wrap: break-word;
-                    white-space: normal;
-                    line-height:27px;
-
-                    border: 1px solid #fff;
-                    border-radius: 6px;
-                    padding: 15px;
-
-
-                    
-                }*/
-
-                .button-box ul li .button {
                     background: none;
                     box-shadow: none;
                     border: 0;
@@ -214,6 +190,35 @@
                     border-radius: 6px;
                     padding: 6px 12px;
                     min-height: 66px;
+                }*/
+                .button-box ul li .layer{
+                    background:#001CB0;
+                    position:absolute;
+                    left:0%;
+                    top:0%;
+                    z-index:2;
+                    height:170px;
+                    width:100%;
+                    opacity:0.5;
+                    border-radius:8px;
+                }
+                
+                .button-box ul li .button {
+                    background: none;
+                    box-shadow: none;
+                    border: 0;
+                    font-size: 16px;
+                    white-space: normal;
+                    line-height: 27px;
+                    padding: 6px 12px;
+                    /*color:#00DFED;*/
+                    color:#fff;
+                    font-weight:bold;
+                    position:absolute;
+                    left:6%;
+                    top:38%;
+                    z-index:3
+                    
                 }
 
 
@@ -386,6 +391,10 @@
         {
             padding:0px;
         }
+        legend
+        {
+            width:auto;
+        }
     </style>
 </head>
 <body>
@@ -402,7 +411,8 @@
 
         <div class="container">
             <fieldset class="form-content" />
-            <h1 class="heading1">Please Click on the boxes below to complete the details</h1>
+            <legend class="heading1">Please Click on the boxes below to complete the details</legend>
+          
 
             <form id="form1" runat="server">
 
@@ -414,13 +424,18 @@
 
                             <asp:Panel ID="BPanel1" runat="server">
                                 <li>
+                                    <div class="layer"></div> 
+                                    <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
                                     <button type="button" id="Button1" class="button" data-toggle="modal" data-target="#myModal">Onboarding New Application</button>
-                                    <%-- <asp:Button ID="Button1" runat="server" Text="Onboarding New Application" class="button"  />         --%>                                   
+                                    <%-- <asp:Button ID="Button1" runat="server" Text="Onboarding New Application" class="button"  />         --%>        
+                                                              
                                 </li>
                             </asp:Panel>
                             <asp:Panel ID="BPanel2" runat="server">
                                 <li>
+                                    <div class="layer"></div> 
+                                    <asp:Image ID="Image9" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
                                     <button type="button" id="Button2" class="button" data-toggle="modal" data-target="#myModal2">Infrastructure is procured</button>
 
@@ -429,6 +444,8 @@
                             </asp:Panel>
                             <asp:Panel ID="BPanel3" runat="server">
                                 <li>
+                                    <div class="layer"></div> 
+                                    <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
                                     <button type="button" id="Button3" class="button" data-toggle="modal" data-target="#myModal3">Application to Infrastructure relationship</button>
                                     <%--<asp:Button ID="Button3" runat="server" Text="Application to Infrastructure relationship" class="button" />--%>
@@ -437,6 +454,8 @@
                             </asp:Panel>
                             <asp:Panel ID="BPanel4" runat="server">
                                 <li>
+                                    <div class="layer"></div> 
+                                    <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
                                     <button type="button" id="Button4" class="button" data-toggle="modal" data-target="#myModal4">Infrastructure to Infrastructure relationship</button>
                                     <%--<asp:Button ID="Button4" runat="server" Text="Infrastructure to Infrastructure relationship" class="button"  />--%>
@@ -446,12 +465,17 @@
                             <asp:Panel ID="BPanel5" runat="server">
                                 <li>
 
+                                    <div class="layer"></div> 
+                                    <asp:Image ID="Image12" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
+
                                     <button type="button" id="Button5" class="button" data-toggle="modal" data-target="#myModal5">Decommission of Application</button>
                                     <%--<asp:Button ID="Button5" runat="server" Text="Decommission of Application" class="button"  />--%>
                                 </li>
                             </asp:Panel>
                             <asp:Panel ID="BPanel6" runat="server">
                                 <li>
+                                    <div class="layer"></div> 
+                                    <asp:Image ID="Image13" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
                                     <button type="button" id="Button13" class="button" data-toggle="modal" data-target="#myModal6">Update Application Attributes</button>
                                     <%-- <asp:Button ID="Button13" runat="server" Text="Update Application Attributes" class="button" />--%>
@@ -1132,7 +1156,7 @@
 
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Infra_Att]"></asp:SqlDataSource>
 
-                        <asp:Button ID="Button7" runat="server" Text="Submit" class="button1" />
+                        <asp:Button ID="Button7" runat="server" Text="Submit" class="button1" OnClick="SumbitBtn_Click" />
                         <div class="clear"></div>
 
                     </div>
@@ -1162,6 +1186,7 @@
                         <div class="modal-containt">
                             <ul class="width100">
                                 <li>
+                                    
                                     <div>
                                         <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
                                     </div>

@@ -4,11 +4,17 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace CMDB2
 {
+
+
     public partial class WebForm3 : System.Web.UI.Page
     {
+        SqlConnection con = new SqlConnection("Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin");
+    
         protected void Page_Load(object sender, EventArgs e)
         {
             string ChoiceA, ChoiceB, ChoiceC, ChoiceD, ChoiceE,ChoiceF;
@@ -115,5 +121,27 @@ namespace CMDB2
                 BPanel6.Visible = false;
             }
         }
+
+        protected void SumbitBtn_Click(object sender, EventArgs e)
+        {
+            string a1, a2, a3, a4, a5, a6, a7, a8;
+            a1 = CI_Name.Text;
+            a2 = System_Environment.Text;
+            a3 = Primary_Capability.Text;
+            a4 = Owner.Text;
+            a5 = Supported_By.Text;
+            a6 = System_Role.Text;
+            a7 = Site.Text;
+            a8 = OEM_Supported.Text;
+            SqlCommand cmd = new SqlCommand("insert into [Infra_Att](CI_Name,System_Env,Primary_Cap,Owner,Supported_By,System_Role,Site,OEM_Supported) values (@a1,@a2,@a3,@a4,@a5,@a6,@a7,@a8)", con);
+            con.Open();
+            con.Close();
+        }
+
+
+
     }
+
+
+
 }

@@ -24,7 +24,11 @@ namespace CMDB2
             if (CheckBox5.Checked) { choiceE = Convert.ToString("1"); Session["value5"] = choiceE; } else { Session["value5"] = "5"; };
             if (CheckBox6.Checked) { choiceF = Convert.ToString("1"); Session["value6"] = choiceF; } else { Session["value6"] = "5"; };
 
-            Response.Redirect("WebForm3.aspx");
+            if ((choiceA == "1") && (choiceB != "1") && (choiceC != "1") && (choiceD != "1")&& (choiceE != "1")&& (choiceF != "1"))
+            {
+                Response.Redirect("Choice.aspx");
+            }    
+                Response.Redirect("WebForm3.aspx");
        
         }
     }

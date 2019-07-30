@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Photos and Logos\agl-logo.png" />
+    <Content Include="Photos and Logos\it.jpg" />
     <Content Include="Photos and Logos\logo.png" />
     <Content Include="Photos and Logos\65-652804_keeping-warm-shouldnt-burn-a-hole-in-your.png" />
     <Content Include="Photos and Logos\front1.jpg" />

@@ -720,19 +720,43 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
     <div class="modal-dialog">
     
       <!-- Modal content-->
-       <div class="modal-content">
-          <div class="top-part12">
-                                    <asp:Image ID="Image7" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" /> Magneto
-                                </div>
-                                <p class="heading12">Please select the category of application details to be updated</p><br />
-
-        <div class="modal-body">
-          <div class="modal-containt">
-                                                
+      <div class="modal-content">
+<div class="top-part12">
+   <asp:Image ID="Image7" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+   Magneto
+   <button type="button" class="close" data-dismiss="modal">&times;</button> 
+</div>
+<p class="heading12">Please select the category of application details to be updated</p>
+<br />
+<div class="modal-body">
+<div class="modal-containt">
+<ul>
+   <li>
+      <div>
+         <asp:Button ID="Button11" runat="server" Text="Application Attributes"  style="text-align:center" class="button1" />
+      </div>
+   </li>
+   <li>
+      <div>
+         <asp:Button ID="Button12" runat="server" Text="Infrastructure attributes" style="text-align:center"  class="button1" />
+      </div>
+   </li>
+   <li>
+      <div>
+         <asp:Button ID="Button14" runat="server" Text="Application to Infrastructure Relationship" style="text-align:center"  class="button1" />
+      </div>
+   </li>
+   <li>
+      <div>
+         <asp:Button ID="Button15" runat="server" Text="Infrastructure to Infrastructure Attributes" style="text-align:center" class="button1" />
+      </div>
+   </li>
+</ul>
+             <%--                                   
               <asp:Button ID="Button11" runat="server" Text="Application Attributes"  style="text-align:center" class="button1" /><br />
               <asp:Button ID="Button12" runat="server" Text="Infrastructure attributes" style="text-align:center"  class="button1" /> <br />
               <asp:Button ID="Button14" runat="server" Text="Application to Infrastructure Relationship" style="text-align:center"  class="button1" /><br />
-              <asp:Button ID="Button15" runat="server" Text="Infrastructure to Infrastructure Attributes" style="text-align:center" class="button1" /><br />
+              <asp:Button ID="Button15" runat="server" Text="Infrastructure to Infrastructure Attributes" style="text-align:center" class="button1" /><br />--%>
             
                                     
                                         <div class="clear"></div>

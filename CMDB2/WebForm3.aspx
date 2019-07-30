@@ -416,7 +416,7 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
                                                 <asp:Label ID="Label1" runat="server" Text="Application ID"></asp:Label>
                                             </div>
                                             <div>
-                                                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                                                <asp:TextBox ID="Application_ID" runat="server"></asp:TextBox>
                                             </div>
                                         </li>
                                         <li>
@@ -425,7 +425,12 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
                                             </div>
 
                                             <div>
-                                                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                                               <asp:DropDownList ID="DropDownList2" runat="server">
+                                                    <asp:ListItem>GOLD</asp:ListItem>
+                                                    <asp:ListItem>SILVER</asp:ListItem>
+                                                    <asp:ListItem>BRONZE</asp:ListItem>
+                                                   <asp:ListItem>No Categorization</asp:ListItem>
+                                                </asp:DropDownList>
                                             </div>
                                         </li>
                                         <li>
@@ -435,7 +440,17 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
                                             </div>
 
                                             <div>
-                                                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                                                <asp:DropDownList ID="DropDownList1" runat="server">
+                                                    <asp:ListItem>MEDIUM</asp:ListItem>
+                                                    <asp:ListItem>SIMPLE</asp:ListItem>
+                                                    <asp:ListItem>COMPLEX</asp:ListItem>
+                                                    <asp:ListItem>CUSTOM A</asp:ListItem>
+                                                    <asp:ListItem>CUSTOM B</asp:ListItem>
+                                                    <asp:ListItem>CUSTOM D</asp:ListItem>
+                                                    <asp:ListItem>CUSTOM E</asp:ListItem>
+                                                    <asp:ListItem>CUSTOM F</asp:ListItem>
+                                                    <asp:ListItem>API</asp:ListItem>
+                                                </asp:DropDownList>
                                             </div>
                                         </li>
                                         <li>
@@ -444,7 +459,7 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
                                                 <asp:Label ID="Label4" runat="server" Text="Remedy Group"></asp:Label>
                                             </div>
                                             <div>
-                                                <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                                                <asp:TextBox ID="Remedy_Group" runat="server"></asp:TextBox>
                                                 <br />
                                             </div>
 
@@ -456,10 +471,10 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
                                             </div>
 
                                             <div>
-                                                <asp:DropDownList ID="DropDownList1" runat="server">
-                                                    <asp:ListItem>Prod</asp:ListItem>
-                                                    <asp:ListItem>NonProd</asp:ListItem>
-                                                    <asp:ListItem>Prod-NonProd</asp:ListItem>
+                                                <asp:DropDownList ID="Environment_Instance" runat="server">
+                                                    <asp:ListItem>PROD</asp:ListItem>
+                                                    <asp:ListItem>NON-PROD</asp:ListItem>
+                                                    <asp:ListItem>DR</asp:ListItem>
                                                 </asp:DropDownList>
                                                 <br /> </div>
                                         </li>
@@ -495,7 +510,7 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
                                                     <asp:Label ID="Label6" runat="server" Text="CI Name"></asp:Label>
                                                 </div>
                                                 <div>
-                                                    <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                                                    <asp:TextBox ID="CI_Name" runat="server"></asp:TextBox>
                                                 </div>
                                             </li>
                                             <li>
@@ -504,7 +519,7 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
                                                     <asp:Label ID="Label7" runat="server" Text="System Environment"></asp:Label>
                                                 </div>
                                                 <div>
-                                                    <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                                                    <asp:TextBox ID="System_Environment" runat="server"></asp:TextBox>
                                                 </div>
                                             </li>
                                             <li>
@@ -512,7 +527,7 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
                                                     <asp:Label ID="Label8" runat="server" Text="Primary Capability"></asp:Label>
                                                 </div>
                                                 <div>
-                                                    <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                                                    <asp:TextBox ID="Primary_Capability" runat="server"></asp:TextBox>
                                                 </div>
                                             </li>
                                             <li>
@@ -521,7 +536,7 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
                                                     <asp:Label ID="Label9" runat="server" Text="Owner"></asp:Label>
                                                 </div>
                                                 <div>
-                                                    <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                                                    <asp:TextBox ID="Owner" runat="server"></asp:TextBox>
                                                 </div>
                                             </li>
                                             <li>
@@ -530,7 +545,7 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
                                                     <asp:Label ID="Label10" runat="server" Text="Supported By"></asp:Label>
                                                 </div>
                                                 <div>
-                                                    <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                                                    <asp:TextBox ID="Supported_By" runat="server"></asp:TextBox>
                                                 </div>
                                             </li>
                                             <li>
@@ -539,7 +554,7 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
                                                     <asp:Label ID="Label11" runat="server" Text="System Role"></asp:Label>
                                                 </div>
                                                 <div>
-                                                    <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+                                                    <asp:TextBox ID="System_Role" runat="server"></asp:TextBox>
                                                 </div>
                                             </li>
                                             <li>
@@ -548,20 +563,272 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
                                                     <asp:Label ID="Label12" runat="server" Text="Site"></asp:Label>
                                                 </div>
                                                 <div>
-                                                    <asp:DropDownList ID="DropDownList2" runat="server">
-                                                        <asp:ListItem>Site1</asp:ListItem>
-                                                        <asp:ListItem>Site2</asp:ListItem>
-                                                        <asp:ListItem>Site3</asp:ListItem>
+                                                    <asp:DropDownList ID="Site" runat="server">
+                                                        <asp:ListItem>Boston Support Center</asp:ListItem>
+<asp:ListItem>Headquarters, Building 1.31</asp:ListItem>
+<asp:ListItem>Headquarters, Building 1.31</asp:ListItem>
+<asp:ListItem>Headquarters, Building 1.32</asp:ListItem>
+<asp:ListItem>Headquarters, Building 1.32</asp:ListItem>
+<asp:ListItem>Headquarters, Building 1.33</asp:ListItem>
+<asp:ListItem>Headquarters, Building 1.33</asp:ListItem>
+<asp:ListItem>Headquarters, Building 1.34</asp:ListItem>
+<asp:ListItem>Headquarters, Building 1.34</asp:ListItem>
+<asp:ListItem>Hong Kong Support Center</asp:ListItem>
+<asp:ListItem>Tokyo Support Center</asp:ListItem>
+<asp:ListItem>Amsterdam Support Center</asp:ListItem>
+<asp:ListItem>Paris Support Center</asp:ListItem>
+<asp:ListItem>120 Spencer Street</asp:ListItem>
+<asp:ListItem>Bourke Street 1234</asp:ListItem>
+<asp:ListItem>THE GRAND TRUNKWAY GILLMAN - TIPS</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - PAYROLL</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - PAYROLL</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB19A</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB16B</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB20B</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB20A</asp:ListItem>
+<asp:ListItem>CAPTAIN COOK DRIVE KURNELL - KURN</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB18A</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB21B</asp:ListItem>
+<asp:ListItem>COMPLEX 1, 303 BURWOOD HWY BURWOOD EAST - POWERDIR</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB15A</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB18B</asp:ListItem>
+<asp:ListItem>GREENHILL ROAD EASTWOOD - EW02</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB14</asp:ListItem>
+<asp:ListItem>EDWARD STREET BRISBANE - BRIS</asp:ListItem>
+<asp:ListItem>N/A N/A - EXTERNAL</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB16A</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB22B</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB17A</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - BOUR7</asp:ListItem>
+<asp:ListItem>MEDHURST ROAD MENANGLE - MENA</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2202</asp:ListItem>
+<asp:ListItem>PO BOX 300 MOUNT BEAUTY - MT BEAUTY</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2105</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2205</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB17B</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2104</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2101</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2106</asp:ListItem>
+<asp:ListItem>GREENHILL ROAD EASTWOOD - EW01E</asp:ListItem>
+<asp:ListItem>GREENHILL ROAD EASTWOOD - EW01W</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2102</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - BOUR8</asp:ListItem>
+<asp:ListItem>SALTASH STREET BRISBANE - BOILERLAND</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2001</asp:ListItem>
+<asp:ListItem>PO BOX 126 EILDON - EILDON</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2103</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LOY-YANG</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2107</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LOY-YANG-BASED-AGL</asp:ListItem>
+<asp:ListItem>SILVERSPRING GAS LANE ROAD SURAT - MOSAIC - QLD</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2203</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2206</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB19B</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB15B</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE ADMIN</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB21A</asp:ListItem>
+<asp:ListItem>N/A N/A - KOLKATA</asp:ListItem>
+<asp:ListItem>ADVANTAGE ROAD MELBOURNE - AGLSOLAR</asp:ListItem>
+<asp:ListItem>ADVANTAGE ROAD MELBOURNE - AGL SOLAR</asp:ListItem>
+<asp:ListItem>N/A N/A - MANILA</asp:ListItem>
+<asp:ListItem>BRIDGE STREET SYDNEY - MOSAIC - SYDNEY</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - BOUR6B</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2002</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE ELEC A ROSTER</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE ELEC E ROSTER</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE ENGINEERING</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE ELEC C ROSTER</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-STATION ENGINEERING</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE SUPPLY</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE PRODUCTION</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE ELEC B ROSTER</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-CORP</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-STATION OPS 4TH FLR</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE ELEC D ROSTER</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE WAREHOUSING</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-STATION I.S. OFFICE</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-STATION ADMIN</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2207 PAYROLL</asp:ListItem>
+<asp:ListItem>235 OLD MAITLAND ROAD HEXHAM - HEXHAM</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE PROD SERV B</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE PROD SERV A</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-STATION FRT WORKSHOP</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE OPS B ROSTER</asp:ListItem>
+<asp:ListItem>BUNDAR STREET CANBERRA - CANB05</asp:ListItem>
+<asp:ListItem>BUNDAR STREET CANBERRA - CANB05</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2201</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-STATION WAREHOUSING</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - BOUR6A</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE PROD SERV 9DF</asp:ListItem>
+<asp:ListItem>BEAUMONT ROAD MT. KURING-GAI - AGL ELECTROSERV</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE TECH</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-STATION CHEM</asp:ListItem>
+<asp:ListItem>GREENHILL ROAD EASTWOOD - EWOOD</asp:ListItem>
+<asp:ListItem>PO BOX 103 BROKE - BROKE2</asp:ListItem>
+<asp:ListItem>COMMERCIAL STREET BURRA - BURRA</asp:ListItem>
+<asp:ListItem>HUME HIGHWAY SOMERTON - SOMER</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2204</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - RECEPTION NS</asp:ListItem>
+<asp:ListItem>229 WOLLOMBI ROAD BROKE - BROKE</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-STATION SUPPLY</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE I.C.E OFFICE</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE I.C.E OFFICE</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE OPS E ROSTER</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE OPS D ROSTER</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE OPS A ROSTER</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE OPS C ROSTER</asp:ListItem>
+<asp:ListItem>PO BOX 1541 - WALLUMBILLA</asp:ListItem>
+<asp:ListItem>Development</asp:ListItem>
+<asp:ListItem>Pitt Street Data Center</asp:ListItem>
+<asp:ListItem>Exhibition Street Data Center</asp:ListItem>
+<asp:ListItem>OLD PITTWATER ROAD BROOKVALE - BROOKVALE</asp:ListItem>
+<asp:ListItem>KEPPEL STREET BATHURST - BATHURST</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-STATION ICE</asp:ListItem>
+<asp:ListItem>THE GRAND TRUNKWAY GILLMAN - AGL TORRENS</asp:ListItem>
+<asp:ListItem>BAYSWATER POWER STATION MUSWELLBROOK - STATIONS</asp:ListItem>
+<asp:ListItem>BAYSWATER POWER STATION MUSWELLBROOK - STATIONS</asp:ListItem>
+<asp:ListItem>34 GRIFFITHS ROAD LAMBTON - LAMBTON</asp:ListItem>
+<asp:ListItem>LONDON CIRCUIT CANBERRA - CANB03</asp:ListItem>
+<asp:ListItem>GREENHILL ROAD EASTWOOD - EW01WN</asp:ListItem>
+<asp:ListItem>MILLER STREET NORTH SYDNEY - NS2001AS</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - BOURKE7AS</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB20AAS</asp:ListItem>
+<asp:ListItem>SPENCER STREET MELBOURNE - MELB20BAS</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - BOURKE6AS</asp:ListItem>
+<asp:ListItem>BAYSWATER POWER STATION - NON-P'ROLL STATIONS</asp:ListItem>
+<asp:ListItem>N/A N/A - MANILA_AS</asp:ListItem>
+<asp:ListItem>34 GRIFFITHS ROAD LAMBTON - NON-P'ROLL LAMBTON</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB7A</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB7D</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB10C</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB3A</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB10A</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-MINE</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-STATION</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB9D</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB6B</asp:ListItem>
+<asp:ListItem>ST KILDA ROAD MELBOURNE - STKILDA</asp:ListItem>
+<asp:ListItem>ST KILDA ROAD MELBOURNE - STKILDA</asp:ListItem>
+<asp:ListItem>ST KILDA ROAD MELBOURNE - STKILDA</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB7B</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB8D</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB8B</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB8B</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB8C</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB8A</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB9C</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB9B</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB9A</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB11B</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB11A</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB7C</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB6A</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB10B</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB10D</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB11C</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB6D</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB6C</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB11D</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB5D</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB5C</asp:ListItem>
+<asp:ListItem>Antiene</asp:ListItem>
+<asp:ListItem>Bayswater</asp:ListItem>
+<asp:ListItem>Newcastle - Ipera Data Centre</asp:ListItem>
+<asp:ListItem>Newcastle - Lambton</asp:ListItem>
+<asp:ListItem></asp:ListItem>
+<asp:ListItem>Liddell</asp:ListItem>
+<asp:ListItem>Telstra Site</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB5A</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-STATION GROUND FLOOR</asp:ListItem>
+<asp:ListItem>N/A N/A - CLARK TOWER D</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB5B</asp:ListItem>
+<asp:ListItem>N/A N/A - MANILA TOWER B</asp:ListItem>
+<asp:ListItem>N/A N/A - MANILA TOWER A</asp:ListItem>
+<asp:ListItem>N/A N/A - CLARK TOWER C</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB5C_CN</asp:ListItem>
+<asp:ListItem>OLD PUNT ROAD TOMAGO - NGSF</asp:ListItem>
+<asp:ListItem>George Street</asp:ListItem>
+<asp:ListItem>GEORGE STREET SYDNEY - SYD22C</asp:ListItem>
+<asp:ListItem>GEORGE STREET SYDNEY - SYD23H</asp:ListItem>
+<asp:ListItem>GEORGE STREET SYDNEY - SYD24C</asp:ListItem>
+<asp:ListItem>GEORGE STREET SYDNEY - SYD22H</asp:ListItem>
+<asp:ListItem>GEORGE STREET SYDNEY - SYD23C</asp:ListItem>
+<asp:ListItem>Bourke Street</asp:ListItem>
+<asp:ListItem>Torrens Island</asp:ListItem>
+<asp:ListItem>West Kiewa Power Station</asp:ListItem>
+<asp:ListItem>Mount Beauty</asp:ListItem>
+<asp:ListItem>Miller Street</asp:ListItem>
+<asp:ListItem>Eastwood</asp:ListItem>
+<asp:ListItem>Brisbane</asp:ListItem>
+<asp:ListItem>TRARALGON - LY-STATION</asp:ListItem>
+<asp:ListItem>TRARALGON - LY-MINE</asp:ListItem>
+<asp:ListItem>HEXHAM</asp:ListItem>
+<asp:ListItem>Gloucestor</asp:ListItem>
+<asp:ListItem>Silver Spring</asp:ListItem>
+<asp:ListItem>Australia South</asp:ListItem>
+<asp:ListItem>Australia South East</asp:ListItem>
+<asp:ListItem>Hydro</asp:ListItem>
+<asp:ListItem>Camden</asp:ListItem>
+<asp:ListItem>MARY STREET BRISBANE - BNE</asp:ListItem>
+<asp:ListItem>LONSDALE STREET MELBOURNE - MELB555</asp:ListItem>
+<asp:ListItem>BOURKE STREET MELBOURNE - MELB600</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-STATION FRT</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-STATION FRT</asp:ListItem>
+<asp:ListItem>COLLINS STREET MELBOURNE - MELB727A</asp:ListItem>
+<asp:ListItem>COLLINS STREET MELBOURNE - MELB727B</asp:ListItem>
+<asp:ListItem>Collin Square</asp:ListItem>
+<asp:ListItem>BARTON'S LANE TRARALGON - LY-STATION OPS 4TH FLOOR</asp:ListItem>
+<asp:ListItem>ST GEORGES TCE PERTH - PERTH108</asp:ListItem>
+<asp:ListItem>COLLINS STREET MELBOURNE - MELB5F</asp:ListItem>
+<asp:ListItem>COLLINS STREET MELBOURNE - MELB5H</asp:ListItem>
+<asp:ListItem>COLLINS STREET MELBOURNE - MELB6G</asp:ListItem>
+<asp:ListItem>COLLINS STREET MELBOURNE - MELB6F</asp:ListItem>
+<asp:ListItem>COLLINS STREET MELBOURNE - MELB6H</asp:ListItem>
+<asp:ListItem>COLLINS STREET MELBOURNE - MELB5G</asp:ListItem>
+<asp:ListItem>COLLINS STREET MELBOURNE - MELB6E</asp:ListItem>
+<asp:ListItem>Visitor</asp:ListItem>
+<asp:ListItem>The Grand Trunkway - Torrens Island Power Station</asp:ListItem>
+<asp:ListItem>221 London Circuit - ActewAGL B</asp:ListItem>
+<asp:ListItem>664 Collins Street - Melbourne 664 Collins</asp:ListItem>
+<asp:ListItem>MELB664 - Level 5</asp:ListItem>
+<asp:ListItem>5 Old Punt Road - Newcastle Gas Storage Facility</asp:ListItem>
+<asp:ListItem>New England Highway - Bayswater Power Station</asp:ListItem>
+<asp:ListItem>40 Bundar Street - ActewAGL A</asp:ListItem>
+<asp:ListItem>Kiewa Valley Hwy - Hydro Head Office</asp:ListItem>
+<asp:ListItem>Eildon Road - Eildon Power Station</asp:ListItem>
+<asp:ListItem>MELB664 - Level 6</asp:ListItem>
+<asp:ListItem>1331 Wallumbilla South Rd - Wallumbilla LPG Plant</asp:ListItem>
+<asp:ListItem>New England Highway - Liddell Power Station</asp:ListItem>
+<asp:ListItem>200 George Street - Sydney Corporate</asp:ListItem>
+<asp:ListItem>200 Mary St - Brisbane Corporate</asp:ListItem>
+<asp:ListItem>699 Bourke Street - Melbourne Corporate</asp:ListItem>
+<asp:ListItem>34 Griffiths Road - Macquarie Office</asp:ListItem>
+<asp:ListItem>727 Collins Street - Melbourne 727 Collins</asp:ListItem>
+<asp:ListItem>108 St Georges Terrace - Perth Corporate</asp:ListItem>
+<asp:ListItem>1/22-24 Beaumont Rd - Electroserv</asp:ListItem>
+<asp:ListItem>200 George Street</asp:ListItem>
+<asp:ListItem>Medhurst Road - Camden Gas Project</asp:ListItem>
+<asp:ListItem>226 Greenhill Road - Adelaide Corporate</asp:ListItem>
+<asp:ListItem>Barton's Lane - Loy Yang Power Station</asp:ListItem>
+<asp:ListItem>PO Box 41 - Silver Springs Gas Storage</asp:ListItem>
+<asp:ListItem>Barton's Lane - Loy Yang Mine</asp:ListItem>
+<asp:ListItem>Barton's Lane - Loy Yang Operations</asp:ListItem>
+<asp:ListItem>Bangalore, India (Non AGL Site) - Bangalore</asp:ListItem>
+<asp:ListItem>Bartons Lane - LY-Based Corporate</asp:ListItem>
+<asp:ListItem>108 St Georges Terrace - External Training Centre (WA)</asp:ListItem>
+<asp:ListItem>40 OHERNS RD - Somerton Power Station</asp:ListItem>
+<asp:ListItem>226 Greenhill Road - EASTWG01</asp:ListItem>
+
                                                     </asp:DropDownList>
                                                 </div>
                                             </li>
                                             <li>
 
                                                 <div>
-                                                    <asp:Label ID="Label13" runat="server" Text="OEM Supported "></asp:Label>
+                                                    <asp:Label ID="Label13" runat="server" Text="OEM Supported"></asp:Label>
                                                 </div>
                                                 <div>
-                                                    <asp:DropDownList ID="DropDownList3" runat="server">
+                                                    <asp:DropDownList ID="OEM_Supported" runat="server">
                                                         <asp:ListItem>Yes</asp:ListItem>
                                                         <asp:ListItem>No</asp:ListItem>
                                                     </asp:DropDownList>
@@ -720,7 +987,7 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
     <div class="modal-dialog">
     
       <!-- Modal content-->
-      <div class="modal-content">
+       <div class="modal-content">
 <div class="top-part12">
    <asp:Image ID="Image7" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
    Magneto
@@ -751,9 +1018,8 @@ fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
          <asp:Button ID="Button15" runat="server" Text="Infrastructure to Infrastructure Attributes" style="text-align:center" class="button1" />
       </div>
    </li>
-</ul>
-             <%--                                   
-              <asp:Button ID="Button11" runat="server" Text="Application Attributes"  style="text-align:center" class="button1" /><br />
+</ul>    
+            <%--  <asp:Button ID="Button11" runat="server" Text="Application Attributes"  style="text-align:center" class="button1" /><br />
               <asp:Button ID="Button12" runat="server" Text="Infrastructure attributes" style="text-align:center"  class="button1" /> <br />
               <asp:Button ID="Button14" runat="server" Text="Application to Infrastructure Relationship" style="text-align:center"  class="button1" /><br />
               <asp:Button ID="Button15" runat="server" Text="Infrastructure to Infrastructure Attributes" style="text-align:center" class="button1" /><br />--%>

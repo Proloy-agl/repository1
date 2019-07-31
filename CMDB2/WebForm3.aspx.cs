@@ -50,7 +50,7 @@ namespace CMDB2
                 BPanel6.Visible = false;
 
             }
-            if ((ValA == 0) && (ValB == 1) && (ValC != 1) && (ValD != 1))
+            if ((ValA != 1) && (ValB == 1) && (ValC != 1) && (ValD != 1))
             {
                 BPanel5.Visible = false;
                 BPanel6.Visible = false;
@@ -133,11 +133,50 @@ namespace CMDB2
             a6 = System_Role.Text;
             a7 = Site.Text;
             a8 = OEM_Supported.Text;
-            SqlCommand cmd = new SqlCommand("insert into [Infra_Att](CI_Name,System_Env,Primary_Cap,Owner,Supported_By,System_Role,Site,OEM_Supported) values (@a1,@a2,@a3,@a4,@a5,@a6,@a7,@a8)", con);
-            cmd.Parameters.AddWithValue(@"a1", CI_Name.Text);
+            string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
+            SqlConnection conn = null;
 
-            con.Open();
-            con.Close();
+            try
+            {
+                conn = new SqlConnection(connString);
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "insert into [Infra_Att](CI_Name,System_Env,Primary_Cap,Owner,Supported_By,System_Role,Site,OEM_Supported) values (@var1,@var2,@var3,@var4,@var5,@var6,@var7,@var8)";
+                    cmd.Parameters.AddWithValue("@var1", a1);
+                    cmd.Parameters.AddWithValue("@var2", a2);
+                    cmd.Parameters.AddWithValue("@var3", a3);
+                    cmd.Parameters.AddWithValue("@var4", a4);
+                    cmd.Parameters.AddWithValue("@var5", a5);
+                    cmd.Parameters.AddWithValue("@var6", a6);
+                    cmd.Parameters.AddWithValue("@var7", a7);
+                    cmd.Parameters.AddWithValue("@var8", a8);
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected == 1)
+                    {
+                        Response.Redirect("Choice.aspx");
+                    }
+                    else
+                    {
+                        //Error notification
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                //log error 
+                //display friendly error to user
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    //cleanup connection i.e close 
+                }
+            }
         }
 
 
@@ -146,4 +185,7 @@ namespace CMDB2
 
 
 
-}
+    }
+
+
+

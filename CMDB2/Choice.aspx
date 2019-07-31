@@ -221,7 +221,7 @@ body{
 
                 <ul>
                     <li>
-
+                       
                         <asp:CheckBox ID="CheckBox1" runat="server" value="1" />
                         <asp:Label ID="Label1" runat="server" Text="Onboarding New Application"></asp:Label>
                     </li>

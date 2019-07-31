@@ -79,6 +79,7 @@
     <Content Include="Photos and Logos\front1.jpg" />
     <Content Include="Web.config" />
     <Content Include="Choice.aspx" />
+    <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +90,13 @@
     </Compile>
     <Compile Include="Choice.aspx.designer.cs">
       <DependentUpon>Choice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm3.aspx.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>

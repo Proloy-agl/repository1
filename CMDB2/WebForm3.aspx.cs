@@ -134,6 +134,8 @@ namespace CMDB2
             a7 = Site.Text;
             a8 = OEM_Supported.Text;
             SqlCommand cmd = new SqlCommand("insert into [Infra_Att](CI_Name,System_Env,Primary_Cap,Owner,Supported_By,System_Role,Site,OEM_Supported) values (@a1,@a2,@a3,@a4,@a5,@a6,@a7,@a8)", con);
+            cmd.Parameters.AddWithValue(@"a1", CI_Name.Text);
+
             con.Open();
             con.Close();
         }

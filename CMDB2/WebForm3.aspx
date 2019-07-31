@@ -14,6 +14,61 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
      <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  $("#L1").mouseenter(function(){
+      $("#L1").fadeTo("fast", 0.3);
+     
+  });
+
+  $("#L1").mouseleave(function () {
+      $("#L1").fadeTo("fast", 1);
+  });
+
+  $("#L2").mouseenter(function () {
+      $("#L2").fadeTo("fast", 0.3);
+  });
+
+  $("#L2").mouseleave(function () {
+      $("#L2").fadeTo("fast", 1);
+  });
+
+  $("#L3").mouseenter(function () {
+      $("#L3").fadeTo("fast", 0.3);
+  });
+
+  $("#L3").mouseleave(function () {
+      $("#L3").fadeTo("fast", 1);
+  });
+
+  $("#L4").mouseenter(function () {
+      $("#L4").fadeTo("fast", 0.3);
+  });
+
+  $("#L4").mouseleave(function () {
+      $("#L4").fadeTo("fast", 1);
+  });
+  $("#L5").mouseenter(function () {
+      $("#L5").fadeTo("fast", 0.3);
+  });
+
+  $("#L5").mouseleave(function () {
+      $("#L5").fadeTo("fast", 1);
+  });
+
+  $("#L6").mouseenter(function () {
+      $("#L6").fadeTo("fast", 0.3);
+  });
+
+  $("#L6").mouseleave(function () {
+      $("#L6").fadeTo("fast", 1);
+  });
+});
+</script>
+
+  
     <style>
         html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
         del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -423,7 +478,7 @@
                         <ul>
 
                             <asp:Panel ID="BPanel1" runat="server">
-                                <li>
+                                <li id="L1">
                                     <div class="layer"></div> 
                                     <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
@@ -433,17 +488,17 @@
                                 </li>
                             </asp:Panel>
                             <asp:Panel ID="BPanel2" runat="server">
-                                <li>
+                                <li id="L2">
                                     <div class="layer"></div> 
                                     <asp:Image ID="Image9" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
-                                    <button type="button" id="Button2" class="button" data-toggle="modal" data-target="#myModal2">Infrastructure is procured</button>
+                                    <button type="button" id="Button2" class="button" data-toggle="modal" data-target="#myModal2">New Infrastructure is procured</button>
 
                                     <%--<asp:Button ID="Button2" runat="server" Text="Infrastructure is procured" class="button"  />--%>
                                 </li>
                             </asp:Panel>
                             <asp:Panel ID="BPanel3" runat="server">
-                                <li>
+                                <li id="L3">
                                     <div class="layer"></div> 
                                     <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
@@ -453,7 +508,7 @@
                                 </li>
                             </asp:Panel>
                             <asp:Panel ID="BPanel4" runat="server">
-                                <li>
+                                <li id="L4">
                                     <div class="layer"></div> 
                                     <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
@@ -463,7 +518,7 @@
                                 </li>
                             </asp:Panel>
                             <asp:Panel ID="BPanel5" runat="server">
-                                <li>
+                                <li id="L5">
 
                                     <div class="layer"></div> 
                                     <asp:Image ID="Image12" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
@@ -473,7 +528,7 @@
                                 </li>
                             </asp:Panel>
                             <asp:Panel ID="BPanel6" runat="server">
-                                <li>
+                                <li id="L6">
                                     <div class="layer"></div> 
                                     <asp:Image ID="Image13" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 

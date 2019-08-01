@@ -578,6 +578,7 @@ $(document).ready(function(){
 
                                 <div>
                                     <asp:DropDownList ID="DropDownList2" runat="server">
+                                        <asp:ListItem>-----Select-----</asp:ListItem>
                                         <asp:ListItem>GOLD</asp:ListItem>
                                         <asp:ListItem>SILVER</asp:ListItem>
                                         <asp:ListItem>BRONZE</asp:ListItem>
@@ -593,6 +594,7 @@ $(document).ready(function(){
 
                                 <div>
                                     <asp:DropDownList ID="DropDownList1" runat="server">
+                                        <asp:ListItem>-----Select-----</asp:ListItem>
                                         <asp:ListItem>MEDIUM</asp:ListItem>
                                         <asp:ListItem>SIMPLE</asp:ListItem>
                                         <asp:ListItem>COMPLEX</asp:ListItem>
@@ -612,6 +614,7 @@ $(document).ready(function(){
                                 </div>
                                 <div>
                                     <asp:DropDownList ID="DropDownList3" runat="server">
+                                        <asp:ListItem>-----Select-----</asp:ListItem>
                                         <asp:ListItem>AGLM ONT</asp:ListItem>
                                         <asp:ListItem>APP_ SAP CAPABILITY REV-TRAC & SALT</asp:ListItem>
                                         <asp:ListItem>APP_AGLM_SAP </asp:ListItem>
@@ -828,9 +831,12 @@ $(document).ready(function(){
 
                                 <div>
                                     <asp:DropDownList ID="Environment_Instance" runat="server">
+                                        <asp:ListItem>-----Select-----</asp:ListItem>
                                         <asp:ListItem>PROD</asp:ListItem>
                                         <asp:ListItem>NON-PROD</asp:ListItem>
                                         <asp:ListItem>DR</asp:ListItem>
+                                        <asp:ListItem>PROD-NONPROD-DR</asp:ListItem>
+                                        <asp:ListItem>PROD-DR</asp:ListItem>
                                     </asp:DropDownList>
                                     <br />
                                 </div>
@@ -889,7 +895,13 @@ $(document).ready(function(){
                                     <asp:Label ID="Label7" runat="server" Text="System Environment"></asp:Label>
                                 </div>
                                 <div>
-                                    <asp:TextBox ID="System_Environment" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="System_Environment" runat="server" Visible="false"></asp:TextBox>
+                                    <asp:DropDownList ID="DropDownList5" runat="server">
+                                        <asp:ListItem>-----Select-----</asp:ListItem>
+                                        <asp:ListItem>PROD</asp:ListItem>
+                                        <asp:ListItem>NON-PROD</asp:ListItem>
+                                        <asp:ListItem>DR</asp:ListItem>
+                                    </asp:DropDownList>
                                 </div>
                             </li>
                             <li>
@@ -934,6 +946,7 @@ $(document).ready(function(){
                                 </div>
                                 <div>
                                     <asp:DropDownList ID="Site" runat="server">
+                                        <asp:ListItem>-----Select-----</asp:ListItem>
                                         <asp:ListItem>Boston Support Center</asp:ListItem>
                                         <asp:ListItem>Headquarters, Building 1.31</asp:ListItem>
                                         <asp:ListItem>Headquarters, Building 1.31</asp:ListItem>
@@ -1199,6 +1212,7 @@ $(document).ready(function(){
                                 </div>
                                 <div>
                                     <asp:DropDownList ID="OEM_Supported" runat="server">
+                                        <asp:ListItem>-----Select-----</asp:ListItem>
                                         <asp:ListItem>Yes</asp:ListItem>
                                         <asp:ListItem>No</asp:ListItem>
                                     </asp:DropDownList>

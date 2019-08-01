@@ -866,6 +866,17 @@ $(document).ready(function(){
                             <li>
 
                                 <div>
+                                    <asp:Label ID="Label14" runat="server" Text="CR Number"></asp:Label>
+                                </div>
+                                <div>
+                                    <asp:TextBox ID="I_CR_Num" runat="server"></asp:TextBox>
+                                </div>
+                            </li>
+
+
+                            <li>
+
+                                <div>
                                     <asp:Label ID="Label6" runat="server" Text="CI Name"></asp:Label>
                                 </div>
                                 <div>
@@ -1194,7 +1205,7 @@ $(document).ready(function(){
                                 </div>
                             </li>
                         </ul>
-                        <div class="table-wrapper">
+                       <%-- <div class="table-wrapper">
                             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Visible="False">
                                 <Columns>
                                     <asp:BoundField DataField="CI_Name" HeaderText="CI_Name" SortExpression="CI_Name" />
@@ -1207,11 +1218,11 @@ $(document).ready(function(){
                                     <asp:BoundField DataField="OEM_Supported" HeaderText="OEM_Supported" SortExpression="OEM_Supported" />
                                 </Columns>
                             </asp:GridView>
-                        </div>
+                        </div>--%>
 
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Infra_Att]"></asp:SqlDataSource>
 
-                        <asp:Button ID="Button7" runat="server" Text="Submit" class="button1" OnClick="SumbitBtn_Click" />
+                        <asp:Button ID="Button7" runat="server" Text="Submit" class="button1" OnClick="Infra_SumbitBtn_Click" />
                         <div class="clear"></div>
 
                     </div>

@@ -1359,19 +1359,29 @@ $(document).ready(function(){
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
-                    <p class="heading12">Type of Decommission being done</p>
+                    <p class="heading12"> Decommission of Infrastructure</p>
                    
 
                     <div class="modal-body">
                         <div class="modal-containt">
                             <ul class="width100">
-                                <li>
+                               <li>
+
+                                <div>
+                                    <asp:Label ID="Label18" runat="server" Text="Infrastructure Name"></asp:Label>
+                                </div>
+                                <div>
+                                    <asp:TextBox ID="D_Infra" runat="server"></asp:TextBox>
+                                </div>
+                            </li>
+                                 <li>
+                                      <div>
+                                    <asp:Label ID="Label19" runat="server" Text="Type of Decommission"></asp:Label>
+                                </div>
 
                                     <div>
-
-
-
                                         <asp:DropDownList ID="DropDownList4" runat="server">
+                                            <asp:ListItem>---Select---</asp:ListItem>
                                             <asp:ListItem>Physical</asp:ListItem>
                                             <asp:ListItem>Logical</asp:ListItem>
                                         </asp:DropDownList>
@@ -1379,16 +1389,14 @@ $(document).ready(function(){
                                 </li>
                             </ul>
 
-                            <asp:Button ID="Button10" runat="server" Text="Submit" class="button1" />
+                            <asp:Button ID="Button10" runat="server" Text="Submit" class="button1" OnClick="Dcom_SumbitBtn_Click" />
 
 
                             <div class="clear"></div>
 
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+                    
                 </div>
             </div>
         </div>

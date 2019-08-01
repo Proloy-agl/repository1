@@ -564,11 +564,29 @@ $(document).ready(function(){
 
                         <ul>
                             <li>
+
+                                <div>
+                                    <asp:Label ID="Label15" runat="server" Text="CR Number"></asp:Label>
+                                </div>
+                                <div>
+                                    <asp:TextBox ID="A_CR_Number" runat="server"></asp:TextBox>
+                                </div>
+                            </li>
+
+                            <li>
                                 <div>
                                     <asp:Label ID="Label1" runat="server" Text="Application ID"></asp:Label>
                                 </div>
                                 <div>
                                     <asp:TextBox ID="Application_ID" runat="server"></asp:TextBox>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <asp:Label ID="Label16" runat="server" Text="Application Name"></asp:Label>
+                                </div>
+                                <div>
+                                    <asp:TextBox ID="Application_Name" runat="server"></asp:TextBox>
                                 </div>
                             </li>
                             <li>
@@ -844,7 +862,7 @@ $(document).ready(function(){
                         </ul>
                         <div class="clear"></div>
 
-                        <asp:Button ID="Button6" runat="server" Text="Submit" CssClass="button1" />
+                        <asp:Button ID="Button6" runat="server" Text="Submit" CssClass="button1" OnClick="App_SumbitBtn_Click"/>
                         <div class="clear"></div>
                     </div>
 

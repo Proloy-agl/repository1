@@ -532,7 +532,7 @@ $(document).ready(function(){
                                     <div class="layer"></div> 
                                     <asp:Image ID="Image13" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
-                                    <button type="button" id="Button13" class="button" data-toggle="modal" data-target="#myModal6">Update Application Attributes</button>
+                                    <button type="button" id="Button13" class="button" data-toggle="modal" data-target="#myModal6">Update Attributes & Relationships</button>
                                     <%-- <asp:Button ID="Button13" runat="server" Text="Update Application Attributes" class="button" />--%>
                                 </li>
                             </asp:Panel>
@@ -1265,7 +1265,6 @@ $(document).ready(function(){
 
             </div>
         </div>
-
         <!-- Modal -->
         <div class="modal fade" id="myModal3" role="dialog">
             <div class="modal-dialog">
@@ -1418,6 +1417,41 @@ $(document).ready(function(){
               <asp:Button ID="Button14" runat="server" Text="Application to Infrastructure Relationship" style="text-align:center"  class="button1" /><br />
               <asp:Button ID="Button15" runat="server" Text="Infrastructure to Infrastructure Attributes" style="text-align:center" class="button1" /><br />--%>
 
+
+                            <div class="clear"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal7" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="top-part12">
+                        <asp:Image ID="Image14" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+                        Magneto
+   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <p class="heading12"> This page displays data based on CR number </p>
+                    
+                    <div class="modal-body">
+                        <div class="modal-containt">
+                            <<ul>
+                                <li>
+
+                                <div>
+                                    <asp:Label ID="Label17" runat="server" Text="CR Number"></asp:Label>
+                                </div>
+                                <div>
+                                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                                </div>
+                            </li>
+                            </ul>
 
                             <div class="clear"></div>
 

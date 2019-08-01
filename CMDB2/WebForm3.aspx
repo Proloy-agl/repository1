@@ -1276,15 +1276,15 @@ $(document).ready(function(){
                         Magneto
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <p class="heading12">Application to Infrastructure Relationship</p>
-                   
+                    <p class="heading12">Application to Infrastructure Relationship</p>                  
 
                     <div class="modal-body">
                         <div class="modal-containt">
                             <ul class="width100">
+                             
                                 <li>
                                     
-                                    <div>
+                                    <div>                                      
                                         <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
                                     </div>
                                     <div class="clear"></div>
@@ -1296,7 +1296,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>
 
-                            <asp:Button ID="Button8" runat="server" Text="Submit" CssClass="button1" />
+                            <asp:Button ID="Button8" runat="server" Text="Submit" CssClass="button1" OnClick="AtoI_SumbitBtn_Click" />
                             <div class="clear"></div>
                         </div>
                     </div>
@@ -1321,7 +1321,8 @@ $(document).ready(function(){
                     <div class="modal-body">
                         <div class="modal-containt">
                             <ul class="width100">
-                                <li>
+                               
+                                 <li>
 
                                     <div>
                                         <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
@@ -1337,7 +1338,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>
 
-                            <asp:Button ID="Button9" runat="server" Text="Submit" class="button1" />
+                            <asp:Button ID="Button9" runat="server" Text="Submit" class="button1" OnClick="ItoI_SumbitBtn_Click" />
                             <div class="clear"></div>
 
                         </div>
@@ -1357,6 +1358,7 @@ $(document).ready(function(){
                         Magneto
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
+
                     <p class="heading12">Type of Decommission being done</p>
                    
 

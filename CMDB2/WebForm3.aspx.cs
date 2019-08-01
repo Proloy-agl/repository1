@@ -175,7 +175,7 @@ namespace CMDB2
                     }
                     else
                     {
-                        
+
                     }
                 }
             }
@@ -195,7 +195,7 @@ namespace CMDB2
 
         protected void App_SumbitBtn_Click(object sender, EventArgs e)
         {
-            string b1, b2, b3, b4, b5, b6,b7,b8;
+            string b1, b2, b3, b4, b5, b6, b7, b8;
             DateTime b9;
             b1 = A_CR_Number.Text;
             b2 = Application_ID.Text;
@@ -254,10 +254,107 @@ namespace CMDB2
                 }
             }
         }
+
+        protected void AtoI_SumbitBtn_Click(object sender, EventArgs e)
+        {
+            string c1, c2;
+            c1 = TextBox11.Text;
+            c2 = TextBox12.Text;
+            DateTime c3 = DateTime.Now;
+            string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
+            SqlConnection conn = null;
+            try
+            {
+                conn = new SqlConnection(connString);
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "insert into [Audit_Relationship_App_to_Infra](CR_Number,App_CI_Name,Infra_CI_Name,Transaction_Timestamp,Transaction_Status) values (@var1,@var2,@var3,@var4,@var5)";
+                    cmd.Parameters.AddWithValue("@var1", "test");
+                    cmd.Parameters.AddWithValue("@var2", c1);
+                    cmd.Parameters.AddWithValue("@var3", c2);
+                    cmd.Parameters.AddWithValue("@var4", c3);
+                    cmd.Parameters.AddWithValue("@var5", "new");
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    int test = rowsAffected;
+                    if (rowsAffected == 1)
+
+                    {
+                        Response.Redirect("WebForm3.aspx");
+                    }
+                    else
+                    {
+                        Response.Redirect("Choice.aspx");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    //cleanup connection i.e close 
+                }
+            }
+        }
+        protected void ItoI_SumbitBtn_Click(object sender, EventArgs e)
+        {
+            string c1, c2;
+            c1 = TextBox13.Text;
+            c2 = TextBox14.Text;
+            DateTime c3 = DateTime.Now;
+            string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
+            SqlConnection conn = null;
+            try
+            {
+                conn = new SqlConnection(connString);
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "insert into [Audit_Relationship_Infra_to_Infra](CR_Number,Parent_Infra_CI_Name,Child_Infra_CI_Name,Transaction_Timestamp,Transaction_Status) values (@var1,@var2,@var3,@var4,@var5)";
+                    cmd.Parameters.AddWithValue("@var1", "test");
+                    cmd.Parameters.AddWithValue("@var2", c1);
+                    cmd.Parameters.AddWithValue("@var3", c2);
+                    cmd.Parameters.AddWithValue("@var4", c3);
+                    cmd.Parameters.AddWithValue("@var5", "new");
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    int test = rowsAffected;
+                    if (rowsAffected == 1)
+
+                    {
+                        Response.Redirect("WebForm3.aspx");
+                    }
+                    else
+                    {
+                        Response.Redirect("Choice.aspx");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    //cleanup connection i.e close 
+                }
+            }
+        }
+
     }
+
 }
-
-
    
 
 

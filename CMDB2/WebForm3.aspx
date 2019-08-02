@@ -13,62 +13,70 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet"/>
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-$(document).ready(function(){
-  $("#L1").mouseenter(function(){
-      $("#L1").fadeTo("fast", 0.3);
-     
-  });
+        $(document).ready(function () {
+            $("#L1").mouseenter(function () {
+                $("#L1").fadeTo("fast", 0.3);
 
-  $("#L1").mouseleave(function () {
-      $("#L1").fadeTo("fast", 1);
-  });
+            });
 
-  $("#L2").mouseenter(function () {
-      $("#L2").fadeTo("fast", 0.3);
-  });
+            $("#L1").mouseleave(function () {
+                $("#L1").fadeTo("fast", 1);
+            });
 
-  $("#L2").mouseleave(function () {
-      $("#L2").fadeTo("fast", 1);
-  });
+            $("#L2").mouseenter(function () {
+                $("#L2").fadeTo("fast", 0.3);
+            });
 
-  $("#L3").mouseenter(function () {
-      $("#L3").fadeTo("fast", 0.3);
-  });
+            $("#L2").mouseleave(function () {
+                $("#L2").fadeTo("fast", 1);
+            });
 
-  $("#L3").mouseleave(function () {
-      $("#L3").fadeTo("fast", 1);
-  });
+            $("#L3").mouseenter(function () {
+                $("#L3").fadeTo("fast", 0.3);
+            });
 
-  $("#L4").mouseenter(function () {
-      $("#L4").fadeTo("fast", 0.3);
-  });
+            $("#L3").mouseleave(function () {
+                $("#L3").fadeTo("fast", 1);
+            });
 
-  $("#L4").mouseleave(function () {
-      $("#L4").fadeTo("fast", 1);
-  });
-  $("#L5").mouseenter(function () {
-      $("#L5").fadeTo("fast", 0.3);
-  });
+            $("#L4").mouseenter(function () {
+                $("#L4").fadeTo("fast", 0.3);
+            });
 
-  $("#L5").mouseleave(function () {
-      $("#L5").fadeTo("fast", 1);
-  });
+            $("#L4").mouseleave(function () {
+                $("#L4").fadeTo("fast", 1);
+            });
+            $("#L5").mouseenter(function () {
+                $("#L5").fadeTo("fast", 0.3);
+            });
 
-  $("#L6").mouseenter(function () {
-      $("#L6").fadeTo("fast", 0.3);
-  });
+            $("#L5").mouseleave(function () {
+                $("#L5").fadeTo("fast", 1);
+            });
 
-  $("#L6").mouseleave(function () {
-      $("#L6").fadeTo("fast", 1);
-  });
-});
-</script>
+            $("#L6").mouseenter(function () {
+                $("#L6").fadeTo("fast", 0.3);
+            });
 
-  
+            $("#L6").mouseleave(function () {
+                $("#L6").fadeTo("fast", 1);
+            });
+        });
+
+        function openModal() {
+            $("#myModal123").modal('hide');
+        }
+        function pop(x) {
+            if (x == 0) document.getElementById('myModal123').style.display = 'none';
+            return;
+        }
+    </script>
+
+
     <style>
         html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
         del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -85,7 +93,7 @@ $(document).ready(function(){
         }
 
         body {
-            font-family:"Titillium Web",sans-serif;
+            font-family: "Titillium Web",sans-serif;
             padding: 0;
             margin: 0;
             background: #ccc;
@@ -188,7 +196,7 @@ $(document).ready(function(){
         .button-box ul {
             list-style: none;
             list-style-type: none;
-            margin-bottom:10px;
+            margin-bottom: 10px;
         }
 
 
@@ -203,23 +211,22 @@ $(document).ready(function(){
                 background: #fff;
                 /*border: 1px solid #0075CC;*/
                 padding: 12px;
-                border-radius:8px;
+                border-radius: 8px;
                 text-align: center;
                 cursor: pointer;
                 /*background: #0075cc;*/
                 color: #fff;
-                position:relative;
-
+                position: relative;
             }
 
-                .button-box ul li img{
-                    width:100%;
-                    height:100%;
-                    position:absolute;
-                    top:0;
-                    left:0;
-                    border-radius:8px;
-                    z-index:1;
+                .button-box ul li img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-radius: 8px;
+                    z-index: 1;
                 }
 
 
@@ -230,7 +237,7 @@ $(document).ready(function(){
                     cursor:pointer;*/
                 }
 
-             
+
 
                 /*.button-box ul li .button {
                     background: none;
@@ -246,18 +253,18 @@ $(document).ready(function(){
                     padding: 6px 12px;
                     min-height: 66px;
                 }*/
-                .button-box ul li .layer{
-                    background:#001CB0;
-                    position:absolute;
-                    left:0%;
-                    top:0%;
-                    z-index:2;
-                    height:170px;
-                    width:100%;
-                    opacity:0.5;
-                    border-radius:8px;
+                .button-box ul li .layer {
+                    background: #001CB0;
+                    position: absolute;
+                    left: 0%;
+                    top: 0%;
+                    z-index: 2;
+                    height: 170px;
+                    width: 100%;
+                    opacity: 0.5;
+                    border-radius: 8px;
                 }
-                
+
                 .button-box ul li .button {
                     background: none;
                     box-shadow: none;
@@ -267,13 +274,12 @@ $(document).ready(function(){
                     line-height: 27px;
                     padding: 6px 12px;
                     /*color:#00DFED;*/
-                    color:#fff;
-                    font-weight:bold;
-                    position:absolute;
-                    left:6%;
-                    top:38%;
-                    z-index:3
-                    
+                    color: #fff;
+                    font-weight: bold;
+                    position: absolute;
+                    left: 6%;
+                    top: 38%;
+                    z-index: 3;
                 }
 
 
@@ -309,7 +315,6 @@ $(document).ready(function(){
         .heading12 {
             margin: 18px 0 2px 20px;
             font-weight: bold;
- 
             font-size: 14px;
         }
 
@@ -318,7 +323,7 @@ $(document).ready(function(){
             padding: 16px;
             list-style: none;
             border-radius: 6px;
-            margin:20px;
+            margin: 20px;
             border: 1px solid #ccc;
             width: 92%;
             padding-right: 0;
@@ -425,30 +430,30 @@ $(document).ready(function(){
             position: relative;
             top: -7px;
             right: -7px;
-            opacity:1!important;
+            opacity: 1 !important;
         }
-        button.close:hover{
-            opacity:1!important;
 
+            button.close:hover {
+                opacity: 1 !important;
+            }
+
+        .button-new .button1 {
+            float: left;
+            width: 40%;
+            margin: 0%;
+            margin: 15px 0 5px 25px;
+            min-height: 60px;
+            border: 1px solid #00DFED;
+            font-weight: normal;
+            font-size: 15px;
         }
-        .button-new .button1
-        {
-            float:left;
-            width:40%;
-            margin:0%;
-            margin:15px 0 5px 25px;
-            min-height:60px;
-            border:1px solid #00DFED;
-            font-weight:normal;
-            font-size:15px;
+
+        .modal-body {
+            padding: 0px;
         }
-        .modal-body
-        {
-            padding:0px;
-        }
-        legend
-        {
-            width:auto;
+
+        legend {
+            width: auto;
         }
     </style>
 </head>
@@ -467,7 +472,7 @@ $(document).ready(function(){
         <div class="container">
             <fieldset class="form-content" />
             <legend class="heading1">Please Click on the boxes below to complete the details</legend>
-          
+
 
             <form id="form1" runat="server">
 
@@ -479,17 +484,17 @@ $(document).ready(function(){
 
                             <asp:Panel ID="BPanel1" runat="server">
                                 <li id="L1">
-                                    <div class="layer"></div> 
+                                    <div class="layer"></div>
                                     <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
-                                    <button type="button" id="Button1" class="button" data-toggle="modal" data-target="#myModal">Onboarding New Application</button>
+                                    <button type="button" id="Button1" class="button" data-toggle="modal" data-target="#myModal123">Onboarding New Application</button>
                                     <%-- <asp:Button ID="Button1" runat="server" Text="Onboarding New Application" class="button"  />         --%>        
                                                               
                                 </li>
                             </asp:Panel>
                             <asp:Panel ID="BPanel2" runat="server">
                                 <li id="L2">
-                                    <div class="layer"></div> 
+                                    <div class="layer"></div>
                                     <asp:Image ID="Image9" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
                                     <button type="button" id="Button2" class="button" data-toggle="modal" data-target="#myModal2">New Infrastructure is procured</button>
@@ -499,7 +504,7 @@ $(document).ready(function(){
                             </asp:Panel>
                             <asp:Panel ID="BPanel3" runat="server">
                                 <li id="L3">
-                                    <div class="layer"></div> 
+                                    <div class="layer"></div>
                                     <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
                                     <button type="button" id="Button3" class="button" data-toggle="modal" data-target="#myModal3">Application to Infrastructure relationship</button>
@@ -509,7 +514,7 @@ $(document).ready(function(){
                             </asp:Panel>
                             <asp:Panel ID="BPanel4" runat="server">
                                 <li id="L4">
-                                    <div class="layer"></div> 
+                                    <div class="layer"></div>
                                     <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
                                     <button type="button" id="Button4" class="button" data-toggle="modal" data-target="#myModal4">Infrastructure to Infrastructure relationship</button>
@@ -520,7 +525,7 @@ $(document).ready(function(){
                             <asp:Panel ID="BPanel5" runat="server">
                                 <li id="L5">
 
-                                    <div class="layer"></div> 
+                                    <div class="layer"></div>
                                     <asp:Image ID="Image12" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
                                     <button type="button" id="Button5" class="button" data-toggle="modal" data-target="#myModal5">Decommission of Application</button>
@@ -529,7 +534,7 @@ $(document).ready(function(){
                             </asp:Panel>
                             <asp:Panel ID="BPanel6" runat="server">
                                 <li id="L6">
-                                    <div class="layer"></div> 
+                                    <div class="layer"></div>
                                     <asp:Image ID="Image13" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
                                     <button type="button" id="Button13" class="button" data-toggle="modal" data-target="#myModal6">Update Attributes & Relationships</button>
@@ -550,15 +555,17 @@ $(document).ready(function(){
             <div class="modal-dialog">
 
                 <!-- Modal content-->
-                <div class="modal-content">
+                <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image2" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
                         Magneto
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-
-                    <p class="heading12">Please enter the details for Application</p>
                     
+                    <asp:Panel ID="Panel2" runat="server">
+<div id="A1" >
+                    <p class="heading12">Please enter the details for Application</p>
+ </div>                   
 
                     <div class="modal-containt">
 
@@ -866,10 +873,13 @@ $(document).ready(function(){
                         <div class="clear"></div>
                     </div>
 
+                        </asp:Panel>
 
-                </div>
+                    <!-- Grid for APP_CI -->
+                  
+        </div>
 
-            </div>
+        </div>
         </div>
         <!-- Modal -->
         <div class="modal fade" id="myModal2" role="dialog">
@@ -883,7 +893,7 @@ $(document).ready(function(){
           <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Please complete the Infrastructure attribute details</p>
-                    
+
 
                     <div class="modal-containt">
                         <ul>
@@ -1237,7 +1247,7 @@ $(document).ready(function(){
                                 </div>
                             </li>
                         </ul>
-                       <%-- <div class="table-wrapper">
+                        <%-- <div class="table-wrapper">
                             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Visible="False">
                                 <Columns>
                                     <asp:BoundField DataField="CI_Name" HeaderText="CI_Name" SortExpression="CI_Name" />
@@ -1258,7 +1268,7 @@ $(document).ready(function(){
                         <div class="clear"></div>
 
                     </div>
-
+                    <!-- Grid for INFRA_CI -->
                 </div>
 
 
@@ -1276,15 +1286,15 @@ $(document).ready(function(){
                         Magneto
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <p class="heading12">Application to Infrastructure Relationship</p>                  
+                    <p class="heading12">Application to Infrastructure Relationship</p>
 
                     <div class="modal-body">
                         <div class="modal-containt">
                             <ul class="width100">
-                             
+
                                 <li>
-                                    
-                                    <div>                                      
+
+                                    <div>
                                         <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
                                     </div>
                                     <div class="clear"></div>
@@ -1299,6 +1309,7 @@ $(document).ready(function(){
                             <asp:Button ID="Button8" runat="server" Text="Submit" CssClass="button1" OnClick="AtoI_SumbitBtn_Click" />
                             <div class="clear"></div>
                         </div>
+
                     </div>
 
                 </div>
@@ -1316,13 +1327,13 @@ $(document).ready(function(){
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Infrastructure to Infrastructure Relationship</p>
-                   
+
 
                     <div class="modal-body">
                         <div class="modal-containt">
                             <ul class="width100">
-                               
-                                 <li>
+
+                                <li>
 
                                     <div>
                                         <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
@@ -1342,6 +1353,7 @@ $(document).ready(function(){
                             <div class="clear"></div>
 
                         </div>
+
                     </div>
 
                 </div>
@@ -1359,25 +1371,25 @@ $(document).ready(function(){
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
-                    <p class="heading12"> Decommission of Infrastructure</p>
-                   
+                    <p class="heading12">Decommission of Infrastructure</p>
+
 
                     <div class="modal-body">
                         <div class="modal-containt">
                             <ul class="width100">
-                               <li>
+                                <li>
 
-                                <div>
-                                    <asp:Label ID="Label18" runat="server" Text="Infrastructure Name"></asp:Label>
-                                </div>
-                                <div>
-                                    <asp:TextBox ID="D_Infra" runat="server"></asp:TextBox>
-                                </div>
-                            </li>
-                                 <li>
-                                      <div>
-                                    <asp:Label ID="Label19" runat="server" Text="Type of Decommission"></asp:Label>
-                                </div>
+                                    <div>
+                                        <asp:Label ID="Label18" runat="server" Text="Infrastructure Name"></asp:Label>
+                                    </div>
+                                    <div>
+                                        <asp:TextBox ID="D_Infra" runat="server"></asp:TextBox>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <asp:Label ID="Label19" runat="server" Text="Type of Decommission"></asp:Label>
+                                    </div>
 
                                     <div>
                                         <asp:DropDownList ID="DropDownList4" runat="server">
@@ -1396,7 +1408,7 @@ $(document).ready(function(){
 
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -1412,16 +1424,16 @@ $(document).ready(function(){
    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Please select the category of application/Infrastructure/Relationship details to be updated</p>
-                    
+
                     <div class="modal-body">
                         <div class="modal-containt">
                             <div class="button-new">
-                                 <asp:Button ID="Button16" runat="server" Text="Application Attributes" Style="text-align: center" class="button1" />
+                                <asp:Button ID="Button16" runat="server" Text="Application Attributes" Style="text-align: center" class="button1" />
                                 <asp:Button ID="Button12" runat="server" Text="Infrastructure attributes" Style="text-align: center" class="button1" />
                                 <asp:Button ID="Button14" runat="server" Text="Application to Infrastructure Relationship" Style="text-align: center" class="button1" />
                                 <asp:Button ID="Button15" runat="server" Text="Infrastructure to Infrastructure Attributes" Style="text-align: center" class="button1" />
                             </div>
-                           
+
                             <%--  <asp:Button ID="Button11" runat="server" Text="Application Attributes"  style="text-align:center" class="button1" /><br />
               <asp:Button ID="Button12" runat="server" Text="Infrastructure attributes" style="text-align:center"  class="button1" /> <br />
               <asp:Button ID="Button14" runat="server" Text="Application to Infrastructure Relationship" style="text-align:center"  class="button1" /><br />
@@ -1447,20 +1459,20 @@ $(document).ready(function(){
                         Magneto
    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <p class="heading12"> This page displays data based on CR number </p>
-                    
+                    <p class="heading12">This page displays data based on CR number </p>
+
                     <div class="modal-body">
                         <div class="modal-containt">
                             <<ul>
                                 <li>
 
-                                <div>
-                                    <asp:Label ID="Label17" runat="server" Text="CR Number"></asp:Label>
-                                </div>
-                                <div>
-                                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                                </div>
-                            </li>
+                                    <div>
+                                        <asp:Label ID="Label17" runat="server" Text="CR Number"></asp:Label>
+                                    </div>
+                                    <div>
+                                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                                    </div>
+                                </li>
                             </ul>
 
                             <div class="clear"></div>
@@ -1470,6 +1482,34 @@ $(document).ready(function(){
 
                 </div>
             </div>
+        </div>
+
+          <!-- Modal -->
+        <div class="modal fade" id="myModal123" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" onsubmit="return false">
+                    <div class="top-part12">
+                        <asp:Image ID="Image15" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+                        Magneto
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div>
+                                                   <p class="heading12">Please Select your action</p> 
+                        <asp:RadioButtonList ID="RadioButtonList2" runat="server">
+                            <asp:ListItem>Create new Entry</asp:ListItem>
+                            <asp:ListItem>Amend Exist Entity</asp:ListItem>
+                        </asp:RadioButtonList> 
+                       
+                       <button type="button" id="ButtonTry" class="button" data-toggle="modal" data-target="#myModal" onclick="pop(0)">try</button>  
+                    </div>
+                  
+                    <!-- Grid for APP_CI -->
+                  
+        </div>
+
+        </div>
         </div>
 
     </div>

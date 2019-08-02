@@ -351,6 +351,7 @@ namespace CMDB2
                 }
             }
         }
+        
         protected void Dcom_SumbitBtn_Click(object sender, EventArgs e)
         {
             string c1, c2;

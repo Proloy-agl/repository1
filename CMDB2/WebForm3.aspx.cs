@@ -13,6 +13,7 @@ namespace CMDB2
 
     public partial class WebForm3 : System.Web.UI.Page
     {
+        public int Y1, Y2, Y3, Y4, Y5;
         SqlConnection con = new SqlConnection("Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin");
 
         protected void Page_Load(object sender, EventArgs e)
@@ -121,6 +122,8 @@ namespace CMDB2
                 BPanel5.Visible = false;
                 BPanel6.Visible = false;
             }
+        
+
         }
 
         protected void Infra_SumbitBtn_Click(object sender, EventArgs e)
@@ -172,8 +175,10 @@ namespace CMDB2
                     if (rowsAffected == 1)
 
                     {
-                        T2.Visible = true;
+                        
                         Response.Redirect("WebForm3.aspx");
+                        T2.Visible = true;
+                        Y2 = 1;
                     }
                     else
                     {
@@ -233,8 +238,9 @@ namespace CMDB2
                     if (rowsAffected == 1)
 
                     {
-                        T1.Visible = true;
+                        
                         Response.Redirect("WebForm3.aspx");
+                        T1.Visible = true;
                     }
                     else
                     {
@@ -285,8 +291,10 @@ namespace CMDB2
                     if (rowsAffected == 1)
 
                     {
-                        T3.Visible = true;
+                        
                         Response.Redirect("WebForm3.aspx");
+                        T3.Visible = true;
+                      
                     }
                     else
                     {
@@ -334,9 +342,9 @@ namespace CMDB2
                     if (rowsAffected == 1)
 
                     {
-                       
+                        Y4 = 1;
                         Response.Redirect("WebForm3.aspx");
-                        T4.Visible = true;
+                      
                     }
                     else
                     {
@@ -385,8 +393,9 @@ namespace CMDB2
                     if (rowsAffected == 1)
 
                     {
-                        T5.Visible = true;
+                        
                         Response.Redirect("WebForm3.aspx");
+                        T5.Visible = true;
                     }
                     else
                     {

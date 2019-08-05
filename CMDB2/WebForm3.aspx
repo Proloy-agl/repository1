@@ -229,7 +229,24 @@
                 /*background: #0075cc;*/
                 color: #fff;
                 position: relative;
+                
             }
+         
+            
+                .button-box ul li .filter {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    z-index: 99;
+    border-radius: 25px;
+    box-shadow: 1px 2px 8px 0px #333;
+    opacity: 0.9;
+}
+
+            
 
                 .button-box ul li img {
                     width: 100%;
@@ -505,6 +522,7 @@
 
                             <asp:Panel ID="BPanel1" runat="server">
                                 <li id="L1">
+                         <asp:Panel ID="T1" Visible="false" runat="server"> <div class="filter"> <span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span></div></asp:Panel>  
                                     
                                     <div class="layer"></div>
                                     <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
@@ -516,6 +534,7 @@
                             </asp:Panel>
                             <asp:Panel ID="BPanel2" runat="server">
                                 <li id="L2">
+                           <asp:Panel ID="T2" Visible="false"  runat="server"> <div class="filter"> <span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span></div></asp:Panel>          
                                     <div class="layer"></div>
                                     <asp:Image ID="Image9" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
@@ -526,6 +545,7 @@
                             </asp:Panel>
                             <asp:Panel ID="BPanel3" runat="server">
                                 <li id="L3">
+                             <asp:Panel ID="T3" Visible="false"  runat="server"><div class="filter"> <span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span></div></asp:Panel>           
                                     <div class="layer"></div>
                                     <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
@@ -536,6 +556,7 @@
                             </asp:Panel>
                             <asp:Panel ID="BPanel4" runat="server">
                                 <li id="L4">
+                         <asp:Panel ID="T4" Visible="false"  runat="server"> <div class="filter"> <span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span></div></asp:Panel> 
                                     <div class="layer"></div>
                                     <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
@@ -546,7 +567,7 @@
                             </asp:Panel>
                             <asp:Panel ID="BPanel5" runat="server">
                                 <li id="L5">
-
+                       <asp:Panel ID="T5" Visible="false"  runat="server"> <div class="filter"> <span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span></div></asp:Panel>  
                                     <div class="layer"></div>
                                     <asp:Image ID="Image12" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 

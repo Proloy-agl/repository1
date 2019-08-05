@@ -1289,6 +1289,7 @@
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Infra_Att]"></asp:SqlDataSource>
 
                         <asp:Button ID="Button7" runat="server" Text="Submit" class="button1" OnClick="Infra_SumbitBtn_Click" />
+                        <button type="button" id="Button18" class="button" data-toggle="modal" data-target="#myModal2" onclick="Infra_Add_Click">Add a New Infrastructure </button>
                         <div class="clear"></div>
 
                     </div>

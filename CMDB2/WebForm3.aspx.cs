@@ -61,7 +61,8 @@ namespace CMDB2
                 BPanel1.Visible = false;
                 BPanel5.Visible = false;
                 BPanel6.Visible = false;
-
+                BPanel2.Visible = false;
+                BPanel4.Visible = false;
 
 
 
@@ -409,6 +410,17 @@ namespace CMDB2
         {
             Session["value11"] = "1";
             Response.Redirect("WebForm4.aspx");
+        }
+
+        protected void Infra_Add_Click(object sender, EventArgs e)
+        {
+            CI_Name.Text = "";
+            System_Environment.Text = "";
+            Primary_Capability.Text = "";
+            Owner.Text = "";
+            Supported_By.Text = "";
+            System_Role.Text = "";
+
         }
 
     }

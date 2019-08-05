@@ -74,6 +74,10 @@
             if (x == 0) document.getElementById('myModal123').style.display = 'none';
             return;
         }
+        function pop1(x) {
+            if (x == 0) document.getElementById('myModal321').style.display = 'none';
+            return;
+        }
     </script>
 
 
@@ -121,10 +125,14 @@
             margin: 0;
             padding: 0;
         }
+.logo {
+    float: left;
+    margin:6px 20px 0 20px;
 
-        .logo {
+}
+        .logo1 {
             float: left;
-            margin: 6px 30px 0 20px;
+            margin: 22px 0px 0 20px;
         }
 
         .top-part {
@@ -463,7 +471,8 @@
 
         <div class="top-part">
             <asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos/logo.png" Width="86px" class="logo" />
-            Magneto
+            <asp:Image ID="Image16" runat="server" ImageUrl="~/Photos and Logos/m-logo1.png"  class="logo1" />
+            &nbsp
         </div>
         <div>
             <nav class="navBar"></nav>
@@ -487,7 +496,7 @@
                                     <div class="layer"></div>
                                     <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
-                                    <button type="button" id="Button1" class="button" data-toggle="modal" data-target="#myModal123">Onboarding New Application</button>
+                                    <button type="button" id="Button1" class="button" data-toggle="modal" data-target="#myModal">Onboarding New Application</button>
                                     <%-- <asp:Button ID="Button1" runat="server" Text="Onboarding New Application" class="button"  />         --%>        
                                                               
                                 </li>
@@ -507,7 +516,7 @@
                                     <div class="layer"></div>
                                     <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
-                                    <button type="button" id="Button3" class="button" data-toggle="modal" data-target="#myModal3">Application to Infrastructure relationship</button>
+                                    <button type="button" id="Button3" class="button" data-toggle="modal" data-target="#myModal123">Application to Infrastructure relationship</button>
                                     <%--<asp:Button ID="Button3" runat="server" Text="Application to Infrastructure relationship" class="button" />--%>
 
                                 </li>
@@ -517,7 +526,7 @@
                                     <div class="layer"></div>
                                     <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
-                                    <button type="button" id="Button4" class="button" data-toggle="modal" data-target="#myModal4">Infrastructure to Infrastructure relationship</button>
+                                    <button type="button" id="Button4" class="button" data-toggle="modal" data-target="#myModal321">Infrastructure to Infrastructure relationship</button>
                                     <%--<asp:Button ID="Button4" runat="server" Text="Infrastructure to Infrastructure relationship" class="button"  />--%>
                                         
                                 </li>
@@ -1496,16 +1505,43 @@
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div>
-                                                   <p class="heading12">Please Select your action</p> 
-                        <asp:RadioButtonList ID="RadioButtonList2" runat="server">
-                            <asp:ListItem>Create new Entry</asp:ListItem>
-                            <asp:ListItem>Amend Exist Entity</asp:ListItem>
-                        </asp:RadioButtonList> 
-                       
-                       <button type="button" id="ButtonTry" class="button" data-toggle="modal" data-target="#myModal" onclick="pop(0)">try</button>  
+                                                                 <p class="heading12">Please Select your action</p> 
+                                              
+                       <button type="button" id="ButtonTry" class="button1" data-toggle="modal" data-target="#myModal3" onclick="pop(0)">Create New Entry</button>  
+                        <asp:Button ID="Button11" runat="server" CssClass="button1" Text="Amend existing entry" OnClick="move_toGrid" />
+                      
+                        <br />
+
                     </div>
                   
-                    <!-- Grid for APP_CI -->
+                   
+                  
+        </div>
+
+        </div>
+        </div>
+        
+          <!-- Modal -->
+        <div class="modal fade" id="myModal321" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" onsubmit="return false">
+                    <div class="top-part12">
+                        <asp:Image ID="Image17" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+                        Magneto
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div>
+                                                   <p class="heading12">Please Select your action</p> 
+                                               
+                       <button type="button" id="ButtonTry2" class="button1" data-toggle="modal" data-target="#myModal4" onclick="pop1(0)">Create New Entry</button>  
+                        <asp:Button ID="Button17" runat="server" CssClass="button1" Text="Amend existing entry" OnClick="move_toGrid1" />
+                    
+                        <br />
+                    </div>
+                  
+                   
                   
         </div>
 

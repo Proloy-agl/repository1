@@ -401,6 +401,16 @@ namespace CMDB2
             }
         }
 
+        protected void move_toGrid1(object sender, EventArgs e) {
+            Response.Redirect("WebForm4.aspx");
+            Session["value11"] = "2";
+        }
+        protected void move_toGrid(object sender, EventArgs e)
+        {
+            Session["value11"] = "1";
+            Response.Redirect("WebForm4.aspx");
+        }
+
     }
 
 }

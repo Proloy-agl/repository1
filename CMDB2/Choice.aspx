@@ -53,7 +53,12 @@ body{
 
 .logo {
     float: left;
-    margin:6px 30px 0 20px;
+    margin:6px 20px 0 20px;
+
+}
+.logo1 {
+    float: left;
+    margin:22px 0px 0 20px;
 
 }
 .top-part{
@@ -192,12 +197,14 @@ body{
          
         <div class="container-wrapper">
 
-    <div class="top-part">
-m
-
-    </div>
-
-    <div><nav class="navBar"></nav></div>
+        <div class="top-part">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos/logo.png" Width="86px" class="logo" />
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/Photos and Logos/m-logo1.png"  class="logo1" />
+            &nbsp
+        </div>
+        <div>
+            <nav class="navBar"></nav>
+        </div>
 
 
     <div class="container">
@@ -231,7 +238,7 @@ m
                     </li>
                     <li>
                         <asp:CheckBox ID="CheckBox2" runat="server" value="1" />
-                        <asp:Label ID="Label2" runat="server" Text="Infrastructure is procured"></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Text="New Infrastructure is procured"></asp:Label>
                     </li>
                     <li>
                         <asp:CheckBox ID="CheckBox4" runat="server" value="1" />

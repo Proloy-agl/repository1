@@ -25,7 +25,7 @@ namespace CMDB2
             ValC = Convert.ToInt32(ChoiceC = Session["value3"].ToString());
             ValD = Convert.ToInt32(ChoiceD = Session["value4"].ToString());
             ValE = Convert.ToInt32(ChoiceE = Session["value5"].ToString());
-            ValF = Convert.ToInt32(ChoiceF = Session["value6"].ToString());
+            ValF = 5;
             if (ValE == 1)
             {
                 BPanel1.Visible = false;

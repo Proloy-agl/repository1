@@ -166,6 +166,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.Image Image2;
         
         /// <summary>
+        /// Image18 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image18;
+        
+        /// <summary>
         /// Panel2 control.
         /// </summary>
         /// <remarks>
@@ -317,6 +326,15 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image3;
+        
+        /// <summary>
+        /// Image19 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image19;
         
         /// <summary>
         /// Label14 control.
@@ -517,6 +535,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.Image Image4;
         
         /// <summary>
+        /// Image20 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image20;
+        
+        /// <summary>
         /// TextBox11 control.
         /// </summary>
         /// <remarks>
@@ -553,6 +580,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.Image Image5;
         
         /// <summary>
+        /// Image21 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image21;
+        
+        /// <summary>
         /// TextBox13 control.
         /// </summary>
         /// <remarks>
@@ -587,6 +623,15 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image6;
+        
+        /// <summary>
+        /// Image22 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image22;
         
         /// <summary>
         /// Label18 control.
@@ -643,6 +688,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.Image Image7;
         
         /// <summary>
+        /// Image23 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image23;
+        
+        /// <summary>
         /// Button16 control.
         /// </summary>
         /// <remarks>
@@ -688,6 +742,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.Image Image14;
         
         /// <summary>
+        /// Image24 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image24;
+        
+        /// <summary>
         /// Label17 control.
         /// </summary>
         /// <remarks>
@@ -715,6 +778,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.Image Image15;
         
         /// <summary>
+        /// Image25 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image25;
+        
+        /// <summary>
         /// Button11 control.
         /// </summary>
         /// <remarks>
@@ -731,6 +803,15 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image17;
+        
+        /// <summary>
+        /// Image26 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image26;
         
         /// <summary>
         /// Button17 control.

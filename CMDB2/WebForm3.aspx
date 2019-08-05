@@ -106,6 +106,10 @@
         .clearfix::after {
             clear: both !important;
         }
+        .fltLeft
+        {
+            float:left!important;
+        }
 
         .container-wrapper {
             width: 100%;
@@ -320,6 +324,12 @@
             height: 50px;
         }
 
+        .top-part12 .logo1 {
+    float: left;
+    margin: 8px 0px 0 0px!important;
+}
+
+
         .heading12 {
             margin: 18px 0 2px 20px;
             font-weight: bold;
@@ -439,6 +449,8 @@
             top: -7px;
             right: -7px;
             opacity: 1 !important;
+            line-height:0;
+            padding-bottom:4px;
         }
 
             button.close:hover {
@@ -493,6 +505,7 @@
 
                             <asp:Panel ID="BPanel1" runat="server">
                                 <li id="L1">
+                                    
                                     <div class="layer"></div>
                                     <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
@@ -537,7 +550,7 @@
                                     <div class="layer"></div>
                                     <asp:Image ID="Image12" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
-                                    <button type="button" id="Button5" class="button" data-toggle="modal" data-target="#myModal5">Decommission of Application</button>
+                                    <button type="button" id="Button5" class="button" data-toggle="modal" data-target="#myModal5">Decommission of Infrastructure</button>
                                     <%--<asp:Button ID="Button5" runat="server" Text="Decommission of Application" class="button"  />--%>
                                 </li>
                             </asp:Panel>
@@ -566,8 +579,10 @@
                 <!-- Modal content-->
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
-                        <asp:Image ID="Image2" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                        Magneto
+                         <asp:Image ID="Image2" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+            <asp:Image ID="Image18" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+
+
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     
@@ -898,7 +913,7 @@
                 <div class="modal-content">
                     <div class="top-part12">
                         <asp:Image ID="Image3" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                        Magneto
+                        <asp:Image ID="Image19" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
           <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Please complete the Infrastructure attribute details</p>
@@ -1292,7 +1307,7 @@
                 <div class="modal-content">
                     <div class="top-part12">
                         <asp:Image ID="Image4" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                        Magneto
+                       <asp:Image ID="Image20" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Application to Infrastructure Relationship</p>
@@ -1332,7 +1347,7 @@
                 <div class="modal-content">
                     <div class="top-part12">
                         <asp:Image ID="Image5" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                        Magneto
+                       <asp:Image ID="Image21" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Infrastructure to Infrastructure Relationship</p>
@@ -1376,7 +1391,7 @@
                 <div class="modal-content">
                     <div class="top-part12">
                         <asp:Image ID="Image6" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                        Magneto
+                       <asp:Image ID="Image22" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
@@ -1429,7 +1444,7 @@
                 <div class="modal-content">
                     <div class="top-part12">
                         <asp:Image ID="Image7" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                        Magneto
+                        <asp:Image ID="Image23" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Please select the category of application/Infrastructure/Relationship details to be updated</p>
@@ -1465,7 +1480,7 @@
                 <div class="modal-content">
                     <div class="top-part12">
                         <asp:Image ID="Image14" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                        Magneto
+                       <asp:Image ID="Image24" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">This page displays data based on CR number </p>
@@ -1501,16 +1516,18 @@
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image15" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                        Magneto
+                       <asp:Image ID="Image25" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <div>
-                                                                 <p class="heading12">Please Select your action</p> 
+                    <div>                                <p class="heading12">Please Select your action</p> 
+                        <div class="modal-containt"> 
                                               
-                       <button type="button" id="ButtonTry" class="button1" data-toggle="modal" data-target="#myModal3" onclick="pop(0)">Create New Entry</button>  
-                        <asp:Button ID="Button11" runat="server" CssClass="button1" Text="Amend existing entry" OnClick="move_toGrid" />
+                       <button type="button" id="ButtonTry" class="button1 fltLeft" data-toggle="modal" data-target="#myModal3" onclick="pop(0)">Create New Entry</button>  
+                        <asp:Button ID="Button11" runat="server" CssClass="button1 fltLeft" Text="Amend existing entry" OnClick="move_toGrid" />
                       
                         <br />
+                          <div class="clear"></div>   
+                        </div>
 
                     </div>
                   
@@ -1529,16 +1546,19 @@
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image17" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                        Magneto
+                       <asp:Image ID="Image26" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div>
                                                    <p class="heading12">Please Select your action</p> 
+                        <div class="modal-containt">
                                                
-                       <button type="button" id="ButtonTry2" class="button1" data-toggle="modal" data-target="#myModal4" onclick="pop1(0)">Create New Entry</button>  
-                        <asp:Button ID="Button17" runat="server" CssClass="button1" Text="Amend existing entry" OnClick="move_toGrid1" />
+                       <button type="button" id="ButtonTry2" class="button1 fltLeft" data-toggle="modal" data-target="#myModal4" onclick="pop1(0)">Create New Entry</button>  
+                        <asp:Button ID="Button17" runat="server" CssClass="button1 fltLeft" Text="Amend existing entry" OnClick="move_toGrid1" />
                     
                         <br />
+                        <div class="clear"></div>
+                            </div>
                     </div>
                   
                    

@@ -249,10 +249,7 @@ body{
                         <asp:CheckBox ID="CheckBox5" runat="server" value="1" />
                         <asp:Label ID="Label5" runat="server" Text="Decommission of Infrastructure"></asp:Label>
                     </li>
-                    <li>
-                        <asp:CheckBox ID="CheckBox6" runat="server" value="1" />
-                        <asp:Label ID="Label6" runat="server" Text="Update details for previously created entities"></asp:Label>
-                    </li>
+                   
                    
 
                 </ul>

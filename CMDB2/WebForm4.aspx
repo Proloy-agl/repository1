@@ -235,29 +235,8 @@
                 }
 
 
-                .button-box ul li:hover {
-                    /*background: #0075CC;
-                    box-shadow: 0px 3px 4px 0px #00DFED inset;
-                    color: #fff;
-                    cursor:pointer;*/
-                }
 
 
-
-                /*.button-box ul li .button {
-                    background: none;
-                    box-shadow: none;
-                    border: 0;
-                    font-size: 16px;
-                    word-break: break-word;
-                    overflow-wrap: break-word;
-                    white-space: normal;
-                    line-height: 27px;
-                    border: 1px solid #fff;
-                    border-radius: 6px;
-                    padding: 6px 12px;
-                    min-height: 66px;
-                }*/
                 .button-box ul li .layer {
                     background: #001CB0;
                     position: absolute;
@@ -292,20 +271,7 @@
                         color: #fff !important;
                     }
 
-        /*.modal-box {
-                    background-color: white;
-                   
-                    width: 550px;
-                    height: auto;
-                    top: 50%;
-                    left: 50%!important;
-                    border-radius: 12px 12px;
-                    border: 3px solid #A7A9B3;
-                    box-shadow: 0 15px 45px rgba(0, 0, 0, .25);
-                    position: relative;
-                    z-index: 1;
-                    margin-left: -275px
-                }*/
+        
 
         .top-part12 {
             font-size: 27px;
@@ -323,81 +289,39 @@
             font-size: 14px;
         }
 
-        .modal-containt {
-            background: #EFF0F4;
-            padding: 16px;
-            list-style: none;
-            border-radius: 6px;
-            margin: 20px;
-            border: 1px solid #ccc;
-            width: 92%;
-            padding-right: 0;
-        }
-
-            .modal-containt ul li {
-                list-style: none;
-                list-style-type: none;
-                float: left;
-                margin-right: 20px;
-                width: 100%;
-                margin-bottom: 10px;
-            }
-
-                .modal-containt ul li div {
-                    float: left;
-                    margin-left: 12px;
-                    width: 45%;
-                }
-
-                .modal-containt ul li input {
-                    border: 1px solid #A7A9B3;
-                    border-radius: 6px;
-                    height: 23px;
-                    line-height: 23px;
-                    width: 99.5%;
-                    padding-left: .2%;
-                }
-
-        .width100 li div {
-            width: 92% !important;
-            margin-bottom: 5px !important;
-        }
-
-        .modal-containt ul li select {
-            border: 1px solid #A7A9B3;
-            border-radius: 6px;
-            height: 26px;
-            line-height: 26px;
-            width: 100%;
-        }
-
         .table-wrapper {
             /*display: block;
                      white-space: nowrap;*/
             overflow-x: auto;
             width: 94.5%;
         }
-
-        .modal-containt table {
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-left: 0;
+        .table-wrapper div{
+            width:50%;
+            margin:0 auto;;
         }
 
-            .modal-containt table th {
+        .table-wrapper table {
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            width:100%;
+           
+        }
+
+            .table-wrapper table th {
                 background: #0075cc;
                 line-height: 20px;
                 color: #fff;
             }
 
-            .modal-containt table th,
-            .modal-containt table td {
+            .table-wrapper table th,
+            .table-wrapper table td {
+                border:0!important;
                 border-bottom: 1px solid #ccc;
                 border-left: 1px solid #ccc;
                 line-height: 22px;
-                font-size: 13px;
+                font-size: 14px;
                 font-weight: bold;
-                padding: 4px 10px;
+                padding: 4px 15px;
                 text-align: center;
             }
 
@@ -475,24 +399,29 @@
             <asp:Image ID="Image16" runat="server" ImageUrl="~/Photos and Logos/m-logo1.png"  class="logo1" />
             &nbsp
         </div>
-         </div>
+       
         <div>
             <nav class="navBar">
-                
+                 <%--<asp:Button ID="Button2" runat="server" CssClass="button1" Text="Go back to previous page" OnClick="Button2_Click" />--%>
             </nav>
         </div>
-    <form id="form2" runat="server">
-        <asp:Button ID="Button2" runat="server" CssClass="button1" Text="Go back to previous page" OnClick="Button2_Click" />
-   <div>
+         <div class="container">
+              <form id="form2" runat="server">
+                <div>
        <asp:Label ID="Label1" runat="server" Text="CR number of previous Entry"></asp:Label>
        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
        <asp:Button ID="Button1" runat="server" Text="Search" OnClick="Button1_Click" />
        <br />
        <br />
    </div>
-      
-            <asp:Panel ID="Panel1" runat="server">
-    <asp:GridView ID="GridView1" runat="server" DataKeyNames="Transaction_ID" DataSourceID="SqlDataSource1" Visible="false"  Height="350px" BackColor="Black" 
+                  <asp:Panel runat="server" ID="panel456" Visible="false">
+              <fieldset class="form-content">
+            <legend class="heading1">Please Click on the boxes below to complete the details</legend>
+
+                   <asp:Panel ID="Panel1" runat="server">
+                <div class="table-wrapper">
+
+    <asp:GridView ID="GridView1" runat="server" DataKeyNames="Transaction_ID" DataSourceID="SqlDataSource1" Visible="false"
     CssClass="GridView1" GridLines="none" CellPadding="-1" CellSpacing="-1" ShowFooter="True" AllowSorting="True" AutoGenerateColumns="false">
         <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
     <HeaderStyle Font-Size="7pt" Width="400px" BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF"></HeaderStyle>
@@ -512,6 +441,8 @@
             <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />--%>
         </Columns>
      </asp:GridView>
+</div>
+
 
                 <asp:GridView ID="GridView2" runat="server" DataKeyNames="Transaction_ID" DataSourceID="SqlDataSource2" Visible="false"  Height="350px" BackColor="Black" 
     CssClass="GridView1" GridLines="none" CellPadding="-1" CellSpacing="-1" ShowFooter="True" AllowSorting="True" AutoGenerateColumns="false">
@@ -538,8 +469,18 @@
     
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Audit_Relationship_App_to_Infra]"></asp:SqlDataSource>
    </asp:Panel>
+            </fieldset>
+                  </asp:Panel>
+   
+       
+
+      
+           
             
              </form>
+
+             </div>
+</div>
     
 </body>
 </html>

@@ -17,10 +17,12 @@ namespace CMDB2
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (varA == 1) { 
+            if (varA == 1) {
+                panel456.Visible = true;
             GridView1.Visible = true;
             }
-            if (varA == 2) { 
+            if (varA == 2) {
+                panel456.Visible = true;
             GridView2.Visible = true;
             }
         }

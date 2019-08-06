@@ -527,7 +527,7 @@
                                     <div class="layer"></div>
                                     <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
-                                    <button type="button" id="Button1" class="button" data-toggle="modal" data-target="#myModal">Onboarding New Application</button>
+                                    <button type="button" id="Button1" class="button" data-toggle="modal" data-target="#myModal">Addition of Application attributes </button>
                                     <%-- <asp:Button ID="Button1" runat="server" Text="Onboarding New Application" class="button"  />         --%>        
                                                               
                                 </li>
@@ -538,7 +538,7 @@
                                     <div class="layer"></div>
                                     <asp:Image ID="Image9" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
-                                    <button type="button" id="Button2" class="button" data-toggle="modal" data-target="#myModal2">New Infrastructure is procured</button>
+                                    <button type="button" id="Button2" class="button" data-toggle="modal" data-target="#myModal2">Addition of Infrastructure attributes</button>
 
                                     <%--<asp:Button ID="Button2" runat="server" Text="Infrastructure is procured" class="button"  />--%>
                                 </li>

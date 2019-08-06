@@ -239,7 +239,7 @@ namespace CMDB2
 
                     {
                         
-                        Response.Redirect("WebForm3.aspx");
+                       // Response.Redirect("WebForm3.aspx");
                         T1.Visible = true;
                     }
                     else
@@ -292,9 +292,9 @@ namespace CMDB2
 
                     {
                         
-                        Response.Redirect("WebForm3.aspx");
+                       // Response.Redirect("WebForm3.aspx");
                         T3.Visible = true;
-                        Response.Redirect("WebForm3.aspx");
+                        
                     }
                     else
                     {
@@ -342,8 +342,9 @@ namespace CMDB2
                     if (rowsAffected == 1)
 
                     {
-                        Y4 = 1;
-                        Response.Redirect("WebForm3.aspx");
+                       
+                       // Response.Redirect("WebForm3.aspx");
+                        T4.Visible = true;
                       
                     }
                     else
@@ -394,7 +395,7 @@ namespace CMDB2
 
                     {
                         
-                        Response.Redirect("WebForm3.aspx");
+                       // Response.Redirect("WebForm3.aspx");
                         T5.Visible = true;
                     }
                     else

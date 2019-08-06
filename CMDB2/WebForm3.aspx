@@ -525,7 +525,7 @@
                          <asp:Panel ID="T1" Visible="false" runat="server"> <div class="filter"> <span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span></div></asp:Panel>  
                                     
                                     <div class="layer"></div>
-                                    <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
+                                    <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/AAtt.jpg" Width="" />
 
                                     <button type="button" id="Button1" class="button" data-toggle="modal" data-target="#myModal">Addition of Application attributes </button>
                                     <%-- <asp:Button ID="Button1" runat="server" Text="Onboarding New Application" class="button"  />         --%>        
@@ -536,7 +536,7 @@
                                 <li id="L2">
                            <asp:Panel ID="T2" Visible="false"  runat="server"> <div class="filter"> <span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span></div></asp:Panel>          
                                     <div class="layer"></div>
-                                    <asp:Image ID="Image9" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
+                                    <asp:Image ID="Image9" runat="server" ImageUrl="~/Photos and Logos/infra.jpg" Width="" />
 
                                     <button type="button" id="Button2" class="button" data-toggle="modal" data-target="#myModal2">Addition of Infrastructure attributes</button>
 
@@ -547,7 +547,7 @@
                                 <li id="L3">
                              <asp:Panel ID="T3" Visible="false"  runat="server"><div class="filter"> <span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span></div></asp:Panel>           
                                     <div class="layer"></div>
-                                    <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
+                                    <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos/AppToInf.jpg" Width="" />
 
                                     <button type="button" id="Button3" class="button" data-toggle="modal" data-target="#myModal123">Application to Infrastructure relationship</button>
                                     <%--<asp:Button ID="Button3" runat="server" Text="Application to Infrastructure relationship" class="button" />--%>
@@ -558,7 +558,7 @@
                                 <li id="L4">
                          <asp:Panel ID="T4" Visible="false"  runat="server"> <div class="filter"> <span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span></div></asp:Panel> 
                                     <div class="layer"></div>
-                                    <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
+                                    <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/AppToInfra.jpg" Width="" />
 
                                     <button type="button" id="Button4" class="button" data-toggle="modal" data-target="#myModal321">Infrastructure to Infrastructure relationship</button>
                                     <%--<asp:Button ID="Button4" runat="server" Text="Infrastructure to Infrastructure relationship" class="button"  />--%>

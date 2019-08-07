@@ -78,6 +78,19 @@
             if (x == 0) document.getElementById('myModal321').style.display = 'none';
             return;
         }
+        function pop2(x) {
+            if (x == 0) document.getElementById('myModal1to2').style.display = 'none';
+            return;
+        }
+        function pop3(x) {
+            if (x == 0) document.getElementById('myModal2to3').style.display = 'none';
+            return;
+        }
+        function pop4(x) {
+            if (x == 0) document.getElementById('myModal3to4').style.display = 'none';
+            return;
+        }
+
     </script>
 
 
@@ -290,7 +303,7 @@
                     z-index: 2;
                     height: 170px;
                     width: 100%;
-                    opacity: 0.5;
+                    opacity: 0.4;
                     border-radius: 8px;
                 }
 
@@ -298,7 +311,7 @@
                     background: none;
                     box-shadow: none;
                     border: 0;
-                    font-size: 16px;
+                    font-size: 20px;
                     white-space: normal;
                     line-height: 27px;
                     padding: 6px 12px;
@@ -314,6 +327,7 @@
 
                     .button-box ul li .button:hover {
                         color: #fff !important;
+                        
                     }
 
         /*.modal-box {
@@ -526,8 +540,8 @@
                                     
                                     <div class="layer"></div>
                                     <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/AAtt.jpg" Width="" />
-
-                                    <button type="button" id="Button1" class="button" data-toggle="modal" data-target="#myModal">Addition of Application attributes </button>
+                                    <asp:Button ID="Button18" runat="server" Text="Button" data-toggle="modal" data-target="#myModal"/>
+                                    <button type="button" id="Button1" class="button" data-toggle="modal" data-target="#myModal" runat="server">Addition of Application attributes </button>
                                     <%-- <asp:Button ID="Button1" runat="server" Text="Onboarding New Application" class="button"  />         --%>        
                                                               
                                 </li>
@@ -538,7 +552,7 @@
                                     <div class="layer"></div>
                                     <asp:Image ID="Image9" runat="server" ImageUrl="~/Photos and Logos/infra.jpg" Width="" />
 
-                                    <button type="button" id="Button2" class="button" data-toggle="modal" data-target="#myModal2">Addition of Infrastructure attributes</button>
+                                    <button type="button" id="Button2" class="button" data-toggle="modal" data-target="#myModal1to2" runat="server">Addition of Infrastructure attributes</button>
 
                                     <%--<asp:Button ID="Button2" runat="server" Text="Infrastructure is procured" class="button"  />--%>
                                 </li>
@@ -549,7 +563,7 @@
                                     <div class="layer"></div>
                                     <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos/AppToInf.jpg" Width="" />
 
-                                    <button type="button" id="Button3" class="button" data-toggle="modal" data-target="#myModal123">Application to Infrastructure relationship</button>
+                                    <button type="button" id="Button3" class="button" data-toggle="modal" data-target="#myModal123" runat="server">Application to Infrastructure relationship</button>
                                     <%--<asp:Button ID="Button3" runat="server" Text="Application to Infrastructure relationship" class="button" />--%>
 
                                 </li>
@@ -560,7 +574,7 @@
                                     <div class="layer"></div>
                                     <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/AppToInfra.jpg" Width="" />
 
-                                    <button type="button" id="Button4" class="button" data-toggle="modal" data-target="#myModal321">Infrastructure to Infrastructure relationship</button>
+                                    <button type="button" id="Button4" class="button" data-toggle="modal" data-target="#myModal321" runat="server">Infrastructure to Infrastructure relationship</button>
                                     <%--<asp:Button ID="Button4" runat="server" Text="Infrastructure to Infrastructure relationship" class="button"  />--%>
                                         
                                 </li>
@@ -571,7 +585,7 @@
                                     <div class="layer"></div>
                                     <asp:Image ID="Image12" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
-                                    <button type="button" id="Button5" class="button" data-toggle="modal" data-target="#myModal5">Decommission of Infrastructure</button>
+                                    <button type="button" id="Button5" class="button" data-toggle="modal" data-target="#myModal5" runat="server">Decommission of Infrastructure</button>
                                     <%--<asp:Button ID="Button5" runat="server" Text="Decommission of Application" class="button"  />--%>
                                 </li>
                             </asp:Panel>
@@ -580,10 +594,15 @@
                                     <div class="layer"></div>
                                     <asp:Image ID="Image13" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
 
-                                    <button type="button" id="Button13" class="button" data-toggle="modal" data-target="#myModal6">Update Attributes & Relationships</button>
-                                    <%-- <asp:Button ID="Button13" runat="server" Text="Update Application Attributes" class="button" />--%>
+                                      <button type="button" id="Button19" class="button" data-toggle="modal" data-target="#myModal1to2" runat="server" visible="false">Proceed</button>
+                                     <button type="button" id="Button20" class="button" data-toggle="modal" data-target="#myModal2to3" runat="server" visible="false">Proceed1</button>
+                                     <button type="button" id="Button21" class="button" data-toggle="modal" data-target="#myModal3to4" runat="server" visible="false">Proceed2</button>
+                                    
                                 </li>
+                                
+                              
                             </asp:Panel>
+
                         </ul>
                     </div>
 
@@ -914,7 +933,7 @@
                         </ul>
                         <div class="clear"></div>
 
-                        <asp:Button ID="Button6" runat="server" Text="Submit" CssClass="button1" OnClick="App_SumbitBtn_Click"/>
+                        <asp:Button ID="Button6" runat="server" Text="Submit" CssClass="button1" OnClick="App_SumbitBtn_Click" />
                         <div class="clear"></div>
                     </div>
 
@@ -1310,7 +1329,6 @@
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Infra_Att]"></asp:SqlDataSource>
 
                         <asp:Button ID="Button7" runat="server" Text="Submit" class="button1" OnClick="Infra_SumbitBtn_Click" />
-                        <button type="button" id="Button18" class="button" data-toggle="modal" data-target="#myModal2" onclick="Infra_Add_Click">Add a New Infrastructure </button>
                         <div class="clear"></div>
 
                     </div>
@@ -1352,7 +1370,7 @@
                                 </li>
                             </ul>
 
-                            <asp:Button ID="Button8" runat="server" Text="Submit" CssClass="button1" OnClick="AtoI_SumbitBtn_Click" />
+                            <asp:Button ID="Button8" runat="server" Text="Submit" CssClass="button1" OnClick="AtoI_SumbitBtn_Click"  />
                             <div class="clear"></div>
                         </div>
 
@@ -1578,6 +1596,93 @@
                        <button type="button" id="ButtonTry2" class="button1 fltLeft" data-toggle="modal" data-target="#myModal4" onclick="pop1(0)">Create New Entry</button>  
                         <asp:Button ID="Button17" runat="server" CssClass="button1 fltLeft" Text="Amend existing entry" OnClick="move_toGrid1" />
                     
+                        <br />
+                        <div class="clear"></div>
+                            </div>
+                    </div>
+                  
+                   
+                  
+        </div>
+
+        </div>
+        </div>
+           <!-- Modal -->
+        <div class="modal fade" id="myModal1to2" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" onsubmit="return false">
+                    <div class="top-part12">
+                        <asp:Image ID="Image27" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+                       <asp:Image ID="Image28" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div>
+                                                   <p class="heading12">Does your CR involve procurement of an infrastructure</p> 
+                        <div class="modal-containt">
+                                               
+                       <button type="button" id="Btyes1" class="button1 fltLeft" data-toggle="modal" data-target="#myModal2" onclick="pop2(0)">Yes</button>  
+                        <button type="button" id="BtNo1" class="button1 fltLeft" data-toggle="modal" data-target="#myModal2to3" onclick="pop2(0)">No</button>  
+                    
+                        <br />
+                        <div class="clear"></div>
+                            </div>
+                    </div>
+                  
+                   
+                  
+        </div>
+
+        </div>
+        </div>
+         <!-- Modal -->
+        <div class="modal fade" id="myModal2to3" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" onsubmit="return false">
+                    <div class="top-part12">
+                        <asp:Image ID="Image29" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+                       <asp:Image ID="Image30" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div>
+                                                   <p class="heading12">Does your CR involve mapping a App to infra relationship</p> 
+                        <div class="modal-containt">
+                                               
+                       <button type="button" id="Btyes2" class="button1 fltLeft" data-toggle="modal" data-target="#myModal3" onclick="pop3(0)">Yes</button>  
+                        <button type="button" id="BtNo2" class="button1 fltLeft" data-toggle="modal" data-target="#myModal3to4" onclick="pop3(0)">No</button>  
+                    
+                        <br />
+                        <div class="clear"></div>
+                            </div>
+                    </div>
+                  
+                   
+                  
+        </div>
+
+        </div>
+        </div>
+         <!-- Modal -->
+        <div class="modal fade" id="myModal3to4" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" onsubmit="return false">
+                    <div class="top-part12">
+                        <asp:Image ID="Image31" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+                       <asp:Image ID="Image32" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div>
+                                                   <p class="heading12">Does your CR involve mapping a Infra to infra relationship</p> 
+                        <div class="modal-containt">
+                                               
+                       <button type="button" id="Btyes3" class="button1 fltLeft" data-toggle="modal" data-target="#myModal4" onclick="pop4(0)">Yes</button>  
+                             <button type="button" id="BtNo3" class="button1 fltLeft" onclick="pop4(0)"></button>  
+                            
                         <br />
                         <div class="clear"></div>
                             </div>

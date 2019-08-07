@@ -10,10 +10,11 @@ using System.Data.SqlClient;
 namespace CMDB2
 {
 
-
+   
     public partial class WebForm3 : System.Web.UI.Page
     {
         public int Y1, Y2, Y3, Y4, Y5;
+      
         SqlConnection con = new SqlConnection("Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin");
 
         protected void Page_Load(object sender, EventArgs e)
@@ -48,14 +49,21 @@ namespace CMDB2
             if ((ValA == 1) && (ValB != 1) && (ValC != 1) && (ValD != 1))
             {
                 BPanel5.Visible = false;
-                BPanel6.Visible = false;
-
+                //BPanel6.Visible = false;
+                Button2.Disabled = true;
+                Button3.Disabled = true;
+                Button4.Disabled = true;
+                
+             
             }
             if ((ValA != 1) && (ValB == 1) && (ValC != 1) && (ValD != 1))
             {
                 BPanel5.Visible = false;
                 BPanel6.Visible = false;
-
+                BPanel1.Visible = false;
+                Button3.Disabled = true;
+                Button4.Disabled = true;
+                
             }
             if ((ValC == 1) && (ValB != 1) && (ValA != 1) && (ValD != 1))
             {
@@ -80,21 +88,33 @@ namespace CMDB2
             {
                 BPanel5.Visible = false;
                 BPanel6.Visible = false;
+                Button2.Disabled = true;
+                Button3.Disabled = true;
+                Button4.Disabled = true;
             }
             if ((ValA == 1) && (ValD == 1) && (ValC != 1) && (ValB != 1))
             {
                 BPanel5.Visible = false;
                 BPanel6.Visible = false;
+                Button2.Disabled = true;
+                Button3.Disabled = true;
+                Button4.Disabled = true;
             }
             if ((ValC == 1) && (ValB == 1) && (ValA != 1) && (ValD != 1))
             {
                 BPanel5.Visible = false;
                 BPanel6.Visible = false;
+                BPanel1.Visible = false;
+                Button3.Disabled = true;
+                Button4.Disabled = true;
             }
             if ((ValD == 1) && (ValB == 1) && (ValC != 1) && (ValA != 1))
             {
                 BPanel5.Visible = false;
                 BPanel6.Visible = false;
+                BPanel1.Visible = false;
+                Button3.Disabled = true;
+                Button4.Disabled = true;
             }
             if ((ValC == 1) && (ValD == 1) && (ValA != 1) && (ValB != 1))
             {
@@ -106,23 +126,44 @@ namespace CMDB2
             {
                 BPanel5.Visible = false;
                 BPanel6.Visible = false;
+                Button2.Disabled = true;
+                Button3.Disabled = true;
+                Button4.Disabled = true;
             }
             if ((ValA == 1) && (ValB == 1) && (ValC == 1) && (ValD != 1))
             {
                 BPanel5.Visible = false;
                 BPanel6.Visible = false;
+                Button2.Disabled = true;
+                Button3.Disabled = true;
+                Button4.Disabled = true;
             }
             if ((ValD == 1) && (ValB != 1) && (ValC == 1) && (ValA == 1))
             {
                 BPanel5.Visible = false;
                 BPanel6.Visible = false;
+                Button2.Disabled = true;
+                Button3.Disabled = true;
+                Button4.Disabled = true;
             }
             if ((ValD == 1) && (ValC != 1) && (ValB == 1) && (ValA == 1))
             {
                 BPanel5.Visible = false;
                 BPanel6.Visible = false;
+                Button2.Disabled = true;
+                Button3.Disabled = true;
+                Button4.Disabled = true;
             }
-        
+            if ((ValC == 1) && (ValD == 1) && (ValA != 1) && (ValB == 1))
+            {
+                BPanel5.Visible = false;
+                BPanel6.Visible = false;
+                BPanel1.Visible = false;
+                Button3.Disabled = true;
+                Button4.Disabled = true;
+            }
+
+
 
         }
 
@@ -175,10 +216,12 @@ namespace CMDB2
                     if (rowsAffected == 1)
 
                     {
-                        
-                        Response.Redirect("WebForm3.aspx");
                         T2.Visible = true;
+                        Button3.Disabled = false;
                         Y2 = 1;
+                        Button19.Visible = false;
+                        Button20.Visible = true;
+                       
                     }
                     else
                     {
@@ -241,6 +284,10 @@ namespace CMDB2
                         
                        // Response.Redirect("WebForm3.aspx");
                         T1.Visible = true;
+                        Button2.Disabled = false;
+                        Y1 = 1;
+                        Button19.Visible = true;
+                       
                     }
                     else
                     {
@@ -294,7 +341,11 @@ namespace CMDB2
                         
                        // Response.Redirect("WebForm3.aspx");
                         T3.Visible = true;
-                        
+                        Button4.Disabled = false;
+                        Y3 = 1;
+                        Button20.Visible = false;
+                        Button21.Visible = true;
+                       
                     }
                     else
                     {
@@ -345,7 +396,9 @@ namespace CMDB2
                        
                        // Response.Redirect("WebForm3.aspx");
                         T4.Visible = true;
-                      
+                        Y4 = 1;
+                        Button21.Visible = false;
+
                     }
                     else
                     {
@@ -437,6 +490,11 @@ namespace CMDB2
             Owner.Text = "";
             Supported_By.Text = "";
             System_Role.Text = "";
+
+        }
+
+        protected void Workflow1(object sender, EventArgs e) {
+            
 
         }
 

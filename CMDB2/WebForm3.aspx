@@ -1681,7 +1681,7 @@
                         <div class="modal-containt">
                                                
                        <button type="button" id="Btyes3" class="button1 fltLeft" data-toggle="modal" data-target="#myModal4" onclick="pop4(0)">Yes</button>  
-                             <button type="button" id="BtNo3" class="button1 fltLeft" onclick="pop4(0)"></button>  
+                             <button type="button" id="BtNo3" class="button1 fltLeft" onclick="pop4(0)">No</button>  
                             
                         <br />
                         <div class="clear"></div>

@@ -399,6 +399,7 @@ namespace CMDB2
                         Y4 = 1;
                         Button21.Visible = false;
 
+
                     }
                     else
                     {

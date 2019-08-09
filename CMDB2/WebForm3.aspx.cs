@@ -186,7 +186,7 @@ namespace CMDB2
             a2 = System_Environment.Text;
             a3 = Primary_Capability.Text;
             a4 = Owner.Text;
-            a5 = Supported_By.Text;
+            a5 = DropDownList6.SelectedValue;
             a6 = System_Role.Text;
             a7 = Site.Text;
             a8 = OEM_Supported.Text;

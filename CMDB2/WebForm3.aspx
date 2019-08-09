@@ -800,7 +800,7 @@
 
                                 <div>
                                     <asp:DropDownList ID="DropDownList2" runat="server">
-                                        <asp:ListItem>-----Select-----</asp:ListItem>
+                                        <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>GOLD</asp:ListItem>
                                         <asp:ListItem>SILVER</asp:ListItem>
                                         <asp:ListItem>BRONZE</asp:ListItem>
@@ -816,7 +816,7 @@
 
                                 <div>
                                     <asp:DropDownList ID="DropDownList1" runat="server">
-                                        <asp:ListItem>-----Select-----</asp:ListItem>
+                                        <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>MEDIUM</asp:ListItem>
                                         <asp:ListItem>SIMPLE</asp:ListItem>
                                         <asp:ListItem>COMPLEX</asp:ListItem>
@@ -836,7 +836,7 @@
                                 </div>
                                 <div>
                                     <asp:DropDownList ID="DropDownList3" runat="server">
-                                        <asp:ListItem>-----Select-----</asp:ListItem>
+                                        <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>AGLM ONT</asp:ListItem>
                                         <asp:ListItem>APP_ SAP CAPABILITY REV-TRAC & SALT</asp:ListItem>
                                         <asp:ListItem>APP_AGLM_SAP </asp:ListItem>
@@ -1053,7 +1053,7 @@
 
                                 <div>
                                     <asp:DropDownList ID="Environment_Instance" runat="server">
-                                        <asp:ListItem>-----Select-----</asp:ListItem>
+                                        <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>PROD</asp:ListItem>
                                         <asp:ListItem>NON-PROD</asp:ListItem>
                                         <asp:ListItem>DR</asp:ListItem>
@@ -1122,7 +1122,7 @@
                                 <div>
                                     <asp:TextBox ID="System_Environment" runat="server" Visible="false"></asp:TextBox>
                                     <asp:DropDownList ID="DropDownList5" runat="server">
-                                        <asp:ListItem>-----Select-----</asp:ListItem>
+                                        <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>PROD</asp:ListItem>
                                         <asp:ListItem>NON-PROD</asp:ListItem>
                                         <asp:ListItem>DR</asp:ListItem>
@@ -1152,7 +1152,213 @@
                                     <asp:Label ID="Label10" runat="server" Text="Supported By"></asp:Label>
                                 </div>
                                 <div>
-                                    <asp:TextBox ID="Supported_By" runat="server"></asp:TextBox>
+                                    <asp:DropDownList ID="DropDownList6" runat="server">
+                                        <asp:ListItem>Select</asp:ListItem>
+                                        <asp:ListItem>AGLM ONT</asp:ListItem>
+                                        <asp:ListItem>APP_ SAP CAPABILITY REV-TRAC & SALT</asp:ListItem>
+                                        <asp:ListItem>APP_AGLM_SAP </asp:ListItem>
+                                        <asp:ListItem>APP_AKMI_CDN</asp:ListItem>
+                                        <asp:ListItem>APP_AKMI_WAF</asp:ListItem>
+                                        <asp:ListItem>APP_AMADEUS</asp:ListItem>
+                                        <asp:ListItem>APP_ASSETSUITE</asp:ListItem>
+                                        <asp:ListItem>APP_BWAMO</asp:ListItem>
+                                        <asp:ListItem>APP_CONCUR</asp:ListItem>
+                                        <asp:ListItem>APP_CyberArk_Support</asp:ListItem>
+                                        <asp:ListItem>APP_DATALAKE</asp:ListItem>
+                                        <asp:ListItem>APP_DIGITAL_FOUNDATIONS</asp:ListItem>
+                                        <asp:ListItem>APP_DIGITAL_MYACCOUNT</asp:ListItem>
+                                        <asp:ListItem>APP_DIGITAL_MYACCOUNT_BILLING</asp:ListItem>
+                                        <asp:ListItem>APP_DIGITAL_MYACCOUNT_PAYMENT</asp:ListItem>
+                                        <asp:ListItem>APP_DIGITAL_MYACCOUNT_USAGE</asp:ListItem>
+                                        <asp:ListItem>APP_EDA</asp:ListItem>
+                                        <asp:ListItem>APP_GEMCAST_CONNECTNOW</asp:ListItem>
+                                        <asp:ListItem>APP_GEMCAST_CORPORATE</asp:ListItem>
+                                        <asp:ListItem>APP_GEMCAST_DIGITAL</asp:ListItem>
+                                        <asp:ListItem>APP_GEMCAST_NONSAP</asp:ListItem>
+                                        <asp:ListItem>APP_GRPOPS_SAP</asp:ListItem>
+                                        <asp:ListItem>APP_IAM</asp:ListItem>
+                                        <asp:ListItem>APP_IAMSEC</asp:ListItem>
+                                        <asp:ListItem>APP_KASADA</asp:ListItem>
+                                        <asp:ListItem>APP_MDH</asp:ListItem>
+                                        <asp:ListItem>APP_NEWENERGY_DEVOPS</asp:ListItem>
+                                        <asp:ListItem>APP_NEWENERGY_ORCHESTRATION</asp:ListItem>
+                                        <asp:ListItem>APP_NEWENERGY_SMARTHOME</asp:ListItem>
+                                        <asp:ListItem>APP_NEWENERGY_VIRTUALPRODUCTS</asp:ListItem>
+                                        <asp:ListItem>APP_PRICINGSERVICES</asp:ListItem>
+                                        <asp:ListItem>APP_PULSE</asp:ListItem>
+                                        <asp:ListItem>APP_READINOW</asp:ListItem>
+                                        <asp:ListItem>APP_RETAILSAP</asp:ListItem>
+                                        <asp:ListItem>APP_SAP_ABAP</asp:ListItem>
+                                        <asp:ListItem>APP_SAP_BASIS</asp:ListItem>
+                                        <asp:ListItem>APP_SAP_BILLING</asp:ListItem>
+                                        <asp:ListItem>APP_SAP_CORP</asp:ListItem>
+                                        <asp:ListItem>APP_SAP_CRM</asp:ListItem>
+                                        <asp:ListItem>APP_SAP_DEVICE</asp:ListItem>
+                                        <asp:ListItem>APP_SAP_FICA</asp:ListItem>
+                                        <asp:ListItem>APP_SAP_GRC</asp:ListItem>
+                                        <asp:ListItem>APP_SAP_HANA</asp:ListItem>
+                                        <asp:ListItem>APP_SAP_SDM</asp:ListItem>
+                                        <asp:ListItem>APP_SAP_XI</asp:ListItem>
+                                        <asp:ListItem>APP_SAP_XI_AZURE </asp:ListItem>
+                                        <asp:ListItem>APP_SAPSEC</asp:ListItem>
+                                        <asp:ListItem>APP_SERRAVIEW</asp:ListItem>
+                                        <asp:ListItem>APP_SILICA</asp:ListItem>
+                                        <asp:ListItem>APP_SLICK</asp:ListItem>
+                                        <asp:ListItem>APP_SPLUNK</asp:ListItem>
+                                        <asp:ListItem>APP_SWIMLANE_SUPPORT</asp:ListItem>
+                                        <asp:ListItem>APP_WHOLEMEAL</asp:ListItem>
+                                        <asp:ListItem>APP_WORKFLOW</asp:ListItem>
+                                        <asp:ListItem>APP_Zscaler_Support</asp:ListItem>
+                                        <asp:ListItem>AUTOMATION_MESSAGING</asp:ListItem>
+                                        <asp:ListItem>AUTOMATION_STORAGE</asp:ListItem>
+                                        <asp:ListItem>AUTOMATION_TOOL</asp:ListItem>
+                                        <asp:ListItem>BPS_SAP_CRM</asp:ListItem>
+                                        <asp:ListItem>GOV _APP_OPS</asp:ListItem>
+                                        <asp:ListItem>GOV_AGLM_IT</asp:ListItem>
+                                        <asp:ListItem>GOV_ASSET_MGT</asp:ListItem>
+                                        <asp:ListItem>GOV_CAPACITY_MGT</asp:ListItem>
+                                        <asp:ListItem>GOV_CGOTT_RELEASE MGT</asp:ListItem>
+                                        <asp:ListItem>GOV_CHANGE_MGT</asp:ListItem>
+                                        <asp:ListItem>GOV_CPE</asp:ListItem>
+                                        <asp:ListItem>GOV_DATA_DECISIONING</asp:ListItem>
+                                        <asp:ListItem>GOV_HYDRO_ISG</asp:ListItem>
+                                        <asp:ListItem>GOV_ITSD_SAP</asp:ListItem>
+                                        <asp:ListItem>GOV_LY_ISG</asp:ListItem>
+                                        <asp:ListItem>GOV_OPERATIONS</asp:ListItem>
+                                        <asp:ListItem>GOV_PLAT_OPS</asp:ListItem>
+                                        <asp:ListItem>GOV_PROBLEM_MGT</asp:ListItem>
+                                        <asp:ListItem>GOV_RELEASE_MGT</asp:ListItem>
+                                        <asp:ListItem>GOV_SECURITY</asp:ListItem>
+                                        <asp:ListItem>GOV_SECURITY_FORENSICS</asp:ListItem>
+                                        <asp:ListItem>GOV_SERVICE_EXPERIENCE</asp:ListItem>
+                                        <asp:ListItem>GOV_TORRENS_ISG</asp:ListItem>
+                                        <asp:ListItem>INFRA_AZURE_OPERATIONS</asp:ListItem>
+                                        <asp:ListItem>INFRA_DBA</asp:ListItem>
+                                        <asp:ListItem>INFRA_DCMS</asp:ListItem>
+                                        <asp:ListItem>INFRA_EUC</asp:ListItem>
+                                        <asp:ListItem>INFRA_EUC_ASSETMGMT</asp:ListItem>
+                                        <asp:ListItem>INFRA_EUC_MobiliseIT</asp:ListItem>
+                                        <asp:ListItem>INFRA_GSRFS</asp:ListItem>
+                                        <asp:ListItem>INFRA_IGNIO</asp:ListItem>
+                                        <asp:ListItem>INFRA_INDIABPS</asp:ListItem>
+                                        <asp:ListItem>INFRA_MESSAGING</asp:ListItem>
+                                        <asp:ListItem>INFRA_NETWORK</asp:ListItem>
+                                        <asp:ListItem>INFRA_OCC</asp:ListItem>
+                                        <asp:ListItem>INFRA_PHILIPPINESBPS</asp:ListItem>
+                                        <asp:ListItem>INFRA_RFS</asp:ListItem>
+                                        <asp:ListItem>INFRA_SCCM</asp:ListItem>
+                                        <asp:ListItem>INFRA_SDM</asp:ListItem>
+                                        <asp:ListItem>INFRA_SECURITY</asp:ListItem>
+                                        <asp:ListItem>INFRA_STORAGE</asp:ListItem>
+                                        <asp:ListItem>INFRA_TOOLS</asp:ListItem>
+                                        <asp:ListItem>INFRA_UNIX</asp:ListItem>
+                                        <asp:ListItem>INFRA_WINTEL</asp:ListItem>
+                                        <asp:ListItem>L1_SERVICEDESK</asp:ListItem>
+                                        <asp:ListItem>MSS_SAPUAM</asp:ListItem>
+                                        <asp:ListItem>ONSITE_AGLLY</asp:ListItem>
+                                        <asp:ListItem>ONSITE_AGLM</asp:ListItem>
+                                        <asp:ListItem>ONSITE_AGLTI</asp:ListItem>
+                                        <asp:ListItem>ONT_LY</asp:ListItem>
+                                        <asp:ListItem>ONT_R</asp:ListItem>
+                                        <asp:ListItem>ONT_TI</asp:ListItem>
+                                        <asp:ListItem>PROJ_4A</asp:ListItem>
+                                        <asp:ListItem>PROJ_AAA</asp:ListItem>
+                                        <asp:ListItem>PROJ_AAA_AUTOMATION_SUPPORT</asp:ListItem>
+                                        <asp:ListItem>PROJ_ALADDIN</asp:ListItem>
+                                        <asp:ListItem>PROJ_CMI</asp:ListItem>
+                                        <asp:ListItem>PROJ_CORE_UPLIFT</asp:ListItem>
+                                        <asp:ListItem>PROJ_DIGITALRECEIPT</asp:ListItem>
+                                        <asp:ListItem>PROJ_DLP</asp:ListItem>
+                                        <asp:ListItem>PROJ_DST</asp:ListItem>
+                                        <asp:ListItem>PROJ_ESC_HARDSHIP</asp:ListItem>
+                                        <asp:ListItem>PROJ_EUC_PT3Support</asp:ListItem>
+                                        <asp:ListItem>PROJ_EUROPA</asp:ListItem>
+                                        <asp:ListItem>PROJ_EZY CHANGES</asp:ListItem>
+                                        <asp:ListItem>PROJ_GENESIS</asp:ListItem>
+                                        <asp:ListItem>PROJ_GO</asp:ListItem>
+                                        <asp:ListItem>PROJ_HANA</asp:ListItem>
+                                        <asp:ListItem>PROJ_IDM</asp:ListItem>
+                                        <asp:ListItem>PROJ_IPERA_DC_EXIT</asp:ListItem>
+                                        <asp:ListItem>PROJ_J5</asp:ListItem>
+                                        <asp:ListItem>PROJ_LAN SWITCHING</asp:ListItem>
+                                        <asp:ListItem>PROJ_MAHA</asp:ListItem>
+                                        <asp:ListItem>PROJ_MDM</asp:ListItem>
+                                        <asp:ListItem>PROJ_OMM</asp:ListItem>
+                                        <asp:ListItem>PROJ_OneDriveMigration</asp:ListItem>
+                                        <asp:ListItem>PROJ_PAPER</asp:ListItem>
+                                        <asp:ListItem>PROJ_PG6_EAMM</asp:ListItem>
+                                        <asp:ListItem>PROJ_POCREGREP</asp:ListItem>
+                                        <asp:ListItem>PROJ_Powerdirect</asp:ListItem>
+                                        <asp:ListItem>PROJ_PT3</asp:ListItem>
+                                        <asp:ListItem>PROJ_RECRUITMENT</asp:ListItem>
+                                        <asp:ListItem>PROJ_ROCKET</asp:ListItem>
+                                        <asp:ListItem>PROJ_SAP_ENVIRONMENTS</asp:ListItem>
+                                        <asp:ListItem>PROJ_SHIELD</asp:ListItem>
+                                        <asp:ListItem>PROJ_Storage Optimization</asp:ListItem>
+                                        <asp:ListItem>PROJ_SUPERNOVA</asp:ListItem>
+                                        <asp:ListItem>PROJ_TITAN</asp:ListItem>
+                                        <asp:ListItem>PROJ_TWILIGHT</asp:ListItem>
+                                        <asp:ListItem>PROJ_ZSCALER</asp:ListItem>
+                                        <asp:ListItem>Project_Adobe eCommerce</asp:ListItem>
+                                        <asp:ListItem>PT3-Analytics</asp:ListItem>
+                                        <asp:ListItem>PT3-CrossF-Data</asp:ListItem>
+                                        <asp:ListItem>PT3-CrossF-Integration</asp:ListItem>
+                                        <asp:ListItem>PT3-CrossF-Open Text</asp:ListItem>
+                                        <asp:ListItem>PT3-CrossF-Tech Development</asp:ListItem>
+                                        <asp:ListItem>PT3-CrossF-Usability (UX)</asp:ListItem>
+                                        <asp:ListItem>PT3-Func-BPC</asp:ListItem>
+                                        <asp:ListItem>PT3-Func-eTime</asp:ListItem>
+                                        <asp:ListItem>PT3-Func-FIN</asp:ListItem>
+                                        <asp:ListItem>PT3-Func-H2R</asp:ListItem>
+                                        <asp:ListItem>PT3-Func-HSE</asp:ListItem>
+                                        <asp:ListItem>PT3-Func-P2P</asp:ListItem>
+                                        <asp:ListItem>PT3-Func-PY</asp:ListItem>
+                                        <asp:ListItem>PT3-Func-WM</asp:ListItem>
+                                        <asp:ListItem>PT3-Hardware Devices</asp:ListItem>
+                                        <asp:ListItem>PT3-Infra-Basis Team</asp:ListItem>
+                                        <asp:ListItem>PT3-Infra-Infra Cloud</asp:ListItem>
+                                        <asp:ListItem>PT3-Query-AP</asp:ListItem>
+                                        <asp:ListItem>PT3-Query-BPC</asp:ListItem>
+                                        <asp:ListItem>PT3-Query-FIN</asp:ListItem>
+                                        <asp:ListItem>PT3-Query-HSE</asp:ListItem>
+                                        <asp:ListItem>PT3-Query-Purch</asp:ListItem>
+                                        <asp:ListItem>PT3-Query-WM</asp:ListItem>
+                                        <asp:ListItem>PT3-Sec-App Security</asp:ListItem>
+                                        <asp:ListItem>RTS_SUPPORT</asp:ListItem>
+                                        <asp:ListItem>SAP_CORP_RFS</asp:ListItem>
+                                        <asp:ListItem>SAP_ENV_OPS</asp:ListItem>
+                                        <asp:ListItem>SAP_ENV_PROJ</asp:ListItem>
+                                        <asp:ListItem>SECURITY_SOC</asp:ListItem>
+                                        <asp:ListItem>SMART BAR</asp:ListItem>
+                                        <asp:ListItem>SMARTBAR_AGLLY</asp:ListItem>
+                                        <asp:ListItem>SMARTBAR_AGLM</asp:ListItem>
+                                        <asp:ListItem>SMARTBAR_AGLTI</asp:ListItem>
+                                        <asp:ListItem>SMO_KNOWLEDGE</asp:ListItem>
+                                        <asp:ListItem>SOFTWARE_LICENSING</asp:ListItem>
+                                        <asp:ListItem>SUPPORT_NON TCS</asp:ListItem>
+                                        <asp:ListItem>VENDOR_ CORPORATE_BLACKLINE</asp:ListItem>
+                                        <asp:ListItem>VENDOR_ASTRAL</asp:ListItem>
+                                        <asp:ListItem>VENDOR_CANON</asp:ListItem>
+                                        <asp:ListItem>VENDOR_COMPUTERSHARE</asp:ListItem>
+                                        <asp:ListItem>VENDOR_FUJIXEROX</asp:ListItem>
+                                        <asp:ListItem>VENDOR_IBMUNICA</asp:ListItem>
+                                        <asp:ListItem>Vendor_ICON</asp:ListItem>
+                                        <asp:ListItem>VENDOR_MICROSOFT</asp:ListItem>
+                                        <asp:ListItem>VENDOR_ORBUS</asp:ListItem>
+                                        <asp:ListItem>VENDOR_PERICORP</asp:ListItem>
+                                        <asp:ListItem>VENDOR_PROMETHEUS</asp:ListItem>
+                                        <asp:ListItem>VENDOR_RUTLEDGE</asp:ListItem>
+                                        <asp:ListItem>VENDOR_SAP</asp:ListItem>
+                                        <asp:ListItem>VENDOR_SERRAVIEW</asp:ListItem>
+                                        <asp:ListItem>VENDOR_SPLUNK</asp:ListItem>
+                                        <asp:ListItem>VENDOR_TALEND</asp:ListItem>
+                                        <asp:ListItem>VENDOR_TELSTRA</asp:ListItem>
+                                        <asp:ListItem>VENDOR_TELSTRA-MOBILEORDERS</asp:ListItem>
+                                        <asp:ListItem>VENDOR_TRINOOR</asp:ListItem>
+                                        <asp:ListItem>VENDOR_VKTEK</asp:ListItem>
+
+                                    </asp:DropDownList>
+                                    <asp:TextBox ID="Supported_By" runat="server" Visible="false"></asp:TextBox>
                                 </div>
                             </li>
                             <li>
@@ -1171,7 +1377,7 @@
                                 </div>
                                 <div>
                                     <asp:DropDownList ID="Site" runat="server">
-                                        <asp:ListItem>-----Select-----</asp:ListItem>
+                                        <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>Boston Support Center</asp:ListItem>
                                         <asp:ListItem>Headquarters, Building 1.31</asp:ListItem>
                                         <asp:ListItem>Headquarters, Building 1.31</asp:ListItem>
@@ -1437,7 +1643,7 @@
                                 </div>
                                 <div>
                                     <asp:DropDownList ID="OEM_Supported" runat="server">
-                                        <asp:ListItem>-----Select-----</asp:ListItem>
+                                        <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>Yes</asp:ListItem>
                                         <asp:ListItem>No</asp:ListItem>
                                     </asp:DropDownList>
@@ -1499,6 +1705,15 @@
                                     <div class="clear"></div>
                                     <div>
                                         <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
+                                    </div>
+                                     <div style="text-align: center"><b>over environment </b></div>
+                                    <div>
+                                         <asp:DropDownList ID="DropDownList7" runat="server">
+                                        <asp:ListItem>Select</asp:ListItem>
+                                        <asp:ListItem>PROD</asp:ListItem>
+                                        <asp:ListItem>NON-PROD</asp:ListItem>
+                                        <asp:ListItem>DR</asp:ListItem>
+                                             </asp:DropDownList>
                                     </div>
                                 </li>
                             </ul>
@@ -1590,7 +1805,7 @@
 
                                     <div>
                                         <asp:DropDownList ID="DropDownList4" runat="server">
-                                            <asp:ListItem>---Select---</asp:ListItem>
+                                            <asp:ListItem>Select</asp:ListItem>
                                             <asp:ListItem>Physical</asp:ListItem>
                                             <asp:ListItem>Logical</asp:ListItem>
                                         </asp:DropDownList>

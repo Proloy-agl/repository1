@@ -18,53 +18,53 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("#L1").mouseenter(function () {
-                $("#L1").fadeTo("fast", 0.3);
+            //$("#L1").mouseenter(function () {
+            //    $("#L1").fadeTo("fast", 0.3);
 
-            });
+            //});
 
-            $("#L1").mouseleave(function () {
-                $("#L1").fadeTo("fast", 1);
-            });
+            //$("#L1").mouseleave(function () {
+            //    $("#L1").fadeTo("fast", 1);
+            //});
 
-            $("#L2").mouseenter(function () {
-                $("#L2").fadeTo("fast", 0.3);
-            });
+            //$("#L2").mouseenter(function () {
+            //    $("#L2").fadeTo("fast", 0.3);
+            //});
 
-            $("#L2").mouseleave(function () {
-                $("#L2").fadeTo("fast", 1);
-            });
+            //$("#L2").mouseleave(function () {
+            //    $("#L2").fadeTo("fast", 1);
+            //});
 
-            $("#L3").mouseenter(function () {
-                $("#L3").fadeTo("fast", 0.3);
-            });
+            //$("#L3").mouseenter(function () {
+            //    $("#L3").fadeTo("fast", 0.3);
+            //});
 
-            $("#L3").mouseleave(function () {
-                $("#L3").fadeTo("fast", 1);
-            });
+            //$("#L3").mouseleave(function () {
+            //    $("#L3").fadeTo("fast", 1);
+            //});
 
-            $("#L4").mouseenter(function () {
-                $("#L4").fadeTo("fast", 0.3);
-            });
+            //$("#L4").mouseenter(function () {
+            //    $("#L4").fadeTo("fast", 0.3);
+            //});
 
-            $("#L4").mouseleave(function () {
-                $("#L4").fadeTo("fast", 1);
-            });
-            $("#L5").mouseenter(function () {
-                $("#L5").fadeTo("fast", 0.3);
-            });
+            //$("#L4").mouseleave(function () {
+            //    $("#L4").fadeTo("fast", 1);
+            //});
+            //$("#L5").mouseenter(function () {
+            //    $("#L5").fadeTo("fast", 0.3);
+            //});
 
-            $("#L5").mouseleave(function () {
-                $("#L5").fadeTo("fast", 1);
-            });
+            //$("#L5").mouseleave(function () {
+            //    $("#L5").fadeTo("fast", 1);
+            //});
 
-            $("#L6").mouseenter(function () {
-                $("#L6").fadeTo("fast", 0.3);
-            });
+            //$("#L6").mouseenter(function () {
+            //    $("#L6").fadeTo("fast", 0.3);
+            //});
 
-            $("#L6").mouseleave(function () {
-                $("#L6").fadeTo("fast", 1);
-            });
+            //$("#L6").mouseleave(function () {
+            //    $("#L6").fadeTo("fast", 1);
+            //});
         });
 
         function openModal() {
@@ -236,14 +236,30 @@
                 background: #fff;
                 /*border: 1px solid #0075CC;*/
                 padding: 12px;
-                border-radius: 8px;
+                /*border-radius: 8px;*/
                 text-align: center;
                 cursor: pointer;
                 /*background: #0075cc;*/
                 color: #fff;
                 position: relative;
                 
+                
             }
+
+            .button-box ul li:after {
+    background-image: linear-gradient(to right,#001ab0 0,#18dfef 100%);
+    width: 31%;
+}
+                .button-box ul li:after {
+                    position: absolute;
+                    bottom: -3px;
+                    height: 3px;
+                    width: 100%;
+                    content: "";
+                   
+                    left: 0;
+                    z-index: 99;
+                }
          
     
 .button-box ul li .filter {
@@ -265,16 +281,17 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    border-radius: 8px;
+                    /*border-radius: 8px;*/
                     z-index: 1;
                 }
 
 
-                .button-box ul li:hover {
+                .button-box ul li:hover.overlay {
                     /*background: #0075CC;
                     box-shadow: 0px 3px 4px 0px #00DFED inset;
                     color: #fff;
                     cursor:pointer;*/
+                    height: 100%;
                 }
 
 
@@ -302,7 +319,7 @@
                     height: 170px;
                     width: 100%;
                     opacity: 0.4;
-                    border-radius: 8px;
+                    /*border-radius: 8px;*/
                 }
 
                 .button-box ul li .button {
@@ -325,6 +342,7 @@
 
                     .button-box ul li .button:hover {
                         color: #fff !important;
+                       
                         
                     }
 
@@ -504,6 +522,69 @@
         legend {
             width: auto;
         }
+        .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0075cc;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .1s ease;
+}
+        .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+        .BoxF:hover .overlay {
+  height: 100%;
+  background-color: #0075cc !important;
+  z-index:3;
+  
+  
+}
+
+  .leftButton
+  {
+      margin:15% 0 0 22%;
+  }
+
+     .layer-button {
+    border: 2px solid #fff;
+    padding: 0px 14px;
+    font-size: 16px;
+    margin: 15px 10px 10px 0;
+    float: left;
+    height: 38px;
+    color: white;
+    box-shadow: 0;
+    /* font-weight: bold; */
+    cursor: pointer;
+    background: none;
+    /* line-height: 35px; */
+}
+
+
+
+          .layer-button:hover {
+           border:2px solid #fff;
+
+    color: #333;
+   
+    background:white;
+
+
+}
+
+
     </style>
 </head>
 <body>
@@ -526,66 +607,91 @@
 
             <form id="form1" runat="server">
 
-
-
                 <asp:Panel ID="Panel1" runat="server">
                     <div class="button-box">
                         <ul>
 
-                            <asp:Panel ID="BPanel1" runat="server">
+                            <asp:Panel ID="BPanel1" runat="server" CssClass="BoxF">
+
                                 <li id="L1">
-                         <asp:Panel ID="T1" Visible="false" runat="server"> <div class="filter">
+                         <asp:Panel ID="T1" Visible="false" runat="server"> 
+                             <div class="filter">
                               <asp:Image ID="Image33" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" />
                             <%-- <span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span>--%></div></asp:Panel>  
                                     
                                     <div class="layer"></div>
                                     <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/AAtt.jpg" Width="" />
-                                    <asp:Button ID="Button18" runat="server" Text="Button" data-toggle="modal" data-target="#myModal"/>
-                                    <button type="button" id="Button1" class="button" data-toggle="modal" data-target="#myModal" runat="server">Addition of Application attributes </button>
+                                    <asp:Label ID="Label20" runat="server" Text="Label" CssClass="button">Application Attributes</asp:Label> 
+                                     <div class="overlay">
+                                         <div class="leftButton">
+                                    <button type="button" id="Button1" class="layer-button" data-toggle="modal" data-target="#myModal" runat="server">Create New</button>
+                                   <button type="button" id="Button13" class="layer-button" runat="server">Help</button>
+                                             </div>
+                                         
+                                         </div>
                                     <%-- <asp:Button ID="Button1" runat="server" Text="Onboarding New Application" class="button"  />         --%>        
                                                               
                                 </li>
                             </asp:Panel>
-                            <asp:Panel ID="BPanel2" runat="server">
+                            <asp:Panel ID="BPanel2" runat="server" CssClass="BoxF">
                                 <li id="L2">
                            <asp:Panel ID="T2" Visible="false"  runat="server"> <div class="filter"> <asp:Image ID="Image34" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" /><%--<span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span>--%></div></asp:Panel>          
                                     <div class="layer"></div>
                                     <asp:Image ID="Image9" runat="server" ImageUrl="~/Photos and Logos/infra.jpg" Width="" />
-
-                                    <button type="button" id="Button2" class="button" data-toggle="modal" data-target="#myModal1to2" runat="server">Addition of Infrastructure attributes</button>
-
+                                     <asp:Label ID="Label21" runat="server" Text="Label" CssClass="button">Infrastructure Attributes</asp:Label> 
+                                    <div class="overlay">
+                                         <div class="leftButton">
+                                    <button type="button" id="Button2" class="layer-button" data-toggle="modal" data-target="#myModal1to2" runat="server">Create New</button>
+                                              <button type="button" id="Button18" class="layer-button" runat="server">Help</button>
+                                             </div>
+                                    </div>
                                     <%--<asp:Button ID="Button2" runat="server" Text="Infrastructure is procured" class="button"  />--%>
                                 </li>
                             </asp:Panel>
-                            <asp:Panel ID="BPanel3" runat="server">
+                            <asp:Panel ID="BPanel3" runat="server" CssClass="BoxF">
                                 <li id="L3">
                              <asp:Panel ID="T3" Visible="false"  runat="server"><div class="filter"> <asp:Image ID="Image35" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" /> <%--<span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span>--%></div></asp:Panel>           
                                     <div class="layer"></div>
                                     <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos/AppToInf.jpg" Width="" />
-
-                                    <button type="button" id="Button3" class="button" data-toggle="modal" data-target="#myModal123" runat="server">Application to Infrastructure relationship</button>
+                                     <asp:Label ID="Label22" runat="server" Text="Label" CssClass="button">Application to Infrastructure relationship</asp:Label> 
+                                    <div class="overlay">
+                                         <div class="leftButton">
+                                    <button type="button" id="Button3" class="layer-button" data-toggle="modal" data-target="#myModal123" runat="server">Create New</button>
+                                              <button type="button" id="Button22" class="layer-button" runat="server">Help</button>
+                                        </div>
+                                        </div>
                                     <%--<asp:Button ID="Button3" runat="server" Text="Application to Infrastructure relationship" class="button" />--%>
 
                                 </li>
                             </asp:Panel>
-                            <asp:Panel ID="BPanel4" runat="server">
+                            <asp:Panel ID="BPanel4" runat="server" CssClass="BoxF">
                                 <li id="L4">
                          <asp:Panel ID="T4" Visible="false"  runat="server"> <div class="filter"> <asp:Image ID="Image36" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" /> <%--<span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span>--%></div></asp:Panel> 
                                     <div class="layer"></div>
                                     <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/AppToInfra.jpg" Width="" />
-
-                                    <button type="button" id="Button4" class="button" data-toggle="modal" data-target="#myModal321" runat="server">Infrastructure to Infrastructure relationship</button>
+                                     <asp:Label ID="Label23" runat="server" Text="Label" CssClass="button">Infrastructure to Infrastructure relationship</asp:Label> 
+                                    <div class="overlay">
+                                         <div class="leftButton">
+                                    <button type="button" id="Button4" class="layer-button" data-toggle="modal" data-target="#myModal321" runat="server">Create New</button>
+                                              <button type="button" id="Button23" class="layer-button" runat="server">Help</button>
+                                        </div>
+                                        </div>
                                     <%--<asp:Button ID="Button4" runat="server" Text="Infrastructure to Infrastructure relationship" class="button"  />--%>
                                         
                                 </li>
                             </asp:Panel>
-                            <asp:Panel ID="BPanel5" runat="server">
+                            <asp:Panel ID="BPanel5" runat="server" CssClass="BoxF">
                                 <li id="L5">
                        <asp:Panel ID="T5" Visible="false"  runat="server"> <div class="filter"> <asp:Image ID="Image37" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" /> <%--<span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span>--%></div></asp:Panel>  
                                     <div class="layer"></div>
                                     <asp:Image ID="Image12" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
-
-                                    <button type="button" id="Button5" class="button" data-toggle="modal" data-target="#myModal5" runat="server">Decommission of Infrastructure</button>
+                                     <asp:Label ID="Label24" runat="server" Text="Label" CssClass="button">Decommission of Infrastructure</asp:Label> 
+                                    <div class="overlay">
+                                         <div class="leftButton">
+                                    <button type="button" id="Button5" class="layer-button" data-toggle="modal" data-target="#myModal5" runat="server">Create New</button>
+                                              <button type="button" id="Button24" class="layer-button" runat="server">Help</button>
+                                        </div>
+                                        </div>
                                     <%--<asp:Button ID="Button5" runat="server" Text="Decommission of Application" class="button"  />--%>
                                 </li>
                             </asp:Panel>

@@ -84,6 +84,7 @@
         }
         function pop3(x) {
             if (x == 0) document.getElementById('myModal2to3').style.display = 'none';
+          
             return;
         }
         function pop4(x) {
@@ -589,7 +590,7 @@
 </head>
 <body>
 
-    <div class="container-wrapper">
+    <div id="D1" class="container-wrapper">
 
         <div class="top-part">
             <asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos/logo.png" Width="86px" class="logo" />
@@ -695,24 +696,16 @@
                                     <%--<asp:Button ID="Button5" runat="server" Text="Decommission of Application" class="button"  />--%>
                                 </li>
                             </asp:Panel>
-                            <asp:Panel ID="BPanel6" runat="server">
-                                <li id="L6">
-                                    <div class="layer"></div>
-                                    <asp:Image ID="Image13" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
-
-                                      <button type="button" id="Button19" class="button" data-toggle="modal" data-target="#myModal1to2" runat="server" visible="false">Proceed</button>
-                                     <button type="button" id="Button20" class="button" data-toggle="modal" data-target="#myModal2to3" runat="server" visible="false">Proceed1</button>
-                                     <button type="button" id="Button21" class="button" data-toggle="modal" data-target="#myModal3to4" runat="server" visible="false">Proceed2</button>
-                                    
-                                </li>
-                                
-                              
-                            </asp:Panel>
+                            
 
                         </ul>
+                         <button type="button" id="Button19" class="button1" data-toggle="modal" data-target="#myModal1to2" runat="server" visible="false">Proceed</button>
+                                     <button type="button" id="Button20" class="button1" data-toggle="modal" data-target="#myModal2to3" runat="server" visible="false">Proceed1</button>
+                                     <button type="button" id="Button21" class="button1" data-toggle="modal" data-target="#myModal3to4" runat="server" visible="false">Proceed2</button>
                     </div>
 
                 </asp:Panel>
+
                 <%--</form>--%>
         </div>
         <!-- Trigger the modal with a button -->
@@ -1454,7 +1447,7 @@
                     <div class="top-part12">
                         <asp:Image ID="Image4" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
                        <asp:Image ID="Image20" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
-              <button type="button" class="close" data-dismiss="modal" data-toggle="modal" data-target="#myModal123">&times;</button>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Application to Infrastructure Relationship</p>
 
@@ -1494,7 +1487,7 @@
                     <div class="top-part12">
                         <asp:Image ID="Image5" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
                        <asp:Image ID="Image21" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
-              <button type="button" class="close" data-dismiss="modal" data-toggle="modal" data-target="#myModal321">&times;</button>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Infrastructure to Infrastructure Relationship</p>
 
@@ -1714,7 +1707,7 @@
         </div>
         </div>
            <!-- Modal -->
-        <div class="modal fade" id="myModal1to2" role="dialog">
+        <div class="modal fade" id="myModal1to2" role="dialog" >
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -1787,7 +1780,7 @@
                         <div class="modal-containt">
                                                
                        <button type="button" id="Btyes3" class="button1 fltLeft" data-toggle="modal" data-target="#myModal4" onclick="pop4(0)">Yes</button>  
-                             <button type="button" id="BtNo3" class="button1 fltLeft" onclick="pop4(0)">No</button>  
+                             <button type="button" id="BtNo3" class="button1 fltLeft" data-dismiss="modal" onclick="pop4(0)">No</button>  
                             
                         <br />
                         <div class="clear"></div>

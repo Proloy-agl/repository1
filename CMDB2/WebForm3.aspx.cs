@@ -162,6 +162,14 @@ namespace CMDB2
                 Button3.Disabled = true;
                 Button4.Disabled = true;
             }
+            if ((ValC != 1) && (ValD != 1) && (ValA == 1) && (ValB == 1))
+            {
+                BPanel5.Visible = false;
+               
+                Button3.Disabled = true;
+                Button4.Disabled = true;
+
+            }
 
 
 
@@ -495,7 +503,7 @@ namespace CMDB2
         }
 
         protected void Workflow1(object sender, EventArgs e) {
-            
+            Response.Redirect("http://aglitremedyuat.agl.com.au:8080/arsys ");
 
         }
 

@@ -91,6 +91,16 @@
             if (x == 0) document.getElementById('myModal3to4').style.display = 'none';
             return;
         }
+        function myFunction() {
+            var txt;
+            if (confirm("Please confirm if you have completed all associated changes for your CR in Magneto")) {
+                txt = "You pressed OK!";
+                window.location.replace("http://aglitremedyuat.agl.com.au:8080/arsys ");
+            } else {
+                txt = "You pressed Cancel!";
+            }
+            
+        }
 
     </script>
 
@@ -555,7 +565,7 @@
 
   .leftButton
   {
-      margin:15% 0 0 22%;
+      margin:19% 0 0 3.4%;
   }
 
      .layer-button {
@@ -584,6 +594,21 @@
 
 
 }
+        .button-box ul li .heading9 {
+
+
+            font-size: 20px;
+            white-space: normal;
+            line-height: 27px;
+            padding: 6px 12px;
+            color: #fff;
+            font-weight: bold;
+            position: absolute;
+            left:0;
+            top: 5%;
+            z-index: 3;
+            text-align:left;
+        }
 
 
     </style>
@@ -615,6 +640,7 @@
                             <asp:Panel ID="BPanel1" runat="server" CssClass="BoxF">
 
                                 <li id="L1">
+
                          <asp:Panel ID="T1" Visible="false" runat="server"> 
                              <div class="filter">
                               <asp:Image ID="Image33" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" />
@@ -625,6 +651,7 @@
                                     <asp:Label ID="Label20" runat="server" Text="Label" CssClass="button">Application Attributes</asp:Label> 
                                      <div class="overlay">
                                          <div class="leftButton">
+                                           <span id="LabelAA" class="heading9">Application Attributes</span>
                                     <button type="button" id="Button1" class="layer-button" data-toggle="modal" data-target="#myModal" runat="server">Create New</button>
                                    <button type="button" id="Button13" class="layer-button" runat="server">Help</button>
                                              </div>
@@ -642,6 +669,7 @@
                                      <asp:Label ID="Label21" runat="server" Text="Label" CssClass="button">Infrastructure Attributes</asp:Label> 
                                     <div class="overlay">
                                          <div class="leftButton">
+                                             <span id="LabelIA" class="heading9">Infrastructure Attributes</span>
                                     <button type="button" id="Button2" class="layer-button" data-toggle="modal" data-target="#myModal1to2" runat="server">Create New</button>
                                               <button type="button" id="Button18" class="layer-button" runat="server">Help</button>
                                              </div>
@@ -653,10 +681,11 @@
                                 <li id="L3">
                              <asp:Panel ID="T3" Visible="false"  runat="server"><div class="filter"> <asp:Image ID="Image35" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" /> <%--<span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span>--%></div></asp:Panel>           
                                     <div class="layer"></div>
-                                    <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos/AppToInf.jpg" Width="" />
+                                    <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos/3.jpg" Width="" />
                                      <asp:Label ID="Label22" runat="server" Text="Label" CssClass="button">Application to Infrastructure relationship</asp:Label> 
                                     <div class="overlay">
                                          <div class="leftButton">
+                                             <span id="LabelAi" class="heading9">Application to Infrastructure relationship</span>
                                     <button type="button" id="Button3" class="layer-button" data-toggle="modal" data-target="#myModal123" runat="server">Create New</button>
                                               <button type="button" id="Button22" class="layer-button" runat="server">Help</button>
                                         </div>
@@ -669,10 +698,11 @@
                                 <li id="L4">
                          <asp:Panel ID="T4" Visible="false"  runat="server"> <div class="filter"> <asp:Image ID="Image36" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" /> <%--<span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span>--%></div></asp:Panel> 
                                     <div class="layer"></div>
-                                    <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/AppToInfra.jpg" Width="" />
+                                    <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/4.jpg" Width="" />
                                      <asp:Label ID="Label23" runat="server" Text="Label" CssClass="button">Infrastructure to Infrastructure relationship</asp:Label> 
                                     <div class="overlay">
                                          <div class="leftButton">
+                                             <span id="Labelii" class="heading9">Infrastructure to Infrastructure relationship</span>
                                     <button type="button" id="Button4" class="layer-button" data-toggle="modal" data-target="#myModal321" runat="server">Create New</button>
                                               <button type="button" id="Button23" class="layer-button" runat="server">Help</button>
                                         </div>
@@ -689,6 +719,7 @@
                                      <asp:Label ID="Label24" runat="server" Text="Label" CssClass="button">Decommission of Infrastructure</asp:Label> 
                                     <div class="overlay">
                                          <div class="leftButton">
+                                             <span id="LabelDecom" class="heading9">Decommission of Infrastructure</span>
                                     <button type="button" id="Button5" class="layer-button" data-toggle="modal" data-target="#myModal5" runat="server">Create New</button>
                                               <button type="button" id="Button24" class="layer-button" runat="server">Help</button>
                                         </div>
@@ -702,6 +733,9 @@
                          <button type="button" id="Button19" class="button1" data-toggle="modal" data-target="#myModal1to2" runat="server" visible="false">Proceed</button>
                                      <button type="button" id="Button20" class="button1" data-toggle="modal" data-target="#myModal2to3" runat="server" visible="false">Proceed1</button>
                                      <button type="button" id="Button21" class="button1" data-toggle="modal" data-target="#myModal3to4" runat="server" visible="false">Proceed2</button>
+ 
+                                     <button onclick="myFunction()"  class="button1">Final</button>
+                        
                     </div>
 
                 </asp:Panel>

@@ -30,6 +30,7 @@ namespace CMDB2
             ValF = 5;
             if (ValE == 1)
             {
+                BPanel6.Visible = true;
                 BPanel1.Visible = false;
                 BPanel2.Visible = false;
                 BPanel3.Visible = false;

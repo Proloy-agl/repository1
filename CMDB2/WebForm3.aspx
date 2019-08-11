@@ -103,8 +103,6 @@
         }
 
     </script>
-
-
     <style>
         html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
         del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -653,7 +651,7 @@
                                          <div class="leftButton">
                                            <span id="LabelAA" class="heading9">Application Attributes</span>
                                     <button type="button" id="Button1" class="layer-button" data-toggle="modal" data-target="#myModal" runat="server">Create New</button>
-                                   <button type="button" id="Button13" class="layer-button" runat="server">Help</button>
+                                   <button type="button" id="Button13" class="layer-button" data-toggle="modal" data-target="#Help1" runat="server">Help</button>
                                              </div>
                                          
                                          </div>
@@ -671,7 +669,7 @@
                                          <div class="leftButton">
                                              <span id="LabelIA" class="heading9">Infrastructure Attributes</span>
                                     <button type="button" id="Button2" class="layer-button" data-toggle="modal" data-target="#myModal1to2" runat="server">Create New</button>
-                                              <button type="button" id="Button18" class="layer-button" runat="server">Help</button>
+                                              <button type="button" id="Button18" class="layer-button" data-toggle="modal" data-target="#Help2" runat="server">Help</button>
                                              </div>
                                     </div>
                                     <%--<asp:Button ID="Button2" runat="server" Text="Infrastructure is procured" class="button"  />--%>
@@ -687,7 +685,7 @@
                                          <div class="leftButton">
                                              <span id="LabelAi" class="heading9">Application to Infrastructure relationship</span>
                                     <button type="button" id="Button3" class="layer-button" data-toggle="modal" data-target="#myModal123" runat="server">Create New</button>
-                                              <button type="button" id="Button22" class="layer-button" runat="server">Help</button>
+                                              <button type="button" id="Button22" class="layer-button" data-toggle="modal" data-target="#Help3" runat="server">Help</button>
                                         </div>
                                         </div>
                                     <%--<asp:Button ID="Button3" runat="server" Text="Application to Infrastructure relationship" class="button" />--%>
@@ -704,7 +702,7 @@
                                          <div class="leftButton">
                                              <span id="Labelii" class="heading9">Infrastructure to Infrastructure relationship</span>
                                     <button type="button" id="Button4" class="layer-button" data-toggle="modal" data-target="#myModal321" runat="server">Create New</button>
-                                              <button type="button" id="Button23" class="layer-button" runat="server">Help</button>
+                                              <button type="button" id="Button23" class="layer-button" data-toggle="modal" data-target="#Help4" runat="server">Help</button>
                                         </div>
                                         </div>
                                     <%--<asp:Button ID="Button4" runat="server" Text="Infrastructure to Infrastructure relationship" class="button"  />--%>
@@ -722,6 +720,22 @@
                                              <span id="LabelDecom" class="heading9">Decommission of Infrastructure</span>
                                     <button type="button" id="Button5" class="layer-button" data-toggle="modal" data-target="#myModal5" runat="server">Create New</button>
                                               <button type="button" id="Button24" class="layer-button" runat="server">Help</button>
+                                        </div>
+                                        </div>
+                                    <%--<asp:Button ID="Button5" runat="server" Text="Decommission of Application" class="button"  />--%>
+                                </li>
+                            </asp:Panel>
+                            <asp:Panel ID="BPanel6" Visible="false" runat="server" CssClass="BoxF">
+                                <li id="L6">
+                       <asp:Panel ID="Panel4" Visible="false"  runat="server"> <div class="filter"> <asp:Image ID="Image45" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" /> <%--<span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span>--%></div></asp:Panel>  
+                                    <div class="layer"></div>
+                                    <asp:Image ID="Image46" runat="server" ImageUrl="~/Photos and Logos/it.jpg" Width="" />
+                                     <asp:Label ID="Label25" runat="server" Text="Label" CssClass="button">Decommission of Application</asp:Label> 
+                                    <div class="overlay">
+                                         <div class="leftButton">
+                                             <span id="LabelDecom2" class="heading9">Decommission of Application</span>
+                                    <button type="button" id="Button25" class="layer-button" data-toggle="modal" data-target="#Decom2" runat="server">Create New</button>
+                                              <button type="button" id="Button26" class="layer-button" runat="server">Help</button>
                                         </div>
                                         </div>
                                     <%--<asp:Button ID="Button5" runat="server" Text="Decommission of Application" class="button"  />--%>
@@ -1895,7 +1909,6 @@
                 </div>
             </div>
         </div>
-
           <!-- Modal -->
         <div class="modal fade" id="myModal123" role="dialog">
             <div class="modal-dialog">
@@ -1924,8 +1937,7 @@
         </div>
 
         </div>
-        </div>
-        
+        </div>      
           <!-- Modal -->
         <div class="modal fade" id="myModal321" role="dialog">
             <div class="modal-dialog">
@@ -2041,6 +2053,201 @@
         </div>
 
         </div>
+        </div>
+
+         <!-- Modal -->
+        <div class="modal fade" id="Help1" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" onsubmit="return false">
+                    <div class="top-part12">
+                        <asp:Image ID="Image13" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+                       <asp:Image ID="Image38" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div>
+                                                   <p class="heading12">Addition of Application Attributes:</p> 
+                        <div class="modal-containt">
+                                        This screen allows you to add certain information related to your application that needs to be mandatorily maintained at CMDB end. Here are the description of each of the fields that you would need to fill up:
+ 
+<br /><b>Application Category:</b> This is field specific for TCS supported applications and is required for cost modelling for TCS contractual agreement and for SLA and support engagement. The expected values are GOLD, SILVER, BRONZE and No Categorization. Select ‘No Categorization’ if your application is not TCS Supported.
+<br /><b>Application Complexity:</b> This is again a field specific for TCS supported applications and is required for cost modelling for TCS contractual agreement and for SLA and support engagement. The probable values are Simple, Medium, Complex, Custom A, Custom B, Custom F, Custom E, Custom D, API and Not Applicable. Select ‘Not Applicable’ if your application is not TCS Supported.
+<br /><b>Remedy Group:</b> Please select the name of the Remedy Support Group that would support and manage the application going forward.
+<br /><b>Environment Instance:</b> This field denotes the possible number of environments on which the application has been hosted. Please select the most appropriate combination as applicable. For example, if your application is not on both PROD and NON-PROD and you also have a DR built for the application, your selection for this field will be PROD-NONPROD-DR. 
+<br /> 
+More information 
+Please contact Service Experience for more information or also reach out to GOV_ASSET_MGT team for further information.     
+                    
+                        <br />
+                        <div class="clear">
+                            
+                        </div>
+                            </div>
+                    </div>
+                  
+                   
+                  
+        </div>
+
+        </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Help2" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" onsubmit="return false">
+                    <div class="top-part12">
+                        <asp:Image ID="Image39" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+                       <asp:Image ID="Image40" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div>
+                                                   <p class="heading12">Addition of Infrastructure Attributes:</p> 
+                        <div class="modal-containt">
+                                        
+This screen allows you to add certain information related to your newly procured Infrastructure that needs to be mandatorily maintained at CMDB end. Here are the description of each of the fields that you would need to fill up:
+ 
+<br />System Environment: This denotes the Environment specification of the said CI; for example whether the particular CI is for PROD, NON-PROD or DR.
+<br />Primary Capability: This field denotes the type of CI for example, Server, Switch, Router, storage., etc.
+<br />Owner: Please provide the name of the person from AGL IT/Business who is responsible to own the particular Infrastructure CI. 
+<br />Supported By: Please select the name of the Remedy Support Group that would support and manage the particular Infrastructure CI going forward.
+<br />System Role: This denotes system role of the particular Infrastructure CI; for example Pricing Engine UAT Server etc.
+<br />Site: Please provide the Location of the CI for example Melbourne, any GO site.
+<br />OEM Supported: This filed is used to identify whether the Infra CI has reached EOL/EOS; i.e whether it is still supported by the Hardware vendor. Select Not Applicable for an Azure Server.
+ <br />
+                            <br />
+More information 
+Please contact Service Experience for more information or also reach out to GOV_ASSET_MGT team for further information.   
+                    
+                        <br />
+                        <div class="clear">
+                            
+                        </div>
+                            </div>
+                    </div>
+                  
+                   
+                  
+        </div>
+
+        </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="Help3" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" onsubmit="return false">
+                    <div class="top-part12">
+                        <asp:Image ID="Image41" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+                       <asp:Image ID="Image42" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div>
+                                                   <p class="heading12">Addition of Infrastructure Attributes:</p> 
+                        <div class="modal-containt">
+                                        
+This screen captures the relationships between Application and its associated Infrastructure Components. 
+                            <br />Select APP_ID and link to the Server on which it is hosted.
+                    
+                        <br />
+                        <div class="clear">
+                            
+                        </div>
+                            </div>
+                    </div>
+                  
+                   
+                  
+        </div>
+
+        </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="Help4" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" onsubmit="return false">
+                    <div class="top-part12">
+                        <asp:Image ID="Image43" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+                       <asp:Image ID="Image44" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div>
+                                                   <p class="heading12">Addition of Infrastructure Attributes:</p> 
+                        <div class="modal-containt">
+This screen captures the relationships between Infrastructure components.              
+                        <br />
+                        <div class="clear">
+                            
+                        </div>
+                            </div>
+                    </div>
+                  
+                   
+                  
+        </div>
+
+        </div>
+        </div>
+         <!-- Modal -->
+        <div class="modal fade" id="Decom2" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="top-part12">
+                        <asp:Image ID="Image47" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+                       <asp:Image ID="Image48" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <p class="heading12">Decommission of Application</p>
+
+
+                    <div class="modal-body">
+                        <div class="modal-containt">
+                            <ul class="width100">
+                                <li>
+
+                                    <div>
+                                        <asp:Label ID="Label26" runat="server" Text="Application Name"></asp:Label>
+                                    </div>
+                                    <div>
+                                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <asp:Label ID="Label27" runat="server" Text="Type of Decommission"></asp:Label>
+                                    </div>
+
+                                    <div>
+                                        <asp:DropDownList ID="DropDownList8" runat="server">
+                                            <asp:ListItem>Select</asp:ListItem>
+                                            <asp:ListItem>Physical</asp:ListItem>
+                                            <asp:ListItem>Logical</asp:ListItem>
+                                        </asp:DropDownList>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <asp:Button ID="Button27" runat="server" Text="Submit" class="button1" OnClick="Dcom_SumbitBtn_Click" />
+
+
+                            <div class="clear"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
     </div>

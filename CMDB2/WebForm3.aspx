@@ -760,7 +760,7 @@
         <%--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>--%>
 
         <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal fade" id="myModal" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -1093,7 +1093,7 @@
         </div>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal fade" id="myModal2" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -1693,7 +1693,7 @@
             </div>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal fade" id="myModal3" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -1742,7 +1742,7 @@
             </div>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal fade" id="myModal4" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -1786,7 +1786,7 @@
             </div>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="myModal5" role="dialog">
+        <div class="modal fade" id="myModal5" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -1839,7 +1839,7 @@
             </div>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="myModal6" role="dialog">
+        <div class="modal fade" id="myModal6" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -1875,7 +1875,7 @@
             </div>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="myModal7" role="dialog">
+        <div class="modal fade" id="myModal7" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -1910,7 +1910,7 @@
             </div>
         </div>
           <!-- Modal -->
-        <div class="modal fade" id="myModal123" role="dialog">
+        <div class="modal fade" id="myModal123" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -1939,7 +1939,7 @@
         </div>
         </div>      
           <!-- Modal -->
-        <div class="modal fade" id="myModal321" role="dialog">
+        <div class="modal fade" id="myModal321" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -1968,7 +1968,7 @@
         </div>
         </div>
            <!-- Modal -->
-        <div class="modal fade" id="myModal1to2" role="dialog" >
+        <div class="modal fade" id="myModal1to2" data-keyboard="false" data-backdrop="static" role="dialog" >
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -1997,7 +1997,7 @@
         </div>
         </div>
          <!-- Modal -->
-        <div class="modal fade" id="myModal2to3" role="dialog">
+        <div class="modal fade" id="myModal2to3" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -2026,11 +2026,10 @@
         </div>
         </div>
          <!-- Modal -->
-        <div class="modal fade" id="myModal3to4" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content" onsubmit="return false">
+        <div class="modal fade" id="myModal3to4" data-keyboard="false" data-backdrop="static" role="dialog">
+        <div class="modal-dialog">
+         <!-- Modal content-->
+        <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image31" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
                        <asp:Image ID="Image32" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
@@ -2056,7 +2055,7 @@
         </div>
 
          <!-- Modal -->
-        <div class="modal fade" id="Help1" role="dialog">
+        <div class="modal fade" id="Help1" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -2094,7 +2093,7 @@ Please contact Service Experience for more information or also reach out to GOV_
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="Help2" role="dialog">
+        <div class="modal fade" id="Help2" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -2137,7 +2136,7 @@ Please contact Service Experience for more information or also reach out to GOV_
         </div>
         
         <!-- Modal -->
-        <div class="modal fade" id="Help3" role="dialog">
+        <div class="modal fade" id="Help3" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -2169,7 +2168,7 @@ This screen captures the relationships between Application and its associated In
         </div>
         
         <!-- Modal -->
-        <div class="modal fade" id="Help4" role="dialog">
+        <div class="modal fade" id="Help4" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -2197,7 +2196,7 @@ This screen captures the relationships between Infrastructure components.
         </div>
         </div>
          <!-- Modal -->
-        <div class="modal fade" id="Decom2" role="dialog">
+        <div class="modal fade" id="Decom2" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->

@@ -639,7 +639,15 @@
                 <asp:Panel ID="Panel1" runat="server">
                     <div class="button-box">
                         <ul>
+                            <asp:Panel ID="BPanel7" runat="server" Visible="false"> 
+                                <asp:CheckBox ID="DecomCBOX1" runat="server" />
+                                <asp:Label ID="DecomLabel" runat="server" Text="Decommission of Infrastructure"></asp:Label>
 
+                                 <asp:CheckBox ID="DecomCBOX2" runat="server" />
+                                <asp:Label ID="Label28" runat="server" Text="Decommission of Application "></asp:Label>
+                                
+                                
+                            </asp:Panel>
                             <asp:Panel ID="BPanel1" runat="server" CssClass="BoxF">
 
                                 <li id="L1">
@@ -755,7 +763,8 @@
                                      <button type="button" id="Button21" class="button1" data-toggle="modal" data-target="#myModal3to4" runat="server" visible="false">Proceed2</button>
                                      <button type ="button" id="Button28" class="button1" data-toggle="modal" data-target="#Create" runat="server" visible="false">Create New </button>
                        <%-- <asp:Button ID="Button29" runat="server" CssClass="button1" Text="Add New entry" Visible="false" data-toggle="modal" data-target="#Create" />--%>
-                                     <button onclick="myFunction()"  class="button1">Final</button>
+                                     <button onclick="myFunction()"  id="Final" runat="server" class="button1" visible="false">Final</button>
+                        <asp:Button ID="Button29" runat="server" CssClass="button1" Text="Proceed" OnClick="decom1" Visible="false" />
 
                         
                     </div>
@@ -2037,7 +2046,7 @@
         </div>
         </div>
          <!-- Modal -->
-        <div class="modal fade" id="myModal3to4" data-keyboard="false" data-backdrop="static" role="dialog">
+        <div class="modal fade" id="myModal3to4" data-keyboard="false" data-backdrop="false" role="dialog">
         <div class="modal-dialog">
          <!-- Modal content-->
         <div class="modal-content" onsubmit="return false">
@@ -2051,7 +2060,7 @@
                         <div class="modal-containt">
                                                
                        <button type="button" id="Btyes3" class="button1 fltLeft" data-toggle="modal" data-target="#myModal4" onclick="pop4(0)">Yes</button>  
-                             <button type="button" id="BtNo3" class="button1 fltLeft" data-dismiss="modal" data-toggle="modal" onclick="pop4(0)">No</button>  
+                             <button type="button" id="BtNo3" class="button1 fltLeft" data-dismiss="modal" data-toggle="modal" onclick="pop4(0)" data-backdrop="false">No</button>  
                             
                         <br />
                         <div class="clear"></div>
@@ -2260,7 +2269,7 @@ This screen captures the relationships between Infrastructure components.
             </div>
         </div>
           <!-- Modal -->
-         <div class="modal fade" id="Create" data-keyboard="false" data-backdrop="static" role="dialog">
+         <div class="modal fade" id="Create" data-keyboard="false" data-backdrop="false" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->

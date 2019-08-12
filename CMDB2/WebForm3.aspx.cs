@@ -30,12 +30,16 @@ namespace CMDB2
             ValF = 5;
             if (ValE == 1)
             {
-                BPanel6.Visible = true;
+                BPanel7.Visible = true;
                 BPanel1.Visible = false;
                 BPanel2.Visible = false;
                 BPanel3.Visible = false;
                 BPanel4.Visible = false;
-               
+                BPanel6.Visible = false;
+                BPanel5.Visible = false;
+                Button29.Visible = true;
+
+
             }
             if (ValF == 1)
             {
@@ -231,6 +235,8 @@ namespace CMDB2
                         Y2 = 1;
                         Button19.Visible = false;
                         Button20.Visible = true;
+                        Final.Visible = true;
+                    
                        
                     }
                     else
@@ -297,6 +303,7 @@ namespace CMDB2
                         Button2.Disabled = false;
                         Y1 = 1;
                         Button19.Visible = true;
+                        Final.Visible = true;
                        
                     }
                     else
@@ -355,7 +362,7 @@ namespace CMDB2
                         Y3 = 1;
                         Button20.Visible = false;
                         Button21.Visible = true;
-                        
+                        Final.Visible = true;
                        
                     }
                     else
@@ -410,6 +417,7 @@ namespace CMDB2
                         Y4 = 1;
                         Button21.Visible = false;
                         Button28.Visible = true;
+                        Final.Visible = true;
 
                     }
                     else
@@ -462,7 +470,9 @@ namespace CMDB2
                         
                        // Response.Redirect("WebForm3.aspx");
                         T5.Visible = true;
+                        Final.Visible = true;
                     }
+
                     else
                     {
                         Response.Redirect("Choice.aspx");
@@ -482,6 +492,8 @@ namespace CMDB2
                 }
             }
         }
+
+    
 
         protected void move_toGrid1(object sender, EventArgs e) {
            
@@ -508,6 +520,13 @@ namespace CMDB2
         protected void Workflow1(object sender, EventArgs e) {
             Response.Redirect("http://aglitremedyuat.agl.com.au:8080/arsys ");
 
+        }
+
+        protected void decom1(object sender, EventArgs e) {
+            if (DecomCBOX1.Checked) { BPanel5.Visible = true; }
+            if (DecomCBOX2.Checked) { BPanel6.Visible = true; }
+            BPanel7.Visible = false;
+            Button29.Visible = false;
         }
 
     }

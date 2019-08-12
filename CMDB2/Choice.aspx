@@ -229,7 +229,7 @@ body{
                     <li>
                        
                         <asp:CheckBox ID="CheckBox1" runat="server" value="1" />
-                        <asp:Label ID="Label1" runat="server" Text="Onboarding New Application"></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Text="Add New Application"></asp:Label>
                     </li>
 
                     <li>
@@ -238,7 +238,7 @@ body{
                     </li>
                     <li>
                         <asp:CheckBox ID="CheckBox2" runat="server" value="1" />
-                        <asp:Label ID="Label2" runat="server" Text="New Infrastructure is procured"></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Text="Add New Infrastructure"></asp:Label>
                     </li>
                     <li>
                         <asp:CheckBox ID="CheckBox4" runat="server" value="1" />

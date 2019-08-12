@@ -20,7 +20,7 @@ namespace CMDB2
         protected void Page_Load(object sender, EventArgs e)
         {
             string ChoiceA, ChoiceB, ChoiceC, ChoiceD, ChoiceE, ChoiceF;
-            int ValA, ValB, ValC, ValD, ValE, ValF;
+       int ValA, ValB, ValC, ValD, ValE, ValF;
 
             ValA = Convert.ToInt32(ChoiceA = Session["value1"].ToString());
             ValB = Convert.ToInt32(ChoiceB = Session["value2"].ToString());
@@ -73,6 +73,7 @@ namespace CMDB2
                 
                 BPanel2.Visible = false;
                 BPanel4.Visible = false;
+                Button28.Visible = true;
 
 
 
@@ -83,7 +84,7 @@ namespace CMDB2
                 BPanel2.Visible = false;
                 BPanel3.Visible = false;
                 BPanel5.Visible = false;
-                
+                Button28.Visible = true;
             }
             if ((ValA == 1) && (ValC == 1) && (ValB != 1) && (ValD != 1))
             {
@@ -354,6 +355,7 @@ namespace CMDB2
                         Y3 = 1;
                         Button20.Visible = false;
                         Button21.Visible = true;
+                        
                        
                     }
                     else
@@ -407,7 +409,7 @@ namespace CMDB2
                         T4.Visible = true;
                         Y4 = 1;
                         Button21.Visible = false;
-
+                        Button28.Visible = true;
 
                     }
                     else

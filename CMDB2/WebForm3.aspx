@@ -89,6 +89,11 @@
         }
         function pop4(x) {
             if (x == 0) document.getElementById('myModal3to4').style.display = 'none';
+
+            return;
+        }
+        function pop5(x) {
+            if (x == 0) document.getElementById('Create').style.display = 'none';
             return;
         }
         function myFunction() {
@@ -680,10 +685,10 @@
                              <asp:Panel ID="T3" Visible="false"  runat="server"><div class="filter"> <asp:Image ID="Image35" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" /> <%--<span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span>--%></div></asp:Panel>           
                                     <div class="layer"></div>
                                     <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos/3.jpg" Width="" />
-                                     <asp:Label ID="Label22" runat="server" Text="Label" CssClass="button">Application to Infrastructure relationship</asp:Label> 
+                                     <asp:Label ID="Label22" runat="server" Text="Label" CssClass="button">Application to Infrastructure Relationship</asp:Label> 
                                     <div class="overlay">
                                          <div class="leftButton">
-                                             <span id="LabelAi" class="heading9">Application to Infrastructure relationship</span>
+                                             <span id="LabelAi" class="heading9">Application to Infrastructure Relationship</span>
                                     <button type="button" id="Button3" class="layer-button" data-toggle="modal" data-target="#myModal123" runat="server">Create New</button>
                                               <button type="button" id="Button22" class="layer-button" data-toggle="modal" data-target="#Help3" runat="server">Help</button>
                                         </div>
@@ -697,10 +702,10 @@
                          <asp:Panel ID="T4" Visible="false"  runat="server"> <div class="filter"> <asp:Image ID="Image36" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" /> <%--<span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span>--%></div></asp:Panel> 
                                     <div class="layer"></div>
                                     <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/4.jpg" Width="" />
-                                     <asp:Label ID="Label23" runat="server" Text="Label" CssClass="button">Infrastructure to Infrastructure relationship</asp:Label> 
+                                     <asp:Label ID="Label23" runat="server" Text="Label" CssClass="button">Infrastructure to Infrastructure Relationship</asp:Label> 
                                     <div class="overlay">
                                          <div class="leftButton">
-                                             <span id="Labelii" class="heading9">Infrastructure to Infrastructure relationship</span>
+                                             <span id="Labelii" class="heading9">Infrastructure to Infrastructure Relationship</span>
                                     <button type="button" id="Button4" class="layer-button" data-toggle="modal" data-target="#myModal321" runat="server">Create New</button>
                                               <button type="button" id="Button23" class="layer-button" data-toggle="modal" data-target="#Help4" runat="server">Help</button>
                                         </div>
@@ -744,11 +749,14 @@
                             
 
                         </ul>
+                        
                          <button type="button" id="Button19" class="button1" data-toggle="modal" data-target="#myModal1to2" runat="server" visible="false">Proceed</button>
                                      <button type="button" id="Button20" class="button1" data-toggle="modal" data-target="#myModal2to3" runat="server" visible="false">Proceed1</button>
                                      <button type="button" id="Button21" class="button1" data-toggle="modal" data-target="#myModal3to4" runat="server" visible="false">Proceed2</button>
- 
+                                     <button type ="button" id="Button28" class="button1" data-toggle="modal" data-target="#Create" runat="server" visible="false">Create New </button>
+                       <%-- <asp:Button ID="Button29" runat="server" CssClass="button1" Text="Add New entry" Visible="false" data-toggle="modal" data-target="#Create" />--%>
                                      <button onclick="myFunction()"  class="button1">Final</button>
+
                         
                     </div>
 
@@ -1720,7 +1728,7 @@
                                     <div>
                                         <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
                                     </div>
-                                     <div style="text-align: center"><b>over environment </b></div>
+                                     <div style="text-align: center"><b>on environment </b></div>
                                     <div>
                                          <asp:DropDownList ID="DropDownList7" runat="server">
                                         <asp:ListItem>Select</asp:ListItem>
@@ -2040,7 +2048,7 @@
                         <div class="modal-containt">
                                                
                        <button type="button" id="Btyes3" class="button1 fltLeft" data-toggle="modal" data-target="#myModal4" onclick="pop4(0)">Yes</button>  
-                             <button type="button" id="BtNo3" class="button1 fltLeft" data-dismiss="modal" onclick="pop4(0)">No</button>  
+                             <button type="button" id="BtNo3" class="button1 fltLeft" data-dismiss="modal" data-toggle="modal" onclick="pop4(0)">No</button>  
                             
                         <br />
                         <div class="clear"></div>
@@ -2248,6 +2256,36 @@ This screen captures the relationships between Infrastructure components.
                 </div>
             </div>
         </div>
+          <!-- Modal -->
+         <div class="modal fade" id="Create" data-keyboard="false" data-backdrop="static" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" onsubmit="return false">
+                    <div class="top-part12">
+                        <asp:Image ID="Image49" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+                       <asp:Image ID="Image50" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div>                                <p class="heading12">Please Select your action</p> 
+                        <div class="modal-containt"> 
+                                              
+                       <button type="button" id="InfraAdd" class="button1 fltLeft" data-toggle="modal" data-target="#myModal2" onclick="pop5(0)" >Infrastructure</button>  
+                        <button type="button" id="InfraAdd1" class="button1 fltLeft" data-toggle="modal" data-target="#myModal3" onclick="pop5(0)">App to Infra relation</button>  
+                        <button type="button" id="InfraAdd2" class="button1 fltLeft" data-toggle="modal" data-target="#myModal4" onclick="pop5(0)">Infra to Infra</button>  
+                      
+                        <br />
+                          <div class="clear"></div>   
+                        </div>
+
+                    </div>
+                  
+                   
+                  
+        </div>
+
+        </div>
+        </div>     
 
     </div>
 

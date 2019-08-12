@@ -848,6 +848,7 @@
                                         <asp:ListItem>CUSTOM E</asp:ListItem>
                                         <asp:ListItem>CUSTOM F</asp:ListItem>
                                         <asp:ListItem>API</asp:ListItem>
+                                         <asp:ListItem>Not Defined</asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
                             </li>
@@ -1077,10 +1078,11 @@
                                     <asp:DropDownList ID="Environment_Instance" runat="server">
                                         <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>PROD</asp:ListItem>
-                                        <asp:ListItem>NON-PROD</asp:ListItem>
+                                        <asp:ListItem>NON PROD</asp:ListItem>
                                         <asp:ListItem>DR</asp:ListItem>
-                                        <asp:ListItem>PROD-NONPROD-DR</asp:ListItem>
+                                        <asp:ListItem>PROD-NON PROD-DR</asp:ListItem>
                                         <asp:ListItem>PROD-DR</asp:ListItem>
+                                        <asp:ListItem>PROD-NON PROD</asp:ListItem>
                                     </asp:DropDownList>
                                     <br />
                                 </div>
@@ -1668,6 +1670,7 @@
                                         <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>Yes</asp:ListItem>
                                         <asp:ListItem>No</asp:ListItem>
+                                        <asp:ListItem>Not Applicable</asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
                             </li>

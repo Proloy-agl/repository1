@@ -13,6 +13,7 @@ namespace CMDB2
         protected void Page_Load(object sender, EventArgs e)
         {
             varA = Convert.ToInt16(Session["value11"]);
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)

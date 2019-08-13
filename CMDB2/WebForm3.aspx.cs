@@ -189,6 +189,7 @@ namespace CMDB2
 
         protected void Infra_SumbitBtn_Click(object sender, EventArgs e)
         {
+            
             string a1, a2, a3, a4, a5, a6, a7, a8, a9;
             int a10, a11;
             DateTime a12;
@@ -531,6 +532,11 @@ namespace CMDB2
         protected void decom1(object sender, EventArgs e) {
             if (DecomCBOX1.Checked) { BPanel5.Visible = true; }
             if (DecomCBOX2.Checked) { BPanel6.Visible = true; }
+            if (DecomCBOX3.Checked)
+            {
+                BPanel6.Visible = true;
+                BPanel5.Visible = true;
+            }
             BPanel7.Visible = false;
             Button29.Visible = false;
         }

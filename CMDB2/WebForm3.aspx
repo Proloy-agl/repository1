@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm3.aspx.cs" Inherits="CMDB2.WebForm3" UnobtrusiveValidationMode="None" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm3.aspx.cs" Inherits="CMDB2.WebForm3"%>
 
 <!DOCTYPE html>
 
@@ -641,10 +641,13 @@
                         <ul>
                             <asp:Panel ID="BPanel7" runat="server" Visible="false"> 
                                 <asp:CheckBox ID="DecomCBOX1" runat="server" />
-                                <asp:Label ID="DecomLabel" runat="server" Text="Decommission of Infrastructure"></asp:Label>
+                                <asp:Label ID="DecomLabel" runat="server" Text="Decommission of Infrastructure"></asp:Label><br />
 
                                  <asp:CheckBox ID="DecomCBOX2" runat="server" />
-                                <asp:Label ID="Label28" runat="server" Text="Decommission of Application "></asp:Label>
+                                <asp:Label ID="Label28" runat="server" Text="Decommission of Application "></asp:Label> <br />
+                                 
+                                <asp:CheckBox ID="DecomCBOX3" runat="server" />
+                                <asp:Label ID="Label29" runat="server" Text="Decommission of Application & Infrastructure "></asp:Label>
                                 
                                 
                             </asp:Panel>
@@ -805,7 +808,7 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="A_CR_Number" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Cannot be empty" ControlToValidate="A_CR_Number" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                                    
                                 </div>
                             </li>
 
@@ -815,7 +818,7 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="Application_ID" runat="server"></asp:TextBox>
-                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Cannot be empty" ControlToValidate="Application_ID" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                                    
                                 </div>
                             </li>
                             <li>
@@ -824,7 +827,7 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="Application_Name" runat="server"></asp:TextBox>
-                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Cannot be empty" ControlToValidate="Application_Name" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                                  
                                 </div>
                             </li>
                             <li>
@@ -1138,7 +1141,7 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="I_CR_Num" runat="server"></asp:TextBox>
-                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*Cannot be empty" ControlToValidate="I_CR_Num" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                                    
                                 </div>
                             </li>
 
@@ -1150,7 +1153,7 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="CI_Name" runat="server"></asp:TextBox>
-                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*Cannot be empty" ControlToValidate="CI_Name" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                                    
                                 </div>
                             </li>
                             <li>
@@ -1174,7 +1177,7 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="Primary_Capability" runat="server"></asp:TextBox>
-                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="*Cannot be empty" ControlToValidate="Primary_Capability" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                                   
                                 </div>
                             </li>
                             <li>
@@ -1184,7 +1187,7 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="Owner" runat="server"></asp:TextBox>
-                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="*Cannot be empty" ControlToValidate="Owner" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                                     
                                 </div>
                             </li>
                             <li>
@@ -1409,7 +1412,7 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="System_Role" runat="server"></asp:TextBox>
-                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="*Cannot be empty" ControlToValidate="System_Role" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                                    
                                 </div>
                             </li>
                             <li>
@@ -1742,14 +1745,14 @@
 
                                     <div>
                                         <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
-                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="*Cannot be empty" ControlToValidate="TextBox11" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                                         
                                     </div>
                                     <div class="clear"></div>
                                     <div style="text-align: center"><b>is hosted on </b></div>
                                     <div class="clear"></div>
                                     <div>
                                         <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
-                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="*Cannot be empty" ControlToValidate="TextBox12" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                                        
                                     </div>
                                      <div style="text-align: center"><b>on environment </b></div>
                                     <div>
@@ -1794,7 +1797,7 @@
 
                                     <div>
                                         <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
-                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="*Cannot be empty" ControlToValidate="TextBox13" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                                         
                                     </div>
                                     <div class="clear"></div>
 
@@ -1802,7 +1805,7 @@
                                     <div class="clear"></div>
                                     <div>
                                         <asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
-                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ErrorMessage="*Cannot be empty" ControlToValidate="TextBox14" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                                        
                                     </div>
                                 </li>
                             </ul>

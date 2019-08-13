@@ -180,8 +180,7 @@ namespace CMDB2
             if ((ValC != 1) && (ValD != 1) && (ValA != 1) && (ValB != 1)&&(ValE!=1))
             {
                 Response.Redirect("Choice.aspx");
-                Response.Write("alert('No choices selected')");
-              
+                          
 
             }
 

@@ -58,8 +58,8 @@ namespace CMDB2
                 Button2.Disabled = true;
                 Button3.Disabled = true;
                 Button4.Disabled = true;
-                
-             
+                BPanel7.Visible = false;
+
             }
             if ((ValA != 1) && (ValB == 1) && (ValC != 1) && (ValD != 1))
             {
@@ -68,13 +68,13 @@ namespace CMDB2
                 BPanel1.Visible = false;
                 Button3.Disabled = true;
                 Button4.Disabled = true;
-                
+                BPanel7.Visible = false;
             }
             if ((ValC == 1) && (ValB != 1) && (ValA != 1) && (ValD != 1))
             {
                 BPanel1.Visible = false;
                 BPanel5.Visible = false;
-                
+                BPanel7.Visible = false;
                 BPanel2.Visible = false;
                 BPanel4.Visible = false;
                 Button28.Visible = true;
@@ -89,11 +89,12 @@ namespace CMDB2
                 BPanel3.Visible = false;
                 BPanel5.Visible = false;
                 Button28.Visible = true;
+                BPanel7.Visible = false;
             }
             if ((ValA == 1) && (ValC == 1) && (ValB != 1) && (ValD != 1))
             {
                 BPanel5.Visible = false;
-               
+                BPanel7.Visible = false;
                 Button2.Disabled = true;
                 Button3.Disabled = true;
                 Button4.Disabled = true;
@@ -101,7 +102,7 @@ namespace CMDB2
             if ((ValA == 1) && (ValD == 1) && (ValC != 1) && (ValB != 1))
             {
                 BPanel5.Visible = false;
-                
+                BPanel7.Visible = false;
                 Button2.Disabled = true;
                 Button3.Disabled = true;
                 Button4.Disabled = true;
@@ -109,7 +110,7 @@ namespace CMDB2
             if ((ValC == 1) && (ValB == 1) && (ValA != 1) && (ValD != 1))
             {
                 BPanel5.Visible = false;
-                
+                BPanel7.Visible = false;
                 BPanel1.Visible = false;
                 Button3.Disabled = true;
                 Button4.Disabled = true;
@@ -117,7 +118,7 @@ namespace CMDB2
             if ((ValD == 1) && (ValB == 1) && (ValC != 1) && (ValA != 1))
             {
                 BPanel5.Visible = false;
-               
+                BPanel7.Visible = false;
                 BPanel1.Visible = false;
                 Button3.Disabled = true;
                 Button4.Disabled = true;
@@ -131,7 +132,7 @@ namespace CMDB2
             if ((ValA == 1) && (ValB == 1) && (ValC == 1) && (ValD == 1))
             {
                 BPanel5.Visible = false;
-                
+                BPanel7.Visible = false;
                 Button2.Disabled = true;
                 Button3.Disabled = true;
                 Button4.Disabled = true;
@@ -139,7 +140,7 @@ namespace CMDB2
             if ((ValA == 1) && (ValB == 1) && (ValC == 1) && (ValD != 1))
             {
                 BPanel5.Visible = false;
-                
+                BPanel7.Visible = false;
                 Button2.Disabled = true;
                 Button3.Disabled = true;
                 Button4.Disabled = true;
@@ -147,7 +148,7 @@ namespace CMDB2
             if ((ValD == 1) && (ValB != 1) && (ValC == 1) && (ValA == 1))
             {
                 BPanel5.Visible = false;
-               
+                BPanel7.Visible = false;
                 Button2.Disabled = true;
                 Button3.Disabled = true;
                 Button4.Disabled = true;
@@ -155,7 +156,7 @@ namespace CMDB2
             if ((ValD == 1) && (ValC != 1) && (ValB == 1) && (ValA == 1))
             {
                 BPanel5.Visible = false;
-               
+                BPanel7.Visible = false;
                 Button2.Disabled = true;
                 Button3.Disabled = true;
                 Button4.Disabled = true;
@@ -163,7 +164,7 @@ namespace CMDB2
             if ((ValC == 1) && (ValD == 1) && (ValA != 1) && (ValB == 1))
             {
                 BPanel5.Visible = false;
-                
+                BPanel7.Visible = false;
                 BPanel1.Visible = false;
                 Button3.Disabled = true;
                 Button4.Disabled = true;
@@ -171,12 +172,18 @@ namespace CMDB2
             if ((ValC != 1) && (ValD != 1) && (ValA == 1) && (ValB == 1))
             {
                 BPanel5.Visible = false;
-               
+                BPanel7.Visible = false;
                 Button3.Disabled = true;
                 Button4.Disabled = true;
 
             }
+            if ((ValC != 1) && (ValD != 1) && (ValA != 1) && (ValB != 1)&&(ValE!=1))
+            {
+                Response.Redirect("Choice.aspx");
+                Response.Write("alert('No choices selected')");
+              
 
+            }
 
 
         }

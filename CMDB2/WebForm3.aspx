@@ -851,6 +851,7 @@
                                         <asp:ListItem>BRONZE</asp:ListItem>
                                         <asp:ListItem>No Categorization</asp:ListItem>
                                     </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="*Required" ControlToValidate="DropDownList2" ForeColor="Red" ValidationGroup="AppSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error4" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
                             </li>
@@ -874,6 +875,7 @@
                                         <asp:ListItem>API</asp:ListItem>
                                          <asp:ListItem>Not Defined</asp:ListItem>
                                     </asp:DropDownList>
+                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="*Required" ControlToValidate="DropDownList1" ForeColor="Red" ValidationGroup="AppSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error5" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
                             </li>
@@ -1089,6 +1091,7 @@
                                         <asp:ListItem>VENDOR_VKTEK</asp:ListItem>
 
                                     </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="*Required" ControlToValidate="DropDownList3" ForeColor="Red" ValidationGroup="AppSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error6" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                     <br />
                                 </div>
@@ -1097,7 +1100,7 @@
                             <li>
 
                                 <div>
-                                    <asp:Label ID="Label5" runat="server" Text="Environment Instance"> Visible="false"</asp:Label>
+                                    <asp:Label ID="Label5" runat="server" Text="Environment Instance"> </asp:Label>
                                 </div>
 
                                 <div>
@@ -1110,6 +1113,7 @@
                                         <asp:ListItem>PROD-DR</asp:ListItem>
                                         <asp:ListItem>PROD-NON PROD</asp:ListItem>
                                     </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ErrorMessage="*Required" ControlToValidate="Environment_Instance" ForeColor="Red" ValidationGroup="AppSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error7" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                     <br />
                                 </div>
@@ -1185,6 +1189,7 @@
                                         <asp:ListItem>NON-PROD</asp:ListItem>
                                         <asp:ListItem>DR</asp:ListItem>
                                     </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ErrorMessage="*Required" ControlToValidate="DropDownList5" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error10" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
                             </li>
@@ -1421,7 +1426,7 @@
                                         <asp:ListItem>VENDOR_VKTEK</asp:ListItem>
 
                                     </asp:DropDownList>
-
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ErrorMessage="*Required" ControlToValidate="DropDownList6" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                     <asp:TextBox ID="Supported_By" runat="server" Visible="false"></asp:TextBox>
                                      <asp:Label ID="Error13" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false" ></asp:Label>
                                 </div>
@@ -1701,6 +1706,7 @@
                                         <asp:ListItem>226 Greenhill Road - EASTWG01</asp:ListItem>
 
                                     </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ErrorMessage="*Required" ControlToValidate="Site" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error15" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
 
@@ -1717,6 +1723,7 @@
                                         <asp:ListItem>No</asp:ListItem>
                                         <asp:ListItem>Not Applicable</asp:ListItem>
                                     </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ErrorMessage="*Required" ControlToValidate="OEM_Supported" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error16" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
                             </li>

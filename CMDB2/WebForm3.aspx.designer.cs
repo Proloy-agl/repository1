@@ -553,6 +553,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.TextBox A_CR_Number;
         
         /// <summary>
+        /// RequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        
+        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -569,6 +578,24 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Application_ID;
+        
+        /// <summary>
+        /// Error2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error2;
+        
+        /// <summary>
+        /// RequiredFieldValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
         
         /// <summary>
         /// Label16 control.
@@ -589,6 +616,24 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.TextBox Application_Name;
         
         /// <summary>
+        /// Error3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error3;
+        
+        /// <summary>
+        /// RequiredFieldValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        
+        /// <summary>
         /// Label2 control.
         /// </summary>
         /// <remarks>
@@ -605,6 +650,15 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        
+        /// <summary>
+        /// Error4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error4;
         
         /// <summary>
         /// Label3 control.
@@ -625,6 +679,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
+        /// Error5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error5;
+        
+        /// <summary>
         /// Label4 control.
         /// </summary>
         /// <remarks>
@@ -643,6 +706,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
         
         /// <summary>
+        /// Error6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error6;
+        
+        /// <summary>
         /// Label5 control.
         /// </summary>
         /// <remarks>
@@ -659,6 +731,15 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList Environment_Instance;
+        
+        /// <summary>
+        /// Error7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error7;
         
         /// <summary>
         /// Button6 control.
@@ -706,6 +787,24 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.TextBox I_CR_Num;
         
         /// <summary>
+        /// Error8 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error8;
+        
+        /// <summary>
+        /// RequiredFieldValidator4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        
+        /// <summary>
         /// Label6 control.
         /// </summary>
         /// <remarks>
@@ -722,6 +821,24 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox CI_Name;
+        
+        /// <summary>
+        /// Error9 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error9;
+        
+        /// <summary>
+        /// RequiredFieldValidator5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
         
         /// <summary>
         /// Label7 control.
@@ -751,6 +868,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList5;
         
         /// <summary>
+        /// Error10 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error10;
+        
+        /// <summary>
         /// Label8 control.
         /// </summary>
         /// <remarks>
@@ -769,6 +895,24 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.TextBox Primary_Capability;
         
         /// <summary>
+        /// Error11 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error11;
+        
+        /// <summary>
+        /// RequiredFieldValidator6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
+        
+        /// <summary>
         /// Label9 control.
         /// </summary>
         /// <remarks>
@@ -785,6 +929,24 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Owner;
+        
+        /// <summary>
+        /// Error12 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error12;
+        
+        /// <summary>
+        /// RequiredFieldValidator7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
         
         /// <summary>
         /// Label10 control.
@@ -814,6 +976,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.TextBox Supported_By;
         
         /// <summary>
+        /// Error13 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error13;
+        
+        /// <summary>
         /// Label11 control.
         /// </summary>
         /// <remarks>
@@ -830,6 +1001,24 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox System_Role;
+        
+        /// <summary>
+        /// Error14 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error14;
+        
+        /// <summary>
+        /// RequiredFieldValidator8 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator8;
         
         /// <summary>
         /// Label12 control.
@@ -850,6 +1039,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.DropDownList Site;
         
         /// <summary>
+        /// Error15 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error15;
+        
+        /// <summary>
         /// Label13 control.
         /// </summary>
         /// <remarks>
@@ -866,6 +1064,15 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList OEM_Supported;
+        
+        /// <summary>
+        /// Error16 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error16;
         
         /// <summary>
         /// SqlDataSource1 control.
@@ -1244,6 +1451,15 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image32;
+        
+        /// <summary>
+        /// Button32 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button32;
         
         /// <summary>
         /// Image13 control.

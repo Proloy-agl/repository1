@@ -279,6 +279,7 @@ namespace CMDB2
             b7 = Application_Name.Text;
             b9 = DateTime.Now;
             b8 = "1";
+            
             string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
             SqlConnection conn = null;
             try
@@ -540,6 +541,58 @@ namespace CMDB2
            
             BPanel7.Visible = false;
             Button29.Visible = false;
+        }
+
+        protected void Check1(object sender, EventArgs e)
+        {
+
+            string b1, b2, b3, b4, b5, b6, b7, b8;
+            DateTime b9;
+            b1 = A_CR_Number.Text;
+            b2 = Application_ID.Text;
+            b3 = DropDownList2.SelectedValue;
+            b4 = DropDownList1.SelectedValue;
+            b5 = DropDownList3.SelectedValue;
+            b6 = Environment_Instance.Text;
+            b7 = Application_Name.Text;
+            b9 = DateTime.Now;
+            b8 = "1";
+        //    if (b1 == "") { Error1.Visible = true; }
+            //if (b2 == "") { Error2.Visible = true; }
+            //if (b7 == "") { Error3.Visible = true; }
+            //if (b3 == "Select") { Error4.Visible = true; }
+            //if (b4 == "Select") { Error5.Visible = true; }
+            //if (b5 == "Select") { Error6.Visible = true; }
+            //if (b6 == "") { Error7.Visible = true; }
+            //Button6.Visible = true;
+            //Button30.Visible = false;
+        }
+        protected void Check2(object sender, EventArgs e)
+        {
+            string a1, a2, a3, a4, a5, a6, a7, a8, a9;
+            System_Environment.Text = DropDownList5.SelectedValue;
+            
+            a1 = CI_Name.Text;
+            a2 = System_Environment.Text;
+            a3 = Primary_Capability.Text;
+            a4 = Owner.Text;
+            a5 = DropDownList6.SelectedValue;
+            a6 = System_Role.Text;
+            a7 = Site.Text;
+            a8 = OEM_Supported.Text;
+            a9 = I_CR_Num.Text;
+            //if (a1 == "") { Error9.Visible = true; }
+            //if (a2 == "Select") { Error10.Visible = true; }
+            //if (a3 == "") { Error11.Visible = true; }
+            //if (a4 == "") { Error12.Visible = true; }
+            //if (a5 == "Select") { Error13.Visible = true; }
+            //if (a6 == "") { Error14.Visible = true; }
+            //if (a7 == "") { Error15.Visible = true; }
+            //if (a8 == "") { Error16.Visible = true; }
+            //if (a9 == "") { Error8.Visible = true; }
+            //Button7.Visible = true;
+            //Button31.Visible = false;
+
         }
 
     }

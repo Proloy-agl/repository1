@@ -784,6 +784,7 @@
         <%--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>--%>
 
         <!-- Modal -->
+
         <div class="modal fade" id="myModal" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
@@ -812,7 +813,8 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="A_CR_Number" runat="server"></asp:TextBox>
-                                    
+                                   <%-- <asp:Label ID="Error1" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>--%>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Required" ControlToValidate="A_CR_Number" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
 
@@ -822,7 +824,8 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="Application_ID" runat="server"></asp:TextBox>
-                                    
+                                     <asp:Label ID="Error2" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Required" ControlToValidate="Application_ID" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
                             <li>
@@ -831,7 +834,8 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="Application_Name" runat="server"></asp:TextBox>
-                                  
+                                   <asp:Label ID="Error3" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Required" ControlToValidate="Application_Name" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
                             <li>
@@ -847,7 +851,7 @@
                                         <asp:ListItem>BRONZE</asp:ListItem>
                                         <asp:ListItem>No Categorization</asp:ListItem>
                                     </asp:DropDownList>
-
+                                     <asp:Label ID="Error4" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
                             </li>
                             <li>
@@ -870,6 +874,7 @@
                                         <asp:ListItem>API</asp:ListItem>
                                          <asp:ListItem>Not Defined</asp:ListItem>
                                     </asp:DropDownList>
+                                     <asp:Label ID="Error5" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
                             </li>
                             <li>
@@ -1084,6 +1089,7 @@
                                         <asp:ListItem>VENDOR_VKTEK</asp:ListItem>
 
                                     </asp:DropDownList>
+                                     <asp:Label ID="Error6" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                     <br />
                                 </div>
 
@@ -1091,7 +1097,7 @@
                             <li>
 
                                 <div>
-                                    <asp:Label ID="Label5" runat="server" Text="Environment Instance"></asp:Label>
+                                    <asp:Label ID="Label5" runat="server" Text="Environment Instance"> Visible="false"</asp:Label>
                                 </div>
 
                                 <div>
@@ -1104,13 +1110,15 @@
                                         <asp:ListItem>PROD-DR</asp:ListItem>
                                         <asp:ListItem>PROD-NON PROD</asp:ListItem>
                                     </asp:DropDownList>
+                                     <asp:Label ID="Error7" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                     <br />
                                 </div>
                             </li>
                         </ul>
                         <div class="clear"></div>
-
-                        <asp:Button ID="Button6" runat="server" Text="Submit" CssClass="button1" OnClick="App_SumbitBtn_Click" />
+                        
+                      <%--  <asp:Button  ID="Button30" runat="server" Text="Check" CssClass="button1" data-target="#myModal" data-toggle="modal" OnClick="Check1" />--%>
+                        <asp:Button ID="Button6" runat="server" Text="Submit" CssClass="button1" OnClick="App_SumbitBtn_Click" ValidationGroup="AppSub"/>
                         <div class="clear"></div>
                     </div>
 
@@ -1122,7 +1130,9 @@
 
         </div>
         </div>
+    
         <!-- Modal -->
+        
         <div class="modal fade" id="myModal2" data-keyboard="false" data-backdrop="false" role="dialog">
             <div class="modal-dialog">
 
@@ -1145,7 +1155,8 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="I_CR_Num" runat="server"></asp:TextBox>
-                                    
+                                     <asp:Label ID="Error8" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
+                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4"  ErrorMessage="*Required" ControlToValidate="I_CR_Num" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
 
@@ -1157,7 +1168,8 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="CI_Name" runat="server"></asp:TextBox>
-                                    
+                                     <asp:Label ID="Error9" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5"  ErrorMessage="*Required" ControlToValidate="CI_Name" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
                             <li>
@@ -1173,6 +1185,7 @@
                                         <asp:ListItem>NON-PROD</asp:ListItem>
                                         <asp:ListItem>DR</asp:ListItem>
                                     </asp:DropDownList>
+                                     <asp:Label ID="Error10" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
                             </li>
                             <li>
@@ -1181,7 +1194,8 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="Primary_Capability" runat="server"></asp:TextBox>
-                                   
+                                    <asp:Label ID="Error11" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ErrorMessage="*Required" ControlToValidate="Primary_Capability" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
                             <li>
@@ -1191,7 +1205,8 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="Owner" runat="server"></asp:TextBox>
-                                     
+                                      <asp:Label ID="Error12" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
+                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ErrorMessage="*Required" ControlToValidate="Owner" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
                             <li>
@@ -1406,7 +1421,9 @@
                                         <asp:ListItem>VENDOR_VKTEK</asp:ListItem>
 
                                     </asp:DropDownList>
+
                                     <asp:TextBox ID="Supported_By" runat="server" Visible="false"></asp:TextBox>
+                                     <asp:Label ID="Error13" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false" ></asp:Label>
                                 </div>
                             </li>
                             <li>
@@ -1416,7 +1433,8 @@
                                 </div>
                                 <div>
                                     <asp:TextBox ID="System_Role" runat="server"></asp:TextBox>
-                                    
+                                     <asp:Label ID="Error14" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
+                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ErrorMessage="*Required" ControlToValidate="System_Role" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
                             <li>
@@ -1683,7 +1701,9 @@
                                         <asp:ListItem>226 Greenhill Road - EASTWG01</asp:ListItem>
 
                                     </asp:DropDownList>
+                                     <asp:Label ID="Error15" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
+
                             </li>
                             <li>
 
@@ -1697,6 +1717,7 @@
                                         <asp:ListItem>No</asp:ListItem>
                                         <asp:ListItem>Not Applicable</asp:ListItem>
                                     </asp:DropDownList>
+                                     <asp:Label ID="Error16" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
                             </li>
                         </ul>
@@ -1716,8 +1737,8 @@
                         </div>--%>
 
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Infra_Att]"></asp:SqlDataSource>
-
-                        <asp:Button ID="Button7" runat="server" Text="Submit" class="button1" OnClick="Infra_SumbitBtn_Click" />
+                       <%-- <asp:Button ID="Button31" runat="server" Text="Check" CssClass="button1" OnClick="Check2" />--%>
+                        <asp:Button ID="Button7" runat="server" Text="Submit" class="button1" OnClick="Infra_SumbitBtn_Click"  ValidationGroup="InfSub"/>
                         <div class="clear"></div>
 
                     </div>
@@ -2079,8 +2100,8 @@
                         <div class="modal-containt">
                                                
                        <button type="button" id="Btyes3" class="button1 fltLeft" data-toggle="modal" data-target="#myModal4" onclick="pop4(0)">Yes</button>  
-                             <button type="button" id="BtNo3" class="button1 fltLeft" data-dismiss="modal" data-toggle="modal" onclick="pop4(0)" data-backdrop="false">No</button>  
-                            
+                            <%-- <button type="button" id="BtNo3" class="button1 fltLeft" data-dismiss="modal" data-toggle="modal" onclick="pop4(0)" data-backdrop="false">No</button>  --%>
+                             <asp:Button ID="Button32" runat="server" Text="No" CssClass="button1 fltLeft"/>
                         <br />
                         <div class="clear"></div>
                             </div>

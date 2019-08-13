@@ -640,15 +640,19 @@
                     <div class="button-box">
                         <ul>
                             <asp:Panel ID="BPanel7" runat="server" Visible="false"> 
-                                <asp:CheckBox ID="DecomCBOX1" runat="server" />
+                                <%--<asp:CheckBox ID="DecomCBOX1" runat="server" />
                                 <asp:Label ID="DecomLabel" runat="server" Text="Decommission of Infrastructure"></asp:Label><br />
 
                                  <asp:CheckBox ID="DecomCBOX2" runat="server" />
-                                <asp:Label ID="Label28" runat="server" Text="Decommission of Application "></asp:Label> <br />
+                                <asp:Label ID="Label28" runat="server" Text="Decommission of Application "></asp:Label> <br />--%>
                                  
-                                <asp:CheckBox ID="DecomCBOX3" runat="server" />
-                                <asp:Label ID="Label29" runat="server" Text="Decommission of Application & Infrastructure "></asp:Label>
-                                
+                               <%-- <asp:CheckBox ID="DecomCBOX3" runat="server" />--%>
+                                <asp:Label ID="Label29" runat="server" Text="Please select the appropriate nature for the decommission associated with your CR  "></asp:Label>
+                                <asp:RadioButtonList ID="DecomCBOX" runat="server">
+                                    <asp:ListItem>Decommission Of Infrastructure</asp:ListItem>
+                                    <asp:ListItem>Decommission Of Application</asp:ListItem>
+                                    <asp:ListItem>Decommission of Application and Infrastructure</asp:ListItem>
+                                </asp:RadioButtonList>
                                 
                             </asp:Panel>
                             <asp:Panel ID="BPanel1" runat="server" CssClass="BoxF">

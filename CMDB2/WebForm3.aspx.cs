@@ -530,13 +530,14 @@ namespace CMDB2
         }
 
         protected void decom1(object sender, EventArgs e) {
-            if (DecomCBOX1.Checked) { BPanel5.Visible = true; }
-            if (DecomCBOX2.Checked) { BPanel6.Visible = true; }
-            if (DecomCBOX3.Checked)
+            if (DecomCBOX.SelectedValue == "Decommission Of Infrastructure") { BPanel5.Visible = true; }
+            if (DecomCBOX.SelectedValue == "Decommission Of Application") { BPanel6.Visible = true; }
+            if (DecomCBOX.SelectedValue == "Both of the Above")
             {
                 BPanel6.Visible = true;
                 BPanel5.Visible = true;
             }
+           
             BPanel7.Visible = false;
             Button29.Visible = false;
         }

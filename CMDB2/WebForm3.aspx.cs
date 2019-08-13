@@ -533,7 +533,7 @@ namespace CMDB2
         protected void decom1(object sender, EventArgs e) {
             if (DecomCBOX.SelectedValue == "Decommission Of Infrastructure") { BPanel5.Visible = true; }
             if (DecomCBOX.SelectedValue == "Decommission Of Application") { BPanel6.Visible = true; }
-            if (DecomCBOX.SelectedValue == "Both of the Above")
+            if (DecomCBOX.SelectedValue == "Decommission of Application and Infrastructure")
             {
                 BPanel6.Visible = true;
                 BPanel5.Visible = true;

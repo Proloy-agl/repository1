@@ -24,8 +24,12 @@ namespace CMDB2
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Response.Redirect("WebForm4.aspx");
+           
             Session["valueR"] = 1;
+
+            choiceF = Convert.ToString("1");
+            Session["value6"] = choiceF;
+            Response.Redirect("WebForm4.aspx");
         }
 
         protected void Button1_Click(object sender, EventArgs e)

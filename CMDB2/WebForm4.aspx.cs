@@ -9,12 +9,14 @@ namespace CMDB2
 {
     public partial class WebForm4 : System.Web.UI.Page
     {
-       public int varA,varB;
+       public int varA,varB, ValF;
         protected void Page_Load(object sender, EventArgs e)
         {
+            string ChoiceF;
+            
             varA = Convert.ToInt16(Session["value11"]);
             varB = Convert.ToInt16(Session["valueR"]);
-            
+            ValF = Convert.ToInt32(ChoiceF = Session["value6"].ToString());
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -22,12 +24,14 @@ namespace CMDB2
             if (varA == 1) {
                 panel456.Visible = true;
             GridView1.Visible = true;
+                GridView2.Visible = false;
             }
             if (varA == 2) {
                 panel456.Visible = true;
             GridView2.Visible = true;
+                GridView1.Visible = false;
             }
-            if (varB == 1)
+            if (ValF== 1)
             {
                 panel456.Visible = true;
                 GridView1.Visible = true;

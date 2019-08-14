@@ -130,15 +130,6 @@ namespace CMDB2 {
         protected global::System.Web.UI.HtmlControls.HtmlButton Button1;
         
         /// <summary>
-        /// Button30 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton Button30;
-        
-        /// <summary>
         /// Button13 control.
         /// </summary>
         /// <remarks>

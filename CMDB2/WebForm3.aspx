@@ -665,8 +665,7 @@
                                          <div class="leftButton">
                                            <span id="LabelAA" class="heading9">Application Attributes</span>
                                    <button type="button" id="Button1" class="layer-button" data-toggle="modal" data-target="#myModal" runat="server">Create </button>
-                                   <button type="button" id="Button30" class="layer-button" data-toggle="modal" data-target="#UpdateInf" runat="server">Update</button>
-                                   <button type="button" id="Button13" class="layer-button" data-toggle="modal" data-target="#Help1" runat="server">Help</button>
+                                  <button type="button" id="Button13" class="layer-button" data-toggle="modal" data-target="#Help1" runat="server">Help</button>
                                             
                                              </div>
                                          

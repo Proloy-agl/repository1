@@ -430,10 +430,7 @@
     <label >CR Number</label>
     <input type="text" id="fname" placeholder=" CR Number"/>
 
-    <label >APP CI Name</label>
-    <input type="text" id="lname" placeholder="APP CI Name"/>
-
- <asp:Button ID="Button1" runat="server" Text="Proceed" CssClass="button1" OnClick="Button1_Click" />
+     <asp:Button ID="Button1" runat="server" Text="Proceed" CssClass="button1" OnClick="Button1_Click" />
                     <div class="clear">
 
                     </div>

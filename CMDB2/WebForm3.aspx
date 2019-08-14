@@ -640,13 +640,7 @@
                     <div class="button-box">
                         <ul>
                             <asp:Panel ID="BPanel7" runat="server" Visible="false"> 
-                                <%--<asp:CheckBox ID="DecomCBOX1" runat="server" />
-                                <asp:Label ID="DecomLabel" runat="server" Text="Decommission of Infrastructure"></asp:Label><br />
-
-                                 <asp:CheckBox ID="DecomCBOX2" runat="server" />
-                                <asp:Label ID="Label28" runat="server" Text="Decommission of Application "></asp:Label> <br />--%>
-                                 
-                               <%-- <asp:CheckBox ID="DecomCBOX3" runat="server" />--%>
+                                
                                 <asp:Label ID="Label29" runat="server" Text="Please select the appropriate nature for the decommission associated with your CR  "></asp:Label>
                                 <asp:RadioButtonList ID="DecomCBOX" runat="server">
                                     <asp:ListItem>Decommission Of Infrastructure</asp:ListItem>
@@ -670,8 +664,10 @@
                                      <div class="overlay">
                                          <div class="leftButton">
                                            <span id="LabelAA" class="heading9">Application Attributes</span>
-                                    <button type="button" id="Button1" class="layer-button" data-toggle="modal" data-target="#myModal" runat="server">Create New</button>
+                                   <button type="button" id="Button1" class="layer-button" data-toggle="modal" data-target="#myModal" runat="server">Create </button>
+                                   <button type="button" id="Button30" class="layer-button" data-toggle="modal" data-target="#UpdateInf" runat="server">Update</button>
                                    <button type="button" id="Button13" class="layer-button" data-toggle="modal" data-target="#Help1" runat="server">Help</button>
+                                            
                                              </div>
                                          
                                          </div>
@@ -2344,7 +2340,52 @@ This screen captures the relationships between Infrastructure components.
         </div>
 
         </div>
-        </div>     
+        </div>  
+         
+        <!-- Modal -->
+        <div class="modal fade" id="UpdateInf" data-keyboard="false" data-backdrop="static" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" onsubmit="return false">
+                    <div class="top-part12">
+                        <asp:Image ID="Image51" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+                       <asp:Image ID="Image52" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div>
+                                                   <p class="heading12">Addition of Infrastructure Attributes:</p> 
+                        <div class="modal-containt">
+                            <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" DataKeyNames="CR_Number" DataSourceID="SqlDataSource3">
+           <Columns>
+               <asp:BoundField DataField="CR_Number" HeaderText="CR_Number" ReadOnly="True" SortExpression="CR_Number" />
+               <asp:BoundField DataField="CI_Name" HeaderText="CI_Name" SortExpression="CI_Name" />
+               <asp:BoundField DataField="System_Environment" HeaderText="System_Environment" SortExpression="System_Environment" />
+               <asp:BoundField DataField="Primary_Capability" HeaderText="Primary_Capability" SortExpression="Primary_Capability" />
+               <asp:BoundField DataField="Owner" HeaderText="Owner" SortExpression="Owner" />
+               <asp:BoundField DataField="Supported_By" HeaderText="Supported_By" SortExpression="Supported_By" />
+               <asp:BoundField DataField="System_Role" HeaderText="System_Role" SortExpression="System_Role" />
+               <asp:BoundField DataField="Site" HeaderText="Site" SortExpression="Site" />
+               <asp:BoundField DataField="OEM_Supported" HeaderText="OEM_Supported" SortExpression="OEM_Supported" />
+               <asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
+               <asp:BoundField DataField="Transaction_Timestamp" HeaderText="Transaction_Timestamp" SortExpression="Transaction_Timestamp" />
+               <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />
+           </Columns>
+                  </asp:GridView>
+                              <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Audit_Infrastructure_CI]"></asp:SqlDataSource>
+                        <br />
+                        <div class="clear">
+                            
+                        </div>
+                            </div>
+                    </div>
+                  
+                   
+                  
+        </div>
+
+        </div>
+        </div>   
 
     </div>
 

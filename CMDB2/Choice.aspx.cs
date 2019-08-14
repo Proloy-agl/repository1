@@ -14,6 +14,20 @@ namespace CMDB2
 
         }
         public string choiceA, choiceB, choiceC, choiceD, choiceE,choiceF;
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+            P1.Visible = true;
+            P2.Visible = false;
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WebForm4.aspx");
+            Session["valueR"] = 1;
+        }
+
         protected void Button1_Click(object sender, EventArgs e)
         {
 

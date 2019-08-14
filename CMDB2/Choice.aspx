@@ -77,6 +77,7 @@ body{
 .container
 {
     padding:20px;
+    min-height:480px;
    
 }
 
@@ -142,6 +143,8 @@ body{
     border:0;
 }
 
+
+
 .button1:hover {
 
     color: white;
@@ -173,6 +176,33 @@ body{
     animation: animate 16s ease-in-out infinite;
     
 }
+.Xbutton {
+       display: inline-block;
+    padding: 15px 25px;
+    font-size: 19px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-image: linear-gradient(#00DFED , #0075CC);
+    border: none;
+    border-radius: 11px;
+    box-shadow: 0px 5px 4px -1px #999;
+    margin-right: 7px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.Xbutton:hover {background-image:none;
+    background-color: #0075CC;}
+
+.Xbutton:active {
+  background-image:none;
+    background-color: #0075CC;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 /*.text1 .textP
 {
     padding:15px 0;
@@ -217,7 +247,7 @@ body{
          </div>
     </div>
    
-
+    <asp:Panel ID="P1" runat="server" Visible="false">
         <div>
             <fieldset class="form-content">
             <legend class="heading1">Please check all the boxes applicable for your CR</legend>
@@ -262,8 +292,13 @@ body{
              </fieldset>
             <br /><br /><br />
         </div>
-    
+   </asp:Panel> 
+        <asp:Panel ID="P2" runat="server">
+            <asp:Button ID="Button2" CssClass="Xbutton" runat="server" Text="Create New Entry " OnClick="Button2_Click" />
+            <asp:Button ID="Button3" CssClass="Xbutton" runat="server" Text="Amendment on Existing CR" OnClick="Button3_Click"/>
+            
 
+        </asp:Panel>
     </div>
 </div>
    </form>           

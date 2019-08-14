@@ -294,8 +294,8 @@ body{
         </div>
    </asp:Panel> 
         <asp:Panel ID="P2" runat="server">
-            <asp:Button ID="Button2" CssClass="Xbutton" runat="server" Text="Create New Entry " OnClick="Button2_Click" />
-            <asp:Button ID="Button3" CssClass="Xbutton" runat="server" Text="Amendment on Existing CR" OnClick="Button3_Click"/>
+            <asp:Button ID="Button2" CssClass="Xbutton" runat="server" Text="Create New Entry  " OnClick="Button2_Click" />
+            <asp:Button ID="Button3" CssClass="Xbutton" runat="server" Text="Update Existing CR" OnClick="Button3_Click"/>
             
 
         </asp:Panel>

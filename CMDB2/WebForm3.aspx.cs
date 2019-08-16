@@ -243,8 +243,16 @@ namespace CMDB2
                         Button19.Visible = false;
                         Button20.Visible = true;
                         Final.Visible = true;
-                    
-                       
+                        CI_Name.Text = "";
+                        System_Environment.Text = "";
+                        Primary_Capability.Text = "";
+                        Owner.Text = "";
+                        System_Role.Text = "";
+                        Site.Text = "";
+                        DropDownList6.SelectedValue = "Select";
+                        DropDownList5.SelectedValue = "Select";
+                        Button28.Visible = true;
+
                     }
                     else
                     {
@@ -371,7 +379,8 @@ namespace CMDB2
                         Button20.Visible = false;
                         Button21.Visible = true;
                         Final.Visible = true;
-                       
+                        TextBox11.Text = "";
+                        TextBox12.Text = "";
                     }
                     else
                     {
@@ -426,7 +435,8 @@ namespace CMDB2
                         Button21.Visible = false;
                         Button28.Visible = true;
                         Final.Visible = true;
-
+                        TextBox13.Text = "";
+                        TextBox14.Text = "";
                     }
                     else
                     {

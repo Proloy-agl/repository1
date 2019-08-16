@@ -1985,7 +1985,7 @@
                     <div>                                <p class="heading12">Please Select your action</p> 
                         <div class="modal-containt"> 
                                               
-                       <button type="button" id="ButtonTry" class="button1 fltLeft" data-toggle="modal" data-target="#myModal3" onclick="pop(0)">Create New Entry</button>  
+                       <button type="button" id="ButtonTry" class="button1 fltLeft" data-toggle="modal" data-target="#myModal3" onclick="pop(0)" >Create New Entry</button>  
                         <asp:Button ID="Button11" runat="server" CssClass="button1 fltLeft" Text="Amend existing entry" OnClick="move_toGrid" />
                       
                         <br />

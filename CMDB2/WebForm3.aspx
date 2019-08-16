@@ -765,9 +765,10 @@
                                      <button type="button" id="Button21" class="button1" data-toggle="modal" data-target="#myModal3to4" runat="server" visible="false">Proceed</button>
                                      <button type ="button" id="Button28" class="button1" data-toggle="modal" data-target="#Create" runat="server" visible="false">Create New </button>
                        <%-- <asp:Button ID="Button29" runat="server" CssClass="button1" Text="Add New entry" Visible="false" data-toggle="modal" data-target="#Create" />--%>
-                                     <button onclick="myFunction()"  id="Final" runat="server" class="button1" visible="false">Submit</button>
+                                     <%--<button onclick="Submit"  id="Final" runat="server" class="button1" visible="false">Submit</button>--%>
+                        
                         <asp:Button ID="Button29" runat="server" CssClass="button1" Text="Proceed" OnClick="decom1" Visible="false" />
-
+                        <asp:Button ID="Final1" runat="server" CssClass="button1" Visible="false" OnClick="Submit" Text="Preview and Submit"  />
                         
                     </div>
 

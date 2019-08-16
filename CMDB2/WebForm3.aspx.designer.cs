@@ -490,15 +490,6 @@ namespace CMDB2 {
         protected global::System.Web.UI.HtmlControls.HtmlButton Button28;
         
         /// <summary>
-        /// Final control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton Final;
-        
-        /// <summary>
         /// Button29 control.
         /// </summary>
         /// <remarks>
@@ -506,6 +497,15 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button29;
+        
+        /// <summary>
+        /// Final1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Final1;
         
         /// <summary>
         /// Image2 control.

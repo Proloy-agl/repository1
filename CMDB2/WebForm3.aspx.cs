@@ -249,7 +249,7 @@ namespace CMDB2
                         Y2 = 1;
                         Button19.Visible = false;
                         Button20.Visible = true;
-                        Final.Visible = true;
+                        Final1.Visible = true;
                         CI_Name.Text = "";
                         System_Environment.Text = "";
                         Primary_Capability.Text = "";
@@ -326,7 +326,7 @@ namespace CMDB2
                         Button2.Disabled = false;
                         Y1 = 1;
                         Button19.Visible = true;
-                        Final.Visible = true;
+                        Final1.Visible = true;
                        
                     }
                     else
@@ -385,7 +385,7 @@ namespace CMDB2
                         Y3 = 1;
                         Button20.Visible = false;
                         Button21.Visible = true;
-                        Final.Visible = true;
+                        Final1.Visible = true;
                         TextBox11.Text = "";
                         TextBox12.Text = "";
                     }
@@ -441,7 +441,7 @@ namespace CMDB2
                         Y4 = 1;
                         Button21.Visible = false;
                         Button28.Visible = true;
-                        Final.Visible = true;
+                        Final1.Visible = true;
                         TextBox13.Text = "";
                         TextBox14.Text = "";
                     }
@@ -495,7 +495,7 @@ namespace CMDB2
                         
                        // Response.Redirect("WebForm3.aspx");
                         T5.Visible = true;
-                        Final.Visible = true;
+                        Final1.Visible = true;
                     }
 
                     else
@@ -588,7 +588,7 @@ namespace CMDB2
         {
             string a1, a2, a3, a4, a5, a6, a7, a8, a9;
             System_Environment.Text = DropDownList5.SelectedValue;
-            
+
             a1 = CI_Name.Text;
             a2 = System_Environment.Text;
             a3 = Primary_Capability.Text;
@@ -609,6 +609,12 @@ namespace CMDB2
             //if (a9 == "") { Error8.Visible = true; }
             //Button7.Visible = true;
             //Button31.Visible = false;
+
+        }
+        protected void Submit(object sender, EventArgs e)
+        {
+            Session["value11"] = "3";
+            Response.Redirect("WebForm4.aspx");
 
         }
 

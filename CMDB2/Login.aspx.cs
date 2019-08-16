@@ -10,6 +10,7 @@ namespace CMDB2
     public partial class Login : System.Web.UI.Page
     {
         public string CR="";
+      
         protected void Page_Load(object sender, EventArgs e)
         {
 

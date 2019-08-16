@@ -395,7 +395,16 @@
   margin-bottom: 16px;
   resize: vertical;
 }
-        
+     .textBox  {
+         width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+     }
 
 
 .containerX {
@@ -428,7 +437,8 @@
             <div class="container">
                 <div class="containerX">
     <label >CR Number</label>
-    <input type="text" id="fname" placeholder=" CR Number"/>
+    <%--<input type="text" id="CR_box" placeholder=" CR Number" runat="server"/>--%>
+                    <asp:TextBox ID="TBox1" runat="server" CssClass="textBox"></asp:TextBox>
 
      <asp:Button ID="Button1" runat="server" Text="Proceed" CssClass="button1" OnClick="Button1_Click" />
                     <div class="clear">

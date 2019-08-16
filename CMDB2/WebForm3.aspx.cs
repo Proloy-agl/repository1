@@ -14,7 +14,9 @@ namespace CMDB2
     public partial class WebForm3 : System.Web.UI.Page
     {
         public int Y1, Y2, Y3, Y4, Y5;
-      
+        public string CR;
+        public int CR_Num;
+
         SqlConnection con = new SqlConnection("Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin");
 
         protected void Page_Load(object sender, EventArgs e)
@@ -28,6 +30,11 @@ namespace CMDB2
             ValD = Convert.ToInt32(ChoiceD = Session["value4"].ToString());
             ValE = Convert.ToInt32(ChoiceE = Session["value5"].ToString());
             ValF = 5;
+           
+            CR = Session["CR_Num"].ToString();
+            CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
+            I_CR_Num.Text =CR;
+            A_CR_Number.Text = CR;
             if (ValE == 1)
             {
                 BPanel7.Visible = true;
@@ -361,7 +368,7 @@ namespace CMDB2
                     cmd.Connection = conn;
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = "insert into [Audit_Relationship_App_to_Infra](CR_Number,App_CI_Name,Infra_CI_Name,Transaction_Timestamp,Transaction_Status) values (@var1,@var2,@var3,@var4,@var5)";
-                    cmd.Parameters.AddWithValue("@var1", "test");
+                    cmd.Parameters.AddWithValue("@var1", CR);
                     cmd.Parameters.AddWithValue("@var2", c1);
                     cmd.Parameters.AddWithValue("@var3", c2);
                     cmd.Parameters.AddWithValue("@var4", c3);
@@ -418,7 +425,7 @@ namespace CMDB2
                     cmd.Connection = conn;
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = "insert into [Audit_Relationship_Infra_to_Infra](CR_Number,Parent_Infra_CI_Name,Child_Infra_CI_Name,Transaction_Timestamp,Transaction_Status) values (@var1,@var2,@var3,@var4,@var5)";
-                    cmd.Parameters.AddWithValue("@var1", "test");
+                    cmd.Parameters.AddWithValue("@var1", CR);
                     cmd.Parameters.AddWithValue("@var2", c1);
                     cmd.Parameters.AddWithValue("@var3", c2);
                     cmd.Parameters.AddWithValue("@var4", c3);
@@ -475,7 +482,7 @@ namespace CMDB2
                     cmd.Connection = conn;
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = "insert into [Audit_Decomission](CR_Number,Infrastructure_CI_Name,Decommission_Type,Transaction_Timestamp,Transaction_Status) values (@var1,@var2,@var3,@var4,@var5)";
-                    cmd.Parameters.AddWithValue("@var1", "test");
+                    cmd.Parameters.AddWithValue("@var1", CR);
                     cmd.Parameters.AddWithValue("@var2", c1);
                     cmd.Parameters.AddWithValue("@var3", c2);
                     cmd.Parameters.AddWithValue("@var4", c3);

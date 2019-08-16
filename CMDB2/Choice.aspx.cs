@@ -9,9 +9,13 @@ namespace CMDB2
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        public string CR;
+        public int CR_Num;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
+         CR=Session["CR_Num"].ToString();
+        CR_Num=Convert.ToInt32(CR = Session["CR_Num"].ToString());
         }
         public string choiceA, choiceB, choiceC, choiceD, choiceE,choiceF;
 

@@ -612,7 +612,7 @@
    </asp:Panel>
             </fieldset>
                   </asp:Panel>
-   
+                  <asp:Button ID="Button2" runat="server" CssClass="button1" Text="Completed Magneto" />
        
 
       

@@ -32,7 +32,7 @@ namespace CMDB2
             ValF = 5;
            
             CR = Session["CR_Num"].ToString();
-            CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
+          //  CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
             I_CR_Num.Text =CR;
             A_CR_Number.Text = CR;
             if (ValE == 1)

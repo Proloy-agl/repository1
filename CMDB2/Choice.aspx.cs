@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.UI;
+using System.Web.UI; 
 using System.Web.UI.WebControls;
 
 namespace CMDB2
@@ -15,7 +15,7 @@ namespace CMDB2
         {
             
          CR=Session["CR_Num"].ToString();
-        CR_Num=Convert.ToInt32(CR = Session["CR_Num"].ToString());
+        //CR_Num=Convert.ToInt32(Session["CR_Num"].ToString());
         }
         public string choiceA, choiceB, choiceC, choiceD, choiceE,choiceF;
 

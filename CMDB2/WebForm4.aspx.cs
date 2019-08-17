@@ -19,9 +19,9 @@ namespace CMDB2
             
             varA = Convert.ToInt16(Session["value11"]);
             varB = Convert.ToInt16(Session["valueR"]);
-            ValF = Convert.ToInt32(ChoiceF = Session["value6"].ToString());
+            //ValF = Convert.ToInt32(ChoiceF = Session["value6"].ToString());
             CR = Session["CR_Num"].ToString();
-            CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
+           // CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
             Label2.Text = CR;
             TextBox1.Text = CR;
         }

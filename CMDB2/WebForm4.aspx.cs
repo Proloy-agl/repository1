@@ -26,6 +26,13 @@ namespace CMDB2
             TextBox1.Text = CR;
         }
 
+        protected void Button2_Click1(object sender, EventArgs e)
+        {
+            
+            Response.Redirect("Login.aspx");
+           
+        }
+
         protected void Button1_Click(object sender, EventArgs e)
         {
             if (varA == 1) {

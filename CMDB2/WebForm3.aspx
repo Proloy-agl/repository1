@@ -2068,7 +2068,8 @@
                     <div class="top-part12">
                         <asp:Image ID="Image29" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
                        <asp:Image ID="Image30" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
-             <button type="button" class="close" data-dismiss="modal">&times;</button>
+             <asp:Button ID="Button31" runat="server" Text="&times;" CssClass="close" BackColor="White"/>
+                      <%--  <button type="button" class="close" data-dismiss="modal">&times;</button>--%>
                     </div>
                     <div>
                                                    <p class="heading12">Does your CR involve mapping a App to infra relationship</p> 
@@ -2096,7 +2097,8 @@
                     <div class="top-part12">
                         <asp:Image ID="Image31" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
                        <asp:Image ID="Image32" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
-             <button type="button" class="close" data-dismiss="modal">&times;</button>
+             <asp:Button ID="Button30" runat="server" Text="&times;" CssClass="close" BackColor="White"/>
+                      <%--  <button type="button" class="close" data-dismiss="modal">&times;</button>--%>
                     </div>
                     <div>
                                                    <p class="heading12">Does your CR involve mapping a Infra to infra relationship</p> 

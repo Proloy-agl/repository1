@@ -614,7 +614,7 @@ DeleteCommand="DELETE FROM [Audit_Infrastructure_CI] where [Transaction_ID]=@Tra
    </asp:Panel>
             </fieldset>
                   </asp:Panel>
-                  <asp:Button ID="Button2" runat="server" CssClass="button1" Text="Completed Magneto" OnClick="Button2_Click1" />
+                  <asp:Button ID="Button2" runat="server" CssClass="button1" Text="Submit" OnClick="Button2_Click1" />
        
 
       

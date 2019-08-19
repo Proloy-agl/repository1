@@ -64,6 +64,16 @@ namespace CMDB2
                 GridView3.Visible = true;
                 GridView1.Visible = true;
             }
+            if (varA == 3)
+            {
+                panel456.Visible = true;
+                //GridView1.Visible = true;
+                //GridView2.Visible = true;
+                GridView4.Visible = true;
+                GridView5.Visible = true;
+                GridView3.Visible = true;
+                GridView1.Visible = true;
+            }
 
         }
 

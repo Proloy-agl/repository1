@@ -612,7 +612,20 @@
             z-index: 3;
             text-align:left;
         }
+        .text-design {
 
+    height: 400px;
+    overflow: scroll;
+    height: 400px;
+    overflow-x: hidden;
+}
+.text-design p
+{
+font-weight: bold;
+    padding: 11px 0 5px 0;
+    color: #1c619c;
+    font-size: 16px;
+}
 
     </style>
 </head>
@@ -796,7 +809,7 @@
                     
                     <asp:Panel ID="Panel2" runat="server">
 <div id="A1" >
-                    <p class="heading12">Please enter the details for Application</p>
+                    <p class="heading12">Please enter the following attribute details for Application CI</p>
  </div>                   
 
                     <div class="modal-containt">
@@ -2131,22 +2144,23 @@
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div>
-                                                   <p class="heading12">Addition of Application Attributes:</p> 
-                        <div class="modal-containt">
+                                                   <p class="heading12">Application Attribute Population Guidelines</p> 
+                        <div class="modal-containt text-design">
+                            
                                         This screen allows you to add certain information related to your application that needs to be mandatorily maintained at CMDB end. Here are the description of each of the fields that you would need to fill up:
  
-<br />&#9658;<b>Application Category:</b> This is field specific for TCS supported applications and is required for cost modelling for TCS contractual agreement and for SLA and support engagement. The expected values are GOLD, SILVER, BRONZE and No Categorization. Select ‘No Categorization’ if your application is not TCS Supported.
-<br />&#9658;<b>Application Complexity:</b> This is again a field specific for TCS supported applications and is required for cost modelling for TCS contractual agreement and for SLA and support engagement. The probable values are Simple, Medium, Complex, Custom A, Custom B, Custom F, Custom E, Custom D, API and Not Applicable. Select ‘Not Applicable’ if your application is not TCS Supported.
-<br />&#9658;<b>Remedy Group:</b> Please select the name of the Remedy Support Group that would support and manage the application going forward.
-<br />&#9658;<b>Environment Instance:</b> This field denotes the possible number of environments on which the application has been hosted. Please select the most appropriate combination as applicable. For example, if your application is not on both PROD and NON-PROD and you also have a DR built for the application, your selection for this field will be PROD-NONPROD-DR. 
+<p>Application Category</p> This is field specific for TCS supported applications and is required for cost modelling for TCS contractual agreement and for SLA and support engagement. The expected values are GOLD, SILVER, BRONZE and No Categorization. Select ‘No Categorization’ if your application is not TCS Supported.
+<p>Application Complexity</p> This is again a field specific for TCS supported applications and is required for cost modelling for TCS contractual agreement and for SLA and support engagement. The probable values are Simple, Medium, Complex, Custom A, Custom B, Custom F, Custom E, Custom D, API and Not Applicable. Select ‘Not Applicable’ if your application is not TCS Supported.
+<p>Remedy Group</p> Please select the name of the Remedy Support Group that would support and manage the application going forward.
+<p>Environment Instance</p> This field denotes the possible number of environments on which the application has been hosted. Please select the most appropriate combination as applicable. For example, if your application is not on both PROD and NON-PROD and you also have a DR built for the application, your selection for this field will be PROD-NONPROD-DR. 
 <br /> 
-More information 
+<p style="color:#212121;">More information</p>
 Please contact <a href="mailto:service_experience@agl.com.au">Service Experience</a> for more information or also reach out to GOV_ASSET_MGT team for further information.  
                     
                         <br />
-                        <div class="clear">
-                            
-                        </div>
+                       
+
+
                             </div>
                     </div>
                   

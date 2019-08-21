@@ -41,6 +41,7 @@ body{
     background-image: linear-gradient(to right, #001CB0, #00DFED);
     height: 40px;
     margin-top: 12px;
+    text-align:right;
 }
 
 
@@ -202,6 +203,9 @@ body{
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+.labelCR{
+    text-align:right
+}
 
 /*.text1 .textP
 {
@@ -233,14 +237,16 @@ body{
             &nbsp
         </div>
         <div>
-            <nav class="navBar"></nav>
+            <nav class="navBar">
+               
+            </nav>
         </div>
 
 
     <div class="container">
     <div class="text1">
 
-        <p>Welcome User</p>
+        <p>Welcome to the CMDB Maintenance Portal</p>
         <div>Your CR will now be audited to ensure you updated the impacted Configuration item properly in CMDB. Please select the type of Impact that is applicable for your changes.<br />
             
        You may select options as applicable.

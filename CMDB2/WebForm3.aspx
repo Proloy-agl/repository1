@@ -626,6 +626,23 @@ font-weight: bold;
     color: #1c619c;
     font-size: 16px;
 }
+.stage {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    z-index: 3;
+    width: 88px;
+    height: 80px;
+    left: inherit;
+}
+.Snumber{
+        color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    z-index: 4;
+    margin: 35px 0 0 35px;
+}
 
     </style>
 </head>
@@ -665,10 +682,13 @@ font-weight: bold;
                             <asp:Panel ID="BPanel1" runat="server" CssClass="BoxF">
 
                                 <li id="L1">
-
+                                     <div class="stage"><asp:Image ID="Image53" runat="server" ImageUrl="~/Photos and Logos/stage.png" Width="" />
+                                         <div class="Snumber"><asp:Label ID="a1" runat="server" Text="1" Visible="false"></asp:Label></div>
+                                     </div>
                          <asp:Panel ID="T1" Visible="false" runat="server"> 
                              <div class="filter">
                               <asp:Image ID="Image33" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" />
+                               
                             <%-- <span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span>--%></div></asp:Panel>  
                                     
                                     <div class="layer"></div>
@@ -689,6 +709,9 @@ font-weight: bold;
                             </asp:Panel>
                             <asp:Panel ID="BPanel2" runat="server" CssClass="BoxF">
                                 <li id="L2">
+                                    <div class="stage"><asp:Image ID="Image54" runat="server" ImageUrl="~/Photos and Logos/stage.png" Width="" />
+                                         <div class="Snumber"><asp:Label ID="b1" runat="server" Text="1" Visible="false"></asp:Label> <asp:Label ID="b2" runat="server" Text="2" Visible="false"></asp:Label></div>
+                                     </div>
                            <asp:Panel ID="T2" Visible="false"  runat="server"> <div class="filter"> <asp:Image ID="Image34" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" /><%--<span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span>--%></div></asp:Panel>          
                                     <div class="layer"></div>
                                     <asp:Image ID="Image9" runat="server" ImageUrl="~/Photos and Logos/infra.jpg" Width="" />
@@ -705,6 +728,9 @@ font-weight: bold;
                             </asp:Panel>
                             <asp:Panel ID="BPanel3" runat="server" CssClass="BoxF">
                                 <li id="L3">
+                                    <div class="stage"><asp:Image ID="Image55" runat="server" ImageUrl="~/Photos and Logos/stage.png" Width="" />
+                                         <div class="Snumber"><asp:Label ID="c1" runat="server" Text="1"  Visible="false"></asp:Label> <asp:Label ID="c2" runat="server" Text="2"  Visible="false"></asp:Label><asp:Label ID="c3" runat="server" Text="3"  Visible="false"></asp:Label></div>
+                                     </div>
                              <asp:Panel ID="T3" Visible="false"  runat="server"><div class="filter"> <asp:Image ID="Image35" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" /> <%--<span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span>--%></div></asp:Panel>           
                                     <div class="layer"></div>
                                     <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos/3.jpg" Width="" />
@@ -722,6 +748,9 @@ font-weight: bold;
                             </asp:Panel>
                             <asp:Panel ID="BPanel4" runat="server" CssClass="BoxF">
                                 <li id="L4">
+                                    <div class="stage"><asp:Image ID="Image56" runat="server" ImageUrl="~/Photos and Logos/stage.png" Width="" />
+                                         <div class="Snumber"><asp:Label ID="d1" runat="server" Text="1" Visible="false"></asp:Label><asp:Label ID="d2" runat="server" Text="2" Visible="false"></asp:Label><asp:Label ID="d3" runat="server" Text="3" Visible="false"></asp:Label><asp:Label ID="d4" runat="server" Text="4" Visible="false"></asp:Label></div>
+                                     </div>
                          <asp:Panel ID="T4" Visible="false"  runat="server"> <div class="filter"> <asp:Image ID="Image36" runat="server" ImageUrl="~/Photos and Logos/tick.png" Width="" /> <%--<span style="font-family: wingdings; font-size: 200%; color:green;">&#252;</span>--%></div></asp:Panel> 
                                     <div class="layer"></div>
                                     <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/4.jpg" Width="" />

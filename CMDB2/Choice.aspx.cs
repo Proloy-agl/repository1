@@ -18,7 +18,7 @@ namespace CMDB2
             //CR_Num=Convert.ToInt32(Session["CR_Num"].ToString());
             
         }
-        public string choiceA, choiceB, choiceC, choiceD, choiceE,choiceF;
+     string choiceA, choiceB, choiceC, choiceD, choiceE,choiceF;
 
         protected void Button2_Click(object sender, EventArgs e)
         {

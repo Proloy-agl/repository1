@@ -21,7 +21,7 @@ namespace CMDB2
             
             CR = Convert.ToString(TBox1.Text);
             Session["CR_Num"] = CR;
-            Response.Redirect("Choice.aspx");
+            Response.Redirect("WebForm5.aspx");
         }
     }
 }

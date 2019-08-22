@@ -205,7 +205,7 @@ color:black;
 }
 .modal-backdrop
 {
-    opacity:0.9 !important;
+    opacity:0.8 !important;
 }
 
        </style>

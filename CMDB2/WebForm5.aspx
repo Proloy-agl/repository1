@@ -205,7 +205,7 @@ color:black;
 }
 .modal-backdrop
 {
-    opacity:0.75 !important;
+    opacity:0.9 !important;
 }
 
        </style>
@@ -349,7 +349,7 @@ function off() {
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Infrastructure CI onboarding form</h4>
+          <h4 class="modal-title">Identify CI impact</h4>
         </div>
           <div class="new-box">
                     <div class="checkbox-area">

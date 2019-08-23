@@ -15,6 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet" />
     <link href="style.css" rel="stylesheet"/>
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -148,10 +149,10 @@
                 <asp:Panel ID="Panel1" runat="server">
                     <div class="button-box">
                        
-                        <ul>
+                        <ul class="radio-design">
                             <asp:Panel ID="BPanel7" runat="server" Visible="false"> 
                                 
-                                <asp:Label ID="Label29" runat="server" Text="Please select the appropriate nature for the decommission associated with your CR  "></asp:Label>
+                                <p class="text-label"><asp:Label  ID="Label29" runat="server" Text="Please select the appropriate nature for the decommission associated with your CR"></asp:Label></p>
                                 <asp:RadioButtonList ID="DecomCBOX" runat="server">
                                     <asp:ListItem>Decommission Of Infrastructure</asp:ListItem>
                                     <asp:ListItem>Decommission Of Application</asp:ListItem>
@@ -354,7 +355,7 @@
                                 <div>
                                     <asp:TextBox ID="Application_Name" runat="server"></asp:TextBox>
                                    <asp:Label ID="Error3" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Required" ControlToValidate="Application_Name" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="Application_Name" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
                             <li>
@@ -370,7 +371,7 @@
                                         <asp:ListItem>BRONZE</asp:ListItem>
                                         <asp:ListItem>No Categorization</asp:ListItem>
                                     </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="*Required" ControlToValidate="DropDownList2" ForeColor="Red" ValidationGroup="AppSub" InitialValue="Select" ></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="DropDownList2" ForeColor="Red" ValidationGroup="AppSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error4" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
                             </li>
@@ -394,7 +395,7 @@
                                         <asp:ListItem>API</asp:ListItem>
                                          <asp:ListItem>Not Defined</asp:ListItem>
                                     </asp:DropDownList>
-                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="*Required" ControlToValidate="DropDownList1" ForeColor="Red" ValidationGroup="AppSub" InitialValue="Select" ></asp:RequiredFieldValidator>
+                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="DropDownList1" ForeColor="Red" ValidationGroup="AppSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error5" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
                             </li>
@@ -610,7 +611,7 @@
                                         <asp:ListItem>VENDOR_VKTEK</asp:ListItem>
 
                                     </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="*Required" ControlToValidate="DropDownList3" ForeColor="Red" ValidationGroup="AppSub" InitialValue="Select" ></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="DropDownList3" ForeColor="Red" ValidationGroup="AppSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error6" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                     <br />
                                 </div>
@@ -632,7 +633,7 @@
                                         <asp:ListItem>PROD-DR</asp:ListItem>
                                         <asp:ListItem>PROD-NON PROD</asp:ListItem>
                                     </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ErrorMessage="*Required" ControlToValidate="Environment_Instance" ForeColor="Red" ValidationGroup="AppSub" InitialValue="Select" ></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="Environment_Instance" ForeColor="Red" ValidationGroup="AppSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error7" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                     <br />
                                 </div>
@@ -680,7 +681,7 @@
                                 <div>
                                     <asp:TextBox ID="I_CR_Num" runat="server"></asp:TextBox>
                                      <asp:Label ID="Error8" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
-                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4"  ErrorMessage="*Required" ControlToValidate="I_CR_Num" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
+                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4"  class="validate"  ErrorMessage="*Required" ControlToValidate="I_CR_Num" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
 
@@ -693,7 +694,7 @@
                                 <div>
                                     <asp:TextBox ID="CI_Name" runat="server"></asp:TextBox>
                                      <asp:Label ID="Error9" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5"  ErrorMessage="*Required" ControlToValidate="CI_Name" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" class="validate" ErrorMessage="*Required" ControlToValidate="CI_Name" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
                             <li>
@@ -709,7 +710,7 @@
                                         <asp:ListItem>NON-PROD</asp:ListItem>
                                         <asp:ListItem>DR</asp:ListItem>
                                     </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ErrorMessage="*Required" ControlToValidate="DropDownList5" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="DropDownList5" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error10" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
                             </li>
@@ -720,7 +721,7 @@
                                 <div>
                                     <asp:TextBox ID="Primary_Capability" runat="server"></asp:TextBox>
                                     <asp:Label ID="Error11" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ErrorMessage="*Required" ControlToValidate="Primary_Capability" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ErrorMessage="*Required"  class="validate" ControlToValidate="Primary_Capability" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
                             <li>
@@ -731,7 +732,7 @@
                                 <div>
                                     <asp:TextBox ID="Owner" runat="server"></asp:TextBox>
                                       <asp:Label ID="Error12" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
-                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ErrorMessage="*Required" ControlToValidate="Owner" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
+                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7"  class="validate" ErrorMessage="*Required" ControlToValidate="Owner" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
                             <li>
@@ -946,7 +947,7 @@
                                         <asp:ListItem>VENDOR_VKTEK</asp:ListItem>
 
                                     </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ErrorMessage="*Required" ControlToValidate="DropDownList6" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="DropDownList6" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                     <asp:TextBox ID="Supported_By" runat="server" Visible="false"></asp:TextBox>
                                      <asp:Label ID="Error13" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false" ></asp:Label>
                                 </div>
@@ -959,7 +960,7 @@
                                 <div>
                                     <asp:TextBox ID="System_Role" runat="server"></asp:TextBox>
                                      <asp:Label ID="Error14" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
-                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ErrorMessage="*Required" ControlToValidate="System_Role" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
+                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8"  class="validate" ErrorMessage="*Required" ControlToValidate="System_Role" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
                             <li>
@@ -1226,7 +1227,7 @@
                                         <asp:ListItem>226 Greenhill Road - EASTWG01</asp:ListItem>
 
                                     </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ErrorMessage="*Required" ControlToValidate="Site" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="Site" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error15" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
 
@@ -1243,7 +1244,7 @@
                                         <asp:ListItem>No</asp:ListItem>
                                         <asp:ListItem>Not Applicable</asp:ListItem>
                                     </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ErrorMessage="*Required" ControlToValidate="OEM_Supported" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="OEM_Supported" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error16" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
                             </li>
@@ -1330,11 +1331,9 @@
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Infrastructure to Infrastructure Relationship</p>
+                    <div class="new-box">
 
-
-                    <div class="modal-body">
-                        <div class="modal-containt">
-                            <ul class="width100">
+                    <ul class="width100">
 
                                 <li>
 
@@ -1352,13 +1351,18 @@
                                     </div>
                                 </li>
                             </ul>
+                    </div>
 
-                            <asp:Button ID="Button9" runat="server" Text="Submit" class="button1" OnClick="ItoI_SumbitBtn_Click" />
+                    
+                        <div class="modal-containt new-box-container"> </div>
+                            
+
+                            <asp:Button ID="Button9" runat="server" Text="Submit" class="button1 newbutton" OnClick="ItoI_SumbitBtn_Click" />
                             <div class="clear"></div>
 
-                        </div>
+                       
 
-                    </div>
+                    
 
                 </div>
             </div>
@@ -1376,11 +1380,8 @@
                     </div>
 
                     <p class="heading12">Decommission of Infrastructure</p>
-
-
-                    <div class="modal-body">
-                        <div class="modal-containt">
-                            <ul class="width100">
+                    <div class="new-box">
+                    <ul class="width100">
                                 <li>
 
                                     <div>
@@ -1404,14 +1405,19 @@
                                     </div>
                                 </li>
                             </ul>
-
-                            <asp:Button ID="Button10" runat="server" Text="Submit" class="button1" OnClick="Dcom_SumbitBtn_Click" />
-
-
-                            <div class="clear"></div>
-
                         </div>
-                    </div>
+
+                    
+                        <div class="modal-containt new-box-container"> </div>
+                            
+
+                            <asp:Button ID="Button10" runat="server" Text="Submit" class="button1 newbutton" OnClick="Dcom_SumbitBtn_Click" />
+
+
+                            
+
+                       
+                  
 
                 </div>
             </div>
@@ -1498,15 +1504,14 @@
                        <asp:Image ID="Image25" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <div>                                <p class="heading12">Please Select your action</p> 
-                        <div class="modal-containt"> 
-                                              
-                       <button type="button" id="ButtonTry" class="button1 fltLeft" data-toggle="modal" data-target="#myModal3" onclick="pop(0)" >Create New Entry</button>  
-                        <asp:Button ID="Button11" runat="server" CssClass="button1 fltLeft" Text="Amend existing entry" OnClick="move_toGrid" />
-                      
-                        <br />
-                          <div class="clear"></div>   
+                    <div> 
+                        <p class="heading12">Please Select your action</p> 
+                        <div class="new-box">
+                            <button type="button" id="ButtonTry" class="button1 fltLeft big-btn" data-toggle="modal" data-target="#myModal3" onclick="pop(0)" >Create New Entry</button>  
+                            <asp:Button ID="Button11" runat="server" CssClass="button1 fltLeft big-btn" Text="Amend existing entry" OnClick="move_toGrid" />
                         </div>
+
+                        <div class="modal-containt new-box-container"></div>
 
                     </div>
                   
@@ -1554,18 +1559,17 @@
                     <div class="top-part12">
                         <asp:Image ID="Image27" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
                        <asp:Image ID="Image28" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
-             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div>
-                                                   <p class="heading12">Does your CR involve procurement of an infrastructure</p> 
-                        <div class="modal-containt">
-                                               
-                       <button type="button" id="Btyes1" class="button1 fltLeft" data-toggle="modal" data-target="#myModal2" onclick="pop2(0)">Yes</button>  
-                        <button type="button" id="BtNo1" class="button1 fltLeft" data-toggle="modal" data-target="#myModal2to3" onclick="pop2(0)">No</button>  
+                         <p class="heading12">Does your CR involve procurement of an infrastructure</p>
+                        <div class="new-box">
+                            <button type="button" id="Btyes1" class="button1 fltLeft big-btn" data-toggle="modal" data-target="#myModal2" onclick="pop2(0)">Yes</button>  
+                            <button type="button" id="BtNo1" class="button1 fltLeft big-btn" data-toggle="modal" data-target="#myModal2to3" onclick="pop2(0)">No</button> 
+                         </div>
+                        <div class="modal-containt new-box-container"></div>
+                        
                     
-                        <br />
-                        <div class="clear"></div>
-                            </div>
                     </div>
                   
                    
@@ -1583,19 +1587,16 @@
                     <div class="top-part12">
                         <asp:Image ID="Image29" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
                        <asp:Image ID="Image30" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
-             <asp:Button ID="Button31" runat="server" Text="&times;" CssClass="close" BackColor="White"/>
-                      <%--  <button type="button" class="close" data-dismiss="modal">&times;</button>--%>
+                    <asp:Button ID="Button31" runat="server" Text="&times;" CssClass="close" BackColor="White"/>
+                    <%-- <button type="button" class="close" data-dismiss="modal">&times;</button>--%>
                     </div>
                     <div>
-                                                   <p class="heading12">Does your CR involve mapping a App to infra relationship</p> 
-                        <div class="modal-containt">
-                                               
-                       <button type="button" id="Btyes2" class="button1 fltLeft" data-toggle="modal" data-target="#myModal3" onclick="pop3(0)">Yes</button>  
-                        <button type="button" id="BtNo2" class="button1 fltLeft" data-toggle="modal" data-target="#myModal3to4" onclick="pop3(0)">No</button>  
-                    
-                        <br />
-                        <div class="clear"></div>
-                            </div>
+                       <p class="heading12">Does your CR involve mapping a App to infra relationship</p>
+                        <div class="new-box">
+                            <button type="button" id="Btyes2" class="button1 fltLeft big-btn" data-toggle="modal" data-target="#myModal3" onclick="pop3(0)">Yes</button>  
+                            <button type="button" id="BtNo2" class="button1 fltLeft big-btn" data-toggle="modal" data-target="#myModal3to4" onclick="pop3(0)">No</button>  
+                        </div>
+                        <div class="modal-containt new-box-container"> </div>
                     </div>
                   
                    
@@ -1612,19 +1613,16 @@
                     <div class="top-part12">
                         <asp:Image ID="Image31" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
                        <asp:Image ID="Image32" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
-             <asp:Button ID="Button30" runat="server" Text="&times;" CssClass="close" BackColor="White"/>
+                        <asp:Button ID="Button30" runat="server" Text="&times;" CssClass="close" BackColor="White"/>
                       <%--  <button type="button" class="close" data-dismiss="modal">&times;</button>--%>
                     </div>
                     <div>
-                                                   <p class="heading12">Does your CR involve mapping a Infra to infra relationship</p> 
-                        <div class="modal-containt">
-                                               
-                       <button type="button" id="Btyes3" class="button1 fltLeft" data-toggle="modal" data-target="#myModal4" onclick="pop4(0)">Yes</button>  
-                            <%-- <button type="button" id="BtNo3" class="button1 fltLeft" data-dismiss="modal" data-toggle="modal" onclick="pop4(0)" data-backdrop="false">No</button>  --%>
-                             <asp:Button ID="Button32" runat="server" Text="No" CssClass="button1 fltLeft"/>
-                        <br />
-                        <div class="clear"></div>
-                            </div>
+                      <p class="heading12">Does your CR involve mapping a Infra to infra relationship</p> 
+                        <div class="new-box">
+                            <button type="button" id="Btyes3" class="button1 fltLeft big-btn" data-toggle="modal" data-target="#myModal4" onclick="pop4(0)">Yes</button>  
+                            <asp:Button ID="Button32" runat="server" Text="No" CssClass="button1 fltLeft big-btn"/>
+                        </div>
+                        <div class="modal-containt new-box-container"></div>
                     </div>
                   
                    
@@ -1789,11 +1787,8 @@ This screen captures the relationships between Infrastructure components.
                     </div>
 
                     <p class="heading12">Decommission of Application</p>
-
-
-                    <div class="modal-body">
-                        <div class="modal-containt">
-                            <ul class="width100">
+                    <div class="new-box">
+                    <ul class="width100">
                                 <li>
 
                                     <div>
@@ -1817,20 +1812,26 @@ This screen captures the relationships between Infrastructure components.
                                     </div>
                                 </li>
                             </ul>
-
-                            <asp:Button ID="Button27" runat="server" Text="Submit" class="button1" OnClick="Dcom_SumbitBtn_Click" />
-
-
-                            <div class="clear"></div>
-
                         </div>
-                    </div>
+
+
+                   
+                        <div class="modal-containt new-box-container"></div>
+                            
+
+                            <asp:Button ID="Button27" runat="server" Text="Submit" class="button1 newbutton" OnClick="Dcom_SumbitBtn_Click" />
+
+
+                           
+
+                        
+                    
 
                 </div>
             </div>
         </div>
           <!-- Modal -->
-         <div class="modal fade" id="Create" data-keyboard="false" data-backdrop="false" role="dialog">
+         <div class="modal fade" id="Create" data-keyboard="false" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -1840,17 +1841,16 @@ This screen captures the relationships between Infrastructure components.
                        <asp:Image ID="Image50" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <div>                                <p class="heading12">Please Select your action</p> 
-                        <div class="modal-containt"> 
-                                              
-                       <button type="button" id="InfraAdd" class="button1 fltLeft" data-toggle="modal" data-target="#myModal2" onclick="pop5(0)" >Infrastructure</button>  
-                        <button type="button" id="InfraAdd1" class="button1 fltLeft" data-toggle="modal" data-target="#myModal3" onclick="pop5(0)">App to Infra relation</button>  
-                        <button type="button" id="InfraAdd2" class="button1 fltLeft" data-toggle="modal" data-target="#myModal4" onclick="pop5(0)">Infra to Infra</button>  
-                      
-                        <br />
-                          <div class="clear"></div>   
+                    <div> 
+                        <p class="heading12">Please Select your action</p>
+                        <div class="new-box">
+                        <button type="button" id="InfraAdd" class="button1 fltLeft big-btn2" data-toggle="modal" data-target="#myModal2" onclick="pop5(0)" >Infrastructure</button>  
+                        <button type="button" id="InfraAdd1" class="button1 fltLeft big-btn2" data-toggle="modal" data-target="#myModal3" onclick="pop5(0)">App to Infra relation</button>  
+                        <button type="button" id="InfraAdd2" class="button1 fltLeft big-btn2" data-toggle="modal" data-target="#myModal4" onclick="pop5(0)">Infra to Infra</button>
                         </div>
+                        <div class="modal-containt new-box-container"></div>
 
+                                              
                     </div>
                   
                    

@@ -15,10 +15,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet"/>
        <style>
+
             body {
             
             background: #fff;
         }
+        input[type="submit"]:focus {
+    outline: 0px!important;
+}
              .container-wrapper {
 
      background: #fff;
@@ -208,6 +212,20 @@ color:black;
     opacity:0.8 !important;
 }
 
+ .newbutton
+ {
+     position:absolute;
+     right:0;
+     z-index:99;
+    padding: 0px 18px;
+    font-size: 16px;
+    height: 34px;
+    font-weight: normal;
+    border: 0;
+    float: right;
+    margin-right:8px;
+
+ }
        </style>
        <script>
 function on() {
@@ -389,7 +407,7 @@ function off() {
              <%--<asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos/m-logo1.png"  class="logo1" />--%>
              <asp:Image ID="Image23" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" class="logo1" />
           <%--<button type="button" class="button1" data-dismiss="modal" onclick="">Submit</button>--%>
-            <asp:Button ID="Button2" runat="server" Text="Submit"  class="button1" OnClick="modal_Submit" />
+            <asp:Button ID="Button2" runat="server" Text="Submit"  class="button1 newbutton" OnClick="modal_Submit" />
         </div>
       </div>
       

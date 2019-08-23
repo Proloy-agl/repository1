@@ -429,6 +429,7 @@ modal-footer .logo1-secured {
     z-index: 9;
     top: 49px;
     height: 355px;
+    border-top:0;
        
 }
 .checkbox-area
@@ -451,11 +452,13 @@ modal-footer .logo1-secured {
 
 
 
-    .modal-footer .logo1
-    {
-            width: 150px;
+.modal-footer .logo1 {
+    width: 150px;
     float: left;
-    }
+    padding-left: 7px;
+    position: relative;
+    z-index: 99;
+}
 
 
 .modal-content
@@ -502,6 +505,11 @@ modal-footer .logo1-secured {
     color:#565656;
     font-weight:bold;
 }*/
+.modal-header {
+    border-bottom: 0 !important;
+}
+
+
 
 
 

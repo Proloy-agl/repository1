@@ -121,6 +121,11 @@
             margin: 0;
             padding: 0;
         }
+        
+input[type="submit"]:focus {
+    outline: 0px !important;
+}
+
         .logo {
     float: left;
     margin:6px 20px 0 20px;
@@ -177,26 +182,7 @@
             border-radius: 6px;
         }
 
-        .button1 {
-            border-radius: 7px;
-            padding: 7px 14px;
-            font-size: 16px;
-            background-color: #0075CC;
-            margin-left: 57px;
-            height: 40px;
-            margin-top: 12px;
-            color: white;
-            box-shadow: 0;
-            font-weight: bold;
-            cursor: pointer;
-            background-image: none;
-            background-color: #0075CC;
-        }
 
-            .button1:hover {
-                color: white;
-                background-image: linear-gradient(#0075CC, #00DFED);
-            }
 
         .button-box ul {
             list-style: none;
@@ -325,30 +311,29 @@
                 text-align: center;
             }
 
-        .button1 {
-            border-radius: 7px;
-            padding: 0px 14px;
-            font-size: 14px;
-            background-color: #0075CC;
-            margin: 15px 0px 10px 0;
-            float: right;
-            height: 30px;
-            margin-top: 12px;
-            color: white;
-            box-shadow: 0;
-            font-weight: bold;
-            cursor: pointer;
-            background-image: none;
-            background-color: #0075CC;
-            border: 0;
-            float: right;
-            margin-right: 0px;
-        }
+       .button1 {
+    align-content: normal;
+    border-radius: 7px;
+    padding: 0px 20px;
+    font-size: 16px;
+    background-color: #0075CC;
+    margin: 5px 0px 10px 0;
+    float: right;
+    height: 36px;
+    color: white;
+    box-shadow: 0;
+    font-weight: normal;
+    cursor: pointer;
+    background-image: none;
+    background-color: #0075CC;
+    border: 0;
+    float: right;
+ 
+}
 
             .button1:hover {
                 color: white;
                 background-image: linear-gradient(#0075CC, #00DFED);
-                border: 0;
             }
 
         button.close {

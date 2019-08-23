@@ -816,6 +816,7 @@ legend {
     height: 80px;
     margin-left: 20px;
     min-width: 40%;
+    float:left;
 }
 
     #myModal123 .big-btn:hover, #myModal1to2 .big-btn:hover, #myModal2to3 .big-btn:hover, #myModal3to4 .big-btn:hover {
@@ -835,6 +836,7 @@ legend {
     border-radius: 0;
     height: 66px;
     margin-left: 13px;
+    float: left;
 }
 
     #Create .big-btn2:hover {

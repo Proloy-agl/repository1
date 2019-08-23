@@ -451,6 +451,29 @@ modal-footer .logo1-secured {
 
 
 
+    .modal-footer .logo1
+    {
+            width: 150px;
+    float: left;
+    }
+
+
+.modal-content
+{
+    background:none!important;
+    position:relative;
+}
+
+.modal-footer {
+    border-top: 0;
+        padding-top: 0;
+}
+.modal-footer .button1{
+        position: relative;
+    z-index: 99;
+    border: 0;
+}
+
 /*.new-box
 {
         list-style: none;
@@ -479,32 +502,6 @@ modal-footer .logo1-secured {
     color:#565656;
     font-weight:bold;
 }*/
-
-
-
-
-    .modal-footer .logo1
-    {
-            width: 150px;
-    float: left;
-    }
-
-
-.modal-content
-{
-    background:none!important;
-    position:relative;
-}
-
-.modal-footer {
-    border-top: 0;
-        padding-top: 0;
-}
-.modal-footer .button1{
-        position: relative;
-    z-index: 99;
-    border: 0;
-}
 
 
 

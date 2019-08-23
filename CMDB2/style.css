@@ -46,6 +46,12 @@
             margin: 0;
             padding: 0;
         }
+        button
+        {
+            border:0;
+            box-shadow:0;       
+
+        }
 .logo {
     float: left;
     margin:6px 20px 0 20px;
@@ -284,8 +290,9 @@
 
         .heading12 {
             margin: 18px 0 2px 20px;
-            font-weight: bold;
+           
             font-size: 14px;
+            color:white;
         }
 
         .modal-containt {
@@ -368,7 +375,7 @@
 
             .modal-backdrop
 {
-    opacity:0.9 !important;
+    opacity:0.8 !important;
 }
 
         .button1 {
@@ -591,4 +598,116 @@ border-color:#77bb55;
 
 }
 
-    </style>
+.new-box-container {
+    list-style: none;
+    list-style-type: none;
+    /* margin-bottom: 30px; */
+    padding: 20px 18px 7px 22px;
+    opacity: 0.3;
+    min-height: 407px;
+}
+
+.new-box
+{
+      list-style: none;
+    list-style-type: none;
+    padding: 42px 18px 15px 43px;
+    width: 100%;
+    position: absolute;
+    border: 1px solid #737070;
+    z-index: 9;
+    top: 49px;
+    padding-top: 86px;
+    border-top: 0;
+    min-height:526px;
+       
+}
+
+
+
+.modal-content
+{
+    background:none!important;
+    position:relative;
+}
+
+.modal-footer {
+    border-top: 0;
+        padding-top: 0;
+}
+.modal-footer .button1{
+        position: relative;
+    z-index: 99;
+    border: 0;
+}
+
+.new-box ul li {
+                list-style: none;
+                list-style-type: none;
+                float: left;
+                margin-right: 20px;
+                width: 100%;
+                margin-bottom: 10px;
+                color:white;
+            }
+
+                .new-box ul li div {
+                    float: left;
+                    margin-left: 12px;
+                    width: 45%;
+                }
+
+                .new-box ul li input {
+                    border: 1px solid #A7A9B3;
+                    border-radius: 6px;
+                    height: 23px;
+                    line-height: 23px;
+                    width: 99.5%;
+                    padding-left: .2%;
+                        color: #333;
+                }
+
+
+
+        .new-box ul li select {
+            border: 1px solid #A7A9B3;
+            border-radius: 6px;
+            height: 26px;
+            line-height: 26px;
+            width: 100%;
+             color: #333;
+        }
+
+ .newbutton
+ {
+     position:absolute;
+     bottom:-32px;
+     right:0;
+     z-index:99;
+ }
+ .validate{
+     color:#ff8720!important;
+ }
+
+#myModal2 .new-box-container
+ {
+     min-height:557px!important;
+ }
+#myModal2 .new-box {
+    height: 680px !important;
+}
+#myModal3 .new-box-container
+ {
+     min-height:229px!important;
+ }
+#myModal3 .new-box {
+    min-height: 351px !important;
+   
+    padding: 42px 18px 15px 0;
+    width: 99%;
+   
+
+}
+#myModal3 .width100 {
+    margin-top: 50px;
+}

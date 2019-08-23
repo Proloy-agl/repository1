@@ -322,11 +322,9 @@
                     <asp:Panel ID="Panel2" runat="server">
 <div id="A1" >
                     <p class="heading12">Please enter the following attribute details for Application CI</p>
- </div>                   
-
-                    <div class="modal-containt">
-
-                        <ul>
+ </div>  
+                        <div class="new-box">
+                         <ul>
                             <li>
 
                                 <div>
@@ -335,7 +333,7 @@
                                 <div>
                                     <asp:TextBox ID="A_CR_Number" runat="server"></asp:TextBox>
                                    <%-- <asp:Label ID="Error1" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>--%>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Required" ControlToValidate="A_CR_Number" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" class="validate" runat="server" ErrorMessage="*Required" ControlToValidate="A_CR_Number" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
 
@@ -346,7 +344,7 @@
                                 <div>
                                     <asp:TextBox ID="Application_ID" runat="server"></asp:TextBox>
                                      <asp:Label ID="Error2" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Required" ControlToValidate="Application_ID" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" class="validate" ErrorMessage="*Required" ControlToValidate="Application_ID" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
                             <li>
@@ -641,13 +639,16 @@
                             </li>
                         </ul>
                         <div class="clear"></div>
+                            </div>
                         
-                      <%--  <asp:Button  ID="Button30" runat="server" Text="Check" CssClass="button1" data-target="#myModal" data-toggle="modal" OnClick="Check1" />--%>
-                        <asp:Button ID="Button6" runat="server" Text="Submit" CssClass="button1" OnClick="App_SumbitBtn_Click" ValidationGroup="AppSub"/>
-                        <div class="clear"></div>
-                    </div>
+                    
+                                      
 
-                        </asp:Panel>
+                    <div class="modal-containt  new-box-container"></div>
+                 <asp:Button ID="Button6" runat="server" Text="Submit" CssClass="button1 newbutton" OnClick="App_SumbitBtn_Click" ValidationGroup="AppSub"/>
+                        <div class="clear"></div>
+                 </asp:Panel>
+
 
                     <!-- Grid for APP_CI -->
                   
@@ -669,10 +670,8 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Please complete the Infrastructure attribute details</p>
-
-
-                    <div class="modal-containt">
-                        <ul>
+                    <div class="new-box">
+                    <ul>
                             <li>
 
                                 <div>
@@ -1249,27 +1248,13 @@
                                 </div>
                             </li>
                         </ul>
-                        <%-- <div class="table-wrapper">
-                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Visible="False">
-                                <Columns>
-                                    <asp:BoundField DataField="CI_Name" HeaderText="CI_Name" SortExpression="CI_Name" />
-                                    <asp:BoundField DataField="System_Env" HeaderText="System_Env" SortExpression="System_Env" />
-                                    <asp:BoundField DataField="Primary_Cap" HeaderText="Primary_Cap" SortExpression="Primary_Cap" />
-                                    <asp:BoundField DataField="Owner" HeaderText="Owner" SortExpression="Owner" />
-                                    <asp:BoundField DataField="Supported_By" HeaderText="Supported_By" SortExpression="Supported_By" />
-                                    <asp:BoundField DataField="System_Role" HeaderText="System_Role" SortExpression="System_Role" />
-                                    <asp:BoundField DataField="Site" HeaderText="Site" SortExpression="Site" />
-                                    <asp:BoundField DataField="OEM_Supported" HeaderText="OEM_Supported" SortExpression="OEM_Supported" />
-                                </Columns>
-                            </asp:GridView>
-                        </div>--%>
-
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Infra_Att]"></asp:SqlDataSource>
-                       <%-- <asp:Button ID="Button31" runat="server" Text="Check" CssClass="button1" OnClick="Check2" />--%>
-                        <asp:Button ID="Button7" runat="server" Text="Submit" class="button1" OnClick="Infra_SumbitBtn_Click"  ValidationGroup="InfSub"/>
-                        <div class="clear"></div>
 
                     </div>
+                        <div class="modal-containt  new-box-container"></div>
+                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Infra_Att]"></asp:SqlDataSource>
+                     
+                        <asp:Button ID="Button7" runat="server" Text="Submit" class="button1 newbutton" OnClick="Infra_SumbitBtn_Click"  ValidationGroup="InfSub"/>
+                        <div class="clear"></div>
                     <!-- Grid for INFRA_CI -->
                 </div>
 
@@ -1289,10 +1274,8 @@
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Application to Infrastructure Relationship</p>
-
-                    <div class="modal-body">
-                        <div class="modal-containt">
-                            <ul class="width100">
+                     <div class="new-box">
+                    <ul class="width100">
 
                                 <li>
 
@@ -1300,14 +1283,18 @@
                                         <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
                                          
                                     </div>
-                                    <div class="clear"></div>
-                                    <div style="text-align: center"><b>is hosted on </b></div>
-                                    <div class="clear"></div>
+                                    </li>
+
+                                    <li>
+                                    <div>is hosted on</div>
+                                    
                                     <div>
                                         <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
                                         
                                     </div>
-                                     <div style="text-align: center"><b>on environment </b></div>
+                                      </li>
+                                        <li>
+                                     <div>on environment</div>
                                     <div>
                                          <asp:DropDownList ID="DropDownList7" runat="server">
                                         <asp:ListItem>Select</asp:ListItem>
@@ -1318,12 +1305,15 @@
                                     </div>
                                 </li>
                             </ul>
+                         </div>
 
-                            <asp:Button ID="Button8" runat="server" Text="Submit" CssClass="button1" OnClick="AtoI_SumbitBtn_Click"  />
+                    
+                        <div class="modal-containt new-box-container"></div>
+
+                        <asp:Button ID="Button8" runat="server" Text="Submit" CssClass="button1 newbutton" OnClick="AtoI_SumbitBtn_Click"  />
                             <div class="clear"></div>
-                        </div>
 
-                    </div>
+                    
 
                 </div>
             </div>

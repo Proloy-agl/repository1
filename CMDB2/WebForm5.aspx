@@ -226,6 +226,7 @@ color:black;
     margin-right:8px;
 
  }
+
        </style>
        <script>
 function on() {
@@ -253,6 +254,7 @@ function off() {
             </div>
             <div class="banner-containt">
                <div class="banner">
+                   <div class="banner-text"><asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos/magneto.png"/></div>
                   <div id="myCarousel" class="carousel slide" data-ride="carousel">
                      <!-- Indicators -->
                      <ol class="carousel-indicators">
@@ -307,22 +309,7 @@ function off() {
 					<div class="sfc-card-desc">Browse through this link for onboarding New Application/Infrastructures and Mapping of Relationships</div> 
 				</div>
 			</div>
-		<%--<div class="card card-on-section"> 
-			    <div class="border1"></div>
-				<div class="sfc-card-img" style="display: block;"> 
-					<picture>    
-                         <asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos_ms/Tile4.jpg"  class="lazy-removed"  />
-						
-					</picture> 
-				</div> 
-				<div class="sfc-card-content"> 
-					<div class="sfc-card-title"><asp:LinkButton ID="LinkButton1" runat="server"  Visible="false">Manage CIs and Relationships</asp:LinkButton>
-                        <button onclick="on()" type="button" class="buttonCard" >Create New</button>
-					</div>
-                    
-					<div class="sfc-card-desc">Browse through this link for onboarding New Application/Infrastructures and Mapping of Relationships</div> 
-				</div>
-			</div>--%>
+		
 			<div class="card card-on-section col-right-ma">
 				<div class="border1"></div>			
 				<div class="sfc-card-img" style="display: block;"> 

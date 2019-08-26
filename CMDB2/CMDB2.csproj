@@ -91,6 +91,8 @@
     <Content Include="Photos and Logos\front1.jpg" />
     <Content Include="Photos and Logos\m-logo-white.png" />
     <Content Include="Photos and Logos\m-logo1.png" />
+    <Content Include="Photos and Logos\magneto-s.png" />
+    <Content Include="Photos and Logos\magneto.png" />
     <Content Include="Photos and Logos\stage.png" />
     <Content Include="Photos and Logos\tick.png" />
     <Content Include="Photos and Logos_ms\agl-logo.png" />

@@ -94,7 +94,7 @@
 }*/
  .border1
  {
- background-image: linear-gradient(to right, #6031A6, #B51DB7);
+    background-image: linear-gradient(to right, #001CB0, #00DFED);
 height:3px;
  }
 
@@ -509,7 +509,17 @@ modal-footer .logo1-secured {
     border-bottom: 0 !important;
 }
 
-
+ .banner-text
+ {
+     color:#fff;
+     font-size:22px;
+     font-weight:bold;
+     position:absolute;
+     z-index:9;
+     top:16px;
+     left:21px;
+     font-family:"Titillium Web";
+ }
 
 
 

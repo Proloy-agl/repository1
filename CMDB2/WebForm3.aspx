@@ -405,7 +405,8 @@
                                     <asp:Label ID="Label4" runat="server" Text="Remedy Group"></asp:Label>
                                 </div>
                                 <div>
-                                    <asp:DropDownList ID="DropDownList3" runat="server">
+                                     
+                                    <asp:DropDownList ID="DropDownList3" Visible="false" runat="server">
                                         <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>AGLM ONT</asp:ListItem>
                                         <asp:ListItem>APP_ SAP CAPABILITY REV-TRAC & SALT</asp:ListItem>

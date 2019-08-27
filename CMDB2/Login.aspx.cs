@@ -37,6 +37,10 @@ namespace CMDB2
             Context.GetOwinContext().Authentication.Challenge(
     new AuthenticationProperties { RedirectUri = "/" },
     OpenIdConnectAuthenticationDefaults.AuthenticationType);
+            if (Request.IsAuthenticated)
+            {
+                Response.Redirect("WebForm5.aspx");
+            }
         }
 
         protected void Loginout_Click(object sender, EventArgs e)

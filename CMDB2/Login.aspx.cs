@@ -13,14 +13,14 @@ namespace CMDB2
     public partial class Login : System.Web.UI.Page
     {
         public string CR="";
-      
+        public string UserName="";
         protected void Page_Load(object sender, EventArgs e)
         {
 
             if (Request.IsAuthenticated)
             {
                 
-                Label1.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
+                UsrName.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
             }
         }
 
@@ -39,6 +39,8 @@ namespace CMDB2
     OpenIdConnectAuthenticationDefaults.AuthenticationType);
             if (Request.IsAuthenticated)
             {
+                UsrName.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
+                Session["UserName"] = Convert.ToString(UsrName.Text);
                 Response.Redirect("WebForm5.aspx");
             }
         }

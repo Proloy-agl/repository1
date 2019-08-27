@@ -426,6 +426,9 @@ input[type="submit"]:focus {
                     <asp:TextBox ID="TBox1" runat="server" CssClass="textBox"></asp:TextBox>
 
      <asp:Button ID="Button1" runat="server" Text="Proceed" CssClass="button1" OnClick="Button1_Click" />
+                    <asp:Button ID="Login" runat="server" Text="Button" OnClick="Login_Click" />
+    <asp:Button ID="Loginout" runat="server" Text="Button"  OnClick="Loginout_Click"  />
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                     <div class="clear">
 
                     </div>

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.Owin.Security;
+using Microsoft.Owin.Security.Cookies;
+using Microsoft.Owin.Security.OpenIdConnect;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -22,6 +25,20 @@ namespace CMDB2
             CR = Convert.ToString(TBox1.Text);
             Session["CR_Num"] = CR;
             Response.Redirect("WebForm5.aspx");
+        }
+        protected void Login_Click(object sender, EventArgs e)
+        {
+
+            Context.GetOwinContext().Authentication.Challenge(
+    new AuthenticationProperties { RedirectUri = "/" },
+    OpenIdConnectAuthenticationDefaults.AuthenticationType);
+        }
+
+        protected void Loginout_Click(object sender, EventArgs e)
+        {
+            Context.GetOwinContext().Authentication.SignOut(
+               OpenIdConnectAuthenticationDefaults.AuthenticationType,
+               CookieAuthenticationDefaults.AuthenticationType);
         }
     }
 }

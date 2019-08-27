@@ -1,13 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="CMDB2.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginSSO.aspx.cs" Inherits="CMDB2.LoginSSO" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-
-
-
-    <title>Forms</title>
+<head runat="server">
+    <title></title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
@@ -408,7 +405,7 @@ input[type="submit"]:focus {
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container-wrapper">
+     <div class="container-wrapper">
     <div class="top-part">
             <asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos/logo.png" Width="86px" class="logo" />
             <asp:Image ID="Image16" runat="server" ImageUrl="~/Photos and Logos/m-logo1.png"  class="logo1" />
@@ -419,31 +416,27 @@ input[type="submit"]:focus {
             <nav class="navBar">
                 
             </nav>
-            <div class="container">
+             <div class="container">
                 <div class="containerX">
                     
-    <label >CR Number</label>
+    <label >Please Click on Login for authenticating to Magneto</label>
     <%--<input type="text" id="CR_box" placeholder=" CR Number" runat="server"/>--%>
 
-                    <asp:TextBox ID="TBox1" runat="server" CssClass="textBox"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="pass" runat="server" ControlToValidate="TBox1" ErrorMessage="Please enter a CR Number"   
-ForeColor="Red"></asp:RequiredFieldValidator>  
-     <asp:Button ID="Button1" runat="server" Text="Proceed" CssClass="button1" OnClick="Button1_Click" Visible="true" />
-                      <%--  </asp:Panel>
-                  <asp:Panel ID="LogPanel" runat="server" Visible="false">   
-                    <asp:Button ID="Login1" runat="server" Text="Login"  CssClass="button1" OnClick="Login_Click" Visible="true"/>
-                    </asp:Panel>
-    <asp:Button ID="Loginout" runat="server" Text="Button"  OnClick="Loginout_Click" Visible="false"  />
-    <asp:Label ID="UsrName" runat="server" Text="Label" Visible="false"></asp:Label>--%>
+                    
+                     
+     
+                     <asp:Button ID="Login" runat="server" Text="Login" OnClick="Login_Click" Visible="true" CssClass="button1" />
+    <asp:Button ID="Loginout" runat="server" Text="Button"  OnClick="Loginout_Click"  Visible="false" />
+    <asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label>
+                      
                        
                     <div class="clear">
 
                     </div>
             </div>
                 </div>
-        </div>
-            </div>>
-         
+
+            </div>
     </form>
 </body>
 </html>

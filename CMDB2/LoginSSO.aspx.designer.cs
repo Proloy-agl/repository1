@@ -10,7 +10,7 @@
 namespace CMDB2 {
     
     
-    public partial class Login {
+    public partial class LoginSSO {
         
         /// <summary>
         /// form1 control.
@@ -40,30 +40,30 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.Image Image16;
         
         /// <summary>
-        /// TBox1 control.
+        /// Login control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBox1;
+        protected global::System.Web.UI.WebControls.Button Login;
         
         /// <summary>
-        /// pass control.
+        /// Loginout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator pass;
+        protected global::System.Web.UI.WebControls.Button Loginout;
         
         /// <summary>
-        /// Button1 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }

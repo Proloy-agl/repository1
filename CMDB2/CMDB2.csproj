@@ -133,6 +133,7 @@
     <Content Include="css_ms\reset_ms.css" />
     <Content Include="css_ms\style_ms.css" />
     <Content Include="Login.aspx" />
+    <Content Include="LoginSSO.aspx" />
     <Content Include="Photos and Logos\3.jpg" />
     <Content Include="Photos and Logos\4.jpg" />
     <Content Include="Photos and Logos\5.jpg" />
@@ -192,6 +193,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginSSO.aspx.cs">
+      <DependentUpon>LoginSSO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginSSO.aspx.designer.cs">
+      <DependentUpon>LoginSSO.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Choice.aspx.cs">

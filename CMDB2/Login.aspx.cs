@@ -17,11 +17,7 @@ namespace CMDB2
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (Request.IsAuthenticated)
-            {
-                
-                UsrName.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
-            }
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -30,38 +26,9 @@ namespace CMDB2
             CR = Convert.ToString(TBox1.Text);
             Session["CR_Num"] = CR;
             Button1.Visible = false;
+            Response.Redirect("WebForm5.aspx");
          
         }
-        protected void Login_Click(object sender, EventArgs e)
-        {
-
-            CR = Convert.ToString(TBox1.Text);
-            Session["CR_Num"] = CR;
-            
-
-            Context.GetOwinContext().Authentication.Challenge(
-       new AuthenticationProperties { RedirectUri = "https://magnetodev.azurewebsites.net/Login.aspx" },
-            OpenIdConnectAuthenticationDefaults.AuthenticationType);
-            CRNumBox.Visible = true;
-            LogPanel.Visible = false;
-            Login1.Visible = false;
-            Button1.Visible = true;
-            if (Request.IsAuthenticated)
-            {
-                
-                UsrName.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
-                Session["UserName"] = Convert.ToString(UsrName.Text);
-                
-
-              //  Response.Redirect("WebForm5.aspx");
-            }
-        }
-
-        protected void Loginout_Click(object sender, EventArgs e)
-        {
-            Context.GetOwinContext().Authentication.SignOut(
-               OpenIdConnectAuthenticationDefaults.AuthenticationType,
-               CookieAuthenticationDefaults.AuthenticationType);
-        }
+      
     }
 }

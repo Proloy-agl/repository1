@@ -202,7 +202,6 @@
       <DependentUpon>Choice.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup1.cs" />
-    <Compile Include="Startup11.cs" />
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

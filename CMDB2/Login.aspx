@@ -425,9 +425,9 @@ input[type="submit"]:focus {
     <%--<input type="text" id="CR_box" placeholder=" CR Number" runat="server"/>--%>
                     <asp:TextBox ID="TBox1" runat="server" CssClass="textBox"></asp:TextBox>
 
-     <asp:Button ID="Button1" runat="server" Text="Proceed" CssClass="button1" OnClick="Button1_Click" />
-                    <asp:Button ID="Login" runat="server" Text="Button" OnClick="Login_Click" />
-    <asp:Button ID="Loginout" runat="server" Text="Button"  OnClick="Loginout_Click"  />
+     <asp:Button ID="Button1" runat="server" Text="Proceed" CssClass="button1" OnClick="Button1_Click" Visible="false" />
+                    <asp:Button ID="Login" runat="server" Text="Login"  CssClass="button1" OnClick="Login_Click" />
+    <asp:Button ID="Loginout" runat="server" Text="Button"  OnClick="Loginout_Click" Visible="false"  />
     <asp:Label ID="UsrName" runat="server" Text="Label"></asp:Label>
                     <div class="clear">
 

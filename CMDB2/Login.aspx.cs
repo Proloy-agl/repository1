@@ -34,6 +34,10 @@ namespace CMDB2
         protected void Login_Click(object sender, EventArgs e)
         {
 
+            CR = Convert.ToString(TBox1.Text);
+            Session["CR_Num"] = CR;
+            
+
             Context.GetOwinContext().Authentication.Challenge(
     new AuthenticationProperties { RedirectUri = "https://magnetodev.azurewebsites.net/WebForm5.aspx" },
     OpenIdConnectAuthenticationDefaults.AuthenticationType);

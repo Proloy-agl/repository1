@@ -29,7 +29,8 @@ namespace CMDB2
             
             CR = Convert.ToString(TBox1.Text);
             Session["CR_Num"] = CR;
-            Response.Redirect("WebForm5.aspx");
+            Button1.Visible = false;
+          LoginPanel.Visible = true;
         }
         protected void Login_Click(object sender, EventArgs e)
         {
@@ -39,15 +40,15 @@ namespace CMDB2
             
 
             Context.GetOwinContext().Authentication.Challenge(
-    new AuthenticationProperties { RedirectUri = "https://magnetodev.azurewebsites.net/WebForm5.aspx" },
-    OpenIdConnectAuthenticationDefaults.AuthenticationType);
+       new AuthenticationProperties { RedirectUri = "https://magnetodev.azurewebsites.net/WebForm3.aspx" },
+            OpenIdConnectAuthenticationDefaults.AuthenticationType);
             if (Request.IsAuthenticated)
             {
                 CR = Convert.ToString(TBox1.Text);
                 Session["CR_Num"] = CR;
                 UsrName.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
                 Session["UserName"] = Convert.ToString(UsrName.Text);
-                Response.Redirect("WebForm5.aspx");
+              //  Response.Redirect("WebForm5.aspx");
             }
         }
 

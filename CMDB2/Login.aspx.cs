@@ -30,7 +30,7 @@ namespace CMDB2
             CR = Convert.ToString(TBox1.Text);
             Session["CR_Num"] = CR;
             Button1.Visible = false;
-          LoginPanel.Visible = true;
+         
         }
         protected void Login_Click(object sender, EventArgs e)
         {

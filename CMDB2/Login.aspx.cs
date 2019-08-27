@@ -43,6 +43,8 @@ namespace CMDB2
     OpenIdConnectAuthenticationDefaults.AuthenticationType);
             if (Request.IsAuthenticated)
             {
+                CR = Convert.ToString(TBox1.Text);
+                Session["CR_Num"] = CR;
                 UsrName.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
                 Session["UserName"] = Convert.ToString(UsrName.Text);
                 Response.Redirect("WebForm5.aspx");

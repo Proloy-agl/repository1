@@ -40,6 +40,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.Image Image16;
         
         /// <summary>
+        /// CRNumBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel CRNumBox;
+        
+        /// <summary>
         /// TBox1 control.
         /// </summary>
         /// <remarks>
@@ -67,13 +76,22 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// Login control.
+        /// LogPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel LogPanel;
         
+        /// <summary>
+        /// Login1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Login1;
         
         /// <summary>
         /// Loginout control.

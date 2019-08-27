@@ -40,14 +40,19 @@ namespace CMDB2
             
 
             Context.GetOwinContext().Authentication.Challenge(
-       new AuthenticationProperties { RedirectUri = "https://magnetodev.azurewebsites.net/WebForm3.aspx" },
+       new AuthenticationProperties { RedirectUri = "https://magnetodev.azurewebsites.net/Login.aspx" },
             OpenIdConnectAuthenticationDefaults.AuthenticationType);
+            CRNumBox.Visible = true;
+            LogPanel.Visible = false;
+            Login1.Visible = false;
+            Button1.Visible = true;
             if (Request.IsAuthenticated)
             {
-                CR = Convert.ToString(TBox1.Text);
-                Session["CR_Num"] = CR;
+                
                 UsrName.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
                 Session["UserName"] = Convert.ToString(UsrName.Text);
+                
+
               //  Response.Redirect("WebForm5.aspx");
             }
         }

@@ -31,7 +31,7 @@ namespace CMDB2
             ValE = Convert.ToInt32(ChoiceE = Session["value5"].ToString());
             ValF = 5;
            
-            CR = Session["CR_Num"].ToString();
+        CR = Session["CR_Num"].ToString();
           //  CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
             I_CR_Num.Text =CR;
             A_CR_Number.Text = CR;

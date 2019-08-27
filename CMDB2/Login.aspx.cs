@@ -35,7 +35,7 @@ namespace CMDB2
         {
 
             Context.GetOwinContext().Authentication.Challenge(
-    new AuthenticationProperties { RedirectUri = "/" },
+    new AuthenticationProperties { RedirectUri = "https://magnetodev.azurewebsites.net/WebForm5.aspx" },
     OpenIdConnectAuthenticationDefaults.AuthenticationType);
             if (Request.IsAuthenticated)
             {

@@ -17,6 +17,11 @@ namespace CMDB2
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (Request.IsAuthenticated)
+            {
+                
+                Label1.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)

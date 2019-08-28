@@ -1526,23 +1526,22 @@
         <div class="modal fade" id="myModal321" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
 
-                <!-- Modal content-->
+                 <!-- Modal content-->
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image17" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
                        <asp:Image ID="Image26" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <div>
-                                                   <p class="heading12">Please Select your action</p> 
-                        <div class="modal-containt">
-                                               
-                       <button type="button" id="ButtonTry2" class="button1 fltLeft" data-toggle="modal" data-target="#myModal4" onclick="pop1(0)">Create New Entry</button>  
+                    <div> 
+                        <p class="heading12">Please Select your action</p> 
+                        <div class="new-box">
+                           <button type="button" id="ButtonTry2" class="button1 fltLeft" data-toggle="modal" data-target="#myModal4" onclick="pop1(0)">Create New Entry</button>  
                         <asp:Button ID="Button17" runat="server" CssClass="button1 fltLeft" Text="Amend existing entry" OnClick="move_toGrid1" />
-                    
-                        <br />
-                        <div class="clear"></div>
-                            </div>
+                        </div>
+
+                        <div class="modal-containt new-box-container"></div>
+
                     </div>
                   
                    

@@ -314,7 +314,7 @@ function off() {
 				<div class="border1"></div>			
 				<div class="sfc-card-img" style="display: block;"> 
 					<picture>    
-						 <asp:Image ID="Image6" runat="server" ImageUrl="~/Photos and Logos/7.jpg"  class="lazy-removed"  />
+						 <asp:Image ID="Image6" runat="server" ImageUrl="~/Photos and Logos/8.jpg"  class="lazy-removed"  />
 					</picture> 
 				</div> 
 				<div class="sfc-card-content"> 

@@ -318,6 +318,7 @@
 
 
              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                       
                     </div>
                     
                     <asp:Panel ID="Panel2" runat="server">

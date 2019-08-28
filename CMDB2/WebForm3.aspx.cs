@@ -105,6 +105,7 @@ namespace CMDB2
                 Button28.Visible = true;
                 BPanel7.Visible = false;
                 d1.Visible = true;
+                Button28.Visible = false;
             }
             if ((ValA == 1) && (ValC == 1) && (ValB != 1) && (ValD != 1))
             {

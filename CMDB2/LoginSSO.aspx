@@ -118,7 +118,7 @@
             font-family: "Titillium Web",sans-serif;
             padding: 0;
             margin: 0;
-            background: #ccc;
+            background: #fff;
         }
 
         .clearfix::after {

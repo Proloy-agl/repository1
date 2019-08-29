@@ -16,8 +16,11 @@ namespace CMDB2
         public string UserName="";
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.UrlReferrer == null)
+            {
+                Response.Redirect("LoginSSO.aspx");
+            }
 
-            
         }
 
         protected void Button1_Click(object sender, EventArgs e)

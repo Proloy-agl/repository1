@@ -21,6 +21,10 @@ namespace CMDB2
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.UrlReferrer == null)
+            {
+                Response.Redirect("LoginSSO.aspx");
+            }
             string ChoiceA, ChoiceB, ChoiceC, ChoiceD, ChoiceE, ChoiceF;
        int ValA, ValB, ValC, ValD, ValE, ValF;
 

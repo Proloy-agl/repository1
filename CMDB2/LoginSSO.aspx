@@ -76,6 +76,30 @@
 
 
     <style>
+
+.loginbox {
+  background: #eceeee;
+  border: 1px solid #42464b;
+  border-radius: 6px;
+  height: 207px;
+  margin: 20px auto 0;
+  width: 298px;
+  box-shadow:0 20px 3px -9px #334;
+}
+      input[type="text"] {
+  
+  border: 1px solid #a1a3a3;
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  color: #696969;
+  height: 39px;
+  margin: 31px 0 0 29px;
+  padding-left: 37px;
+  transition: box-shadow 0.3s;
+  width: 240px;
+}
+
         html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
         del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
         fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
@@ -326,6 +350,8 @@ input[type="submit"]:focus {
     background-color: #0075CC;
     border: 0;
     float: right;
+    margin-right: 27px;
+    margin-top: 15px;
  
 }
 
@@ -368,16 +394,7 @@ input[type="submit"]:focus {
             width: auto;
         }
 
-        input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
+   
      .textBox  {
          width: 100%;
   padding: 12px;
@@ -417,27 +434,29 @@ input[type="submit"]:focus {
             <nav class="navBar">
                 
             </nav>
-             <div class="container">
-                <div class="containerX">
+            
+               
+
+                    <div class="loginbox" >
                     
-    <label >Please Click on Login for authenticating to Magneto</label>
-    <%--<input type="text" id="CR_box" placeholder=" CR Number" runat="server"/>--%>
+    <input type="text" placeholder="AGL ID" id="username"> 
+      <input type="text" placeholder="AGL SSO" id="Tbo" readonly="true"> 
 
                     
                      
-     
+     <div>
                      <asp:Button ID="Login" runat="server" Text="Login" OnClick="Login_Click" Visible="true" CssClass="button1" />
     <asp:Button ID="Loginout" runat="server" Text="Button"  OnClick="Loginout_Click"  Visible="false" />
     <asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label>
-                      
-                       
+               </div>        
+                   </div>    
                     <div class="clear">
 
                     </div>
             </div>
                 </div>
 
-            </div>
+           
     </form>
 </body>
 </html>

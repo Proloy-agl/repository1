@@ -12,7 +12,7 @@ namespace CMDB2
         public string choiceA, choiceB, choiceC, choiceD, choiceE, choiceF;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Label4.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
         }
 
         protected void Button1_Click(object sender, EventArgs e)

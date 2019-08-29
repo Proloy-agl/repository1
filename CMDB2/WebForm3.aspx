@@ -156,7 +156,7 @@
                                 <asp:RadioButtonList ID="DecomCBOX" runat="server">
                                     <asp:ListItem>Decommission Of Infrastructure</asp:ListItem>
                                     <asp:ListItem>Decommission Of Application</asp:ListItem>
-                                    <asp:ListItem>Decommission of Application and Infrastructure</asp:ListItem>
+                                    <%--<asp:ListItem>Decommission of Application and Infrastructure</asp:ListItem>--%>
                                 </asp:RadioButtonList>
                                 
                             </asp:Panel>

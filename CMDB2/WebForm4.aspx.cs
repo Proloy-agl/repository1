@@ -22,7 +22,8 @@ namespace CMDB2
                 Response.Redirect("LoginSSO.aspx");
             }
             string ChoiceF;
-            
+            string CR= Session["CR_Num"].ToString();
+
             varA = Convert.ToInt16(Session["value11"]);
             varB = Convert.ToInt16(Session["valueR"]);
             //ValF = Convert.ToInt32(ChoiceF = Session["value6"].ToString());
@@ -113,8 +114,8 @@ namespace CMDB2
 
             //Post Data 
             string PostURL = "http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
-
-            var client1 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/CRQ000000068504");
+            string URL_PUT = string.Concat(PostURL, CR);
+            var client1 = new RestClient(URL_PUT);
             var request1 = new RestRequest(Method.PUT);
             request1.AddHeader("cache-control", "no-cache");
             request1.AddHeader("Connection", "keep-alive");
@@ -130,7 +131,7 @@ namespace CMDB2
             request1.AddParameter("undefined", "{\r\n  \"values\":{\r\n    \r\n    \"Magneto Flag\": \"Yes\"\r\n  }\r\n}\r\n", ParameterType.RequestBody);
             IRestResponse response1 = client.Execute(request);
 
-            Response.Redirect("Login.aspx");
+            Response.Redirect("LoginSSO.aspx");
         }
     }
 }

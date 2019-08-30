@@ -127,8 +127,10 @@ namespace CMDB2
             request1.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
             request1.AddHeader("Authorization", tokenPass);
             request1.AddHeader("Content-Type", "application/json");
-            request1.AddParameter("undefined", "{\r\n  \"values\":{\r\n    \r\n    \"Magneto Flag\": \"No\"\r\n  }\r\n}\r\n", ParameterType.RequestBody);
+            request1.AddParameter("undefined", "{\r\n  \"values\":{\r\n    \r\n    \"Magneto Flag\": \"Yes\"\r\n  }\r\n}\r\n", ParameterType.RequestBody);
             IRestResponse response1 = client.Execute(request);
+
+            Response.Redirect("Login.aspx");
         }
     }
 }

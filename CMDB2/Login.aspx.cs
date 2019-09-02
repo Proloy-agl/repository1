@@ -14,6 +14,13 @@ namespace CMDB2
     {
         public string CR="";
         public string UserName="";
+
+        /*======================Magneto==========================================
+ =Function= Pageload for the CR Input page      
+ =Developed By= Proloy Mukherjee
+ =Action= Redirects if user has manually entered the URL
+ =Status= Working 
+ =========================================================================*/
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.UrlReferrer == null)
@@ -22,7 +29,12 @@ namespace CMDB2
             }
 
         }
-
+        /*======================Magneto==========================================
+        =Function= Captures CR information      
+        =Developed By= Proloy Mukherjee
+        =Action= CR input is passed to session variable CR_Num from the textbox input 
+        =Status= WORKING 
+        =========================================================================*/
         protected void Button1_Click(object sender, EventArgs e)
         {
             

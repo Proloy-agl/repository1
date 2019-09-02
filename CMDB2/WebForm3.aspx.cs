@@ -18,6 +18,13 @@ namespace CMDB2
         public int CR_Num;
 
         SqlConnection con = new SqlConnection("Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin");
+        
+        /*======================Magneto==========================================
+=Function= Page load for new entry page 
+=Developed By= Proloy Mukherjee
+=Action= converts the user selected choices as int foields and disoplays the tiles for modal display according to the logic
+=Status=working 
+=========================================================================*/
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -247,6 +254,12 @@ namespace CMDB2
 
         }
 
+        /*======================Magneto==========================================
+=Function=  submit function for infrastructure onboarding modal 
+=Developed By= Proloy Mukherjee
+=Action= captures the user inputs for infrastructure onboarding modal and commits the same to the [Audit_Infrastructure_CI] table 
+=Status= working
+=========================================================================*/
         protected void Infra_SumbitBtn_Click(object sender, EventArgs e)
         {
             
@@ -334,6 +347,12 @@ namespace CMDB2
             }
         }
 
+        /*======================Magneto==========================================
+     =Function=  submit function for Application modal 
+     =Developed By= Proloy Mukherjee
+     =Action= captures the user inputs for Application onboarding modal and commits the same to the [Audit_Application_CI] table 
+     =Status= working
+     =========================================================================*/
         protected void App_SumbitBtn_Click(object sender, EventArgs e)
         {
             string b1, b2, b3, b4, b5, b6, b7, b8;
@@ -404,6 +423,12 @@ namespace CMDB2
             }
         }
 
+        /*======================Magneto==========================================
+=Function= submit function for Application to Infra relationship modal
+=Developed By= Proloy Mukherjee
+=Action=captures the user inputs for Application to infra relationship modal and commits the same to the [Audit_Relationship_App_to_Infra] table 
+=Status= working
+=========================================================================*/
         protected void AtoI_SumbitBtn_Click(object sender, EventArgs e)
         {
             string c1, c2;
@@ -461,6 +486,13 @@ namespace CMDB2
                 }
             }
         }
+
+        /*======================Magneto==========================================
+=Function= submit function for Infra to Infra relationship modal
+=Developed By= Proloy Mukherjee
+=Action=captures the user inputs for Infra to Infra  relationship modal and commits the same to the [Audit_Relationship_Infra_to_Infra] table 
+=Status= working
+=========================================================================*/
         protected void ItoI_SumbitBtn_Click(object sender, EventArgs e)
         {
             string c1, c2;
@@ -517,7 +549,12 @@ namespace CMDB2
                 }
             }
         }
-        
+ /*======================Magneto==========================================
+=Function= submit function for Decommission modal
+=Developed By= Proloy Mukherjee
+=Action= displays the available decommissions types in magneto
+=Status=working 
+=========================================================================*/       
         protected void Dcom_SumbitBtn_Click(object sender, EventArgs e)
         {
             string c1, c2;
@@ -571,19 +608,37 @@ namespace CMDB2
             }
         }
 
-    
+ /*======================Magneto==========================================
+=Function= button click event for the move to amend amend existing entry        
+=Developed By= Proloy Mukherjee
+=Action= moves to the corresponding grid for changing the data  
+=Status=
+=========================================================================*/   
 
         protected void move_toGrid1(object sender, EventArgs e) {
            
             Session["value11"] = "2";
             Response.Redirect("WebForm4.aspx");
         }
+
+        /*======================Magneto==========================================
+ =Function= button click event for the move to amend amend existing entry        
+ =Developed By= Proloy Mukherjee
+ =Action= moves to the corresponding grid for changing the data  
+ =Status=
+ =========================================================================*/
         protected void move_toGrid(object sender, EventArgs e)
         {
             Session["value11"] = "1";
             Response.Redirect("WebForm4.aspx");
         }
 
+        /*======================Magneto==========================================
+=Function=
+=Developed By= Proloy Mukherjee
+=Action=
+=Status= IDLE / Not used 
+=========================================================================*/
         protected void Infra_Add_Click(object sender, EventArgs e)
         {
             CI_Name.Text = "";
@@ -594,12 +649,24 @@ namespace CMDB2
             System_Role.Text = "";
 
         }
+        /*======================Magneto==========================================
+=Function=
+=Developed By= Proloy Mukherjee
+=Action=
+=Status=
+=========================================================================*/
 
         protected void Workflow1(object sender, EventArgs e) {
             Response.Redirect("http://aglitremedyuat.agl.com.au:8080/arsys ");
 
         }
 
+        /*======================Magneto==========================================
+=Function=
+=Developed By= Proloy Mukherjee
+=Action=
+=Status=
+=========================================================================*/
         protected void decom1(object sender, EventArgs e) {
             if (DecomCBOX.SelectedValue == "Decommission Of Infrastructure") { BPanel5.Visible = true; }
             if (DecomCBOX.SelectedValue == "Decommission Of Application") { BPanel6.Visible = true; }
@@ -613,6 +680,12 @@ namespace CMDB2
             Button29.Visible = false;
         }
 
+        /*======================Magneto==========================================
+=Function=
+=Developed By= Proloy Mukherjee
+=Action=
+=Status=
+=========================================================================*/
         protected void Check1(object sender, EventArgs e)
         {
 
@@ -627,16 +700,14 @@ namespace CMDB2
             b7 = Application_Name.Text;
             b9 = DateTime.Now;
             b8 = "1";
-        //    if (b1 == "") { Error1.Visible = true; }
-            //if (b2 == "") { Error2.Visible = true; }
-            //if (b7 == "") { Error3.Visible = true; }
-            //if (b3 == "Select") { Error4.Visible = true; }
-            //if (b4 == "Select") { Error5.Visible = true; }
-            //if (b5 == "Select") { Error6.Visible = true; }
-            //if (b6 == "") { Error7.Visible = true; }
-            //Button6.Visible = true;
-            //Button30.Visible = false;
+       
         }
+        /*======================Magneto==========================================
+=Function=
+=Developed By= Proloy Mukherjee
+=Action=
+=Status=
+=========================================================================*/
         protected void Check2(object sender, EventArgs e)
         {
             string a1, a2, a3, a4, a5, a6, a7, a8, a9;
@@ -651,19 +722,15 @@ namespace CMDB2
             a7 = Site.Text;
             a8 = OEM_Supported.Text;
             a9 = I_CR_Num.Text;
-            //if (a1 == "") { Error9.Visible = true; }
-            //if (a2 == "Select") { Error10.Visible = true; }
-            //if (a3 == "") { Error11.Visible = true; }
-            //if (a4 == "") { Error12.Visible = true; }
-            //if (a5 == "Select") { Error13.Visible = true; }
-            //if (a6 == "") { Error14.Visible = true; }
-            //if (a7 == "") { Error15.Visible = true; }
-            //if (a8 == "") { Error16.Visible = true; }
-            //if (a9 == "") { Error8.Visible = true; }
-            //Button7.Visible = true;
-            //Button31.Visible = false;
+           
 
         }
+        /*======================Magneto==========================================
+=Function=
+=Developed By= Proloy Mukherjee
+=Action=
+=Status=
+=========================================================================*/
         protected void Submit(object sender, EventArgs e)
         {
             Session["value11"] = "3";

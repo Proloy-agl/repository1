@@ -10,6 +10,12 @@ namespace CMDB2
     public partial class WebForm5 : System.Web.UI.Page
     {
         public string choiceA, choiceB, choiceC, choiceD, choiceE, choiceF;
+        /*======================Magneto==========================================
+=Function= Page load for the homepage for Magneto interface 
+=Developed By= Proloy Mukherjee
+=Action=  Display the list of choices available for user in Magneto in Tiles like fashion, also receives the user name and passes to display 
+=Status= working 
+=========================================================================*/
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.UrlReferrer == null)
@@ -19,6 +25,12 @@ namespace CMDB2
             Label4.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
         }
 
+        /*======================Magneto==========================================
+=Function= Captures user initial choice if the same is for updating the CR details and redirects WebForm4 
+=Developed By= Proloy Mukherjee
+=Action= user selected updating existing CR for an open CR category 
+=Status=Working 
+=========================================================================*/
         protected void Button1_Click(object sender, EventArgs e)
         {
             string choiceF;
@@ -28,6 +40,12 @@ namespace CMDB2
             Session["value6"] = choiceF;
             Response.Redirect("WebForm4.aspx");
         }
+        /*======================Magneto==========================================
+=Function= First choice modal box submit function for creating new entries for a CR
+=Developed By= Proloy Mukherjee
+=Action= On click event for modal submissions for the choices available on selecting the "I am in process of creating a new CR" tile
+=Status=working 
+=========================================================================*/
 
         protected void modal_Submit(object sender, EventArgs e) {
             if (CheckBox6.Checked) { choiceA = Convert.ToString("1"); Session["value1"] = choiceA; } else { choiceA = Convert.ToString("5"); Session["value1"] = "5"; };

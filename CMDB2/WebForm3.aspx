@@ -406,7 +406,7 @@
                                     <asp:Label ID="Label4" runat="server" Text="Remedy Group"></asp:Label>
                                 </div>
                                 <div>
-                                    <asp:DropDownList ID="DropDownList9" runat="server" DataSourceID="SqlDataSource1" DataTextField="Support_Group_Name" DataValueField="Support_Group_Name"></asp:DropDownList>
+                                    <asp:DropDownList ID="DropDownList9" runat="server" DataSourceID="SqlDataSource2" DataTextField="Support_Group_Name" DataValueField="Support_Group_Name"></asp:DropDownList>
         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ARSystem1ConnectionString %>" SelectCommand="SELECT [Support_Group_Name] FROM [CTM_Support_Group]"></asp:SqlDataSource>
                                     
                                     <asp:DropDownList ID="DropDownList3" Visible="false" runat="server">

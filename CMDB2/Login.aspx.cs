@@ -55,7 +55,7 @@ namespace CMDB2
             request.AddHeader("Accept", "*/*");
             request.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
             request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
-            request.AddParameter("undefined", "username=svc_mobitio&password=svc_mobitio", ParameterType.RequestBody);
+            request.AddParameter("undefined", "username=svc_magneto&password=svc_magneto", ParameterType.RequestBody);
             IRestResponse response = client.Execute(request);
             var data = response.Content;
 

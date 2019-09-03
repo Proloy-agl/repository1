@@ -841,24 +841,6 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// DDGroup control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDGroup;
-        
-        /// <summary>
-        /// RemedyGroup control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource RemedyGroup;
-        
-        /// <summary>
         /// DropDownList3 control.
         /// </summary>
         /// <remarks>

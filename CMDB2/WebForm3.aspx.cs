@@ -360,7 +360,8 @@ namespace CMDB2
            
             b1 = A_CR_Number.Text;
             b2 = Application_ID.Text;
-            b3 = DropDownList2.SelectedValue;
+            b3 = DDGroup.SelectedValue;
+           // b3 = DropDownList2.SelectedValue;
             b4 = DropDownList1.SelectedValue;
             b5 = DropDownList3.SelectedValue;
             b6 = Environment_Instance.Text;

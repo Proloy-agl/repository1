@@ -357,7 +357,7 @@ namespace CMDB2
         {
             string b1, b2, b3, b4, b5, b6, b7, b8;
             DateTime b9;
-            DropDownList3.SelectedValue = DropDownList9.SelectedValue;
+           
             b1 = A_CR_Number.Text;
             b2 = Application_ID.Text;
             b3 = DropDownList2.SelectedValue;

@@ -83,9 +83,9 @@ namespace CMDB2
             IRestResponse response2 = client1.Execute(request1);
 
             JObject jsonResponse = (JObject)JsonConvert.DeserializeObject(response2.Content);
-            DataSet ds = new DataSet(Convert.ToString(jsonResponse));
+         
 
-            DataTable table1 = ds.Tables["JSON"];
+         
 
             var js = new JavaScriptSerializer();
             var d = js.Deserialize<dynamic>(Convert.ToString(jsonResponse));

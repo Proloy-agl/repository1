@@ -1,11 +1,15 @@
 ﻿using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OpenIdConnect;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using RestSharp;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
+using System.Web.Script.Serialization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -77,6 +81,16 @@ namespace CMDB2
             request1.AddHeader("Content-Type", "application/json");
             request1.AddHeader("Authorization", tokenPass);
             IRestResponse response2 = client1.Execute(request1);
+
+            JObject jsonResponse = (JObject)JsonConvert.DeserializeObject(response2.Content);
+            DataSet ds = new DataSet(Convert.ToString(jsonResponse));
+
+            DataTable table1 = ds.Tables["JSON"];
+
+            var js = new JavaScriptSerializer();
+            var d = js.Deserialize<dynamic>(Convert.ToString(jsonResponse));
+            string f2 = d["entries"][0]["values"]["Request ID"];
+
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             Response.Redirect("WebForm5.aspx");

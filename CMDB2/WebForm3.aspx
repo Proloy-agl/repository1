@@ -354,9 +354,10 @@
                                     <asp:Label ID="Label16" runat="server" Text="Application Name"></asp:Label>
                                 </div>
                                 <div>
-                                    <asp:TextBox ID="Application_Name" runat="server"></asp:TextBox>
-                                   <asp:Label ID="Error3" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="Application_Name" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>
+                                    <asp:TextBox ID="Application_Name" runat="server" Visible="false"></asp:TextBox>
+                                    <asp:DropDownList ID="DL3" runat="server"></asp:DropDownList>
+                                   <%--<asp:Label ID="Error3" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="Application_Name" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>--%>
                                 </div>
                             </li>
                             <li>
@@ -696,9 +697,10 @@
                                     <asp:Label ID="Label6" runat="server" Text="CI Name"></asp:Label>
                                 </div>
                                 <div>
-                                    <asp:TextBox ID="CI_Name" runat="server"></asp:TextBox>
-                                     <asp:Label ID="Error9" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" class="validate" ErrorMessage="*Required" ControlToValidate="CI_Name" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:DropDownList ID="DL4" runat="server"></asp:DropDownList>
+                                    <asp:TextBox ID="CI_Name" runat="server" Visible="false"></asp:TextBox>
+                                     <%--<asp:Label ID="Error9" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" class="validate" ErrorMessage="*Required" ControlToValidate="CI_Name" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>--%>
                                 </div>
                             </li>
                             <li>

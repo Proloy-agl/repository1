@@ -821,10 +821,10 @@ namespace CMDB2
 
             }
 
-            DL3.DataSource = AppCI;
-            DL3.DataBind();
-            DL4.DataSource = InfraCI;
-            DL4.DataBind();
+            //DL3.DataSource = AppCI;
+            //DL3.DataBind();
+            //DL4.DataSource = InfraCI;
+            //DL4.DataBind();
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

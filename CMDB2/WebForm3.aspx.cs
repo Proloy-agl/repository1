@@ -32,10 +32,10 @@ namespace CMDB2
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.UrlReferrer == null)
+          /*  if (Request.UrlReferrer == null)
             {
                 Response.Redirect("LoginSSO.aspx");
-            }
+            }*/
             string ChoiceA, ChoiceB, ChoiceC, ChoiceD, ChoiceE, ChoiceF;
        int ValA, ValB, ValC, ValD, ValE, ValF;
 
@@ -821,10 +821,10 @@ namespace CMDB2
 
             }
 
-            //DL3.DataSource = AppCI;
-            //DL3.DataBind();
-            //DL4.DataSource = InfraCI;
-            //DL4.DataBind();
+            DL3.DataSource = AppCI;
+            DL3.DataBind();
+            DL4.DataSource = InfraCI;
+            DL4.DataBind();
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

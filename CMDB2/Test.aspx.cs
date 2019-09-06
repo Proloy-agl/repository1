@@ -57,46 +57,46 @@ namespace CMDB2
             JObject jsonResponse10 = (JObject)JsonConvert.DeserializeObject(response10.Content);
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-            List<string> AppCI = new List<string>();
-            List<string> InfraCI = new List<string>();
+            //List<string> AppCI = new List<string>();
+            //List<string> InfraCI = new List<string>();
 
            
 
-            var js10 = new JavaScriptSerializer();
-            var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
-            int m = 1;
-            int n = 0;
-            dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
-            foreach (var obj in jsonObj.entries)
-            {
-                n = n + 1;
+            //var js10 = new JavaScriptSerializer();
+            //var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
+            //int m = 1;
+            //int n = 0;
+            //dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
+            //foreach (var obj in jsonObj.entries)
+            //{
+            //    n = n + 1;
 
-            }
-            for (int x = 0; x < n; x++)
-            {
-                if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
-                {
-                    string Value = d10["entries"][x]["values"]["Request Description01"];
-                    AppCI.Add(Value);
-                }
+            //}
+            //for (int x = 0; x < n; x++)
+            //{
+            //    if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
+            //    {
+            //        string Value = d10["entries"][x]["values"]["Request Description01"];
+            //        AppCI.Add(Value);
+            //    }
 
-                if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
-                {
-                    string Value = d10["entries"][x]["values"]["Request Description01"];
-                    InfraCI.Add(Value);
-                }
-                else
-                {
-                    m = m + 1;
+            //    if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
+            //    {
+            //        string Value = d10["entries"][x]["values"]["Request Description01"];
+            //        InfraCI.Add(Value);
+            //    }
+            //    else
+            //    {
+            //        m = m + 1;
                     
-                }
+            //    }
 
-            }
+            //}
 
-            DL3.DataSource = AppCI;
-            DL3.DataBind();
-            DL4.DataSource = InfraCI;
-            DL4.DataBind();
+            //DL3.DataSource = AppCI;
+            //DL3.DataBind();
+            //DL4.DataSource = InfraCI;
+            //DL4.DataBind();
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

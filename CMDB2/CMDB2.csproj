@@ -197,6 +197,7 @@
     <Content Include="Photos and Logos_ms\user-icon.png" />
     <Content Include="Photos and Logos_ms\~banner.jpg" />
     <Content Include="style.css" />
+    <Content Include="Test.aspx" />
     <Content Include="Web.config" />
     <Content Include="Choice.aspx" />
     <Content Include="WebForm2.aspx" />
@@ -229,6 +230,13 @@
       <DependentUpon>Choice.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup1.cs" />
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

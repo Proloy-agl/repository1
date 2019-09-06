@@ -61,21 +61,23 @@ namespace CMDB2
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             Label1.Text = tokenPass;
             Label2.Text = Convert.ToString( jsonResponse10) ;
-    //        List<string> AppCI = new List<string>();
-    //        List<string> InfraCI = new List<string>();
-    //        AppCI.Add("Select");
-    //        InfraCI.Add("Select");
 
-    //        var js10 = new JavaScriptSerializer();
-    //        var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
-    //        int m = 1;
-    //        int n = 0;
-    //        dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
+            List<string> AppCI = new List<string>();
+            List<string> InfraCI = new List<string>();
+            AppCI.Add("Select");
+            InfraCI.Add("Select");
 
-    //        Dictionary<string, object> csObj =
-    //js10.Deserialize<Dictionary<string, object>>(response10.Content);
-    //        n = ((ArrayList)csObj["entries"]).Count;
-    //        Label2.Text = Convert.ToString(n);
+            var js10 = new JavaScriptSerializer();
+           // var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
+            int m = 1;
+            int n = 0;
+            dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
+
+            Label2.Text = jsonObj;
+            //        Dictionary<string, object> csObj =
+            //js10.Deserialize<Dictionary<string, object>>(response10.Content);
+            //        n = ((ArrayList)csObj["entries"]).Count;
+            //        Label2.Text = Convert.ToString(n);
 
             //        Label1.Text = Convert.ToString(n);
             //        Label1.Text = tokenPass;

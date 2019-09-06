@@ -109,8 +109,8 @@ namespace CMDB2
 
             } while (i < n);
 
-            DL3.DataSource = AppCI;
-            DL3.DataBind();
+            //DL3.DataSource = AppCI;
+            //DL3.DataBind();
             //DL4.DataSource = InfraCI;
             //DL4.DataBind();
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

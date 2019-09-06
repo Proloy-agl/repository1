@@ -20,9 +20,10 @@ namespace CMDB2
         }
         protected void Test1(object sender, EventArgs e)
         {
+
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////////Generate Token/////////////////////////////////////////////////////////////
-            var client = new RestClient("https://jirauat.mobile.agl.com.au/api/jwt/login");
+            var client = new RestClient("http://glawi1283.agl.int:8008/api/jwt/login");
             var request = new RestRequest(Method.POST);
             request.AddHeader("cache-control", "no-cache");
             request.AddHeader("Connection", "keep-alive");
@@ -41,7 +42,7 @@ namespace CMDB2
             string data1 = "AR-JWT";
             string tokenPass = string.Concat(data1, " ", data);
             //////////////////////////////////Get CI items ///////////////////////////////////////////////////////////////////
-            var client10 = new RestClient("https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22CRQ000000087001%20%22");
+            var client10 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22CRQ000000087001%20%22");
             var request10 = new RestRequest(Method.GET);
             request10.AddHeader("cache-control", "no-cache");
             request10.AddHeader("Connection", "keep-alive");
@@ -69,34 +70,30 @@ namespace CMDB2
             int n = 0;
             dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
 
-    //        Dictionary<string, object> csObj =
-    //js10.Deserialize<Dictionary<string, object>>(response10.Content);
-    //        n =((ArrayList)csObj["entries"]).Count;
+            Dictionary<string, object> csObj =
+    js10.Deserialize<Dictionary<string, object>>(response10.Content);
+            n = ((ArrayList)csObj["entries"]).Count;
 
-       Label1.Text = Convert.ToString(n);
+            Label1.Text = Convert.ToString(n);
             Label1.Text = tokenPass;
 
-            //foreach (var obj in jsonObj.entries !=null)
-            //{
-            //    n = n + 1;
+           
+            for (int x = 0; x < n; x++)
+            {
 
-            //}
-            //for (int x = 0; x < n; x++)
-            //{
+                if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
+                {
+                    string Value1 = d10["entries"][x]["values"]["Request Description01"];
+                    AppCI.Add(Value1);
+                }
 
-            //if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
-            //{
-            //    string Value1 = d10["entries"][x]["values"]["Request Description01"];
-            //    AppCI.Add(Value1);
-            //}
+                if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
+                {
+                    string Value2 = d10["entries"][x]["values"]["Request Description01"];
+                    InfraCI.Add(Value2);
+                }
 
-            //    if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
-            //    {
-            //        string Value2 = d10["entries"][x]["values"]["Request Description01"];
-            //        InfraCI.Add(Value2);
-            //    }
-
-            //}
+            }
 
             //int i = 0;
             //do
@@ -110,10 +107,10 @@ namespace CMDB2
 
             //} while (i < n);
 
-            //DL3.DataSource = AppCI;
-            //DL3.DataBind();
-            //DL4.DataSource = InfraCI;
-            //DL4.DataBind();
+            DL3.DataSource = AppCI;
+            DL3.DataBind();
+            DL4.DataSource = InfraCI;
+            DL4.DataBind();
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

@@ -60,15 +60,11 @@ namespace CMDB2
             List<string> AppCI = new List<string>();
             List<string> InfraCI = new List<string>();
 
+           
 
             var js10 = new JavaScriptSerializer();
             var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
-
-
-
-            string f10 = d10["entries"][0]["values"]["Request Description01"];
-
-            string f11 = d10["entries"][1]["values"]["Request Description01"];
+            int m = 1;
             int n = 0;
             dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
             foreach (var obj in jsonObj.entries)
@@ -88,6 +84,11 @@ namespace CMDB2
                 {
                     string Value = d10["entries"][x]["values"]["Request Description01"];
                     InfraCI.Add(Value);
+                }
+                else
+                {
+                    m = m + 1;
+                    
                 }
 
             }

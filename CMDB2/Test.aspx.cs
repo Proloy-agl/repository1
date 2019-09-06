@@ -57,16 +57,16 @@ namespace CMDB2
             JObject jsonResponse10 = (JObject)JsonConvert.DeserializeObject(response10.Content);
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-            //List<string> AppCI = new List<string>();
-            //List<string> InfraCI = new List<string>();
+            List<string> AppCI = new List<string>();
+            List<string> InfraCI = new List<string>();
 
-           
 
-            //var js10 = new JavaScriptSerializer();
-            //var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
-            //int m = 1;
-            //int n = 0;
-            //dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
+
+            var js10 = new JavaScriptSerializer();
+            var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
+            int m = 1;
+            int n = 0;
+            dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
             //foreach (var obj in jsonObj.entries)
             //{
             //    n = n + 1;
@@ -88,7 +88,7 @@ namespace CMDB2
             //    else
             //    {
             //        m = m + 1;
-                    
+
             //    }
 
             //}

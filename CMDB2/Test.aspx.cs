@@ -60,8 +60,8 @@ namespace CMDB2
 
             List<string> AppCI = new List<string>();
             List<string> InfraCI = new List<string>();
-
-
+            AppCI.Add("Select");
+            InfraCI.Add("Select");
 
             var js10 = new JavaScriptSerializer();
             var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));

@@ -67,11 +67,11 @@ namespace CMDB2
             int m = 1;
             int n = 0;
             dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
-            //foreach (var obj in jsonObj.entries)
-            //{
-            //    n = n + 1;
+            foreach (var obj in jsonObj.entries)
+            {
+                n = n + 1;
 
-            //}
+            }
             //for (int x = 0; x < n; x++)
             //{
             //    if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")

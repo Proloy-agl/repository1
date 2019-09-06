@@ -23,7 +23,7 @@ namespace CMDB2
 
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////////Generate Token/////////////////////////////////////////////////////////////
-            var client = new RestClient("http://glawi1283.agl.int:8008/api/jwt/login");
+            var client = new RestClient("https://jirauat.mobile.agl.com.au/api/jwt/login");
             var request = new RestRequest(Method.POST);
             request.AddHeader("cache-control", "no-cache");
             request.AddHeader("Connection", "keep-alive");

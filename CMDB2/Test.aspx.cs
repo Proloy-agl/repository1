@@ -73,7 +73,7 @@ namespace CMDB2
     js10.Deserialize<Dictionary<string, object>>(response10.Content);
             n =Convert.ToInt16(((ArrayList)csObj["entries"]).Count);
 
-            Label1.Text = Convert.ToString(n);
+       Label1.Text = Convert.ToString(n);
 
             //foreach (var obj in jsonObj.entries !=null)
             //{

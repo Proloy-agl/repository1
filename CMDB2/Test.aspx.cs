@@ -72,31 +72,31 @@ namespace CMDB2
             //    n = n + 1;
 
             //}
-            //for (int x = 0; x < n; x++)
-            //{
-            //    if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
-            //    {
-            //        string Value = d10["entries"][x]["values"]["Request Description01"];
-            //        AppCI.Add(Value);
-            //    }
+            for (int x = 0; x < 2; x++)
+            {
+                if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
+                {
+                    string Value = d10["entries"][x]["values"]["Request Description01"];
+                    AppCI.Add(Value);
+                }
 
-            //    if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
-            //    {
-            //        string Value = d10["entries"][x]["values"]["Request Description01"];
-            //        InfraCI.Add(Value);
-            //    }
-            //    else
-            //    {
-            //        m = m + 1;
+                if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
+                {
+                    string Value = d10["entries"][x]["values"]["Request Description01"];
+                    InfraCI.Add(Value);
+                }
+                else
+                {
+                    m = m + 1;
 
-            //    }
+                }
 
-            //}
+            }
 
-            //DL3.DataSource = AppCI;
-            //DL3.DataBind();
-            //DL4.DataSource = InfraCI;
-            //DL4.DataBind();
+            DL3.DataSource = AppCI;
+            DL3.DataBind();
+            DL4.DataSource = InfraCI;
+            DL4.DataBind();
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

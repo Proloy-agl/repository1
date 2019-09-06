@@ -357,8 +357,7 @@
                                     <asp:Label ID="Label16" runat="server" Text="Application Name"></asp:Label>
                                 </div>
                                 <div>
-                                    <asp:TextBox ID="Application_Name" runat="server" Visible="false"></asp:TextBox>
- 
+                                    <asp:TextBox ID="Application_Name" runat="server" ></asp:TextBox>
                                    <asp:Label ID="Error3" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="Application_Name" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>
                                 </div>

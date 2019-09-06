@@ -73,6 +73,8 @@ namespace CMDB2
     js10.Deserialize<Dictionary<string, object>>(response10.Content);
             n = ((ArrayList)csObj["entries"]).Count;
 
+            Label1.Text = Convert.ToString(n);
+
             //foreach (var obj in jsonObj.entries !=null)
             //{
             //    n = n + 1;
@@ -80,37 +82,38 @@ namespace CMDB2
             //}
             for (int x = 0; x < n; x++)
             {
-                try
-                {
-                    if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
-                    {
-                        string Value1 = d10["entries"][x]["values"]["Request Description01"];
-                        AppCI.Add(Value1);
-                    }
 
-                    if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
-                    {
-                        string Value2 = d10["entries"][x]["values"]["Request Description01"];
-                        InfraCI.Add(Value2);
-                    }
-                }
-                catch
-                {
-                    m = m + 1;
-                }
+                Label2.Text = Convert.ToString(x);
+             
+                    //if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
+                    //{
+                    //    string Value1 = d10["entries"][x]["values"]["Request Description01"];
+                    //    AppCI.Add(Value1);
+                    //}
+
+                    //if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
+                    //{
+                    //    string Value2 = d10["entries"][x]["values"]["Request Description01"];
+                    //    InfraCI.Add(Value2);
+                    //}
+            
+               
 
 
 
             }
 
-            DL3.DataSource = AppCI;
-            DL3.DataBind();
-            DL4.DataSource = InfraCI;
-            DL4.DataBind();
+            //DL3.DataSource = AppCI;
+            //DL3.DataBind();
+            //DL4.DataSource = InfraCI;
+            //DL4.DataBind();
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
         }
+        
+
+
     }
 
 }

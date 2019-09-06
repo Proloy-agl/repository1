@@ -60,7 +60,7 @@ namespace CMDB2
             
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             Label1.Text = tokenPass;
-            Label2.Text ="" ;
+            Label2.Text = response10.Content ;
     //        List<string> AppCI = new List<string>();
     //        List<string> InfraCI = new List<string>();
     //        AppCI.Add("Select");

@@ -71,7 +71,7 @@ namespace CMDB2
 
             Dictionary<string, object> csObj =
     js10.Deserialize<Dictionary<string, object>>(response10.Content);
-            n = ((ArrayList)csObj["entries"]).Count;
+            n =Convert.ToInt16(((ArrayList)csObj["entries"]).Count);
 
             Label1.Text = Convert.ToString(n);
 

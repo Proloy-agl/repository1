@@ -23,7 +23,7 @@ namespace CMDB2
 
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////////Generate Token/////////////////////////////////////////////////////////////
-            var client = new RestClient("https://jirauat.mobile.agl.com.au/api/jwt/login");
+            var client = new RestClient("http://glawi1283.agl.int:8008/api/jwt/login");
             var request = new RestRequest(Method.POST);
             request.AddHeader("cache-control", "no-cache");
             request.AddHeader("Connection", "keep-alive");
@@ -42,7 +42,7 @@ namespace CMDB2
             string data1 = "AR-JWT";
             string tokenPass = string.Concat(data1, " ", data);
             //////////////////////////////////Get CI items ///////////////////////////////////////////////////////////////////
-            var client10 = new RestClient("http://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22CRQ000000087001%22");
+            var client10 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22CRQ000000087001%20%22");
             var request10 = new RestRequest(Method.GET);
             request10.AddHeader("cache-control", "no-cache");
             request10.AddHeader("Connection", "keep-alive");
@@ -53,7 +53,7 @@ namespace CMDB2
             request10.AddHeader("Accept", "*/*");
             request10.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
             request10.AddHeader("Content-Type", "application/json");
-            request10.AddHeader("Authorization", "AR-JWT eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcjNoQXI5c2RUZG5IbjNYVitMaWVJWTVKTFJtQmxRbmc3M2wzS3pHTW9NRGpVdml5WlwvdFhMNDZ0cXFtY2FUQ0FmMUFmQVZLZ29jZ3RIalZDeEZlNTh5YkNuUjBuend5SGdsb2grdnd4cGVJVzB4bWlrbWpaZz09IiwibmJmIjoxNTY3NzU2NDE4LCJpc3MiOiJHTEFXSTEyODQiLCJleHAiOjE1Njc3NjAxMzgsIl9jYWNoZUlkIjoyMjU2MjIsImlhdCI6MTU2Nzc1NjUzOCwianRpIjoiSURHQUFFSFhBSUhYNUFQWDQ2T1FQVzZWNjdYNzVXIn0.QDAsbAvBev7GBF1170ED4fO7ridF0eHi0S39SRZU9TI");
+            request10.AddHeader("Authorization", tokenPass);
             IRestResponse response10 = client10.Execute(request10);
 
             JObject jsonResponse10 = (JObject)JsonConvert.DeserializeObject(response10.Content);

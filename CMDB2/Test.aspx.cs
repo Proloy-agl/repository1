@@ -59,58 +59,48 @@ namespace CMDB2
             JObject jsonResponse10 = (JObject)JsonConvert.DeserializeObject(response10.Content);
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-            List<string> AppCI = new List<string>();
-            List<string> InfraCI = new List<string>();
-            AppCI.Add("Select");
-            InfraCI.Add("Select");
+    //        List<string> AppCI = new List<string>();
+    //        List<string> InfraCI = new List<string>();
+    //        AppCI.Add("Select");
+    //        InfraCI.Add("Select");
 
-            var js10 = new JavaScriptSerializer();
-            var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
-            int m = 1;
-            int n = 0;
-            dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
+    //        var js10 = new JavaScriptSerializer();
+    //        var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
+    //        int m = 1;
+    //        int n = 0;
+    //        dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
 
-            Dictionary<string, object> csObj =
-    js10.Deserialize<Dictionary<string, object>>(response10.Content);
-            n = ((ArrayList)csObj["entries"]).Count;
+    //        Dictionary<string, object> csObj =
+    //js10.Deserialize<Dictionary<string, object>>(response10.Content);
+    //        n = ((ArrayList)csObj["entries"]).Count;
 
-            Label1.Text = Convert.ToString(n);
-            Label1.Text = tokenPass;
+    //        Label1.Text = Convert.ToString(n);
+    //        Label1.Text = tokenPass;
 
            
-            for (int x = 0; x < n; x++)
-            {
+    //        for (int x = 0; x < n; x++)
+    //        {
 
-                if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
-                {
-                    string Value1 = d10["entries"][x]["values"]["Request Description01"];
-                    AppCI.Add(Value1);
-                }
+    //            if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
+    //            {
+    //                string Value1 = d10["entries"][x]["values"]["Request Description01"];
+    //                AppCI.Add(Value1);
+    //            }
 
-                if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
-                {
-                    string Value2 = d10["entries"][x]["values"]["Request Description01"];
-                    InfraCI.Add(Value2);
-                }
+    //            if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
+    //            {
+    //                string Value2 = d10["entries"][x]["values"]["Request Description01"];
+    //                InfraCI.Add(Value2);
+    //            }
 
-            }
+    //        }
 
-            //int i = 0;
-            //do
-            //{
-            //    if (d10["entries"][i]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
-            //    {
-            //        string Value1 = d10["entries"][i]["values"]["Request Description01"];
-            //        AppCI.Add(Value1);
-            //    }
-            //    i++;
+            
 
-            //} while (i < n);
-
-            DL3.DataSource = AppCI;
-            DL3.DataBind();
-            DL4.DataSource = InfraCI;
-            DL4.DataBind();
+    //        DL3.DataSource = AppCI;
+    //        DL3.DataBind();
+    //        DL4.DataSource = InfraCI;
+    //        DL4.DataBind();
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

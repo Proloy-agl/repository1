@@ -67,36 +67,36 @@ namespace CMDB2
             int m = 1;
             int n = 0;
             dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
-            //foreach (var obj in jsonObj.entries)
-            //{
-            //    n = n + 1;
-
-            //}
-            for (int x = 0; x < 2; x++)
+            foreach (var obj in jsonObj.entries !=null)
             {
-                if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
-                {
-                    string Value = d10["entries"][x]["values"]["Request Description01"];
-                    AppCI.Add(Value);
-                }
-
-                if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
-                {
-                    string Value = d10["entries"][x]["values"]["Request Description01"];
-                    InfraCI.Add(Value);
-                }
-                else
-                {
-                    m = m + 1;
-
-                }
+                n = n + 1;
 
             }
+            //for (int x = 0; x < n; x++)
+            //{
+            //    if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
+            //    {
+            //        string Value = d10["entries"][x]["values"]["Request Description01"];
+            //        AppCI.Add(Value);
+            //    }
 
-            DL3.DataSource = AppCI;
-            DL3.DataBind();
-            DL4.DataSource = InfraCI;
-            DL4.DataBind();
+            //    if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
+            //    {
+            //        string Value = d10["entries"][x]["values"]["Request Description01"];
+            //        InfraCI.Add(Value);
+            //    }
+            //    else
+            //    {
+            //        m = m + 1;
+
+            //    }
+
+            //}
+
+            //DL3.DataSource = AppCI;
+            //DL3.DataBind();
+            //DL4.DataSource = InfraCI;
+            //DL4.DataBind();
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

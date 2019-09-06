@@ -22,14 +22,14 @@ namespace CMDB2
         {
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////////Generate Token/////////////////////////////////////////////////////////////
-            var client = new RestClient("http://glawi1283.agl.int:8008/api/jwt/login");
+            var client = new RestClient("https://jirauat.mobile.agl.com.au/api/jwt/login");
             var request = new RestRequest(Method.POST);
             request.AddHeader("cache-control", "no-cache");
             request.AddHeader("Connection", "keep-alive");
-            request.AddHeader("Content-Length", "45");
+            request.AddHeader("Content-Length", "41");
             request.AddHeader("Accept-Encoding", "gzip, deflate");
-            request.AddHeader("Host", "glawi1283.agl.int:8008");
-            // request.AddHeader("Postman-Token", "ba7b4308-7ca3-423f-81df-7bafe5970493,80ff5308-7b89-4ca0-afb8-35707261710e");
+            request.AddHeader("Host", "jirauat.mobile.agl.com.au");
+            request.AddHeader("Postman-Token", "901b7816-bdc7-4068-b86c-b5c4ef7ca209,ba847dcf-cf82-4ef1-aea8-db4cbc12e6cf");
             request.AddHeader("Cache-Control", "no-cache");
             request.AddHeader("Accept", "*/*");
             request.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
@@ -41,7 +41,7 @@ namespace CMDB2
             string data1 = "AR-JWT";
             string tokenPass = string.Concat(data1, " ", data);
             //////////////////////////////////Get CI items ///////////////////////////////////////////////////////////////////
-            var client10 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22CRQ000000087001%20%22");
+            var client10 = new RestClient("https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22CRQ000000087001%20%22");
             var request10 = new RestRequest(Method.GET);
             request10.AddHeader("cache-control", "no-cache");
             request10.AddHeader("Connection", "keep-alive");
@@ -71,7 +71,7 @@ namespace CMDB2
 
             Dictionary<string, object> csObj =
     js10.Deserialize<Dictionary<string, object>>(response10.Content);
-            n =Convert.ToInt16(((ArrayList)csObj["entries"]).Count);
+            n =((ArrayList)csObj["entries"]).Count;
 
        Label1.Text = Convert.ToString(n);
 

@@ -47,7 +47,7 @@ namespace CMDB2
             request10.AddHeader("cache-control", "no-cache");
             request10.AddHeader("Connection", "keep-alive");
             request10.AddHeader("Accept-Encoding", "gzip, deflate");
-            request10.AddHeader("Host", "glawi1283.agl.int:8008");
+            request.AddHeader("Host", "jirauat.mobile.agl.com.au");
             request10.AddHeader("Postman-Token", "b9f14d6d-19ca-4d17-a820-daf1154bd2db,5fd63ab8-cfe2-456d-96f3-45b5da106246");
             request10.AddHeader("Cache-Control", "no-cache");
             request10.AddHeader("Accept", "*/*");
@@ -57,10 +57,10 @@ namespace CMDB2
             IRestResponse response10 = client10.Execute(request10);
 
             JObject jsonResponse10 = (JObject)JsonConvert.DeserializeObject(response10.Content);
-            JObject o = JObject.Parse(response10.Content);
+            
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             Label1.Text = tokenPass;
-            Label2.Text = Convert.ToString(o);
+            Label2.Text ="" ;
     //        List<string> AppCI = new List<string>();
     //        List<string> InfraCI = new List<string>();
     //        AppCI.Add("Select");

@@ -69,11 +69,12 @@ namespace CMDB2
             int n = 0;
             dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
 
-            Dictionary<string, object> csObj =
-    js10.Deserialize<Dictionary<string, object>>(response10.Content);
-            n =((ArrayList)csObj["entries"]).Count;
+    //        Dictionary<string, object> csObj =
+    //js10.Deserialize<Dictionary<string, object>>(response10.Content);
+    //        n =((ArrayList)csObj["entries"]).Count;
 
        Label1.Text = Convert.ToString(n);
+            Label1.Text = tokenPass;
 
             //foreach (var obj in jsonObj.entries !=null)
             //{
@@ -97,17 +98,17 @@ namespace CMDB2
 
             //}
 
-            int i = 0;
-            do
-            {
-                if (d10["entries"][i]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
-                {
-                    string Value1 = d10["entries"][i]["values"]["Request Description01"];
-                    AppCI.Add(Value1);
-                }
-                i++;
+            //int i = 0;
+            //do
+            //{
+            //    if (d10["entries"][i]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
+            //    {
+            //        string Value1 = d10["entries"][i]["values"]["Request Description01"];
+            //        AppCI.Add(Value1);
+            //    }
+            //    i++;
 
-            } while (i < n);
+            //} while (i < n);
 
             //DL3.DataSource = AppCI;
             //DL3.DataBind();

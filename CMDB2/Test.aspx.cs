@@ -42,7 +42,7 @@ namespace CMDB2
             string data1 = "AR-JWT";
             string tokenPass = string.Concat(data1, " ", data);
             //////////////////////////////////Get CI items ///////////////////////////////////////////////////////////////////
-            var client10 = new RestClient("http://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22CRQ000000087001%22");
+            var client10 = new RestClient("https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22CRQ000000087001%20%22");
             var request10 = new RestRequest(Method.GET);
             request10.AddHeader("cache-control", "no-cache");
             request10.AddHeader("Connection", "keep-alive");
@@ -57,10 +57,12 @@ namespace CMDB2
             IRestResponse response10 = client10.Execute(request10);
 
             JObject jsonResponse10 = (JObject)JsonConvert.DeserializeObject(response10.Content);
-            
+
+            dynamic json = JValue.Parse(response10.Content);
+            Label2.Text =Convert.ToString(json);
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             Label1.Text = tokenPass;
-            Label2.Text = Convert.ToString( jsonResponse10) ;
+      //      Label2.Text = Convert.ToString( jsonResponse10) ;
 
             List<string> AppCI = new List<string>();
             List<string> InfraCI = new List<string>();
@@ -68,44 +70,44 @@ namespace CMDB2
             InfraCI.Add("Select");
 
             var js10 = new JavaScriptSerializer();
-           // var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
+            var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
             int m = 1;
             int n = 0;
             dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
 
-            Label2.Text = jsonObj;
-            //        Dictionary<string, object> csObj =
-            //js10.Deserialize<Dictionary<string, object>>(response10.Content);
-            //        n = ((ArrayList)csObj["entries"]).Count;
-            //        Label2.Text = Convert.ToString(n);
+            
+            Dictionary<string, object> csObj =
+    js10.Deserialize<Dictionary<string, object>>(response10.Content);
+            n = ((ArrayList)csObj["entries"]).Count;
+           // Label2.Text = Convert.ToString(n);
 
-            //        Label1.Text = Convert.ToString(n);
-            //        Label1.Text = tokenPass;
-
-
-            //        for (int x = 0; x < n; x++)
-            //        {
-
-            //            if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
-            //            {
-            //                string Value1 = d10["entries"][x]["values"]["Request Description01"];
-            //                AppCI.Add(Value1);
-            //            }
-
-            //            if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
-            //            {
-            //                string Value2 = d10["entries"][x]["values"]["Request Description01"];
-            //                InfraCI.Add(Value2);
-            //            }
-
-            //        }
+            Label1.Text = Convert.ToString(n);
+            Label1.Text = tokenPass;
 
 
+            for (int x = 0; x < n; x++)
+            {
 
-            //        DL3.DataSource = AppCI;
-            //        DL3.DataBind();
-            //        DL4.DataSource = InfraCI;
-            //        DL4.DataBind();
+                if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
+                {
+                    string Value1 = d10["entries"][x]["values"]["Request Description01"];
+                    AppCI.Add(Value1);
+                }
+
+                if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
+                {
+                    string Value2 = d10["entries"][x]["values"]["Request Description01"];
+                    InfraCI.Add(Value2);
+                }
+
+            }
+
+
+
+            DL3.DataSource = AppCI;
+            DL3.DataBind();
+            DL4.DataSource = InfraCI;
+            DL4.DataBind();
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

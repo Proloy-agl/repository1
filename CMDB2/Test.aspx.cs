@@ -30,7 +30,7 @@ namespace CMDB2
             request.AddHeader("Content-Length", "41");
             request.AddHeader("Accept-Encoding", "gzip, deflate");
             request.AddHeader("Host", "jirauat.mobile.agl.com.au");
-            request.AddHeader("Postman-Token", "901b7816-bdc7-4068-b86c-b5c4ef7ca209,ba847dcf-cf82-4ef1-aea8-db4cbc12e6cf");
+            request.AddHeader("Postman-Token", "2332ba70-dcf1-4e0b-b248-8ad5c17500b3,f1624587-65bb-4734-87f7-25dc90c7e437");
             request.AddHeader("Cache-Control", "no-cache");
             request.AddHeader("Accept", "*/*");
             request.AddHeader("User-Agent", "PostmanRuntime/7.16.3");

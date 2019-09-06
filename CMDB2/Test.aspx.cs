@@ -42,7 +42,7 @@ namespace CMDB2
             string data1 = "AR-JWT";
             string tokenPass = string.Concat(data1, " ", data);
             //////////////////////////////////Get CI items ///////////////////////////////////////////////////////////////////
-            var client10 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22CRQ000000087001%20%22");
+            var client10 = new RestClient("https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22CRQ000000087001%20%22");
             var request10 = new RestRequest(Method.GET);
             request10.AddHeader("cache-control", "no-cache");
             request10.AddHeader("Connection", "keep-alive");
@@ -59,6 +59,7 @@ namespace CMDB2
             JObject jsonResponse10 = (JObject)JsonConvert.DeserializeObject(response10.Content);
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             Label1.Text = tokenPass;
+            Label2.Text = Convert.ToString(response10);
     //        List<string> AppCI = new List<string>();
     //        List<string> InfraCI = new List<string>();
     //        AppCI.Add("Select");

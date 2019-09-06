@@ -53,28 +53,28 @@ namespace CMDB2
             request10.AddHeader("Accept", "*/*");
             request10.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
             request10.AddHeader("Content-Type", "application/json");
-            request10.AddHeader("Authorization", tokenPass);
+            request10.AddHeader("Authorization", "AR-JWT eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcjNoQXI5c2RUZG5IbjNYVitMaWVJWTVKTFJtQmxRbmc3M2wzS3pHTW9NRGpVdml5WlwvdFhMNDZ0cXFtY2FUQ0FmMUFmQVZLZ29jZ3RIalZDeEZlNTh5YkNuUjBuend5SGdsb2grdnd4cGVJVzB4bWlrbWpaZz09IiwibmJmIjoxNTY3NzU2NDE4LCJpc3MiOiJHTEFXSTEyODQiLCJleHAiOjE1Njc3NjAxMzgsIl9jYWNoZUlkIjoyMjU2MjIsImlhdCI6MTU2Nzc1NjUzOCwianRpIjoiSURHQUFFSFhBSUhYNUFQWDQ2T1FQVzZWNjdYNzVXIn0.QDAsbAvBev7GBF1170ED4fO7ridF0eHi0S39SRZU9TI");
             IRestResponse response10 = client10.Execute(request10);
 
             JObject jsonResponse10 = (JObject)JsonConvert.DeserializeObject(response10.Content);
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             Label1.Text = tokenPass;
-            Label2.Text = Convert.ToString(response10);
-            List<string> AppCI = new List<string>();
-            List<string> InfraCI = new List<string>();
-            AppCI.Add("Select");
-            InfraCI.Add("Select");
+            Label2.Text = Convert.ToString(response10.Content);
+    //        List<string> AppCI = new List<string>();
+    //        List<string> InfraCI = new List<string>();
+    //        AppCI.Add("Select");
+    //        InfraCI.Add("Select");
 
-            var js10 = new JavaScriptSerializer();
-            var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
-            int m = 1;
-            int n = 0;
-            dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
+    //        var js10 = new JavaScriptSerializer();
+    //        var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
+    //        int m = 1;
+    //        int n = 0;
+    //        dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
 
-            Dictionary<string, object> csObj =
-    js10.Deserialize<Dictionary<string, object>>(response10.Content);
-            n = ((ArrayList)csObj["entries"]).Count;
-            Label2.Text = Convert.ToString(n);
+    //        Dictionary<string, object> csObj =
+    //js10.Deserialize<Dictionary<string, object>>(response10.Content);
+    //        n = ((ArrayList)csObj["entries"]).Count;
+    //        Label2.Text = Convert.ToString(n);
 
             //        Label1.Text = Convert.ToString(n);
             //        Label1.Text = tokenPass;

@@ -272,8 +272,8 @@ namespace CMDB2
             DateTime a12;
             System_Environment.Text = DropDownList5.SelectedValue;
             string a13;
-            //a1 = CI_Name.Text;
-            a1 = DL4.Text;
+          a1 = CI_Name.Text;
+           // a1 = DL4.Text;
             a2 = System_Environment.Text;
             a3 = Primary_Capability.Text;
             a4 = Owner.Text;
@@ -370,8 +370,8 @@ namespace CMDB2
             b4 = DropDownList1.SelectedValue;
             b5 = DropDownList3.SelectedValue;
             b6 = Environment_Instance.Text;
-            // b7 = Application_Name.Text;
-            b7 = DL3.Text;
+          b7 = Application_Name.Text;
+           // b7 = DL3.Text;
             b9 = DateTime.Now;
             b8 = "1";
             

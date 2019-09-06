@@ -412,7 +412,7 @@
                                     <%--<asp:DropDownList ID="DDGroup" runat="server" DataSourceID="RemedyGroup" DataTextField="Support_Group_Name" DataValueField="Support_Group_Name"></asp:DropDownList>
         <asp:SqlDataSource ID="RemedyGroup" runat="server" ConnectionString="<%$ ConnectionStrings:ARSystem1ConnectionString %>" SelectCommand="SELECT [Support_Group_Name] FROM [CTM_Support_Group]"></asp:SqlDataSource>--%>
                                     
-                                    <asp:DropDownList ID="DropDownList3" Visible="false" runat="server">
+                                    <asp:DropDownList ID="DropDownList3" runat="server">
                                         <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>AGLM ONT</asp:ListItem>
                                         <asp:ListItem>APP_ SAP CAPABILITY REV-TRAC & SALT</asp:ListItem>

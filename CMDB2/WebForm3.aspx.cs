@@ -273,8 +273,8 @@ namespace CMDB2
             DateTime a12;
             System_Environment.Text = DropDownList5.SelectedValue;
             string a13;
-          a1 = CI_Name.Text;
-           // a1 = DL4.Text;
+         // a1 = CI_Name.Text;
+          a1 = DL4.Text;
             a2 = System_Environment.Text;
             a3 = Primary_Capability.Text;
             a4 = Owner.Text;
@@ -371,8 +371,8 @@ namespace CMDB2
             b4 = DropDownList1.SelectedValue;
             b5 = DropDownList3.SelectedValue;
             b6 = Environment_Instance.Text;
-          b7 = Application_Name.Text;
-           // b7 = DL3.Text;
+         // b7 = Application_Name.Text;
+           b7 = DL3.Text;
             b9 = DateTime.Now;
             b8 = "1";
             
@@ -872,9 +872,9 @@ namespace CMDB2
             JObject jsonResponse10 = (JObject)JsonConvert.DeserializeObject(response10.Content);
 
             dynamic json = JValue.Parse(response10.Content);
-            Label2.Text = Convert.ToString(json);
+           
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            Label1.Text = tokenPass;
+           
             //      Label2.Text = Convert.ToString( jsonResponse10) ;
 
             List<string> AppCI = new List<string>();
@@ -894,8 +894,7 @@ namespace CMDB2
             n = ((ArrayList)csObj["entries"]).Count;
             // Label2.Text = Convert.ToString(n);
 
-            Label1.Text = Convert.ToString(n);
-            Label1.Text = tokenPass;
+           
 
 
             for (int x = 0; x < n; x++)

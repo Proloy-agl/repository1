@@ -80,28 +80,28 @@ namespace CMDB2
             //    n = n + 1;
 
             //}
-            for (int x = 0; x < n; x++)
-            {
+            //for (int x = 0; x < n; x++)
+            //{
 
-                Label2.Text = Convert.ToString(x);
+            //    Label2.Text = Convert.ToString(x);
              
-                    //if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
-                    //{
-                    //    string Value1 = d10["entries"][x]["values"]["Request Description01"];
-                    //    AppCI.Add(Value1);
-                    //}
+            //        //if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
+            //        //{
+            //        //    string Value1 = d10["entries"][x]["values"]["Request Description01"];
+            //        //    AppCI.Add(Value1);
+            //        //}
 
-                    //if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
-                    //{
-                    //    string Value2 = d10["entries"][x]["values"]["Request Description01"];
-                    //    InfraCI.Add(Value2);
-                    //}
+            //        //if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
+            //        //{
+            //        //    string Value2 = d10["entries"][x]["values"]["Request Description01"];
+            //        //    InfraCI.Add(Value2);
+            //        //}
             
                
 
 
 
-            }
+            //}
 
             //DL3.DataSource = AppCI;
             //DL3.DataBind();
@@ -111,7 +111,21 @@ namespace CMDB2
 
 
         }
-        
+        protected void Test2(object sender, EventArgs e)
+        {
+            string p = Label1.Text;
+            int m = Convert.ToInt16(p);
+            for (int x = 0; x < m; x++)
+            {
+
+                Label2.Text = Convert.ToString(x);
+
+              
+            }
+
+        }
+
+
 
 
     }

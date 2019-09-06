@@ -10,6 +10,7 @@
     <form id="form1" runat="server">
     <div>
         <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Test1" />
+        <asp:Button ID="Button2" runat="server" Text="Button" OnClick="Test2" />
         <asp:DropDownList ID="DL3" runat="server"></asp:DropDownList>
         <asp:DropDownList ID="DL4" runat="server"></asp:DropDownList>
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>

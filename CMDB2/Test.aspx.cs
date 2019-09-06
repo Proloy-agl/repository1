@@ -80,6 +80,7 @@ namespace CMDB2
             //}
             for (int x = 0; x < n; x++)
             {
+                try { 
                 if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
                 {
                     string Value = d10["entries"][x]["values"]["Request Description01"];
@@ -91,11 +92,13 @@ namespace CMDB2
                     string Value = d10["entries"][x]["values"]["Request Description01"];
                     InfraCI.Add(Value);
                 }
-                else
+                }
+                catch
                 {
                     m = m + 1;
-
                 }
+
+                
 
             }
 

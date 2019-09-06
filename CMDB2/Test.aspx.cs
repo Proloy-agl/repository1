@@ -58,7 +58,7 @@ namespace CMDB2
 
             JObject jsonResponse10 = (JObject)JsonConvert.DeserializeObject(response10.Content);
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+            Label1.Text = tokenPass;
     //        List<string> AppCI = new List<string>();
     //        List<string> InfraCI = new List<string>();
     //        AppCI.Add("Select");

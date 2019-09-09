@@ -15,6 +15,12 @@ namespace CMDB2
         public string CR;
         public int CR_Num;
 
+        /*======================Magneto==========================================
+=Function=
+=Developed By= Proloy Mukherjee
+=Action= PageLoad for the main page 
+=Status= working 
+=========================================================================*/
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.UrlReferrer == null)
@@ -32,14 +38,24 @@ namespace CMDB2
             Label2.Text = CR;
             TextBox1.Text = CR;
         }
-
+        /*======================Magneto==========================================
+       =Function= 
+       =Developed By= Proloy Mukherjee
+       =Action= move back to CR entry page 
+       =Status= working 
+       =========================================================================*/
         protected void Button2_Click1(object sender, EventArgs e)
         {
             
             Response.Redirect("Login.aspx");
            
         }
-
+        /*======================Magneto==========================================
+=Function=
+=Developed By= Proloy Mukherjee
+=Action=
+=Status=
+=========================================================================*/
         protected void Button1_Click(object sender, EventArgs e)
         {
             if (varA == 1) {
@@ -83,13 +99,26 @@ namespace CMDB2
             }
 
         }
-
+        /*======================Magneto==========================================
+       =Function=
+       =Developed By= Proloy Mukherjee
+       =Action=
+       =Status=
+       =========================================================================*/
         protected void Button2_Click(object sender, EventArgs e)
         {
             Response.Redirect("WebForm3.aspx");
         }
+ /*======================Magneto==========================================
+=Function= 
+=Developed By= Proloy Mukherjee
+=Action= post flag to AGL remedy UAT
+=Status= working
+=========================================================================*/
         protected void Button3_Click(object sender, EventArgs e)
         {
+
+            string CR= Session["CR_Num"].ToString();
             //generate Token
 
             var client = new RestClient("http://glawi1283.agl.int:8008/api/jwt/login");
@@ -115,7 +144,10 @@ namespace CMDB2
 
 
             //Post Data 
-            var client3 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/CRQ000000068504");
+            string PreURl = "http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
+            string URL=string.Concat(PreURl, CR);
+            var client3 = new RestClient(URL);
+            //var client3 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/CRQ000000068504");
             var request3 = new RestRequest(Method.PUT);
             request3.AddHeader("cache-control", "no-cache");
             request3.AddHeader("Connection", "keep-alive");

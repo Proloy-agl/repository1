@@ -376,7 +376,7 @@ namespace CMDB2
             a10 = 1;
             a11 = 1;
             a12 = DateTime.Now;
-            a13 = "pass";
+            a13 = "I";
             string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
             SqlConnection conn = null;
 
@@ -464,7 +464,7 @@ namespace CMDB2
          // b7 = Application_Name.Text;
            b7 = DL3.Text;
             b9 = DateTime.Now;
-            b8 = "1";
+            b8 = "I";
             
             string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
             SqlConnection conn = null;
@@ -549,7 +549,7 @@ namespace CMDB2
                     cmd.Parameters.AddWithValue("@var2", c1);
                     cmd.Parameters.AddWithValue("@var3", c2);
                     cmd.Parameters.AddWithValue("@var4", c3);
-                    cmd.Parameters.AddWithValue("@var5", "new");
+                    cmd.Parameters.AddWithValue("@var5", "I");
                     int rowsAffected = cmd.ExecuteNonQuery();
                     int test = rowsAffected;
                     if (rowsAffected == 1)
@@ -613,7 +613,7 @@ namespace CMDB2
                     cmd.Parameters.AddWithValue("@var2", c1);
                     cmd.Parameters.AddWithValue("@var3", c2);
                     cmd.Parameters.AddWithValue("@var4", c3);
-                    cmd.Parameters.AddWithValue("@var5", "new");
+                    cmd.Parameters.AddWithValue("@var5", "I");
                     int rowsAffected = cmd.ExecuteNonQuery();
                     int test = rowsAffected;
                     if (rowsAffected == 1)
@@ -675,7 +675,7 @@ namespace CMDB2
                     cmd.Parameters.AddWithValue("@var2", c1);
                     cmd.Parameters.AddWithValue("@var3", c2);
                     cmd.Parameters.AddWithValue("@var4", c3);
-                    cmd.Parameters.AddWithValue("@var5", "new");
+                    cmd.Parameters.AddWithValue("@var5", "I");
                     int rowsAffected = cmd.ExecuteNonQuery();
                     int test = rowsAffected;
                     if (rowsAffected == 1)

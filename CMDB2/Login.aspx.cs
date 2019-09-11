@@ -28,10 +28,10 @@ namespace CMDB2
  =========================================================================*/
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.UrlReferrer == null)
-            {
-                Response.Redirect("LoginSSO.aspx");
-            }
+            //if (Request.UrlReferrer == null)
+            //{
+            //    Response.Redirect("LoginSSO.aspx");
+            //}
 
         }
         /*======================Magneto==========================================

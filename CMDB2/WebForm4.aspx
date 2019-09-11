@@ -496,8 +496,8 @@
                                    <asp:BoundField DataField="Remedy_Group" HeaderText="Remedy_Group" SortExpression="Remedy_Group" />
                                    <asp:BoundField DataField="Application_Environment" HeaderText="Application_Environment" SortExpression="Application_Environment" />
                                    <%--<asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
-                                   <asp:BoundField DataField="Transaction_Timestamp" HeaderText="Transaction_Timestamp" SortExpression="Transaction_Timestamp" />
-                                   <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />--%>
+                                   <asp:BoundField DataField="Transaction_Timestamp" HeaderText="Transaction_Timestamp" SortExpression="Transaction_Timestamp" />--%>
+                                   <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />
                                </Columns>
                            </asp:GridView>
                            <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Audit_Application_CI] WHERE ([CR_NUMBER] = @CR_NUMBER) " UpdateCommand="UPDATE [Audit_Application_CI] SET [App_ID]=@App_ID,[Application_Name]=@Application_Name,[Application_Category]=@Application_Category,[Application_Complexity]=@Application_Complexity,[Remedy_Group]=@Remedy_Group,[Application_Environment]=@Application_Environment,[Transaction_Status]='U' where [Transaction_ID]=@Transaction_ID  " DeleteCommand="DELETE FROM [Audit_Application_CI] where [Transaction_ID]=@Transaction_ID">

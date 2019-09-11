@@ -645,7 +645,7 @@ DeleteCommand="DELETE FROM [Audit_Decomission] where [Transaction_ID]=@Transacti
                   </asp:Panel>
                   <asp:Button ID="Button2" runat="server" CssClass="button1" Text="Submit and Close" OnClick="Button3_Click"  />
        
-                  <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="http://aglitremedyuat.agl.com.au:8080/arsys " OnClick="Button2_Click1">LinkButton</asp:LinkButton>
+                  <asp:LinkButton ID="RemedyUAT" runat="server" PostBackUrl="http://aglitremedyuat.agl.com.au:8080/arsys " OnClick="Button2_Click1">LinkButton</asp:LinkButton>
           
             
              </form>

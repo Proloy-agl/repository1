@@ -306,8 +306,7 @@ namespace CMDB2
 
             List<string> AppCI = new List<string>();
             List<string> InfraCI = new List<string>();
-            //AppCI.Add("Select");
-            //InfraCI.Add("Select");
+            
 
             var js10 = new JavaScriptSerializer();
             var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
@@ -322,10 +321,12 @@ namespace CMDB2
             // Label2.Text = Convert.ToString(n);
 
 
-
+            
 
             for (int x = 0; x < n; x++)
             {
+                AppCI.Add("Select");
+                InfraCI.Add("Select");
 
                 if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
                 {
@@ -347,6 +348,8 @@ namespace CMDB2
             DL3.DataBind();
             DL4.DataSource = InfraCI;
             DL4.DataBind();
+
+
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

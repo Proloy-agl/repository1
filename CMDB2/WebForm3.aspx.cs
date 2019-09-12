@@ -33,10 +33,10 @@ namespace CMDB2
 
         protected void Page_Load(object sender, EventArgs e)
         {
-          /*  if (Request.UrlReferrer == null)
+            if (Request.UrlReferrer == null)
             {
                 Response.Redirect("LoginSSO.aspx");
-            }*/
+            }
             string ChoiceA, ChoiceB, ChoiceC, ChoiceD, ChoiceE, ChoiceF;
        int ValA, ValB, ValC, ValD, ValE, ValF;
 
@@ -306,8 +306,8 @@ namespace CMDB2
 
             List<string> AppCI = new List<string>();
             List<string> InfraCI = new List<string>();
-            AppCI.Add("Select");
-            InfraCI.Add("Select");
+            //AppCI.Add("Select");
+            //InfraCI.Add("Select");
 
             var js10 = new JavaScriptSerializer();
             var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));

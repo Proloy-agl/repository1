@@ -357,7 +357,10 @@
                                     <asp:Label ID="Label16" runat="server" Text="Application Name"></asp:Label>
                                 </div>
                                 <div>
-                                    <asp:DropDownList ID="DL3" runat="server"></asp:DropDownList>
+                                    <asp:DropDownList ID="DL3" runat="server">
+                                        <asp:ListItem>Select</asp:ListItem>
+                                    </asp:DropDownList>
+
                                     <asp:TextBox ID="Application_Name" runat="server" visible="false"></asp:TextBox>
                                    <asp:Label ID="Error3" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="DL3" ForeColor="Red" ValidationGroup="AppSub" InitialValue="Select"></asp:RequiredFieldValidator>

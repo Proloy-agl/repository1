@@ -308,7 +308,7 @@ namespace CMDB2
             List<string> InfraCI = new List<string>();
             
 
-            //AppCI.Add("Select");
+          // AppCI.Add("Select");
             //InfraCI.Add("Select");
 
             var js10 = new JavaScriptSerializer();

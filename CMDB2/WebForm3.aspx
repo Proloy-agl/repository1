@@ -374,9 +374,9 @@
                                 <div>
                                     <asp:DropDownList ID="DropDownList2" runat="server">
                                         <asp:ListItem>Select</asp:ListItem>
-                                        <asp:ListItem>GOLD</asp:ListItem>
-                                        <asp:ListItem>SILVER</asp:ListItem>
-                                        <asp:ListItem>BRONZE</asp:ListItem>
+                                        <asp:ListItem>Gold</asp:ListItem>
+                                        <asp:ListItem>Silver</asp:ListItem>
+                                        <asp:ListItem>Bronze</asp:ListItem>
                                         <asp:ListItem>No Categorization</asp:ListItem>
                                     </asp:DropDownList>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="DropDownList2" ForeColor="Red" ValidationGroup="AppSub" InitialValue="Select" ></asp:RequiredFieldValidator>

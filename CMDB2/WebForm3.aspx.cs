@@ -306,6 +306,8 @@ namespace CMDB2
 
             List<string> AppCI = new List<string>();
             List<string> InfraCI = new List<string>();
+            string APP_CIv;
+
             //AppCI.Add("Select");
             //InfraCI.Add("Select");
 
@@ -332,23 +334,29 @@ namespace CMDB2
                 {
                     string Value1 = d10["entries"][x]["values"]["Request Description01"];
                     AppCI.Add(Value1);
+                    DL3.DataSource = AppCI;
+                    DL3.DataValueField = Value1;
+                    DL3.DataBind();
                 }
 
                 if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
                 {
                     string Value2 = d10["entries"][x]["values"]["Request Description01"];
                     InfraCI.Add(Value2);
+                    DL4.DataSource = InfraCI;
+                    DL4.DataValueField = Value2;
+                    DL4.DataBind();
                 }
 
             }
 
+            
 
-
-            DL3.DataSource = AppCI;
-            DL3.DataBind();
-            DL4.DataSource = InfraCI;
-            DL4.DataBind();
-
+            //DL3.DataSource = AppCI;
+            //DL3.DataBind();
+            //DL4.DataSource = InfraCI;
+            //DL4.DataBind();
+            
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

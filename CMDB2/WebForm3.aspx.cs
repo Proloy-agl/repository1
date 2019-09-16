@@ -334,7 +334,13 @@ namespace CMDB2
                 {
                     string Value1 = d10["entries"][x]["values"]["Request Description01"];
                     AppCI.Add(Value1);
-                   
+
+                    string[] separators = { "Prod", "Non Prod" };
+                    
+                    string[] words = Value1.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (var word in words)
+                        AppCI.Add(word);
+
                 }
 
                 if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")

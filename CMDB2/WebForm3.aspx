@@ -708,7 +708,7 @@
                                     <asp:DropDownList ID="DL4" runat="server"></asp:DropDownList>
                                     <asp:TextBox ID="CI_Name" runat="server" Visible="false" ></asp:TextBox>
                                      <asp:Label ID="Error9" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
-                                   <%-- <asp:RequiredFieldValidator ID="RequiredFieldValidator5" class="validate" ErrorMessage="*Required" ControlToValidate="CI_Name" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>--%>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" class="validate" ErrorMessage="*Required" ControlToValidate="DL4" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
                             <li>

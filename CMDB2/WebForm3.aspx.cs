@@ -333,9 +333,9 @@ namespace CMDB2
                 if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
                 {
                     string Value1 = d10["entries"][x]["values"]["Request Description01"];
-                    AppCI.Add(Value1);
+                   // AppCI.Add(Value1);
 
-                    string[] separators = { "PROD", "NON PROD" };
+                    string[] separators = { "PROD", "NON PROD","DR" };
                     
                     string[] words = Value1.Split(separators, StringSplitOptions.RemoveEmptyEntries);
                     foreach (var word in words)
@@ -346,8 +346,15 @@ namespace CMDB2
                 if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
                 {
                     string Value2 = d10["entries"][x]["values"]["Request Description01"];
-                    InfraCI.Add(Value2);
-                    
+                   // InfraCI.Add(Value2);
+
+                    string[] separators = { "PROD", "NON PROD", "DR" };
+
+                    string[] words = Value2.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (var word in words)
+                        InfraCI.Add(word);
+
+
                 }
 
             }

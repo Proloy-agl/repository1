@@ -392,14 +392,14 @@
                                 <div>
                                     <asp:DropDownList ID="DropDownList1" runat="server">
                                         <asp:ListItem>Select</asp:ListItem>
-                                        <asp:ListItem>MEDIUM</asp:ListItem>
-                                        <asp:ListItem>SIMPLE</asp:ListItem>
-                                        <asp:ListItem>COMPLEX</asp:ListItem>
-                                        <asp:ListItem>CUSTOM A</asp:ListItem>
-                                        <asp:ListItem>CUSTOM B</asp:ListItem>
-                                        <asp:ListItem>CUSTOM D</asp:ListItem>
-                                        <asp:ListItem>CUSTOM E</asp:ListItem>
-                                        <asp:ListItem>CUSTOM F</asp:ListItem>
+                                        <asp:ListItem>Medium</asp:ListItem>
+                                        <asp:ListItem>Simple</asp:ListItem>
+                                        <asp:ListItem>Complex</asp:ListItem>
+                                        <asp:ListItem>Custom A</asp:ListItem>
+                                        <asp:ListItem>Custom B</asp:ListItem>
+                                        <asp:ListItem>Custom D</asp:ListItem>
+                                        <asp:ListItem>Custom E</asp:ListItem>
+                                        <asp:ListItem>Custom F</asp:ListItem>
                                         <asp:ListItem>API</asp:ListItem>
                                          <asp:ListItem>Not Defined</asp:ListItem>
                                     </asp:DropDownList>

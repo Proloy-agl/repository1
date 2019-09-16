@@ -1295,8 +1295,8 @@
                                 <li>
 
                                     <div>
-                                        <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
-                                         
+                                        <asp:TextBox ID="TextBox11" runat="server" Visible="false"></asp:TextBox>
+                                        <asp:DropDownList ID="DLApp" runat="server"></asp:DropDownList>
                                     </div>
                                     </li>
 
@@ -1304,8 +1304,8 @@
                                     <div>is hosted on</div>
                                     
                                     <div>
-                                        <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
-                                        
+                                        <asp:TextBox ID="TextBox12" runat="server" Visible="false"></asp:TextBox>
+                                        <asp:DropDownList ID="DLinf1" runat="server"></asp:DropDownList>
                                     </div>
                                       </li>
                                         <li>
@@ -1352,16 +1352,16 @@
                                 <li>
 
                                     <div>
-                                        <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
-                                         
+                                        <asp:TextBox ID="TextBox13" runat="server" Visible="false"></asp:TextBox>
+                                      <asp:DropDownList ID="DLinf3" runat="server"></asp:DropDownList>   
                                     </div>
                                     <div class="clear"></div>
 
                                     <div style="text-align: center"><b>is linked to storage CI</b></div>
                                     <div class="clear"></div>
                                     <div>
-                                        <asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
-                                        
+                                        <asp:TextBox ID="TextBox14" runat="server" Visible="false"></asp:TextBox>
+                                     <asp:DropDownList ID="DLinf4" runat="server"></asp:DropDownList>   
                                     </div>
                                 </li>
                             </ul>

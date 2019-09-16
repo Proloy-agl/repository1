@@ -1318,6 +1318,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.TextBox TextBox11;
         
         /// <summary>
+        /// DLApp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DLApp;
+        
+        /// <summary>
         /// TextBox12 control.
         /// </summary>
         /// <remarks>
@@ -1325,6 +1334,15 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox12;
+        
+        /// <summary>
+        /// DLinf1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DLinf1;
         
         /// <summary>
         /// DropDownList7 control.
@@ -1372,6 +1390,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.TextBox TextBox13;
         
         /// <summary>
+        /// DLinf3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DLinf3;
+        
+        /// <summary>
         /// TextBox14 control.
         /// </summary>
         /// <remarks>
@@ -1379,6 +1406,15 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox14;
+        
+        /// <summary>
+        /// DLinf4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DLinf4;
         
         /// <summary>
         /// Button9 control.

@@ -365,7 +365,14 @@ namespace CMDB2
             DL3.DataBind();
             DL4.DataSource = InfraCI;
             DL4.DataBind();
-
+            DLApp.DataSource = AppCI;
+            DLApp.DataBind();
+            DLinf1.DataSource = InfraCI;
+            DLinf1.DataBind();
+            DLinf4.DataSource = InfraCI;
+            DLinf4.DataBind();
+            DLinf3.DataSource = InfraCI;
+            DLinf3.DataBind();
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -555,8 +562,10 @@ namespace CMDB2
         protected void AtoI_SumbitBtn_Click(object sender, EventArgs e)
         {
             string c1, c2;
-            c1 = TextBox11.Text;
-            c2 = TextBox12.Text;
+           // c1 = TextBox11.Text;
+            c1 = DLApp.SelectedValue;
+            //  c2 = TextBox12.Text;
+            c2 = DLinf1.SelectedValue;
             DateTime c3 = DateTime.Now;
             string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
             SqlConnection conn = null;
@@ -619,8 +628,11 @@ namespace CMDB2
         protected void ItoI_SumbitBtn_Click(object sender, EventArgs e)
         {
             string c1, c2;
-            c1 = TextBox13.Text;
-            c2 = TextBox14.Text;
+            // c1 = TextBox13.Text;
+            c1 = DLinf3.SelectedValue;
+
+            // c2 = TextBox14.Text;
+            c2 = DLinf4.SelectedValue;
             DateTime c3 = DateTime.Now;
             string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
             SqlConnection conn = null;

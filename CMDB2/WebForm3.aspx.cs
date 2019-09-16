@@ -487,9 +487,9 @@ namespace CMDB2
                 {
                     cmd.Connection = conn;
                     cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "insert into [Audit_Application_CI](CR_NUMBER,App_ID,Application_Name,Application_Category,Application_Complexity,Remedy_Group,Application_Environment,Transaction_Timestamp,Transaction_Status) values (@var1,@var2,@var3,@var4,@var5,@var6,@var7,@var8,@var9)";
+                    cmd.CommandText = "insert into [Audit_Application_CI](CR_NUMBER,Application_Name,Application_Category,Application_Complexity,Remedy_Group,Application_Environment,Transaction_Timestamp,Transaction_Status) values (@var1,@var3,@var4,@var5,@var6,@var7,@var8,@var9)";
                     cmd.Parameters.AddWithValue("@var1", b1);
-                    cmd.Parameters.AddWithValue("@var2", b2);
+                 //   cmd.Parameters.AddWithValue("@var2", b2);
                     cmd.Parameters.AddWithValue("@var3", b7);
                     cmd.Parameters.AddWithValue("@var4", b3);
                     cmd.Parameters.AddWithValue("@var5", b4);

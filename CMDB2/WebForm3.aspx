@@ -343,14 +343,16 @@
                             </li>
 
                             <li>
+                                <asp:Panel runat="server" visible="false">
                                 <div>
                                     <asp:Label ID="Label1" runat="server" Text="Application ID"></asp:Label>
                                 </div>
                                 <div>
                                     <asp:TextBox ID="Application_ID" runat="server"></asp:TextBox>
                                      <asp:Label ID="Error2" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" class="validate" ErrorMessage="*Required" ControlToValidate="Application_ID" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>
+                                    <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" class="validate" ErrorMessage="*Required" ControlToValidate="Application_ID" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>--%>
                                 </div>
+                                </asp:Panel>
                             </li>
                             <li>
                                 <div>

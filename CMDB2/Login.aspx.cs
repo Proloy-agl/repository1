@@ -29,10 +29,10 @@ namespace CMDB2
  =========================================================================*/
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (Request.UrlReferrer == null)
-            //{
-            //    Response.Redirect("LoginSSO.aspx");
-            //}
+            if (Request.UrlReferrer == null)
+            {
+                Response.Redirect("LoginSSO.aspx");
+            }
 
         }
         /*======================Magneto==========================================
@@ -43,12 +43,12 @@ namespace CMDB2
         =========================================================================*/
         protected void Button1_Click(object sender, EventArgs e)
         {
-            
+            ////////////////////////////////////////////////////////////////////////////
             CR = Convert.ToString(TBox1.Text);
             Session["CR_Num"] = CR;
             Button1.Visible = false;
             ////////////////////////////////////////////////////////////////////////////
-            string status = "scheduled";
+            string status = "Scheduled";
             string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
             SqlConnection conn = null;
             try

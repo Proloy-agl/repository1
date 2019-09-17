@@ -375,42 +375,7 @@ namespace CMDB2
             DLinf3.DataBind();
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            string status = "scheduled";
-            string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
-            SqlConnection conn = null;
-            try
-            {
-                conn = new SqlConnection(connString);
-                conn.Open();
-                using (SqlCommand cmd = new SqlCommand())
-                {
-                    cmd.Connection = conn;
-                    cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "insert into [CR_Info](CR_Number,CR_Status) values (@var1,@var2)";
-                    cmd.Parameters.AddWithValue("@var1", CR);
-                    cmd.Parameters.AddWithValue("@var2", status);
-
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    int test = rowsAffected;
-                    if (rowsAffected == 1) { }
-                    else
-                    {
-
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-
-
-            }
-            finally
-            {
-                if (conn != null)
-                {
-                    //cleanup connection i.e close 
-                }
-            }
+            
 
 
 

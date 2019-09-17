@@ -7,6 +7,7 @@ using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Script.Serialization;
@@ -28,10 +29,10 @@ namespace CMDB2
  =========================================================================*/
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.UrlReferrer == null)
-            {
-                Response.Redirect("LoginSSO.aspx");
-            }
+            //if (Request.UrlReferrer == null)
+            //{
+            //    Response.Redirect("LoginSSO.aspx");
+            //}
 
         }
         /*======================Magneto==========================================
@@ -47,8 +48,46 @@ namespace CMDB2
             Session["CR_Num"] = CR;
             Button1.Visible = false;
             ////////////////////////////////////////////////////////////////////////////
+            string status = "scheduled";
+            string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
+            SqlConnection conn = null;
+            try
+            {
+                conn = new SqlConnection(connString);
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "insert into [CR_Info](CR_Number,CR_Status) values (@var1,@var2)";
+                    cmd.Parameters.AddWithValue("@var1", CR);
+                    cmd.Parameters.AddWithValue("@var2", status);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    int test = rowsAffected;
+                    if (rowsAffected == 1) { }
+                    else
+                    {
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    //cleanup connection i.e close 
+                }
+            }
+
+
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-          
+
             Response.Redirect("WebForm5.aspx");
          
         }

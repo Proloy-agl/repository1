@@ -114,6 +114,21 @@
             return;
         }
 
+        function pop8(x) {
+            if (x == 0)
+                $('myModal').modal('hide');
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
+            return;
+        }
+        function pop9(x) {
+            if (x == 0)
+                $('myModal2').modal('hide');
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
+            return;
+        }
+
 
         function myFunction() {
             var txt;
@@ -338,7 +353,7 @@
             <asp:Image ID="Image18" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
 
 
-             <button type="button" class="close" data-toggle="modal" data-target="#myModal1to2" data-dismiss="modal">&times;</button>
+             <button type="button" class="close" data-toggle="modal" data-target="#myModal1to2" data-dismiss="modal" onclick="pop8(0)">&times;</button>
                        
                     </div>
                     
@@ -699,7 +714,7 @@
                     <div class="top-part12">
                         <asp:Image ID="Image3" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
                         <asp:Image ID="Image19" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
-          <button type="button" class="close" data-toggle="modal" data-target="#myModal2to3" data-dismiss="modal">&times;</button>
+          <button type="button" class="close" data-toggle="modal" data-target="#myModal2to3" data-dismiss="modal" onclick="pop9(0)">&times;</button>
                     </div>
                     <p class="heading12">Please complete the Infrastructure attribute details</p>
                     <div class="new-box">

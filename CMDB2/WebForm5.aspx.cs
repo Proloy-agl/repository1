@@ -33,7 +33,7 @@ namespace CMDB2
 =========================================================================*/
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string choiceF;
+            string choiceF="";
             Session["valueR"] = 1;
 
             choiceF = Convert.ToString("1");

@@ -106,6 +106,14 @@
             return;
         }
 
+        function pop7(x) {
+            if (x == 0)
+                $('myModal4').modal('hide');
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
+            return;
+        }
+
 
         function myFunction() {
             var txt;
@@ -1352,7 +1360,7 @@
                     <div class="top-part12">
                         <asp:Image ID="Image5" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
                        <asp:Image ID="Image21" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
-              <button type="button" class="close" data-dismiss="modal" data-backdrop="false">&times;</button>
+              <button type="button" class="close" data-dismiss="modal" onclick="pop7(0)">&times;</button>
                     </div>
                     <p class="heading12">Infrastructure to Infrastructure Relationship</p>
                     <div class="new-box">

@@ -1,3 +1,5 @@
+.body { padding-right: 0 !important }
+
  .container-wrapper {
      width: 100%;
      margin: 0 auto;

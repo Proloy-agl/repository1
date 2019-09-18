@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet" />
     <link href="style.css" rel="stylesheet"/>
    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
     <script>
         $(document).ready(function () {
             //$("#L1").mouseenter(function () {

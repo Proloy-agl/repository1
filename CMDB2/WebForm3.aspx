@@ -99,7 +99,10 @@
         }
 
         function pop6(x) {
-            if (x == 0) document.getElementById('myModal3').style.display = 'none';
+            if (x == 0)
+                $('myModal3').modal('hide');
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
             return;
         }
 
@@ -1293,7 +1296,7 @@
                     <div class="top-part12">
                         <asp:Image ID="Image4" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
                        <asp:Image ID="Image20" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"  onclick="pop6(0)"><span aria-hidden="true">&times;</span></button>
                     </div>
                     <p class="heading12">Application to Infrastructure Relationship</p>
                      <div class="new-box">

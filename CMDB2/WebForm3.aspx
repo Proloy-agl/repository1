@@ -1285,7 +1285,7 @@
             </div>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="myModal3" data-keyboard="false" data-backdrop="static" role="dialog" >
+        <div id="myModal3" data-keyboard="false" data-backdrop="static" role="dialog" >
             <div class="modal-dialog">
 
                 <!-- Modal content-->

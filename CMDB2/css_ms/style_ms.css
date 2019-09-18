@@ -513,14 +513,16 @@ modal-footer .logo1-secured {
 
  .banner-text
  {
-     color:#fff;
-     font-size:22px;
-     font-weight:bold;
-     position:absolute;
-     z-index:9;
-     top:16px;
-     left:21px;
-     font-family:"Titillium Web";
+     color: #fff;
+    font-size: 38px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 9;
+    top: 12px;
+    left: 27px;
+    font-family: "Titillium Web";
+    text-shadow: 2px 2px #757575;
+    border-bottom: 1px solid #fff;
  }
 
 

@@ -243,7 +243,7 @@ function off() {
          <div class="container-wrapper">
            <div class="top-part">
             <asp:Image ID="Image2" runat="server" ImageUrl="~/Photos and Logos/logo.png" Width="86px" class="logo" />
-            <asp:Image ID="Image7" runat="server" ImageUrl="~/Photos and Logos/m-logo1.png"  class="logo1" />
+            <asp:Image ID="Image7" runat="server" ImageUrl="~/Photos and Logos/magneto-logo.png"  class="logo1" />
             &nbsp
         </div>
             <div>
@@ -255,7 +255,7 @@ function off() {
             </div>
             <div class="banner-containt">
                <div class="banner">
-                   <div class="banner-text"><asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos/magneto.png"/></div>
+                   <div class="banner-text"><%--<asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos/magneto.png"/>--%>AGL Next Gen CMDB</div>
                   <div id="myCarousel" class="carousel slide" data-ride="carousel">
                      <!-- Indicators -->
                      <ol class="carousel-indicators">

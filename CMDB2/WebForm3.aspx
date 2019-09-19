@@ -369,7 +369,7 @@
                                     <asp:Label ID="Label15" runat="server" Text="CR Number"></asp:Label>
                                 </div>
                                 <div>
-                                    <asp:TextBox ID="A_CR_Number" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="A_CR_Number" runat="server" ReadOnly="true"></asp:TextBox>
                                    <%-- <asp:Label ID="Error1" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>--%>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" class="validate" runat="server" ErrorMessage="*Required" ControlToValidate="A_CR_Number" ForeColor="Red" ValidationGroup="AppSub"></asp:RequiredFieldValidator>
                                 </div>
@@ -725,7 +725,7 @@
                                     <asp:Label ID="Label14" runat="server" Text="CR Number"></asp:Label>
                                 </div>
                                 <div>
-                                    <asp:TextBox ID="I_CR_Num" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="I_CR_Num" runat="server" ReadOnly="true"></asp:TextBox>
                                      <asp:Label ID="Error8" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                      <asp:RequiredFieldValidator ID="RequiredFieldValidator4"  class="validate"  ErrorMessage="*Required" ControlToValidate="I_CR_Num" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>

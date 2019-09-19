@@ -418,7 +418,7 @@ input[type="submit"]:focus {
        
         <div>
             <nav class="navBar">
-                 <asp:Image ID="Image3" runat="server" ImageUrl="~/Photos and Logos_ms/user-I.png"  class="user"  />
+                 <asp:Image ID="Image3" runat="server" ImageUrl="~/Photos and Logos_ms/user-icon.png"  class="user"  />
                    <asp:Label ID="Label4" runat="server" ForeColor="White"></asp:Label>
             </nav>
             <div class="container">

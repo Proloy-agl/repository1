@@ -454,6 +454,13 @@ namespace CMDB2
                         DropDownList5.SelectedValue = "Select";
                         Button28.Visible = true;
 
+                        Button1.Disabled = true;
+                        Button2.Disabled = true;
+                        Button3.Disabled = false;
+                        Button4.Disabled = true;
+
+
+
                     }
                     else
                     {
@@ -530,7 +537,12 @@ namespace CMDB2
                         Y1 = 1;
                         Button19.Visible = true;
                         Final1.Visible = true;
-                       
+
+                        Button1.Disabled = true;
+                        Button2.Disabled = false;
+                        Button3.Disabled = true;
+                        Button4.Disabled = true;
+
                     }
                     else
                     {
@@ -599,6 +611,11 @@ namespace CMDB2
                         Final1.Visible = true;
                         TextBox11.Text = "";
                         TextBox12.Text = "";
+
+                        Button1.Disabled = true;
+                        Button2.Disabled = true;
+                        Button3.Disabled = true;
+                        Button4.Disabled = false;
                     }
                     else
                     {

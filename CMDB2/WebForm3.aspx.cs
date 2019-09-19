@@ -396,7 +396,7 @@ namespace CMDB2
             System_Environment.Text = DropDownList5.SelectedValue;
             string a13;
          // a1 = CI_Name.Text;
-          a1 = DL4.Text;
+          a1 = DL4.SelectedItem.Text; 
             a2 = System_Environment.Text;
             a3 = Primary_Capability.Text;
             a4 = Owner.Text;
@@ -501,7 +501,7 @@ namespace CMDB2
             b5 = DropDownList3.SelectedValue;
             b6 = Environment_Instance.Text;
          // b7 = Application_Name.Text;
-            b7 = DL3.Text;
+            b7 = DL3.SelectedItem.Text; 
             b9 = DateTime.Now;
             b8 = "I";
             
@@ -576,9 +576,10 @@ namespace CMDB2
         {
             string c1, c2;
            // c1 = TextBox11.Text;
-            c1 = DLApp.SelectedValue;
+            c1 = DLApp.SelectedItem.Text;
+           
             //  c2 = TextBox12.Text;
-            c2 = DLinf1.SelectedValue;
+            c2 = DLinf1.SelectedItem.Text;
             DateTime c3 = DateTime.Now;
             string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
             SqlConnection conn = null;
@@ -647,10 +648,10 @@ namespace CMDB2
         {
             string c1, c2;
             // c1 = TextBox13.Text;
-            c1 = DLinf3.SelectedValue;
+            c1 = DLinf3.SelectedItem.Text;
 
             // c2 = TextBox14.Text;
-            c2 = DLinf4.SelectedValue;
+            c2 = DLinf4.SelectedItem.Text;
             DateTime c3 = DateTime.Now;
             string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
             SqlConnection conn = null;

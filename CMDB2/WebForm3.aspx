@@ -350,7 +350,7 @@
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                          <asp:Image ID="Image2" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-            <asp:Image ID="Image18" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+            <asp:Image ID="Image18" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
 
 
              <button type="button" class="close" data-toggle="modal" data-target="#myModal1to2" data-dismiss="modal" onclick="pop8(0)">&times;</button>
@@ -713,7 +713,7 @@
                 <div class="modal-content">
                     <div class="top-part12">
                         <asp:Image ID="Image3" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                        <asp:Image ID="Image19" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                        <asp:Image ID="Image19" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
           <button type="button" class="close" data-toggle="modal" data-target="#myModal2to3" data-dismiss="modal" onclick="pop9(0)">&times;</button>
                     </div>
                     <p class="heading12">Please complete the Infrastructure attribute details</p>
@@ -1318,7 +1318,7 @@
                 <div class="modal-content">
                     <div class="top-part12">
                         <asp:Image ID="Image4" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image20" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image20" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"  onclick="pop6(0)"><span aria-hidden="true">&times;</span></button>
                     </div>
                     <p class="heading12">Application to Infrastructure Relationship</p>
@@ -1374,7 +1374,7 @@
                 <div class="modal-content">
                     <div class="top-part12">
                         <asp:Image ID="Image5" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image21" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image21" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
               <button type="button" class="close" data-dismiss="modal" onclick="pop7(0)">&times;</button>
                     </div>
                     <p class="heading12">Infrastructure to Infrastructure Relationship</p>
@@ -1422,7 +1422,7 @@
                 <div class="modal-content">
                     <div class="top-part12">
                         <asp:Image ID="Image6" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image22" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image22" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
@@ -1477,7 +1477,7 @@
                 <div class="modal-content">
                     <div class="top-part12">
                         <asp:Image ID="Image7" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                        <asp:Image ID="Image23" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                        <asp:Image ID="Image23" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">Please select the category of application/Infrastructure/Relationship details to be updated</p>
@@ -1513,7 +1513,7 @@
                 <div class="modal-content">
                     <div class="top-part12">
                         <asp:Image ID="Image14" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image24" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image24" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <p class="heading12">This page displays data based on CR number </p>
@@ -1548,7 +1548,7 @@
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image15" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image25" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image25" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div> 
@@ -1576,7 +1576,7 @@
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image17" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image26" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image26" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div> 
@@ -1604,7 +1604,7 @@
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image27" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image28" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image28" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div>
@@ -1632,7 +1632,7 @@
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image29" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image30" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image30" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
                     <asp:Button ID="Button31" runat="server" Text="&times;" CssClass="close" BackColor="White"/>
                     <%-- <button type="button" class="close" data-dismiss="modal">&times;</button>--%>
                     </div>
@@ -1658,7 +1658,7 @@
         <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image31" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image32" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image32" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
                         <asp:Button ID="Button30" runat="server" Text="&times;" CssClass="close" BackColor="White"/>
                       <%--  <button type="button" class="close" data-dismiss="modal">&times;</button>--%>
                     </div>
@@ -1686,7 +1686,7 @@
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image13" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image38" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image38" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div>
@@ -1725,7 +1725,7 @@ Please contact <a href="mailto:service_experience@agl.com.au">Service Experience
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image39" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image40" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image40" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div>
@@ -1768,7 +1768,7 @@ Please contact <a href="mailto:service_experience@agl.com.au">Service Experience
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image41" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image42" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image42" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div>
@@ -1800,7 +1800,7 @@ This screen captures the relationships between Application and its associated In
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image43" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image44" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image44" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div>
@@ -1828,7 +1828,7 @@ This screen captures the relationships between Infrastructure components.
                 <div class="modal-content">
                     <div class="top-part12">
                         <asp:Image ID="Image47" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image48" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image48" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
               <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
@@ -1884,7 +1884,7 @@ This screen captures the relationships between Infrastructure components.
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image49" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image50" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image50" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div> 
@@ -1914,7 +1914,7 @@ This screen captures the relationships between Infrastructure components.
                 <div class="modal-content" onsubmit="return false">
                     <div class="top-part12">
                         <asp:Image ID="Image51" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                       <asp:Image ID="Image52" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" Width="120px" class="logo1" />
+                       <asp:Image ID="Image52" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" Width="120px" class="logo1" />
              <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div>

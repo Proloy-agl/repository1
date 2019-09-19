@@ -393,7 +393,7 @@ function off() {
         </div>
         <div class="modal-footer">
              <%--<asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos/m-logo1.png"  class="logo1" />--%>
-             <asp:Image ID="Image23" runat="server" ImageUrl="~/Photos and Logos/m-logo-white.png" class="logo1" />
+             <asp:Image ID="Image23" runat="server" ImageUrl="~/Photos and Logos/magneto-logo-w.png" class="logo1" />
           <%--<button type="button" class="button1" data-dismiss="modal" onclick="">Submit</button>--%>
             <asp:Button ID="Button2" runat="server" Text="Submit"  class="button1 newbutton" OnClick="modal_Submit" />
         </div>

@@ -362,29 +362,23 @@ namespace CMDB2
 
 
             DL3.DataSource = AppCI;
-            DL3.DataTextField = Convert.ToString(AppCI);
-            DL3.DataValueField = Convert.ToString(AppCI);
+           
             DL3.DataBind();
             DL4.DataSource = InfraCI;
-            DL4.DataTextField = Convert.ToString(AppCI);
-            DL4.DataValueField = Convert.ToString(AppCI);
+           
             DL4.DataBind();
             DLApp.DataSource = AppCI;
-            DLApp.DataTextField = Convert.ToString(AppCI);
-            DLApp.DataValueField = Convert.ToString(AppCI);
+            
             DLApp.DataBind();
             DLinf1.DataSource = InfraCI;
-            DLinf1.DataTextField = Convert.ToString(AppCI);
-            DLinf1.DataValueField = Convert.ToString(AppCI);
+           
             DLinf1.DataBind();
             
             DLinf4.DataSource = InfraCI;
-            DLinf4.DataTextField = Convert.ToString(AppCI);
-            DLinf4.DataValueField = Convert.ToString(AppCI);
+            
             DLinf4.DataBind();
             DLinf3.DataSource = InfraCI;
-            DLinf3.DataTextField = Convert.ToString(AppCI);
-            DLinf3.DataValueField = Convert.ToString(AppCI);
+           
             DLinf3.DataBind();
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

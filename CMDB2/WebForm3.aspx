@@ -1877,7 +1877,7 @@ This screen captures the relationships between Infrastructure components.
             </div>
         </div>
           <!-- Modal -->
-         <div class="modal fade" id="Create" data-keyboard="false" role="dialog">
+        <div class="modal fade" id="Create" data-keyboard="false" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->

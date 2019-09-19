@@ -399,7 +399,7 @@
 
         <div class="top-part">
             <asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos/logo.png" Width="86px" class="logo" />
-            <asp:Image ID="Image16" runat="server" ImageUrl="~/Photos and Logos/m-logo1.png"  class="logo1" />
+            <asp:Image ID="Image16" runat="server" ImageUrl="~/Photos and Logos/magneto-logo.png"  class="logo1" />
             &nbsp
         </div>
        

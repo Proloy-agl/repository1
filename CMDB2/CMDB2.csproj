@@ -199,14 +199,12 @@
     <Content Include="Photos and Logos_ms\user-icon.png" />
     <Content Include="Photos and Logos_ms\~banner.jpg" />
     <Content Include="style.css" />
-    <Content Include="Test.aspx" />
     <Content Include="Web.config" />
     <Content Include="Choice.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
     <Content Include="WebForm4.aspx" />
     <Content Include="WebForm5.aspx" />
-    <Content Include="Rough.aspx" />
     <Content Include="WebForm7.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -233,13 +231,6 @@
       <DependentUpon>Choice.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup1.cs" />
-    <Compile Include="Test.aspx.cs">
-      <DependentUpon>Test.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Test.aspx.designer.cs">
-      <DependentUpon>Test.aspx</DependentUpon>
-    </Compile>
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -267,13 +258,6 @@
     </Compile>
     <Compile Include="WebForm5.aspx.designer.cs">
       <DependentUpon>WebForm5.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Rough.aspx.cs">
-      <DependentUpon>Rough.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Rough.aspx.designer.cs">
-      <DependentUpon>Rough.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm7.aspx.cs">
       <DependentUpon>WebForm7.aspx</DependentUpon>

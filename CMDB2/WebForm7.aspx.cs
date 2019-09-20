@@ -64,5 +64,58 @@ namespace CMDB2
                 }
             }
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+           
+            DateTime c3 = DateTime.Now;
+            string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
+            SqlConnection conn = null;
+            try
+            {
+                conn = new SqlConnection(connString);
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "insert into [Audit_Relationship_Infra_to_Infra](CR_Number,Parent_Infra_CI_Name,Child_Infra_CI_Name,Transaction_Timestamp,Transaction_Status) values (@var1,@var2,@var3,@var4,@var5)";
+                    cmd.Parameters.AddWithValue("@var1", "1");
+                    cmd.Parameters.AddWithValue("@var2", "1");
+                    cmd.Parameters.AddWithValue("@var3", "1");
+                    cmd.Parameters.AddWithValue("@var4", c3);
+                    cmd.Parameters.AddWithValue("@var5", "I");
+
+
+
+
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    int test = rowsAffected;
+                    if (rowsAffected == 1)
+
+                    {
+
+                        
+                    }
+                    else
+                    {
+                       
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    //cleanup connection i.e close 
+                }
+            }
+        }
     }
 }

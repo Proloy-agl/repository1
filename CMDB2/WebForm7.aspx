@@ -12,6 +12,13 @@
         <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
 
 
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:Button ID="Button2" runat="server" Text="222222222222" OnClick="Button1_Click" />
+
+
     </div>
     </form>
 </body>

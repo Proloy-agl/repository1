@@ -33,10 +33,10 @@ namespace CMDB2
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.UrlReferrer == null)
-            {
-                Response.Redirect("LoginSSO.aspx");
-            }
+            //if (Request.UrlReferrer == null)
+            //{
+            //    Response.Redirect("LoginSSO.aspx");
+            //}
 
             if (!IsPostBack)
             {
@@ -53,8 +53,8 @@ namespace CMDB2
                 ValD = Convert.ToInt32(ChoiceD = Session["value4"].ToString());
                 ValE = Convert.ToInt32(ChoiceE = Session["value5"].ToString());
                 ValF = 5;
-
-                CR = Session["CR_Num"].ToString();
+                CR = "CRQ000000087805";
+               // CR = Session["CR_Num"].ToString();
                 //  CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
                 I_CR_Num.Text = CR;
                 A_CR_Number.Text = CR;
@@ -266,128 +266,131 @@ namespace CMDB2
 
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 ///////////////////////////////////Generate Token/////////////////////////////////////////////////////////////
-                var client = new RestClient("https://jirauat.mobile.agl.com.au/api/jwt/login");
-                var request = new RestRequest(Method.POST);
-                request.AddHeader("cache-control", "no-cache");
-                request.AddHeader("Connection", "keep-alive");
-                request.AddHeader("Content-Length", "41");
-                request.AddHeader("Accept-Encoding", "gzip, deflate");
-                request.AddHeader("Host", "jirauat.mobile.agl.com.au");
-                request.AddHeader("Postman-Token", "2332ba70-dcf1-4e0b-b248-8ad5c17500b3,f1624587-65bb-4734-87f7-25dc90c7e437");
-                request.AddHeader("Cache-Control", "no-cache");
-                request.AddHeader("Accept", "*/*");
-                request.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
-                request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
-                request.AddParameter("undefined", "username=svc_magneto&password=svc_magneto", ParameterType.RequestBody);
-                IRestResponse response = client.Execute(request);
-                var data = response.Content;
-
-                string data1 = "AR-JWT";
-                string tokenPass = string.Concat(data1, " ", data);
-                //////////////////////////////////Get CI items ///////////////////////////////////////////////////////////////////
-                string URLinit = "https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22";
-                string URLReady = string.Concat(URLinit, CR, "%20%22");
-                var client10 = new RestClient(URLReady);
-
-                // var client10 = new RestClient("https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22CRQ000000087001%20%22");
-                var request10 = new RestRequest(Method.GET);
-                request10.AddHeader("cache-control", "no-cache");
-                request10.AddHeader("Connection", "keep-alive");
-                request10.AddHeader("Accept-Encoding", "gzip, deflate");
-                request.AddHeader("Host", "jirauat.mobile.agl.com.au");
-                request10.AddHeader("Postman-Token", "b9f14d6d-19ca-4d17-a820-daf1154bd2db,5fd63ab8-cfe2-456d-96f3-45b5da106246");
-                request10.AddHeader("Cache-Control", "no-cache");
-                request10.AddHeader("Accept", "*/*");
-                request10.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
-                request10.AddHeader("Content-Type", "application/json");
-                request10.AddHeader("Authorization", tokenPass);
-                IRestResponse response10 = client10.Execute(request10);
-
-                JObject jsonResponse10 = (JObject)JsonConvert.DeserializeObject(response10.Content);
-
-                dynamic json = JValue.Parse(response10.Content);
-
-                ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-                //      Label2.Text = Convert.ToString( jsonResponse10) ;
-
-                List<string> AppCI = new List<string>();
-                List<string> InfraCI = new List<string>();
-
-
-                // AppCI.Add("Select");
-                //InfraCI.Add("Select");
-
-                var js10 = new JavaScriptSerializer();
-                var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
-                int m = 1;
-                int n = 0;
-                dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
-
-
-                Dictionary<string, object> csObj =
-        js10.Deserialize<Dictionary<string, object>>(response10.Content);
-                n = ((ArrayList)csObj["entries"]).Count;
-                // Label2.Text = Convert.ToString(n);
 
 
 
 
-                for (int x = 0; x < n; x++)
-                {
+        //        var client = new RestClient("https://jirauat.mobile.agl.com.au/api/jwt/login");
+        //        var request = new RestRequest(Method.POST);
+        //        request.AddHeader("cache-control", "no-cache");
+        //        request.AddHeader("Connection", "keep-alive");
+        //        request.AddHeader("Content-Length", "41");
+        //        request.AddHeader("Accept-Encoding", "gzip, deflate");
+        //        request.AddHeader("Host", "jirauat.mobile.agl.com.au");
+        //        request.AddHeader("Postman-Token", "2332ba70-dcf1-4e0b-b248-8ad5c17500b3,f1624587-65bb-4734-87f7-25dc90c7e437");
+        //        request.AddHeader("Cache-Control", "no-cache");
+        //        request.AddHeader("Accept", "*/*");
+        //        request.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
+        //        request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+        //        request.AddParameter("undefined", "username=svc_magneto&password=svc_magneto", ParameterType.RequestBody);
+        //        IRestResponse response = client.Execute(request);
+        //        var data = response.Content;
+
+        //        string data1 = "AR-JWT";
+        //        string tokenPass = string.Concat(data1, " ", data);
+        //        //////////////////////////////////Get CI items ///////////////////////////////////////////////////////////////////
+        //        string URLinit = "https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22";
+        //        string URLReady = string.Concat(URLinit, CR, "%20%22");
+        //        var client10 = new RestClient(URLReady);
+
+             
+        //        var request10 = new RestRequest(Method.GET);
+        //        request10.AddHeader("cache-control", "no-cache");
+        //        request10.AddHeader("Connection", "keep-alive");
+        //        request10.AddHeader("Accept-Encoding", "gzip, deflate");
+        //        request.AddHeader("Host", "jirauat.mobile.agl.com.au");
+        //        request10.AddHeader("Postman-Token", "b9f14d6d-19ca-4d17-a820-daf1154bd2db,5fd63ab8-cfe2-456d-96f3-45b5da106246");
+        //        request10.AddHeader("Cache-Control", "no-cache");
+        //        request10.AddHeader("Accept", "*/*");
+        //        request10.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
+        //        request10.AddHeader("Content-Type", "application/json");
+        //        request10.AddHeader("Authorization", tokenPass);
+        //        IRestResponse response10 = client10.Execute(request10);
+
+        //        JObject jsonResponse10 = (JObject)JsonConvert.DeserializeObject(response10.Content);
+
+        //        dynamic json = JValue.Parse(response10.Content);
+
+        //        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+               
+
+        //        List<string> AppCI = new List<string>();
+        //        List<string> InfraCI = new List<string>();
 
 
-                    if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
-                    {
-                        string Value1 = d10["entries"][x]["values"]["Request Description01"];
-                        // AppCI.Add(Value1);
+               
 
-                        string[] separators = { "PROD", "NON PROD", "DR" };
-
-                        string[] words = Value1.Split(separators, StringSplitOptions.RemoveEmptyEntries);
-                        foreach (var word in words)
-                            AppCI.Add(word);
-
-                    }
-
-                    if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
-                    {
-                        string Value2 = d10["entries"][x]["values"]["Request Description01"];
-                        // InfraCI.Add(Value2);
-
-                        string[] separators = { "PROD", "NON PROD", "DR" };
-
-                        string[] words = Value2.Split(separators, StringSplitOptions.RemoveEmptyEntries);
-                        foreach (var word in words)
-                            InfraCI.Add(word);
+        //        var js10 = new JavaScriptSerializer();
+        //        var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
+        //        int m = 1;
+        //        int n = 0;
+        //        dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
 
 
-                    }
-
-                }
+        //        Dictionary<string, object> csObj =
+        //js10.Deserialize<Dictionary<string, object>>(response10.Content);
+        //        n = ((ArrayList)csObj["entries"]).Count;
+                
 
 
 
-                DL3.DataSource = AppCI;
 
-                DL3.DataBind();
-                DL4.DataSource = InfraCI;
+        //        for (int x = 0; x < n; x++)
+        //        {
 
-                DL4.DataBind();
-                DLApp.DataSource = AppCI;
 
-                DLApp.DataBind();
-                DLinf1.DataSource = InfraCI;
+        //            if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
+        //            {
+        //                string Value1 = d10["entries"][x]["values"]["Request Description01"];
+        //                // AppCI.Add(Value1);
 
-                DLinf1.DataBind();
+        //                string[] separators = { "PROD", "NON PROD", "DR" };
 
-                DLinf4.DataSource = InfraCI;
+        //                string[] words = Value1.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+        //                foreach (var word in words)
+        //                    AppCI.Add(word);
 
-                DLinf4.DataBind();
-                DLinf3.DataSource = InfraCI;
+        //            }
 
-                DLinf3.DataBind();
+        //            if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
+        //            {
+        //                string Value2 = d10["entries"][x]["values"]["Request Description01"];
+        //                // InfraCI.Add(Value2);
 
+        //                string[] separators = { "PROD", "NON PROD", "DR" };
+
+        //                string[] words = Value2.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+        //                foreach (var word in words)
+        //                    InfraCI.Add(word);
+
+
+        //            }
+
+        //        }
+
+
+
+        //        DL3.DataSource = AppCI;
+
+        //        DL3.DataBind();
+        //        DL4.DataSource = InfraCI;
+
+        //        DL4.DataBind();
+        //        DLApp.DataSource = AppCI;
+
+        //        DLApp.DataBind();
+        //        DLinf1.DataSource = InfraCI;
+
+        //        DLinf1.DataBind();
+
+        //        DLinf4.DataSource = InfraCI;
+
+        //        DLinf4.DataBind();
+        //        DLinf3.DataSource = InfraCI;
+
+        //        DLinf3.DataBind();
+                ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             }
 

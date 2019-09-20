@@ -676,12 +676,13 @@ namespace CMDB2
 =========================================================================*/
         protected void ItoI_SumbitBtn_Click(object sender, EventArgs e)
         {
-            string c1, c2;
+            string c1, c2, CR_2;
             // c1 = TextBox13.Text;
             c1 = DLinf3.SelectedItem.Text;
 
             // c2 = TextBox14.Text;
             c2 = DLinf4.SelectedItem.Text;
+            CR_2= Session["CR_Num"].ToString();
             DateTime c3 = DateTime.Now;
             string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
             SqlConnection conn = null;
@@ -694,7 +695,7 @@ namespace CMDB2
                     cmd.Connection = conn;
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = "insert into [Audit_Relationship_Infra_to_Infra](CR_Number,Parent_Infra_CI_Name,Child_Infra_CI_Name,Transaction_Timestamp,Transaction_Status) values (@var1,@var2,@var3,@var4,@var5)";
-                    cmd.Parameters.AddWithValue("@var1", CR);
+                    cmd.Parameters.AddWithValue("@var1", CR_2);
                     cmd.Parameters.AddWithValue("@var2", c1);
                     cmd.Parameters.AddWithValue("@var3", c2);
                     cmd.Parameters.AddWithValue("@var4", c3);

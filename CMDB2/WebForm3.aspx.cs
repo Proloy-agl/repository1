@@ -594,7 +594,7 @@ namespace CMDB2
             string c1, c2, envi;
            // c1 = TextBox11.Text;
             c1 = DLApp.SelectedItem.Text;
-           
+          
             //  c2 = TextBox12.Text;
             c2 = DLinf1.SelectedItem.Text;
             DateTime c3 = DateTime.Now;
@@ -621,8 +621,8 @@ namespace CMDB2
 
                     cmd.CommandText = "insert into [Audit_Relationship_App_to_Infra](CR_Number,App_CI_Name,Infra_CI_Name,Transaction_Timestamp,Transaction_Status,Environment) values (@var1,@var2,@var3,@var4,@var5,@var6)";
                     cmd.Parameters.AddWithValue("@var1", CR);
-                    cmd.Parameters.AddWithValue("@var2", c1);
-                    cmd.Parameters.AddWithValue("@var3", c2);
+                    cmd.Parameters.AddWithValue("@var2", "1");
+                    cmd.Parameters.AddWithValue("@var3", "1");
                     cmd.Parameters.AddWithValue("@var4", c3);
                     cmd.Parameters.AddWithValue("@var5", "5");
                     cmd.Parameters.AddWithValue("@var6", "Envi");

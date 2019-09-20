@@ -591,13 +591,14 @@ namespace CMDB2
 =========================================================================*/
         protected void AtoI_SumbitBtn_Click(object sender, EventArgs e)
         {
-            string c1, c2;
+            string c1, c2, envi;
            // c1 = TextBox11.Text;
             c1 = DLApp.SelectedItem.Text;
            
             //  c2 = TextBox12.Text;
             c2 = DLinf1.SelectedItem.Text;
             DateTime c3 = DateTime.Now;
+            envi = DropDownList7.SelectedItem.Text;
             string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
             SqlConnection conn = null;
             try
@@ -608,12 +609,13 @@ namespace CMDB2
                 {
                     cmd.Connection = conn;
                     cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "insert into [Audit_Relationship_App_to_Infra](CR_Number,App_CI_Name,Infra_CI_Name,Transaction_Timestamp,Transaction_Status) values (@var1,@var2,@var3,@var4,@var5)";
+                    cmd.CommandText = "insert into [Audit_Relationship_App_to_Infra](CR_Number,App_CI_Name,Infra_CI_Name,Transaction_Timestamp,Transaction_Status,Environment) values (@var1,@var2,@var3,@var4,@var5,@var6)";
                     cmd.Parameters.AddWithValue("@var1", CR);
                     cmd.Parameters.AddWithValue("@var2", c1);
                     cmd.Parameters.AddWithValue("@var3", c2);
                     cmd.Parameters.AddWithValue("@var4", c3);
                     cmd.Parameters.AddWithValue("@var5", "I");
+                    cmd.Parameters.AddWithValue("@var1", envi);
                     int rowsAffected = cmd.ExecuteNonQuery();
                     int test = rowsAffected;
                     if (rowsAffected == 1)

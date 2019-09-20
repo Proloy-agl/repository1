@@ -9,8 +9,9 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Support_Group_Name" DataValueField="Support_Group_Name"></asp:DropDownList>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ARSystem1ConnectionString %>" SelectCommand="SELECT [Support_Group_Name] FROM [CTM_Support_Group]"></asp:SqlDataSource>
+        <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+
+
     </div>
     </form>
 </body>

@@ -37,352 +37,359 @@ namespace CMDB2
             {
                 Response.Redirect("LoginSSO.aspx");
             }
-            string ChoiceA, ChoiceB, ChoiceC, ChoiceD, ChoiceE, ChoiceF;
+
+            if (!IsPostBack)
+            {
+                string ChoiceA, ChoiceB, ChoiceC, ChoiceD, ChoiceE, ChoiceF;
        int ValA, ValB, ValC, ValD, ValE, ValF;
 
-            ValA = Convert.ToInt32(ChoiceA = Session["value1"].ToString());
-            ValB = Convert.ToInt32(ChoiceB = Session["value2"].ToString());
-            ValC = Convert.ToInt32(ChoiceC = Session["value3"].ToString());
-            ValD = Convert.ToInt32(ChoiceD = Session["value4"].ToString());
-            ValE = Convert.ToInt32(ChoiceE = Session["value5"].ToString());
-            ValF = 5;
            
-        CR = Session["CR_Num"].ToString();
-          //  CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
-            I_CR_Num.Text =CR;
-            A_CR_Number.Text = CR;
-            if (ValE == 1)
-            {
-                BPanel7.Visible = true;
-                BPanel1.Visible = false;
-                BPanel2.Visible = false;
-                BPanel3.Visible = false;
-                BPanel4.Visible = false;
-                BPanel6.Visible = false;
-                BPanel5.Visible = false;
-                Button29.Visible = true;
 
 
-            }
-            if (ValF == 1)
-            {
-                BPanel1.Visible = false;
-                BPanel2.Visible = false;
-                BPanel3.Visible = false;
-                BPanel4.Visible = false;
-                BPanel5.Visible = false;
 
-            }
+                ValA = Convert.ToInt32(ChoiceA = Session["value1"].ToString());
+                ValB = Convert.ToInt32(ChoiceB = Session["value2"].ToString());
+                ValC = Convert.ToInt32(ChoiceC = Session["value3"].ToString());
+                ValD = Convert.ToInt32(ChoiceD = Session["value4"].ToString());
+                ValE = Convert.ToInt32(ChoiceE = Session["value5"].ToString());
+                ValF = 5;
 
-            if ((ValA == 1) && (ValB != 1) && (ValC != 1) && (ValD != 1))
-            {
-                BPanel5.Visible = false;
-                //BPanel6.Visible = false;
-                Button2.Disabled = true;
-                Button3.Disabled = true;
-                Button4.Disabled = true;
-                BPanel7.Visible = false;
-                a1.Visible = true;
-                b2.Visible = true;
-                c3.Visible = true;
-                d4.Visible = true;
-
-            }
-            if ((ValA != 1) && (ValB == 1) && (ValC != 1) && (ValD != 1))
-            {
-                BPanel5.Visible = false;
-               
-                BPanel1.Visible = false;
-                Button3.Disabled = true;
-                Button4.Disabled = true;
-                BPanel7.Visible = false;
-                b1.Visible = true;
-                c2.Visible = true;
-                d3.Visible = true;
-            }
-            if ((ValC == 1) && (ValB != 1) && (ValA != 1) && (ValD != 1))
-            {
-                BPanel1.Visible = false;
-                BPanel5.Visible = false;
-                BPanel7.Visible = false;
-                BPanel2.Visible = false;
-                BPanel4.Visible = false;
-                Button28.Visible = true;
-                c1.Visible = true;
-
-
-            }
-            if ((ValD == 1) && (ValB != 1) && (ValC != 1) && (ValA != 1))
-            {
-                BPanel1.Visible = false;
-                BPanel2.Visible = false;
-                BPanel3.Visible = false;
-                BPanel5.Visible = false;
-                Button28.Visible = true;
-                BPanel7.Visible = false;
-                d1.Visible = true;
-                Button28.Visible = false;
-            }
-            if ((ValA == 1) && (ValC == 1) && (ValB != 1) && (ValD != 1))
-            {
-                BPanel5.Visible = false;
-                BPanel7.Visible = false;
-                Button2.Disabled = true;
-                Button3.Disabled = true;
-                Button4.Disabled = true;
-                a1.Visible = true;
-                b2.Visible = true;
-                c3.Visible = true;
-                d4.Visible = true;
-            }
-            if ((ValA == 1) && (ValD == 1) && (ValC != 1) && (ValB != 1))
-            {
-                BPanel5.Visible = false;
-                BPanel7.Visible = false;
-                Button2.Disabled = true;
-                Button3.Disabled = true;
-                Button4.Disabled = true;
-                a1.Visible = true;
-                b2.Visible = true;
-                c3.Visible = true;
-                d4.Visible = true;
-            }
-            if ((ValC == 1) && (ValB == 1) && (ValA != 1) && (ValD != 1))
-            {
-                BPanel5.Visible = false;
-                BPanel7.Visible = false;
-                BPanel1.Visible = false;
-                Button3.Disabled = true;
-                Button4.Disabled = true;
-                b1.Visible = true;
-                c2.Visible = true;
-                d3.Visible = true;
-            }
-            if ((ValD == 1) && (ValB == 1) && (ValC != 1) && (ValA != 1))
-            {
-                BPanel5.Visible = false;
-                BPanel7.Visible = false;
-                BPanel1.Visible = false;
-                Button3.Disabled = true;
-                Button4.Disabled = true;
-                b1.Visible = true;
-                c2.Visible = true;
-                d3.Visible = true;
-            }
-            if ((ValC == 1) && (ValD == 1) && (ValA != 1) && (ValB != 1))
-            {
-                BPanel1.Visible = false;
-                BPanel5.Visible = false;
-                BPanel2.Visible = false;
-                c1.Visible = true;
-                d2.Visible = true;
-               
-            }
-            if ((ValA == 1) && (ValB == 1) && (ValC == 1) && (ValD == 1))
-            {
-                BPanel5.Visible = false;
-                BPanel7.Visible = false;
-                Button2.Disabled = true;
-                Button3.Disabled = true;
-                Button4.Disabled = true;
-                a1.Visible = true;
-                b2.Visible = true;
-                c3.Visible = true;
-                d4.Visible = true;
-            }
-            if ((ValA == 1) && (ValB == 1) && (ValC == 1) && (ValD != 1))
-            {
-                BPanel5.Visible = false;
-                BPanel7.Visible = false;
-                Button2.Disabled = true;
-                Button3.Disabled = true;
-                Button4.Disabled = true;
-                a1.Visible = true;
-                b2.Visible = true;
-                c3.Visible = true;
-                d4.Visible = true;
-            }
-            if ((ValD == 1) && (ValB != 1) && (ValC == 1) && (ValA == 1))
-            {
-                BPanel5.Visible = false;
-                BPanel7.Visible = false;
-                Button2.Disabled = true;
-                Button3.Disabled = true;
-                Button4.Disabled = true;
-                a1.Visible = true;
-                b2.Visible = true;
-                c3.Visible = true;
-                d4.Visible = true;
-            }
-            if ((ValD == 1) && (ValC != 1) && (ValB == 1) && (ValA == 1))
-            {
-                BPanel5.Visible = false;
-                BPanel7.Visible = false;
-                Button2.Disabled = true;
-                Button3.Disabled = true;
-                Button4.Disabled = true;
-                a1.Visible = true;
-                b2.Visible = true;
-                c3.Visible = true;
-                d4.Visible = true;
-            }
-            if ((ValC == 1) && (ValD == 1) && (ValA != 1) && (ValB == 1))
-            {
-                BPanel5.Visible = false;
-                BPanel7.Visible = false;
-                BPanel1.Visible = false;
-                Button3.Disabled = true;
-                Button4.Disabled = true;
-                b1.Visible = true;
-                c2.Visible = true;
-                d3.Visible = true;
-            }
-            if ((ValC != 1) && (ValD != 1) && (ValA == 1) && (ValB == 1))
-            {
-                BPanel5.Visible = false;
-                BPanel7.Visible = false;
-                Button3.Disabled = true;
-                Button4.Disabled = true;
-                a1.Visible = true;
-                b2.Visible = true;
-                c3.Visible = true;
-                d4.Visible = true;
-
-            }
-            if ((ValC != 1) && (ValD != 1) && (ValA != 1) && (ValB != 1)&&(ValE!=1))
-            {
-                Response.Redirect("Choice.aspx");
-                          
-
-            }
-
-
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            ///////////////////////////////////Generate Token/////////////////////////////////////////////////////////////
-            var client = new RestClient("https://jirauat.mobile.agl.com.au/api/jwt/login");
-            var request = new RestRequest(Method.POST);
-            request.AddHeader("cache-control", "no-cache");
-            request.AddHeader("Connection", "keep-alive");
-            request.AddHeader("Content-Length", "41");
-            request.AddHeader("Accept-Encoding", "gzip, deflate");
-            request.AddHeader("Host", "jirauat.mobile.agl.com.au");
-            request.AddHeader("Postman-Token", "2332ba70-dcf1-4e0b-b248-8ad5c17500b3,f1624587-65bb-4734-87f7-25dc90c7e437");
-            request.AddHeader("Cache-Control", "no-cache");
-            request.AddHeader("Accept", "*/*");
-            request.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
-            request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
-            request.AddParameter("undefined", "username=svc_magneto&password=svc_magneto", ParameterType.RequestBody);
-            IRestResponse response = client.Execute(request);
-            var data = response.Content;
-
-            string data1 = "AR-JWT";
-            string tokenPass = string.Concat(data1, " ", data);
-            //////////////////////////////////Get CI items ///////////////////////////////////////////////////////////////////
-            string URLinit = "https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22";
-            string URLReady = string.Concat(URLinit, CR, "%20%22");
-            var client10 = new RestClient(URLReady);
-
-           // var client10 = new RestClient("https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22CRQ000000087001%20%22");
-            var request10 = new RestRequest(Method.GET);
-            request10.AddHeader("cache-control", "no-cache");
-            request10.AddHeader("Connection", "keep-alive");
-            request10.AddHeader("Accept-Encoding", "gzip, deflate");
-            request.AddHeader("Host", "jirauat.mobile.agl.com.au");
-            request10.AddHeader("Postman-Token", "b9f14d6d-19ca-4d17-a820-daf1154bd2db,5fd63ab8-cfe2-456d-96f3-45b5da106246");
-            request10.AddHeader("Cache-Control", "no-cache");
-            request10.AddHeader("Accept", "*/*");
-            request10.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
-            request10.AddHeader("Content-Type", "application/json");
-            request10.AddHeader("Authorization", tokenPass);
-            IRestResponse response10 = client10.Execute(request10);
-
-            JObject jsonResponse10 = (JObject)JsonConvert.DeserializeObject(response10.Content);
-
-            dynamic json = JValue.Parse(response10.Content);
-
-            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-            //      Label2.Text = Convert.ToString( jsonResponse10) ;
-
-            List<string> AppCI = new List<string>();
-            List<string> InfraCI = new List<string>();
-            
-
-          // AppCI.Add("Select");
-            //InfraCI.Add("Select");
-
-            var js10 = new JavaScriptSerializer();
-            var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
-            int m = 1;
-            int n = 0;
-            dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
-
-
-            Dictionary<string, object> csObj =
-    js10.Deserialize<Dictionary<string, object>>(response10.Content);
-            n = ((ArrayList)csObj["entries"]).Count;
-            // Label2.Text = Convert.ToString(n);
-
-
-            
-
-            for (int x = 0; x < n; x++)
-            {
-                
-
-                if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
+                CR = Session["CR_Num"].ToString();
+                //  CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
+                I_CR_Num.Text = CR;
+                A_CR_Number.Text = CR;
+                if (ValE == 1)
                 {
-                    string Value1 = d10["entries"][x]["values"]["Request Description01"];
-                   // AppCI.Add(Value1);
+                    BPanel7.Visible = true;
+                    BPanel1.Visible = false;
+                    BPanel2.Visible = false;
+                    BPanel3.Visible = false;
+                    BPanel4.Visible = false;
+                    BPanel6.Visible = false;
+                    BPanel5.Visible = false;
+                    Button29.Visible = true;
 
-                    string[] separators = { "PROD", "NON PROD","DR" };
-                    
-                    string[] words = Value1.Split(separators, StringSplitOptions.RemoveEmptyEntries);
-                    foreach (var word in words)
-                        AppCI.Add(word);
+
+                }
+                if (ValF == 1)
+                {
+                    BPanel1.Visible = false;
+                    BPanel2.Visible = false;
+                    BPanel3.Visible = false;
+                    BPanel4.Visible = false;
+                    BPanel5.Visible = false;
 
                 }
 
-                if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
+                if ((ValA == 1) && (ValB != 1) && (ValC != 1) && (ValD != 1))
                 {
-                    string Value2 = d10["entries"][x]["values"]["Request Description01"];
-                   // InfraCI.Add(Value2);
+                    BPanel5.Visible = false;
+                    //BPanel6.Visible = false;
+                    Button2.Disabled = true;
+                    Button3.Disabled = true;
+                    Button4.Disabled = true;
+                    BPanel7.Visible = false;
+                    a1.Visible = true;
+                    b2.Visible = true;
+                    c3.Visible = true;
+                    d4.Visible = true;
 
-                    string[] separators = { "PROD", "NON PROD", "DR" };
+                }
+                if ((ValA != 1) && (ValB == 1) && (ValC != 1) && (ValD != 1))
+                {
+                    BPanel5.Visible = false;
 
-                    string[] words = Value2.Split(separators, StringSplitOptions.RemoveEmptyEntries);
-                    foreach (var word in words)
-                        InfraCI.Add(word);
+                    BPanel1.Visible = false;
+                    Button3.Disabled = true;
+                    Button4.Disabled = true;
+                    BPanel7.Visible = false;
+                    b1.Visible = true;
+                    c2.Visible = true;
+                    d3.Visible = true;
+                }
+                if ((ValC == 1) && (ValB != 1) && (ValA != 1) && (ValD != 1))
+                {
+                    BPanel1.Visible = false;
+                    BPanel5.Visible = false;
+                    BPanel7.Visible = false;
+                    BPanel2.Visible = false;
+                    BPanel4.Visible = false;
+                    Button28.Visible = true;
+                    c1.Visible = true;
+
+
+                }
+                if ((ValD == 1) && (ValB != 1) && (ValC != 1) && (ValA != 1))
+                {
+                    BPanel1.Visible = false;
+                    BPanel2.Visible = false;
+                    BPanel3.Visible = false;
+                    BPanel5.Visible = false;
+                    Button28.Visible = true;
+                    BPanel7.Visible = false;
+                    d1.Visible = true;
+                    Button28.Visible = false;
+                }
+                if ((ValA == 1) && (ValC == 1) && (ValB != 1) && (ValD != 1))
+                {
+                    BPanel5.Visible = false;
+                    BPanel7.Visible = false;
+                    Button2.Disabled = true;
+                    Button3.Disabled = true;
+                    Button4.Disabled = true;
+                    a1.Visible = true;
+                    b2.Visible = true;
+                    c3.Visible = true;
+                    d4.Visible = true;
+                }
+                if ((ValA == 1) && (ValD == 1) && (ValC != 1) && (ValB != 1))
+                {
+                    BPanel5.Visible = false;
+                    BPanel7.Visible = false;
+                    Button2.Disabled = true;
+                    Button3.Disabled = true;
+                    Button4.Disabled = true;
+                    a1.Visible = true;
+                    b2.Visible = true;
+                    c3.Visible = true;
+                    d4.Visible = true;
+                }
+                if ((ValC == 1) && (ValB == 1) && (ValA != 1) && (ValD != 1))
+                {
+                    BPanel5.Visible = false;
+                    BPanel7.Visible = false;
+                    BPanel1.Visible = false;
+                    Button3.Disabled = true;
+                    Button4.Disabled = true;
+                    b1.Visible = true;
+                    c2.Visible = true;
+                    d3.Visible = true;
+                }
+                if ((ValD == 1) && (ValB == 1) && (ValC != 1) && (ValA != 1))
+                {
+                    BPanel5.Visible = false;
+                    BPanel7.Visible = false;
+                    BPanel1.Visible = false;
+                    Button3.Disabled = true;
+                    Button4.Disabled = true;
+                    b1.Visible = true;
+                    c2.Visible = true;
+                    d3.Visible = true;
+                }
+                if ((ValC == 1) && (ValD == 1) && (ValA != 1) && (ValB != 1))
+                {
+                    BPanel1.Visible = false;
+                    BPanel5.Visible = false;
+                    BPanel2.Visible = false;
+                    c1.Visible = true;
+                    d2.Visible = true;
+
+                }
+                if ((ValA == 1) && (ValB == 1) && (ValC == 1) && (ValD == 1))
+                {
+                    BPanel5.Visible = false;
+                    BPanel7.Visible = false;
+                    Button2.Disabled = true;
+                    Button3.Disabled = true;
+                    Button4.Disabled = true;
+                    a1.Visible = true;
+                    b2.Visible = true;
+                    c3.Visible = true;
+                    d4.Visible = true;
+                }
+                if ((ValA == 1) && (ValB == 1) && (ValC == 1) && (ValD != 1))
+                {
+                    BPanel5.Visible = false;
+                    BPanel7.Visible = false;
+                    Button2.Disabled = true;
+                    Button3.Disabled = true;
+                    Button4.Disabled = true;
+                    a1.Visible = true;
+                    b2.Visible = true;
+                    c3.Visible = true;
+                    d4.Visible = true;
+                }
+                if ((ValD == 1) && (ValB != 1) && (ValC == 1) && (ValA == 1))
+                {
+                    BPanel5.Visible = false;
+                    BPanel7.Visible = false;
+                    Button2.Disabled = true;
+                    Button3.Disabled = true;
+                    Button4.Disabled = true;
+                    a1.Visible = true;
+                    b2.Visible = true;
+                    c3.Visible = true;
+                    d4.Visible = true;
+                }
+                if ((ValD == 1) && (ValC != 1) && (ValB == 1) && (ValA == 1))
+                {
+                    BPanel5.Visible = false;
+                    BPanel7.Visible = false;
+                    Button2.Disabled = true;
+                    Button3.Disabled = true;
+                    Button4.Disabled = true;
+                    a1.Visible = true;
+                    b2.Visible = true;
+                    c3.Visible = true;
+                    d4.Visible = true;
+                }
+                if ((ValC == 1) && (ValD == 1) && (ValA != 1) && (ValB == 1))
+                {
+                    BPanel5.Visible = false;
+                    BPanel7.Visible = false;
+                    BPanel1.Visible = false;
+                    Button3.Disabled = true;
+                    Button4.Disabled = true;
+                    b1.Visible = true;
+                    c2.Visible = true;
+                    d3.Visible = true;
+                }
+                if ((ValC != 1) && (ValD != 1) && (ValA == 1) && (ValB == 1))
+                {
+                    BPanel5.Visible = false;
+                    BPanel7.Visible = false;
+                    Button3.Disabled = true;
+                    Button4.Disabled = true;
+                    a1.Visible = true;
+                    b2.Visible = true;
+                    c3.Visible = true;
+                    d4.Visible = true;
+
+                }
+                if ((ValC != 1) && (ValD != 1) && (ValA != 1) && (ValB != 1) && (ValE != 1))
+                {
+                    Response.Redirect("Choice.aspx");
 
 
                 }
 
+
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                ///////////////////////////////////Generate Token/////////////////////////////////////////////////////////////
+                var client = new RestClient("https://jirauat.mobile.agl.com.au/api/jwt/login");
+                var request = new RestRequest(Method.POST);
+                request.AddHeader("cache-control", "no-cache");
+                request.AddHeader("Connection", "keep-alive");
+                request.AddHeader("Content-Length", "41");
+                request.AddHeader("Accept-Encoding", "gzip, deflate");
+                request.AddHeader("Host", "jirauat.mobile.agl.com.au");
+                request.AddHeader("Postman-Token", "2332ba70-dcf1-4e0b-b248-8ad5c17500b3,f1624587-65bb-4734-87f7-25dc90c7e437");
+                request.AddHeader("Cache-Control", "no-cache");
+                request.AddHeader("Accept", "*/*");
+                request.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
+                request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+                request.AddParameter("undefined", "username=svc_magneto&password=svc_magneto", ParameterType.RequestBody);
+                IRestResponse response = client.Execute(request);
+                var data = response.Content;
+
+                string data1 = "AR-JWT";
+                string tokenPass = string.Concat(data1, " ", data);
+                //////////////////////////////////Get CI items ///////////////////////////////////////////////////////////////////
+                string URLinit = "https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22";
+                string URLReady = string.Concat(URLinit, CR, "%20%22");
+                var client10 = new RestClient(URLReady);
+
+                // var client10 = new RestClient("https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Associations?q=%27Request%20ID02%27=%22CRQ000000087001%20%22");
+                var request10 = new RestRequest(Method.GET);
+                request10.AddHeader("cache-control", "no-cache");
+                request10.AddHeader("Connection", "keep-alive");
+                request10.AddHeader("Accept-Encoding", "gzip, deflate");
+                request.AddHeader("Host", "jirauat.mobile.agl.com.au");
+                request10.AddHeader("Postman-Token", "b9f14d6d-19ca-4d17-a820-daf1154bd2db,5fd63ab8-cfe2-456d-96f3-45b5da106246");
+                request10.AddHeader("Cache-Control", "no-cache");
+                request10.AddHeader("Accept", "*/*");
+                request10.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
+                request10.AddHeader("Content-Type", "application/json");
+                request10.AddHeader("Authorization", tokenPass);
+                IRestResponse response10 = client10.Execute(request10);
+
+                JObject jsonResponse10 = (JObject)JsonConvert.DeserializeObject(response10.Content);
+
+                dynamic json = JValue.Parse(response10.Content);
+
+                ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                //      Label2.Text = Convert.ToString( jsonResponse10) ;
+
+                List<string> AppCI = new List<string>();
+                List<string> InfraCI = new List<string>();
+
+
+                // AppCI.Add("Select");
+                //InfraCI.Add("Select");
+
+                var js10 = new JavaScriptSerializer();
+                var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse10));
+                int m = 1;
+                int n = 0;
+                dynamic jsonObj = JsonConvert.DeserializeObject(response10.Content);
+
+
+                Dictionary<string, object> csObj =
+        js10.Deserialize<Dictionary<string, object>>(response10.Content);
+                n = ((ArrayList)csObj["entries"]).Count;
+                // Label2.Text = Convert.ToString(n);
+
+
+
+
+                for (int x = 0; x < n; x++)
+                {
+
+
+                    if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_APPLICATION")
+                    {
+                        string Value1 = d10["entries"][x]["values"]["Request Description01"];
+                        // AppCI.Add(Value1);
+
+                        string[] separators = { "PROD", "NON PROD", "DR" };
+
+                        string[] words = Value1.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+                        foreach (var word in words)
+                            AppCI.Add(word);
+
+                    }
+
+                    if (d10["entries"][x]["values"]["Lookup Keyword"] == "BMC_COMPUTERSYSTEM")
+                    {
+                        string Value2 = d10["entries"][x]["values"]["Request Description01"];
+                        // InfraCI.Add(Value2);
+
+                        string[] separators = { "PROD", "NON PROD", "DR" };
+
+                        string[] words = Value2.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+                        foreach (var word in words)
+                            InfraCI.Add(word);
+
+
+                    }
+
+                }
+
+
+
+                DL3.DataSource = AppCI;
+
+                DL3.DataBind();
+                DL4.DataSource = InfraCI;
+
+                DL4.DataBind();
+                DLApp.DataSource = AppCI;
+
+                DLApp.DataBind();
+                DLinf1.DataSource = InfraCI;
+
+                DLinf1.DataBind();
+
+                DLinf4.DataSource = InfraCI;
+
+                DLinf4.DataBind();
+                DLinf3.DataSource = InfraCI;
+
+                DLinf3.DataBind();
+
+                ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             }
-
-
-
-            DL3.DataSource = AppCI;
-           
-            DL3.DataBind();
-            DL4.DataSource = InfraCI;
-           
-            DL4.DataBind();
-            DLApp.DataSource = AppCI;
-            
-            DLApp.DataBind();
-            DLinf1.DataSource = InfraCI;
-           
-            DLinf1.DataBind();
-            
-            DLinf4.DataSource = InfraCI;
-            
-            DLinf4.DataBind();
-            DLinf3.DataSource = InfraCI;
-           
-            DLinf3.DataBind();
-
-            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            
 
 
 

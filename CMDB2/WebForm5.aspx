@@ -233,7 +233,7 @@ color:black;
             background-color: #c4c4c4;
             font-size: 14px;
             line-height: 66px;
-            position: relative;
+            position: relative !important;
             padding-left: 15px;
             text-align:center;
         }

@@ -460,6 +460,7 @@ namespace CMDB2
                         Y2 = 1;
                         Button19.Visible = false;
                         Button20.Visible = true;
+                        Button21.Visible = false;
                         Final1.Visible = true;
                         CI_Name.Text = "";
                         System_Environment.Text = "";

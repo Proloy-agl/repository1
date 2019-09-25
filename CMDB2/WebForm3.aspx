@@ -754,7 +754,7 @@
                                     <asp:DropDownList ID="DropDownList5" runat="server">
                                         <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>PROD</asp:ListItem>
-                                        <asp:ListItem>NON-PROD</asp:ListItem>
+                                        <asp:ListItem>NON PROD</asp:ListItem>
                                         <asp:ListItem>DR</asp:ListItem>
                                     </asp:DropDownList>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="DropDownList5" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
@@ -1347,7 +1347,7 @@
                                          <asp:DropDownList ID="DropDownList7" runat="server">
                                         <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>PROD</asp:ListItem>
-                                        <asp:ListItem>NON-PROD</asp:ListItem>
+                                        <asp:ListItem>NON PROD</asp:ListItem>
                                         <asp:ListItem>DR</asp:ListItem>
                                              </asp:DropDownList>
                                     </div>

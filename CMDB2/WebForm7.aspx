@@ -19,6 +19,68 @@
         <asp:Button ID="Button2" runat="server" Text="222222222222" OnClick="Button2_Click" />
 
 
+        <asp:gridview ID="Gridview1" runat="server" ShowFooter="true"
+
+            AutoGenerateColumns="false" onrowcreated="Gridview1_RowCreated">
+
+            <Columns>
+
+            <asp:BoundField DataField="RowNumber" HeaderText="Row Number" />
+
+            <asp:TemplateField HeaderText="Header 1">
+
+                <ItemTemplate>
+
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+
+                </ItemTemplate>
+
+            </asp:TemplateField>
+
+            <asp:TemplateField HeaderText="Header 2">
+
+                <ItemTemplate>
+
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+
+                </ItemTemplate>
+
+            </asp:TemplateField>
+
+            <asp:TemplateField HeaderText="Header 3">
+
+                <ItemTemplate>
+
+                     <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+
+                </ItemTemplate>
+
+                <FooterStyle HorizontalAlign="Right" />
+
+                <FooterTemplate>
+
+                 <asp:Button ID="ButtonAdd" runat="server" Text="Add New Row"
+
+                        onclick="ButtonAdd_Click" />
+
+                </FooterTemplate>
+
+            </asp:TemplateField>
+
+                 <asp:TemplateField>
+
+                <ItemTemplate>
+
+                    <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click">Remove</asp:LinkButton>
+
+                </ItemTemplate>
+
+            </asp:TemplateField>
+
+            </Columns>
+
+        </asp:gridview>
+
     </div>
     </form>
 </body>

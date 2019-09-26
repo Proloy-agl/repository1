@@ -33,14 +33,14 @@ namespace CMDB2
             string ChoiceF;
 
 
-            // string CR= Session["CR_Num"].ToString();
-            string CR = "CRQ000000087819";
+     string CR= Session["CR_Num"].ToString();
+            //string CR = "CRQ000000087819";
 
             varA = Convert.ToInt16(Session["value11"]);
             varB = Convert.ToInt16(Session["valueR"]);
             //ValF = Convert.ToInt32(ChoiceF = Session["value6"].ToString());
 
-              //CR = Session["CR_Num"].ToString();
+            CR = Session["CR_Num"].ToString();
            
             
             // CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
@@ -127,8 +127,8 @@ namespace CMDB2
         protected void Button3_Click(object sender, EventArgs e)
         {
 
-          // string CR= Session["CR_Num"].ToString();
-            string CR = "CRQ000000087819";
+        string CR= Session["CR_Num"].ToString();
+           // string CR = "CRQ000000087819";
 
 
             //generate Token
@@ -172,13 +172,11 @@ namespace CMDB2
 
             JObject jsonResponseNew = (JObject)JsonConvert.DeserializeObject(response55.Content);
 
-        //    dynamic json = JValue.Parse(response55.Content);
+            dynamic json = JValue.Parse(response55.Content);
 
             var jsNew = new JavaScriptSerializer();
             var dNew = jsNew.Deserialize<dynamic>(Convert.ToString(jsonResponseNew));
 
-            int m = 1;
-            int n = 0;
             dynamic jsonObj = JsonConvert.DeserializeObject(response55.Content);
 
 

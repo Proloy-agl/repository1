@@ -392,6 +392,17 @@
     .GridView1 > tbody > tr > th, 
     .GridView1 > tbody > tr > td { border: 2px ridge black; padding: 3px; }
 
+
+    .footer {
+            height: 66px;
+            clear: both;
+            background-color: #c4c4c4;
+            font-size: 14px;
+            line-height: 66px;
+            position: relative !important;
+            padding-left: 15px;
+            text-align:center;
+        }
     </style>
 </head>
 <body>
@@ -653,5 +664,9 @@ DeleteCommand="DELETE FROM [Audit_Decomission] where [Transaction_ID]=@Transacti
              </div>
 </div>
     
+     <div class="footer">
+            
+            <div><b>Administered by:</b> Workplace Experience Team, AGL e: serviceexperience@agl.com.au</div>
+        </div> 
 </body>
 </html>

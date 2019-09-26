@@ -858,3 +858,14 @@ legend {
     padding-top: 0;
     border: 0;
 }
+
+.footer {
+            height: 66px;
+            clear: both;
+            background-color: #c4c4c4;
+            font-size: 14px;
+            line-height: 66px;
+            position: relative !important;
+            padding-left: 15px;
+            text-align:center;
+        }

@@ -77,9 +77,9 @@ namespace CMDB2
 
             
 
-            dynamic jsonObj = JsonConvert.DeserializeObject(response55.Content);
+            var jsonObj = JsonConvert.DeserializeObject(response55.Content);
 
-            dynamic json1 = JObject.Parse(Convert.ToString(jsonObj));
+            var json1 = JObject.Parse(Convert.ToString(jsonObj));
 
            // dynamic json = JValue.Parse(response55.Content);
 

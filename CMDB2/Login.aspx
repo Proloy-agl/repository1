@@ -458,7 +458,7 @@ ForeColor="Red"></asp:RequiredFieldValidator>
               
                 </div>
         </div>
-            </div>>
+            </div>
         <div class="footer">
             
             <div><b>Administered by:</b> Workplace Experience Team, AGL e: serviceexperience@agl.com.au</div>

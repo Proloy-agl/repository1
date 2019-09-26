@@ -36,7 +36,7 @@ namespace CMDB2
 
             //generate Token
 
-            var client = new RestClient("https://jirauat.mobile.agl.com.au/api/jwt/login");
+            var client = new RestClient("http://glawi1283.agl.int:8008/api/jwt/login");
             var request = new RestRequest(Method.POST);
             request.AddHeader("cache-control", "no-cache");
             request.AddHeader("Connection", "keep-alive");
@@ -56,7 +56,7 @@ namespace CMDB2
             string tokenPass = string.Concat(data1, " ", data);
 
             ///////////////////////////////////////////////////////////////////////////////////////////
-            string URLgetinit = "https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Infrastructure%20Change/?q=%27Infrastructure%20Change%20ID%27%20=%20%22";
+            string URLgetinit = "http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/?q=%27Infrastructure%20Change%20ID%27%20=%20%22";
             String URlget = string.Concat(URLgetinit, CR, "%22");
             var client55 = new RestClient(URlget);
             var request55 = new RestRequest(Method.GET);
@@ -75,20 +75,29 @@ namespace CMDB2
 
             JObject jsonResponseNew = (JObject)JsonConvert.DeserializeObject(response55.Content);
 
-            dynamic json = JValue.Parse(response55.Content);
-
-            var jsNew = new JavaScriptSerializer();
-            var dNew = jsNew.Deserialize<dynamic>(Convert.ToString(jsonResponseNew));
+            
 
             dynamic jsonObj = JsonConvert.DeserializeObject(response55.Content);
 
+            dynamic json1 = JObject.Parse(Convert.ToString(jsonObj));
+
+           // dynamic json = JValue.Parse(response55.Content);
+
+            var jsNew = new JavaScriptSerializer();
+
+            var j1 = new JsonSerializer();
+
+            var dNew = jsNew.Deserialize<dynamic>(Convert.ToString(jsonObj));
+
+
+           
 
             string RequestID = dNew["entries"][0]["values"]["Request ID"];
             Label1.Text = RequestID;
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////
             //Post Data 
-            string PreURl = "https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
+            string PreURl = "http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
 
             string URL = string.Concat(PreURl, CR);
             var client3 = new RestClient(URL);

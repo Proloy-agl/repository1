@@ -133,7 +133,7 @@ namespace CMDB2
 
             //generate Token
 
-            var client = new RestClient("http://glawi1283.agl.int:8008/api/jwt/login");
+            var client = new RestClient("https://jirauat.mobile.agl.com.au/api/jwt/login");
             var request = new RestRequest(Method.POST);
             request.AddHeader("cache-control", "no-cache");
             request.AddHeader("Connection", "keep-alive");
@@ -155,7 +155,7 @@ namespace CMDB2
             ///////////////////////////////////////////////////////////////////////////////////////////
             //get request ID required for Posting 
 
-            string PreURl = "http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
+            string PreURl = "https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
             string URLget = string.Concat(PreURl, CR);
 
             var client55 = new RestClient(URLget);

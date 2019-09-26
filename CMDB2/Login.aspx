@@ -461,7 +461,7 @@ ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
         <div class="footer">
             
-            <div><b>V5 Administered by:</b> Workplace Experience Team, AGL e: serviceexperience@agl.com.au</div>
+            <div><b>V7 Administered by:</b> Workplace Experience Team, AGL e: serviceexperience@agl.com.au</div>
         </div>   
     </form>
 </body>

@@ -32,15 +32,15 @@ namespace CMDB2
             //}
             string ChoiceF;
 
-            string CR= Session["CR_Num"].ToString();
-            
+
+        string CR= Session["CR_Num"].ToString();
+           
 
             varA = Convert.ToInt16(Session["value11"]);
             varB = Convert.ToInt16(Session["valueR"]);
             //ValF = Convert.ToInt32(ChoiceF = Session["value6"].ToString());
 
-
-           CR = Session["CR_Num"].ToString();
+              CR = Session["CR_Num"].ToString();
            
             
             // CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
@@ -127,13 +127,13 @@ namespace CMDB2
         protected void Button3_Click(object sender, EventArgs e)
         {
 
-          string CR= Session["CR_Num"].ToString();
-           
+           string CR= Session["CR_Num"].ToString();
+            
 
 
             //generate Token
 
-            var client = new RestClient("https://jirauat.mobile.agl.com.au/api/jwt/login");
+            var client = new RestClient("http://glawi1283.agl.int:8008/api/jwt/login");
             var request = new RestRequest(Method.POST);
             request.AddHeader("cache-control", "no-cache");
             request.AddHeader("Connection", "keep-alive");
@@ -153,12 +153,9 @@ namespace CMDB2
             string tokenPass = string.Concat(data1, " ", data);
 
             ///////////////////////////////////////////////////////////////////////////////////////////
-            //get request ID required for Posting 
-
-            string PreURl = "https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
-            string URLget = string.Concat(PreURl, CR);
-
-            var client55 = new RestClient(URLget);
+            string URLgetinit = "http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/?q=%27Infrastructure%20Change%20ID%27%20=%20%22";
+            String URlget = string.Concat(URLgetinit, CR,"%22");
+            var client55 = new RestClient(URlget);
             var request55 = new RestRequest(Method.GET);
             request55.AddHeader("cache-control", "no-cache");
             request55.AddHeader("Connection", "keep-alive");
@@ -175,7 +172,7 @@ namespace CMDB2
 
             JObject jsonResponseNew = (JObject)JsonConvert.DeserializeObject(response55.Content);
 
-            dynamic json = JToken.Parse(response55.Content);
+            dynamic json = JValue.Parse(response55.Content);
 
             var jsNew = new JavaScriptSerializer();
             var dNew = jsNew.Deserialize<dynamic>(Convert.ToString(jsonResponseNew));
@@ -190,7 +187,7 @@ namespace CMDB2
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////
             //Post Data 
-           
+            string PreURl = "http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
            
             string URL=string.Concat(PreURl, RequestID);
             var client3 = new RestClient(URL);

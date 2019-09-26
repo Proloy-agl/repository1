@@ -15,8 +15,9 @@
         <br />
         <br />
         <br />
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <br />
-        <asp:Button ID="Button2" runat="server" Text="222222222222" OnClick="Button2_Click" />
+        <asp:Button ID="Button2" runat="server" Text="222222222222" OnClick="Button3_Click" />
 
 
         <asp:gridview ID="Gridview1" runat="server" ShowFooter="true"

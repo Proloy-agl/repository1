@@ -17,13 +17,13 @@ namespace CMDB2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
+            //if (!Page.IsPostBack)
 
-            {
+            //{
 
-                SetInitialRow();
+            //    SetInitialRow();
 
-            }
+            //}
 
         }
 
@@ -88,9 +88,8 @@ namespace CMDB2
             var j1 = new JsonSerializer();
 
             var dNew = jsNew.Deserialize<dynamic>(Convert.ToString(jsonObj));
+            
 
-
-           
 
             string RequestID = dNew["entries"][0]["values"]["Request ID"];
             Label1.Text = RequestID;

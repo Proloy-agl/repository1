@@ -1,9 +1,12 @@
-﻿using RestSharp;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Web;
+using System.Web.Script.Serialization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -29,16 +32,15 @@ namespace CMDB2
             //}
             string ChoiceF;
 
-
-           string CR= Session["CR_Num"].ToString();
-           
+            string CR= Session["CR_Num"].ToString();
+            
 
             varA = Convert.ToInt16(Session["value11"]);
             varB = Convert.ToInt16(Session["valueR"]);
             //ValF = Convert.ToInt32(ChoiceF = Session["value6"].ToString());
 
 
-             CR = Session["CR_Num"].ToString();
+           CR = Session["CR_Num"].ToString();
            
             
             // CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
@@ -126,7 +128,7 @@ namespace CMDB2
         {
 
           string CR= Session["CR_Num"].ToString();
-            
+           
 
 
             //generate Token
@@ -151,12 +153,46 @@ namespace CMDB2
             string tokenPass = string.Concat(data1, " ", data);
 
             ///////////////////////////////////////////////////////////////////////////////////////////
+            //get request ID required for Posting 
 
-
-            //Post Data 
             string PreURl = "http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
+            string URLget = string.Concat(PreURl, CR);
+
+            var client55 = new RestClient(URLget);
+            var request55 = new RestRequest(Method.GET);
+            request55.AddHeader("cache-control", "no-cache");
+            request55.AddHeader("Connection", "keep-alive");
+            request55.AddHeader("Accept-Encoding", "gzip, deflate");
+            request55.AddHeader("Host", "glawi1283.agl.int:8008");
+            request55.AddHeader("Postman-Token", "5dd7923c-11e7-42b2-b23b-71851a03509a,f0b22fa4-863a-4666-a8ef-cafd04797e37");
+            request55.AddHeader("Cache-Control", "no-cache");
+            request55.AddHeader("Accept", "*/*");
+            request55.AddHeader("User-Agent", "PostmanRuntime/7.17.1");
+            request55.AddHeader("Content-Type", "application/json");
+            request55.AddHeader("Authorization", tokenPass);
+            IRestResponse response55 = client55.Execute(request55);
+
+
+            JObject jsonResponseNew = (JObject)JsonConvert.DeserializeObject(response55.Content);
+
+            dynamic json = JValue.Parse(response55.Content);
+
+            var jsNew = new JavaScriptSerializer();
+            var dNew = jsNew.Deserialize<dynamic>(Convert.ToString(jsonResponseNew));
+
+            int m = 1;
+            int n = 0;
+            dynamic jsonObj = JsonConvert.DeserializeObject(response55.Content);
+
+
+            string RequestID = dNew["entries"][0]["values"]["Request ID"] ; 
+
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //Post Data 
            
-            string URL=string.Concat(PreURl, CR);
+           
+            string URL=string.Concat(PreURl, RequestID);
             var client3 = new RestClient(URL);
             //var client3 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/CRQ000000087819");
             var request3 = new RestRequest(Method.PUT);

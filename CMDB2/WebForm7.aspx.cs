@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestSharp;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -22,6 +23,12 @@ namespace CMDB2
             }
 
         }
+
+        protected void Button10_Click(object sender, EventArgs e)
+        {
+            
+        }
+
 
         protected void Button1_Click(object sender, EventArgs e)
         {

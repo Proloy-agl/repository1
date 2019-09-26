@@ -23,18 +23,25 @@ namespace CMDB2
 =========================================================================*/
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.UrlReferrer == null)
-            {
-                Response.Redirect("LoginSSO.aspx");
-            }
+            //if (Request.UrlReferrer == null)
+            //{
+            //    Response.Redirect("LoginSSO.aspx");
+            //}
             string ChoiceF;
-            string CR= Session["CR_Num"].ToString();
+
+
+           string CR= Session["CR_Num"].ToString();
+           
 
             varA = Convert.ToInt16(Session["value11"]);
             varB = Convert.ToInt16(Session["valueR"]);
             //ValF = Convert.ToInt32(ChoiceF = Session["value6"].ToString());
-            CR = Session["CR_Num"].ToString();
-           // CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
+
+
+             CR = Session["CR_Num"].ToString();
+           
+            
+            // CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
             Label2.Text = CR;
             TextBox1.Text = CR;
         }
@@ -118,10 +125,13 @@ namespace CMDB2
         protected void Button3_Click(object sender, EventArgs e)
         {
 
-            string CR= Session["CR_Num"].ToString();
+          string CR= Session["CR_Num"].ToString();
+            
+
+
             //generate Token
 
-            var client = new RestClient("https://jirauat.mobile.agl.com.au/api/jwt/login");
+            var client = new RestClient("http://glawi1283.agl.int:8008/api/jwt/login");
             var request = new RestRequest(Method.POST);
             request.AddHeader("cache-control", "no-cache");
             request.AddHeader("Connection", "keep-alive");
@@ -144,10 +154,11 @@ namespace CMDB2
 
 
             //Post Data 
-            string PreURl = "https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
+            string PreURl = "http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
+           
             string URL=string.Concat(PreURl, CR);
             var client3 = new RestClient(URL);
-            //var client3 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/CRQ000000068504");
+            //var client3 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/CRQ000000087819");
             var request3 = new RestRequest(Method.PUT);
             request3.AddHeader("cache-control", "no-cache");
             request3.AddHeader("Connection", "keep-alive");

@@ -44,7 +44,7 @@ namespace CMDB2
             request.AddHeader("Connection", "keep-alive");
             request.AddHeader("Content-Length", "45");
             request.AddHeader("Accept-Encoding", "gzip, deflate");
-            request.AddHeader("Host", "glawi1283.agl.int:8008");
+            //request.AddHeader("Host", "glawi1283.agl.int:8008");
             // request.AddHeader("Postman-Token", "ba7b4308-7ca3-423f-81df-7bafe5970493,80ff5308-7b89-4ca0-afb8-35707261710e");
             request.AddHeader("Cache-Control", "no-cache");
             request.AddHeader("Accept", "*/*");
@@ -65,7 +65,7 @@ namespace CMDB2
             request55.AddHeader("cache-control", "no-cache");
             request55.AddHeader("Connection", "keep-alive");
             request55.AddHeader("Accept-Encoding", "gzip, deflate");
-            request55.AddHeader("Host", "glawi1283.agl.int:8008");
+           // request55.AddHeader("Host", "glawi1283.agl.int:8008");
             request55.AddHeader("Postman-Token", "5dd7923c-11e7-42b2-b23b-71851a03509a,f0b22fa4-863a-4666-a8ef-cafd04797e37");
             request55.AddHeader("Cache-Control", "no-cache");
             request55.AddHeader("Accept", "*/*");

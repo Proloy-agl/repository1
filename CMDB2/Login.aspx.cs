@@ -29,11 +29,11 @@ namespace CMDB2
  =========================================================================*/
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (Request.UrlReferrer == null)
-            //{
-            //    Response.Redirect("LoginSSO.aspx");
-            //}
-           // Label4.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
+            if (Request.UrlReferrer == null)
+            {
+                Response.Redirect("LoginSSO.aspx");
+            }
+            Label4.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
         }
         /*======================Magneto==========================================
         =Function= Captures CR information      

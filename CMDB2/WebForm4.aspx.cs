@@ -128,18 +128,17 @@ namespace CMDB2
         {
 
         string CR= Session["CR_Num"].ToString();
-           // string CR = "CRQ000000087819";
-
+            // string CR = "CRQ000000087819";
 
             //generate Token
 
-            var client = new RestClient("http://glawi1283.agl.int:8008/api/jwt/login");
+            var client = new RestClient("https://jirauat.mobile.agl.com.au/api/jwt/login");
             var request = new RestRequest(Method.POST);
             request.AddHeader("cache-control", "no-cache");
             request.AddHeader("Connection", "keep-alive");
             request.AddHeader("Content-Length", "45");
             request.AddHeader("Accept-Encoding", "gzip, deflate");
-            request.AddHeader("Host", "glawi1283.agl.int:8008");
+            //request.AddHeader("Host", "glawi1283.agl.int:8008");
             // request.AddHeader("Postman-Token", "ba7b4308-7ca3-423f-81df-7bafe5970493,80ff5308-7b89-4ca0-afb8-35707261710e");
             request.AddHeader("Cache-Control", "no-cache");
             request.AddHeader("Accept", "*/*");
@@ -153,41 +152,49 @@ namespace CMDB2
             string tokenPass = string.Concat(data1, " ", data);
 
             ///////////////////////////////////////////////////////////////////////////////////////////
-            //string URLgetinit = "http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/?q=%27Infrastructure%20Change%20ID%27%20=%20%22";
-            //String URlget = string.Concat(URLgetinit, CR,"%22");
-            //var client55 = new RestClient(URlget);
-            //var request55 = new RestRequest(Method.GET);
-            //request55.AddHeader("cache-control", "no-cache");
-            //request55.AddHeader("Connection", "keep-alive");
-            //request55.AddHeader("Accept-Encoding", "gzip, deflate");
-            //request55.AddHeader("Host", "glawi1283.agl.int:8008");
-            //request55.AddHeader("Postman-Token", "5dd7923c-11e7-42b2-b23b-71851a03509a,f0b22fa4-863a-4666-a8ef-cafd04797e37");
-            //request55.AddHeader("Cache-Control", "no-cache");
-            //request55.AddHeader("Accept", "*/*");
-            //request55.AddHeader("User-Agent", "PostmanRuntime/7.17.1");
-            //request55.AddHeader("Content-Type", "application/json");
-            //request55.AddHeader("Authorization", tokenPass);
-            //IRestResponse response55 = client55.Execute(request55);
+            string URLgetinit = "https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Infrastructure%20Change/?q=%27Infrastructure%20Change%20ID%27%20=%20%22";
+            String URlget = string.Concat(URLgetinit, CR, "%22");
+            var client55 = new RestClient(URlget);
+            var request55 = new RestRequest(Method.GET);
+            request55.AddHeader("cache-control", "no-cache");
+            request55.AddHeader("Connection", "keep-alive");
+            request55.AddHeader("Accept-Encoding", "gzip, deflate");
+            // request55.AddHeader("Host", "glawi1283.agl.int:8008");
+            request55.AddHeader("Postman-Token", "5dd7923c-11e7-42b2-b23b-71851a03509a,f0b22fa4-863a-4666-a8ef-cafd04797e37");
+            request55.AddHeader("Cache-Control", "no-cache");
+            request55.AddHeader("Accept", "*/*");
+            request55.AddHeader("User-Agent", "PostmanRuntime/7.17.1");
+            request55.AddHeader("Content-Type", "application/json");
+            request55.AddHeader("Authorization", tokenPass);
+            IRestResponse response55 = client55.Execute(request55);
 
 
-            //JObject jsonResponseNew = (JObject)JsonConvert.DeserializeObject(response55.Content);
-
-            //dynamic json = JValue.Parse(response55.Content);
-
-            //var jsNew = new JavaScriptSerializer();
-            //var dNew = jsNew.Deserialize<dynamic>(Convert.ToString(jsonResponseNew));
-
-            //dynamic jsonObj = JsonConvert.DeserializeObject(response55.Content);
+            JObject jsonResponseNew = (JObject)JsonConvert.DeserializeObject(response55.Content);
 
 
-            //string RequestID = dNew["entries"][0]["values"]["Request ID"] ; 
+
+            dynamic jsonObj = JsonConvert.DeserializeObject(response55.Content);
+
+            dynamic json1 = JObject.Parse(Convert.ToString(jsonObj));
+
+            // dynamic json = JValue.Parse(response55.Content);
+
+            var jsNew = new JavaScriptSerializer();
+
+            var j1 = new JsonSerializer();
+
+            var dNew = jsNew.Deserialize<dynamic>(Convert.ToString(jsonObj));
+
+
+
+            string RequestID = dNew["entries"][0]["values"]["Request ID"];
 
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////
             //Post Data 
-            string PreURl = "http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
+            string PreURl = "https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
            
-            string URL=string.Concat(PreURl, CR);
+            string URL=string.Concat(PreURl, RequestID);
             var client3 = new RestClient(URL);
             //var client3 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/CRQ000000087819");
             var request3 = new RestRequest(Method.PUT);
@@ -195,7 +202,7 @@ namespace CMDB2
             request3.AddHeader("Connection", "keep-alive");
             request3.AddHeader("Content-Length", "58");
             request3.AddHeader("Accept-Encoding", "gzip, deflate");
-            request3.AddHeader("Host", "glawi1283.agl.int:8008");
+            
             request3.AddHeader("Postman-Token", "f2db7919-e3a5-48b6-a906-d34a3d700377,27b2e20f-dadc-4ff9-84af-0f19270678b5");
             request3.AddHeader("Cache-Control", "no-cache");
             request3.AddHeader("Accept", "*/*");

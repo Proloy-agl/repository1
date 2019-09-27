@@ -30,7 +30,9 @@ namespace CMDB2
         protected void Button3_Click(object sender, EventArgs e)
         {
 
-            
+            try
+            {
+
             string CR = "CRQ000000087819";
 
 
@@ -94,30 +96,36 @@ namespace CMDB2
             string RequestID = dNew["entries"][0]["values"]["Request ID"];
             Label1.Text = RequestID;
 
-            ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-            //Post Data 
-            string PreURl = "https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
 
-            string URL = string.Concat(PreURl, CR);
-            var client3 = new RestClient(URL);
-            //var client3 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/CRQ000000087819");
-            var request3 = new RestRequest(Method.PUT);
-            request3.AddHeader("cache-control", "no-cache");
-            request3.AddHeader("Connection", "keep-alive");
-            request3.AddHeader("Content-Length", "58");
-            request3.AddHeader("Accept-Encoding", "gzip, deflate");
-            request3.AddHeader("Host", "glawi1283.agl.int:8008");
-            request3.AddHeader("Postman-Token", "f2db7919-e3a5-48b6-a906-d34a3d700377,27b2e20f-dadc-4ff9-84af-0f19270678b5");
-            request3.AddHeader("Cache-Control", "no-cache");
-            request3.AddHeader("Accept", "*/*");
-            request3.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
-            request3.AddHeader("Authorization", tokenPass);
-            request3.AddHeader("Content-Type", "application/json");
-            request3.AddParameter("undefined", "{\r\n  \"values\":{\r\n    \r\n    \"Magneto Flag\": \"Yes\"\r\n  }\r\n}\r\n", ParameterType.RequestBody);
-            IRestResponse response3 = client3.Execute(request3);
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ////Post Data 
+            //string PreURl = "http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
+
+            //string URL = string.Concat(PreURl, CR);
+            //var client3 = new RestClient(URL);
+            ////var client3 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/CRQ000000087819");
+            //var request3 = new RestRequest(Method.PUT);
+            //request3.AddHeader("cache-control", "no-cache");
+            //request3.AddHeader("Connection", "keep-alive");
+            //request3.AddHeader("Content-Length", "58");
+            //request3.AddHeader("Accept-Encoding", "gzip, deflate");
+            //request3.AddHeader("Host", "glawi1283.agl.int:8008");
+            //request3.AddHeader("Postman-Token", "f2db7919-e3a5-48b6-a906-d34a3d700377,27b2e20f-dadc-4ff9-84af-0f19270678b5");
+            //request3.AddHeader("Cache-Control", "no-cache");
+            //request3.AddHeader("Accept", "*/*");
+            //request3.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
+            //request3.AddHeader("Authorization", tokenPass);
+            //request3.AddHeader("Content-Type", "application/json");
+            //request3.AddParameter("undefined", "{\r\n  \"values\":{\r\n    \r\n    \"Magneto Flag\": \"Yes\"\r\n  }\r\n}\r\n", ParameterType.RequestBody);
+            //IRestResponse response3 = client3.Execute(request3);
 
 
-           
+
         }
 
 

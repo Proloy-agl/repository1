@@ -22,10 +22,16 @@ namespace CMDB2
 
         protected void Login_Click(object sender, EventArgs e)
         {
-
+            try { 
             Context.GetOwinContext().Authentication.Challenge(
     new AuthenticationProperties { RedirectUri = "https://magnetodev.azurewebsites.net/Login.aspx" },
     OpenIdConnectAuthenticationDefaults.AuthenticationType);
+            }
+            catch (Exception ex)
+            {
+                Response.Redirect("LoginSSO.aspx");
+            }
+
         }
 
         protected void Loginout_Click(object sender, EventArgs e)

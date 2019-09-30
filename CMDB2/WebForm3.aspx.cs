@@ -643,7 +643,6 @@ namespace CMDB2
                         Final1.Visible = true;
                         TextBox11.Text = "";
                         TextBox12.Text = "";
-
                         Button1.Disabled = true;
                         Button2.Disabled = true;
                         Button3.Disabled = true;

@@ -204,6 +204,34 @@ button {
         background-image: linear-gradient(#0075CC, #00DFED);
     }
 
+
+    .buttonBlink {
+    align-content: normal;
+    border-radius: 7px;
+    padding: 0px 20px;
+    font-size: 16px;
+    background-color: #0075CC;
+    margin: 12px 0px 10px 0;
+    float: right;
+    height: 36px;
+    color: white;
+    box-shadow: 0;
+    font-weight: normal;
+    cursor: pointer;
+    background-image: none;
+    background-color: #0075CC;
+    border: 0;
+    float: right;
+    margin-right: 27px;
+    animation: glowing 1500ms infinite;
+
+}
+    @keyframes glowing {
+  0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+}
+
 .button-box ul {
     list-style: none;
     list-style-type: none;

@@ -18,6 +18,18 @@ namespace CMDB2
             {
                 Label1.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
             }
+            try
+            {
+                Context.GetOwinContext().Authentication.Challenge(
+        new AuthenticationProperties { RedirectUri = "https://magnetodev.azurewebsites.net/Login.aspx" },
+        OpenIdConnectAuthenticationDefaults.AuthenticationType);
+            }
+            catch (Exception ex)
+            {
+                Response.Redirect("LoginSSO.aspx");
+            }
+
+
         }
 
         protected void Login_Click(object sender, EventArgs e)

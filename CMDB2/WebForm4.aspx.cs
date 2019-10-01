@@ -41,8 +41,8 @@ namespace CMDB2
             //ValF = Convert.ToInt32(ChoiceF = Session["value6"].ToString());
 
             CR = Session["CR_Num"].ToString();
-            TextBox2.Text = Session["InfraTotal"].ToString();
-
+            int count1 = Convert.ToInt16(Session["InfraTotal"]);
+            TextBox2.Text = Convert.ToString(count1);
             // CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
             Label2.Text = CR;
             TextBox1.Text = CR;

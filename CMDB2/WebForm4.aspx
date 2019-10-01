@@ -435,11 +435,12 @@
 
                   <asp:Panel ID="Panel2" runat="server">
   <legend class="heading1">Count details for the CR </legend>
-
+                      <fieldset class="form-content">
                       <asp:Label ID="Label3" runat="server" Text="Label">Infra count linked to CR in Remedy </asp:Label>
                       <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                       <asp:Label ID="Label4" runat="server" Text="Label">Infra count linked to CR in Magneto </asp:Label>
                       <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                          </fieldset>
                   </asp:Panel>
 
                   <asp:Panel runat="server" ID="panel456" Visible="false">

@@ -82,6 +82,11 @@
 
         </asp:gridview>
 
+
+        <br />
+
+        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Site_ID" DataValueField="Site_ID"></asp:DropDownList>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ARSystem1ConnectionString %>" SelectCommand="SELECT [Site_ID] FROM [CHG_Infrastructure_Change]"></asp:SqlDataSource>
     </div>
     </form>
 </body>

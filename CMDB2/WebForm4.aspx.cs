@@ -3,6 +3,8 @@ using Newtonsoft.Json.Linq;
 using RestSharp;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -32,20 +34,51 @@ namespace CMDB2
             //}
             string ChoiceF;
 
-
      string CR= Session["CR_Num"].ToString();
-            //string CR = "CRQ000000087819";
+   //   string CR = "CRQ000000087819";
 
             varA = Convert.ToInt16(Session["value11"]);
             varB = Convert.ToInt16(Session["valueR"]);
             //ValF = Convert.ToInt32(ChoiceF = Session["value6"].ToString());
-
-            CR = Session["CR_Num"].ToString();
+     
             int count1 = Convert.ToInt16(Session["InfraTotal"]);
             TextBox2.Text = Convert.ToString(count1);
             // CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
             Label2.Text = CR;
             TextBox1.Text = CR;
+
+
+            string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
+            SqlConnection conn = null;
+
+            try
+            {
+                conn = new SqlConnection(connString);
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "SELECT COUNT (DISTINCT [CI_Name])  FROM [dbo].[Audit_Infrastructure_CI] where[CR_Number] = @var9 ";
+                    cmd.Parameters.AddWithValue("@var9", CR);
+                    int  amt = (int)cmd.ExecuteScalar();
+                    TextBox3.Text = Convert.ToString(amt);
+                }
+            }
+            catch (Exception ex)
+            {
+
+
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    //cleanup connection i.e close 
+                }
+            }
+
+
         }
         /*======================Magneto==========================================
        =Function= 

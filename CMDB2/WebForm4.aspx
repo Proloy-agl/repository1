@@ -619,7 +619,7 @@ DeleteCommand="DELETE FROM [Audit_Decomission] where [Transaction_ID]=@Transacti
             </fieldset>
                   </asp:Panel>
                
-                  <button type="button" class="button1" data-toggle="modal" data-target="#myModal" runat="server" id="buttonModal" visible="false">Open Modal</button>
+                  <button type="button" class="button1" data-toggle="modal" data-target="#myModal" runat="server" id="buttonModal">Open Modal</button>
                   <asp:Button ID="Button2" runat="server" CssClass="button1" Text="Submit and Close" OnClick="Button3_Click"  />
        
                   <asp:LinkButton ID="RemedyUAT" runat="server" PostBackUrl="http://aglitremedyuat.agl.com.au:8080/arsys " OnClick="Button2_Click1">Remedy UAT</asp:LinkButton>

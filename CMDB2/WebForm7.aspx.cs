@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Linq;
 using RestSharp;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -33,98 +34,96 @@ namespace CMDB2
             try
             {
 
-            string CR = "CRQ000000087819";
+                string CR = "CRQ000000087819";
 
 
-            //generate Token
+                //generate Token
 
-            var client = new RestClient("https://jirauat.mobile.agl.com.au/api/jwt/login");
-            var request = new RestRequest(Method.POST);
-            request.AddHeader("cache-control", "no-cache");
-            request.AddHeader("Connection", "keep-alive");
-            request.AddHeader("Content-Length", "45");
-            request.AddHeader("Accept-Encoding", "gzip, deflate");
-            //request.AddHeader("Host", "glawi1283.agl.int:8008");
-            // request.AddHeader("Postman-Token", "ba7b4308-7ca3-423f-81df-7bafe5970493,80ff5308-7b89-4ca0-afb8-35707261710e");
-            request.AddHeader("Cache-Control", "no-cache");
-            request.AddHeader("Accept", "*/*");
-            request.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
-            request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
-            request.AddParameter("undefined", "username=svc_magneto&password=svc_magneto", ParameterType.RequestBody);
-            IRestResponse response = client.Execute(request);
-            var data = response.Content;
+                var client = new RestClient("http://glawi1283.agl.int:8008/api/jwt/login");
+                var request = new RestRequest(Method.POST);
+                request.AddHeader("cache-control", "no-cache");
+                request.AddHeader("Connection", "keep-alive");
+                request.AddHeader("Content-Length", "45");
+                request.AddHeader("Accept-Encoding", "gzip, deflate");
+                //request.AddHeader("Host", "glawi1283.agl.int:8008");
+                // request.AddHeader("Postman-Token", "ba7b4308-7ca3-423f-81df-7bafe5970493,80ff5308-7b89-4ca0-afb8-35707261710e");
+                request.AddHeader("Cache-Control", "no-cache");
+                request.AddHeader("Accept", "*/*");
+                request.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
+                request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+                request.AddParameter("undefined", "username=svc_magneto&password=svc_magneto", ParameterType.RequestBody);
+                IRestResponse response = client.Execute(request);
+                var data = response.Content;
 
-            string data1 = "AR-JWT";
-            string tokenPass = string.Concat(data1, " ", data);
+                string data1 = "AR-JWT";
+                string tokenPass = string.Concat(data1, " ", data);
+                ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-            ///////////////////////////////////////////////////////////////////////////////////////////
-            string URLgetinit = "https://jirauat.mobile.agl.com.au/api/arsys/v1/entry/CHG:Infrastructure%20Change/?q=%27Infrastructure%20Change%20ID%27%20=%20%22";
-            String URlget = string.Concat(URLgetinit, CR, "%22");
-            var client55 = new RestClient(URlget);
-            var request55 = new RestRequest(Method.GET);
-            request55.AddHeader("cache-control", "no-cache");
-            request55.AddHeader("Connection", "keep-alive");
-            request55.AddHeader("Accept-Encoding", "gzip, deflate");
-           // request55.AddHeader("Host", "glawi1283.agl.int:8008");
-            request55.AddHeader("Postman-Token", "5dd7923c-11e7-42b2-b23b-71851a03509a,f0b22fa4-863a-4666-a8ef-cafd04797e37");
-            request55.AddHeader("Cache-Control", "no-cache");
-            request55.AddHeader("Accept", "*/*");
-            request55.AddHeader("User-Agent", "PostmanRuntime/7.17.1");
-            request55.AddHeader("Content-Type", "application/json");
-            request55.AddHeader("Authorization", tokenPass);
-            IRestResponse response55 = client55.Execute(request55);
+                var client1 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/SIT:Site%20Alias%20Company%20LookUp");
+                var request1 = new RestRequest(Method.GET);
+                request1.AddHeader("cache-control", "no-cache");
+                request1.AddHeader("Connection", "keep-alive");
+                request1.AddHeader("Accept-Encoding", "gzip, deflate");
+                request1.AddHeader("Host", "jirauat.mobile.agl.com.au");
+                request1.AddHeader("Postman-Token", "8fb97c36-ac33-4e13-be14-527c586e0450,118913f2-c6f9-4145-b785-ce095277ba68");
+                request1.AddHeader("Cache-Control", "no-cache");
+                request1.AddHeader("Accept", "*/*");
+                request1.AddHeader("User-Agent", "PostmanRuntime/7.17.1");
+                request1.AddHeader("Content-Type", "application/json");
+                request1.AddHeader("Authorization", tokenPass);
+                IRestResponse response1 = client1.Execute(request1);
 
+                IRestResponse response11 = client1.Execute(request1);
 
-            JObject jsonResponseNew = (JObject)JsonConvert.DeserializeObject(response55.Content);
+                JObject jsonResponse1 = (JObject)JsonConvert.DeserializeObject(response11.Content);
 
-            
+                dynamic json = JValue.Parse(response1.Content);
 
-            dynamic jsonObj = JsonConvert.DeserializeObject(response55.Content);
-
-            dynamic json1 = JObject.Parse(Convert.ToString(jsonObj));
-
-           // dynamic json = JValue.Parse(response55.Content);
-
-            var jsNew = new JavaScriptSerializer();
-
-            var j1 = new JsonSerializer();
-
-            var dNew = jsNew.Deserialize<dynamic>(Convert.ToString(jsonObj));
-            
+                ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-            string RequestID = dNew["entries"][0]["values"]["Request ID"];
-            Label1.Text = RequestID;
+
+                List<string> AppCI = new List<string>();
+                List<string> InfraCI = new List<string>();
+
+
+
+
+                var js10 = new JavaScriptSerializer();
+                var d10 = js10.Deserialize<dynamic>(Convert.ToString(jsonResponse1));
+                int m = 1;
+                int n = 0;
+                dynamic jsonObj = JsonConvert.DeserializeObject(response1.Content);
+
+
+                Dictionary<string, object> csObj =
+        js10.Deserialize<Dictionary<string, object>>(response1.Content);
+                n = ((ArrayList)csObj["entries"]).Count;
+
+
+                for (int x = 0; x < n; x++)
+                {
+
+
+                   
+                        string Value1 = d10["entries"][x]["values"]["Region"];
+                       
+                        foreach (var word in Value1)
+                            AppCI.Add(Convert.ToString(word));
+
+             
+
+                }
 
             }
-            catch(Exception ex)
+
+            catch (Exception ex)
             {
                 Label1.Text = ex.Message;
             }
 
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            ////Post Data 
-            //string PreURl = "http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/";
 
-            //string URL = string.Concat(PreURl, CR);
-            //var client3 = new RestClient(URL);
-            ////var client3 = new RestClient("http://glawi1283.agl.int:8008/api/arsys/v1/entry/CHG:Infrastructure%20Change/CRQ000000087819");
-            //var request3 = new RestRequest(Method.PUT);
-            //request3.AddHeader("cache-control", "no-cache");
-            //request3.AddHeader("Connection", "keep-alive");
-            //request3.AddHeader("Content-Length", "58");
-            //request3.AddHeader("Accept-Encoding", "gzip, deflate");
-            //request3.AddHeader("Host", "glawi1283.agl.int:8008");
-            //request3.AddHeader("Postman-Token", "f2db7919-e3a5-48b6-a906-d34a3d700377,27b2e20f-dadc-4ff9-84af-0f19270678b5");
-            //request3.AddHeader("Cache-Control", "no-cache");
-            //request3.AddHeader("Accept", "*/*");
-            //request3.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
-            //request3.AddHeader("Authorization", tokenPass);
-            //request3.AddHeader("Content-Type", "application/json");
-            //request3.AddParameter("undefined", "{\r\n  \"values\":{\r\n    \r\n    \"Magneto Flag\": \"Yes\"\r\n  }\r\n}\r\n", ParameterType.RequestBody);
-            //IRestResponse response3 = client3.Execute(request3);
-
-
+           
 
         }
 

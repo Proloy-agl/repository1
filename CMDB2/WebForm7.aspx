@@ -85,12 +85,7 @@
 
         <br />
 
-        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Site_ID" DataValueField="Site_ID"></asp:DropDownList>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ARSystem1ConnectionString %>" SelectCommand="SELECT [Site_ID] FROM [CHG_Infrastructure_Change]"></asp:SqlDataSource>
-        <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource3" DataTextField="OldValue" DataValueField="OldValue"></asp:DropDownList>
-
-         <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1111 %>" SelectCommand="SELECT TOP (10) OldValue
-  FROM [AGL_CN_System].[dbo].[Audit] "></asp:SqlDataSource>
+        
        
          </div>
     </form>

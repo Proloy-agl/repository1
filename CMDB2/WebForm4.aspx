@@ -644,7 +644,7 @@ DeleteCommand="DELETE FROM [Audit_Decomission] where [Transaction_ID]=@Transacti
         </div>
         <div class="modal-footer">
          
-             <asp:Button ID="Button4" runat="server" CssClass="button1" Text="Go back and rectify" OnClick="Button2_Click" /> 
+             <asp:Button ID="Button4" runat="server" CssClass="button1" Text="Go back and rectify" data-dismiss="modal" /> 
           <asp:Button ID="Button3" runat="server" CssClass="button1" Text="Proceed with this Data" OnClick="Button3_Click"  />  
         </div>
       </div>

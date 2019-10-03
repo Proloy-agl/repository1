@@ -643,7 +643,8 @@ DeleteCommand="DELETE FROM [Audit_Decomission] where [Transaction_ID]=@Transacti
  infra CI dont have any attributes associated with them in Magneto. Please select your action
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Go back and rectify </button>
+         
+             <asp:Button ID="Button4" runat="server" CssClass="button1" Text="Go back and rectify" OnClick="Button2_Click" /> 
           <asp:Button ID="Button3" runat="server" CssClass="button1" Text="Proceed with this Data" OnClick="Button3_Click"  />  
         </div>
       </div>

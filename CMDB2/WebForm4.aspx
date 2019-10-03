@@ -625,18 +625,8 @@ DeleteCommand="DELETE FROM [Audit_Decomission] where [Transaction_ID]=@Transacti
                   <asp:LinkButton ID="RemedyUAT" runat="server" PostBackUrl="http://aglitremedyuat.agl.com.au:8080/arsys " OnClick="Button2_Click1">Remedy UAT</asp:LinkButton>
           
             
-             </form>
-
-             </div>
-</div>
-    
-     <div class="footer">
-            
-            <div><b>Administered by:</b> Workplace Experience Team, AGL e: serviceexperience@agl.com.au</div>
-        </div> 
-
-
-     <!-- Modal -->
+             
+              <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
@@ -660,5 +650,16 @@ DeleteCommand="DELETE FROM [Audit_Decomission] where [Transaction_ID]=@Transacti
       
     </div>
   </div>
+                  </form>
+             </div>
+</div>
+    
+     <div class="footer">
+            
+            <div><b>Administered by:</b> Workplace Experience Team, AGL e: serviceexperience@agl.com.au</div>
+        </div> 
+
+
+    
 </body>
 </html>

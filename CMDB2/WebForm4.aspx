@@ -618,6 +618,8 @@ DeleteCommand="DELETE FROM [Audit_Decomission] where [Transaction_ID]=@Transacti
    </asp:Panel>
             </fieldset>
                   </asp:Panel>
+               
+                  <button type="button" class="button1" data-toggle="modal" data-target="#myModal" runat="server" id="buttonModal" visible="false">Open Modal</button>
                   <asp:Button ID="Button2" runat="server" CssClass="button1" Text="Submit and Close" OnClick="Button3_Click"  />
        
                   <asp:LinkButton ID="RemedyUAT" runat="server" PostBackUrl="http://aglitremedyuat.agl.com.au:8080/arsys " OnClick="Button2_Click1">Remedy UAT</asp:LinkButton>
@@ -632,5 +634,31 @@ DeleteCommand="DELETE FROM [Audit_Decomission] where [Transaction_ID]=@Transacti
             
             <div><b>Administered by:</b> Workplace Experience Team, AGL e: serviceexperience@agl.com.au</div>
         </div> 
+
+
+     <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Oops! Look like you haven’t filled up all the information.<br />
+            On analyzing the information, you have just provided, we found:</p>
+            <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+ infra CI dont have any attributes associated with them in Magneto. Please select your action
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Go back and rectify </button>
+          <asp:Button ID="Button3" runat="server" CssClass="button1" Text="Proceed with this Data" OnClick="Button3_Click"  />  
+        </div>
+      </div>
+      
+    </div>
+  </div>
 </body>
 </html>

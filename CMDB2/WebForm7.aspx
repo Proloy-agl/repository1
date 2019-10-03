@@ -87,10 +87,9 @@
 
         <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Site_ID" DataValueField="Site_ID"></asp:DropDownList>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ARSystem1ConnectionString %>" SelectCommand="SELECT [Site_ID] FROM [CHG_Infrastructure_Change]"></asp:SqlDataSource>
-        <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource2" DataTextField="TRANID" DataValueField="TRANID"></asp:DropDownList>
+        <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource2" DataTextField="Submit_Date" DataValueField="Submit_Date"></asp:DropDownList>
 
-         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:UAFGConnectionString %>" SelectCommand="SELECT TOP (10)  TRANID
-  FROM [UAFG].[dbo].[T_UAFG_CONSUMPTION_BACKUP] "></asp:SqlDataSource>
+         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ARSystem1ConnectionString3 %>" SelectCommand="SELECT [Submit_Date] FROM [CHG_Infrastructure_Change]"></asp:SqlDataSource>
 
          </div>
     </form>

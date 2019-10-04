@@ -280,7 +280,7 @@
             color: #fff;
             background-image: linear-gradient(to right, #001CB0, #00DFED) !important;
             border-radius: 6px 6px 0 0;
-            height: 50px;
+            height: 55px;
         }
 
         .heading12 {

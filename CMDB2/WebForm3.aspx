@@ -779,7 +779,10 @@
                                     <asp:TextBox ID="Primary_Capability" runat="server" Visible="false"></asp:TextBox>
                                     <%--<asp:Label ID="Error11" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ErrorMessage="*Required"  class="validate" ControlToValidate="Primary_Capability" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
-                               --%> </div>
+                               --%> 
+                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="Primary_Capability_list" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
+                                     <asp:Label ID="Label28" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
+                                </div>
                             </li>
                             <li>
 

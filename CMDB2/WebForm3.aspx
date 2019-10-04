@@ -763,13 +763,23 @@
                             </li>
                             <li>
                                 <div>
+
                                     <asp:Label ID="Label8" runat="server" Text="Primary Capability"></asp:Label>
                                 </div>
                                 <div>
-                                    <asp:TextBox ID="Primary_Capability" runat="server"></asp:TextBox>
-                                    <asp:Label ID="Error11" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
+                                    <asp:DropDownList ID="Primary_Capability_list" runat="server">
+                                        <asp:ListItem>Select</asp:ListItem>
+                                        <asp:ListItem>Server</asp:ListItem>
+                                        <asp:ListItem>Storage</asp:ListItem>
+                                        <asp:ListItem>Switch</asp:ListItem>
+                                        <asp:ListItem>Firewall</asp:ListItem>
+                                        <asp:ListItem>Router</asp:ListItem>
+
+                                    </asp:DropDownList>
+                                    <asp:TextBox ID="Primary_Capability" runat="server" Visible="false"></asp:TextBox>
+                                    <%--<asp:Label ID="Error11" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ErrorMessage="*Required"  class="validate" ControlToValidate="Primary_Capability" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
-                                </div>
+                               --%> </div>
                             </li>
                             <li>
 

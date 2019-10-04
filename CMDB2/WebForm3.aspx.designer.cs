@@ -1066,6 +1066,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.Label Label8;
         
         /// <summary>
+        /// Primary_Capability_list control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList Primary_Capability_list;
+        
+        /// <summary>
         /// Primary_Capability control.
         /// </summary>
         /// <remarks>
@@ -1073,24 +1082,6 @@ namespace CMDB2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Primary_Capability;
-        
-        /// <summary>
-        /// Error11 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Error11;
-        
-        /// <summary>
-        /// RequiredFieldValidator6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
         
         /// <summary>
         /// Label9 control.

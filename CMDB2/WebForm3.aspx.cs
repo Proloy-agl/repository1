@@ -422,7 +422,8 @@ namespace CMDB2
          // a1 = CI_Name.Text;
           a1 = DL4.SelectedItem.Text; 
             a2 = System_Environment.Text;
-            a3 = Primary_Capability.Text;
+            a3 = Primary_Capability_list.SelectedValue;
+            //a3 = Primary_Capability.Text;
             a4 = Owner.Text;
             a5 = DropDownList6.SelectedValue;
             a6 = System_Role.Text;
@@ -478,7 +479,7 @@ namespace CMDB2
                         DropDownList6.SelectedValue = "Select";
                         DropDownList5.SelectedValue = "Select";
                         Button28.Visible = true;
-
+                        Primary_Capability_list.SelectedValue= "Select";
                         Button1.Disabled = true;
                         Button2.Disabled = true;
                         Button3.Disabled = false;
@@ -915,7 +916,8 @@ namespace CMDB2
 
             a1 = CI_Name.Text;
             a2 = System_Environment.Text;
-            a3 = Primary_Capability.Text;
+            a3 = Primary_Capability_list.SelectedValue;
+           // a3 = Primary_Capability.Text;
             a4 = Owner.Text;
             a5 = DropDownList6.SelectedValue;
             a6 = System_Role.Text;

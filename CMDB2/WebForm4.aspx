@@ -504,13 +504,13 @@
                                    <asp:BoundField DataField="System_Role" HeaderText="System_Role" SortExpression="System_Role" />
                                    <asp:BoundField DataField="Site" HeaderText="Site" SortExpression="Site" />
                                    <asp:BoundField DataField="OEM_Supported" HeaderText="OEM_Supported" SortExpression="OEM_Supported" />
-                                   <asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
+                                   <%--<asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" SortExpression="Transaction_ID" />--%>
                                   <%-- <asp:BoundField DataField="Transaction_Timestamp" HeaderText="Transaction_Timestamp" SortExpression="Transaction_Timestamp" />
                                    <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />--%>
                                </Columns>
                            </asp:GridView>
                            <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Audit_Infrastructure_CI] WHERE ([CR_Number] = @CR_Number)" UpdateCommand="UPDATE [Audit_Infrastructure_CI] SET [CI_Name]=@CI_Name,[System_Environment]=@System_Environment,[Primary_Capability]=@Primary_Capability,[Owner]=@Owner,[Supported_By]=@Supported_By,[System_Role]=@System_Role,[Site]=@Site,[OEM_Supported]=@OEM_Supported,[Transaction_Status]='U' where [CR_Number]=@CR_Number"
-DeleteCommand="DELETE FROM [Audit_Infrastructure_CI] where [Transaction_ID]=@Transaction_ID">
+DeleteCommand="DELETE FROM [Audit_Infrastructure_CI]  where [CR_Number]=@CR_Number">
                                <SelectParameters>
                                    <asp:ControlParameter ControlID="TextBox1" Name="CR_Number" PropertyName="Text" Type="String" />
                                </SelectParameters>

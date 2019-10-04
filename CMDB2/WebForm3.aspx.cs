@@ -700,9 +700,11 @@ namespace CMDB2
                 conn.Open();
                 using (SqlCommand cmd = new SqlCommand())
                 {
+                    //[Audit_Relationship_Infra_to_Infra](CR_Number,Parent_Infra_CI_Name,Child_Infra_CI_Name,Transaction_Timestamp,Transaction_Status)
+                    //[dbo].[Audit_Relationship_Infra_to_Infra_Magneto]([CR_Number],[Parent_Infra_CI_Name],[Child_Infra_CI_Name],[Transaction_Timestamp],[Transaction_Status])
                     cmd.Connection = conn;
                     cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "insert into [Audit_Relationship_Infra_to_Infra](CR_Number,Parent_Infra_CI_Name,Child_Infra_CI_Name,Transaction_Timestamp,Transaction_Status) values (@var1,@var2,@var3,@var4,@var5)";
+                    cmd.CommandText = "insert into [dbo].[Audit_Relationship_Infra_to_Infra_Magneto]([CR_Number],[Parent_Infra_CI_Name],[Child_Infra_CI_Name],[Transaction_Timestamp],[Transaction_Status]) values (@var1,@var2,@var3,@var4,@var5)";
                     cmd.Parameters.AddWithValue("@var1", CR_2);
                     cmd.Parameters.AddWithValue("@var2", c1);
                     cmd.Parameters.AddWithValue("@var3", c2);

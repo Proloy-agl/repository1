@@ -1403,7 +1403,7 @@
                                     </div>
                                     <div class="clear"></div>
 
-                                    <div style="text-align: center"><b>is linked to storage CI</b></div>
+                                    <div style="text-align: center"><b>is linked to Infrastructure CI</b></div>
                                     <div class="clear"></div>
                                     <div>
                                         <asp:TextBox ID="TextBox14" runat="server" Visible="false"></asp:TextBox>

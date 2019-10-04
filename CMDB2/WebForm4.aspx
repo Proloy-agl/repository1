@@ -538,7 +538,7 @@ DeleteCommand="DELETE FROM [Audit_Infrastructure_CI] where [Transaction_ID]=@Tra
                                <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />--%>
                            </Columns>
                        </asp:GridView>
-                       <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Audit_Relationship_App_to_Infra] WHERE ([CR_Number] = @CR_Number)" UpdateCommand="UPDATE [Audit_Relationship_App_to_Infra] SET [App_CI_Name]=@App_CI_Name,[Infra_CI_Name]=@Infra_CI_Name,[Transaction_Status]='U' where [Transaction_ID]=@Transaction_ID  " DeleteCommand="DELETE FROM [Audit_Relationship_App_to_Infra] where [Transaction_ID]=@Transaction_ID">
+                       <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Audit_Relationship_App_to_Infra_Magneto] WHERE ([CR_Number] = @CR_Number)" UpdateCommand="UPDATE [Audit_Relationship_App_to_Infra_Magneto] SET [App_CI_Name]=@App_CI_Name,[Infra_CI_Name]=@Infra_CI_Name,[Transaction_Status]='U' where [Transaction_ID]=@Transaction_ID  " DeleteCommand="DELETE FROM [Audit_Relationship_App_to_Infra_Magneto] where [Transaction_ID]=@Transaction_ID">
                            <SelectParameters>
                                <asp:ControlParameter ControlID="TextBox1" Name="CR_Number" PropertyName="Text" Type="String" />
                            </SelectParameters>
@@ -566,7 +566,7 @@ DeleteCommand="DELETE FROM [Audit_Infrastructure_CI] where [Transaction_ID]=@Tra
                                <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />--%>
                            </Columns>
                        </asp:GridView>
-                       <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Audit_Relationship_Infra_to_Infra] WHERE ([CR_Number] = @CR_Number)" UpdateCommand=" UPDATE [Audit_Relationship_Infra_to_Infra] SET [Parent_Infra_CI_Name]= @Parent_Infra_CI_Name,[Child_Infra_CI_Name]=@Child_Infra_CI_Name,[Transaction_Status]='U' where [Transaction_ID]=@Transaction_ID" DeleteCommand="DELETE FROM [Audit_Relationship_Infra_to_Infra] where [Transaction_ID]=@Transaction_ID">
+                       <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Audit_Relationship_Infra_to_Infra_Magneto] WHERE ([CR_Number] = @CR_Number)" UpdateCommand=" UPDATE [Audit_Relationship_Infra_to_Infra_Magneto] SET [Parent_Infra_CI_Name]= @Parent_Infra_CI_Name,[Child_Infra_CI_Name]=@Child_Infra_CI_Name,[Transaction_Status]='U' where [Transaction_ID]=@Transaction_ID" DeleteCommand="DELETE FROM [Audit_Relationship_Infra_to_Infra_Magneto] where [Transaction_ID]=@Transaction_ID">
                            <SelectParameters>
                                <asp:ControlParameter ControlID="TextBox1" Name="CR_Number" PropertyName="Text" Type="String" />
                            </SelectParameters>

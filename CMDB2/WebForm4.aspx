@@ -510,7 +510,7 @@
                                </Columns>
                            </asp:GridView>
                            <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Audit_Infrastructure_CI] WHERE ([CR_Number] = @CR_Number)" UpdateCommand="UPDATE [Audit_Infrastructure_CI] SET [CI_Name]=@CI_Name,[System_Environment]=@System_Environment,[Primary_Capability]=@Primary_Capability,[Owner]=@Owner,[Supported_By]=@Supported_By,[System_Role]=@System_Role,[Site]=@Site,[OEM_Supported]=@OEM_Supported,[Transaction_Status]='U' where [CR_Number]=@CR_Number"
-DeleteCommand="DELETE FROM [Audit_Infrastructure_CI]  where [CR_Number]=@CR_Number and [CI_Name]=@CI_Name">
+DeleteCommand="DELETE FROM [Audit_Infrastructure_CI]  where [CR_Number]=@CR_Number and [Transaction_ID]=@Transaction_ID">
                                <SelectParameters>
                                    <asp:ControlParameter ControlID="TextBox1" Name="CR_Number" PropertyName="Text" Type="String" />
                                </SelectParameters>

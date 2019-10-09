@@ -1059,7 +1059,10 @@
                                     <asp:Label ID="Label12" runat="server" Text="Site"></asp:Label>
                                 </div>
                                 <div>
-                                    <asp:DropDownList ID="Site" runat="server">
+                                    <asp:DropDownList ID="Site" runat="server" DataSourceID="SqlDataSourceSite" DataTextField="Request_ID" DataValueField="Request_ID"></asp:DropDownList>
+                                    <asp:SqlDataSource ID="SqlDataSourceSite" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1111 %>" SelectCommand="SELECT [Site] FROM [SIT_Site_Alias_Company_LookUp]"></asp:SqlDataSource>
+                        <%--Hardcoded sites commented --%>
+                                   <%-- <asp:DropDownList ID="Site" runat="server">
                                         <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>Boston Support Center</asp:ListItem>
                                         <asp:ListItem>Headquarters, Building 1.31</asp:ListItem>
@@ -1316,7 +1319,7 @@
                                         <asp:ListItem>40 OHERNS RD - Somerton Power Station</asp:ListItem>
                                         <asp:ListItem>226 Greenhill Road - EASTWG01</asp:ListItem>
 
-                                    </asp:DropDownList>
+                                    </asp:DropDownList>--%>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server"  class="validate" ErrorMessage="*Required" ControlToValidate="Site" ForeColor="Red" ValidationGroup="InfSub" InitialValue="Select" ></asp:RequiredFieldValidator>
                                      <asp:Label ID="Error15" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>

@@ -34,10 +34,7 @@ namespace CMDB2
                 Response.Redirect("LoginSSO.aspx");
             }
           //  Label4.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
-          if (System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value == null)
-            {
-                Response.Redirect("LoginSSO.aspx");
-            }
+          
         }
         /*======================Magneto==========================================
         =Function= Captures CR information      

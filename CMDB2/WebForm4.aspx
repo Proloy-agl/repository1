@@ -431,6 +431,31 @@
     opacity: 0.3;
     min-height: 245px;
 }
+
+    .modal-content {
+    background: none!important;
+    position: relative;
+}
+
+    .modal-header .close {
+    color: white;
+    opacity: 1;
+     margin-top: -2px;
+  background:none;
+}
+    .newbutton {
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    padding: 0px 18px;
+    font-size: 16px;
+    height: 34px;
+    font-weight: normal;
+    border: 0;
+    float: right;
+    margin-right: 8px;
+}
+
     </style>
 </head>
 <body>
@@ -675,8 +700,8 @@ DeleteCommand="DELETE FROM [Audit_Decomission] where [Transaction_ID]=@Transacti
         </div>
         <div class="modal-footer">
          
-             <asp:Button ID="Button4" runat="server" CssClass="button1" Text="Go back and rectify" data-dismiss="modal" /> 
-          <asp:Button ID="Button3" runat="server" CssClass="button1" Text="Proceed with this Data" OnClick="Button3_Click"  />  
+             <asp:Button ID="Button4" runat="server" CssClass="button1 newbutton" Text="Go back and rectify" data-dismiss="modal" /> 
+          <asp:Button ID="Button3" runat="server" CssClass="button1 newbutton" Text="Proceed with this Data" OnClick="Button3_Click"  />  
         </div>
       </div>
       

@@ -466,6 +466,11 @@
     margin-right: 8px;
 }
 
+    .newbutton1
+    {
+        right:140px;
+    }
+
     </style>
 </head>
 <body>
@@ -700,17 +705,21 @@ DeleteCommand="DELETE FROM [Audit_Decomission] where [Transaction_ID]=@Transacti
           <h4 class="modal-title">Confirmation</h4>
         </div>
 
-          <div class="new-box"></div>
-         
-        <div class="modal-body new-box-container">
-          <p>Oops! Look like you haven’t filled up all the information.<br />
+          <div class="new-box">
+
+              <p>Oops! Look like you haven’t filled up all the information.<br />
             On analyzing the information, you have just provided, we found:</p>
             <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
  infra CI dont have any attributes associated with them in Magneto. Please select your action
+
+          </div>
+         
+        <div class="modal-body new-box-container">
+          
         </div>
         <div class="modal-footer">
          
-             <asp:Button ID="Button4" runat="server" CssClass="button1 newbutton" Text="Go back and rectify" data-dismiss="modal" /> 
+             <asp:Button ID="Button4" runat="server" CssClass="button1 newbutton1" Text="Go back and rectify" data-dismiss="modal" /> 
           <asp:Button ID="Button3" runat="server" CssClass="button1 newbutton" Text="Proceed with this Data" OnClick="Button3_Click"  />  
         </div>
       </div>

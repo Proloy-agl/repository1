@@ -278,14 +278,42 @@ function off() {
                      <!-- Wrapper for slides -->
                      <div class="carousel-inner">
                         <div class="item active">
-                           <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos_ms/b1.jpg" style="width:100%;" />
+                           <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos_ms/1.jpg" style="width:100%;" />
                         </div>
                         <div class="item">
-                           <asp:Image ID="Image12" runat="server" ImageUrl="~/Photos and Logos_ms/b2.jpg" style="width:100%;" />
+                           <asp:Image ID="Image12" runat="server" ImageUrl="~/Photos and Logos_ms/2.jpg" style="width:100%;" />
                         </div>
                         <div class="item">
-                           <asp:Image ID="Image4" runat="server" ImageUrl="~/Photos and Logos_ms/b3.jpg" style="width:100%;"   />
+                           <asp:Image ID="Image4" runat="server" ImageUrl="~/Photos and Logos_ms/3.jpg" style="width:100%;"   />
                         </div>
+                         <div class="item">
+                           <asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos_ms/4.jpg" style="width:100%;"   />
+                        </div>
+                         <div class="item">
+                           <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos_ms/5.jpg" style="width:100%;"   />
+                        </div>
+                         <div class="item">
+                           <asp:Image ID="Image9" runat="server" ImageUrl="~/Photos and Logos_ms/6.jpg" style="width:100%;"   />
+                        </div>
+                         <div class="item">
+                           <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos_ms/7.jpg" style="width:100%;"   />
+                        </div>
+                         <div class="item">
+                           <asp:Image ID="Image13" runat="server" ImageUrl="~/Photos and Logos_ms/8.jpg" style="width:100%;"   />
+                        </div>
+                         <div class="item">
+                           <asp:Image ID="Image14" runat="server" ImageUrl="~/Photos and Logos_ms/9.jpg" style="width:100%;"   />
+                        </div>
+                         <div class="item">
+                           <asp:Image ID="Image15" runat="server" ImageUrl="~/Photos and Logos_ms/10.jpg" style="width:100%;"   />
+                        </div>
+                         <div class="item">
+                           <asp:Image ID="Image16" runat="server" ImageUrl="~/Photos and Logos_ms/11.jpg" style="width:100%;"   />
+                        </div>
+                         <div class="item">
+                           <asp:Image ID="Image17" runat="server" ImageUrl="~/Photos and Logos_ms/12.jpg" style="width:100%;"   />
+                        </div>
+
                      </div>
                      <!-- Left and right controls -->
                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">

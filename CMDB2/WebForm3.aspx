@@ -1627,8 +1627,8 @@
                     <div> 
                         <p class="heading12">Please Select your action</p> 
                         <div class="new-box">
-                           <button type="button" id="ButtonTry2" class="button1 fltLeft" data-toggle="modal" data-target="#myModal4" onclick="pop1(0)">Create New Entry</button>  
-                        <asp:Button ID="Button17" runat="server" CssClass="button1 fltLeft" Text="Amend existing entry" OnClick="move_toGrid1" />
+                           <button type="button" id="ButtonTry2" class="button1 fltLeft big-btn" data-toggle="modal" data-target="#myModal4" onclick="pop1(0)">Create New Entry</button>  
+                        <asp:Button ID="Button17" runat="server" CssClass="button1 fltLeft big-btn" Text="Amend existing entry" OnClick="move_toGrid1" />
                         </div>
 
                         <div class="modal-containt new-box-container"></div>

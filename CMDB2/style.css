@@ -824,15 +824,15 @@ legend {
     min-height: 148px !important;
 }
 
-#myModal123 .new-box, #myModal1to2 .new-box, #myModal2to3 .new-box, #myModal3to4 .new-box, #Create .new-box {
+#myModal123 .new-box, #myModal1to2 .new-box, #myModal2to3 .new-box, #myModal3to4 .new-box, #Create .new-box, #myModal321 .new-box{
     min-height: 225px !important;
 }
 
-#myModal123 .new-box-container, #myModal1to2 .new-box-container, #myModal2to3 .new-box-container, #myModal3to4 .new-box-container, #Create .new-box-container {
+#myModal123 .new-box-container, #myModal1to2 .new-box-container, #myModal2to3 .new-box-container, #myModal3to4 .new-box-container, #Create .new-box-container, #myModal321 .new-box-container{
     min-height: 139px !important;
 }
 
-#myModal123 .big-btn, #myModal1to2 .big-btn, #myModal2to3 .big-btn, #myModal3to4 .big-btn {
+#myModal123 .big-btn, #myModal1to2 .big-btn, #myModal2to3 .big-btn, #myModal3to4 .big-btn , #myModal321 .big-btn  {
     color: white;
     background-image: linear-gradient(#0075CC, #00DFED);
     padding: 0px 25px;
@@ -847,7 +847,7 @@ legend {
     float:left;
 }
 
-    #myModal123 .big-btn:hover, #myModal1to2 .big-btn:hover, #myModal2to3 .big-btn:hover, #myModal3to4 .big-btn:hover {
+    #myModal123 .big-btn:hover, #myModal1to2 .big-btn:hover, #myModal2to3 .big-btn:hover, #myModal3to4 .big-btn:hover, #myModal321 .big-btn:hover {
         color: white;
         background-image: none;
         background-color: #0075CC;

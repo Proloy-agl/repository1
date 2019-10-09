@@ -64,14 +64,7 @@ namespace CMDB2
                     cmd.Parameters.AddWithValue("@var9", CR);
                     int  amt = (int)cmd.ExecuteScalar();
                     TextBox3.Text = Convert.ToString(amt);
-                    int diff = count1 - amt;
-                    Label5.Text = Convert.ToString(diff);
-                    if (diff > 0)
-                    {
-                        buttonModal.Visible = true;
-                        Button2.Visible = false;
-
-                    }
+                    
                 }
             }
             catch (Exception ex)
@@ -195,6 +188,17 @@ namespace CMDB2
 
             count1 = InfraCI.Count;
             TextBox2.Text = Convert.ToString(count1);
+            int amt11 = Convert.ToInt16(TextBox3.Text);
+            int diff = count1 - amt11;
+            Label5.Text = Convert.ToString(diff);
+            if (diff > 0)
+            {
+                buttonModal.Visible = true;
+                Button2.Visible = false;
+
+            }
+
+
         }
         /*======================Magneto==========================================
        =Function= 

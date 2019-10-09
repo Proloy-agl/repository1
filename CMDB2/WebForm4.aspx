@@ -403,6 +403,34 @@
             padding-left: 15px;
             text-align:center;
         }
+
+    .modal-header {
+    padding: 12px;
+    border-bottom: 1px solid #e5e5e5;
+    background-image: linear-gradient(to right, #001CB0, #00DFED) !important;
+    color: #fff;
+}
+
+    .new-box {
+    list-style: none;
+    list-style-type: none;
+    padding: 42px 18px 15px 43px;
+    width: 100%;
+    position: absolute;
+    border: 1px solid #737070;
+    z-index: 9;
+    top: 49px;
+    height: 355px;
+    border-top: 0;
+}
+    .new-box-container {
+    list-style: none;
+    list-style-type: none;
+    /* margin-bottom: 30px; */
+    padding: 20px 18px 7px 22px;
+    opacity: 0.3;
+    min-height: 245px;
+}
     </style>
 </head>
 <body>

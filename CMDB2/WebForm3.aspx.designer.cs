@@ -1309,13 +1309,13 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList10;
         
         /// <summary>
-        /// SqlDataSource2 control.
+        /// SqlDataSourceCountry control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceCountry;
         
         /// <summary>
         /// Label32 control.
@@ -1336,13 +1336,13 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList11;
         
         /// <summary>
-        /// SqlDataSourceCountry control.
+        /// SqlDataSourceRegion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceCountry;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceRegion;
         
         /// <summary>
         /// Label13 control.

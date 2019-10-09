@@ -422,6 +422,7 @@
     top: 49px;
     height: 355px;
     border-top: 0;
+    color:#fff;
 }
         .modal-body {
             position: relative;

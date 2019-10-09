@@ -186,12 +186,14 @@ namespace CMDB2
                     string[] words = Value2.Split(separators, StringSplitOptions.RemoveEmptyEntries);
                     foreach (var word in words)
                         InfraCI.Add(word);
-                    count1 = InfraCI.Count;
+                   
 
                 }
 
 
             }
+
+            count1 = InfraCI.Count;
 
         }
         /*======================Magneto==========================================

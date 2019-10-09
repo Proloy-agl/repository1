@@ -423,6 +423,16 @@
     height: 355px;
     border-top: 0;
 }
+        .modal-body {
+            position: relative;
+            /* padding: 15px; */
+            padding: 25px 25px 25px 35px;
+            background: #f9f9f9;
+            border: 2px solid #dfcce2;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
     .new-box-container {
     list-style: none;
     list-style-type: none;

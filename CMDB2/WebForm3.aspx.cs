@@ -656,6 +656,7 @@ namespace CMDB2
                         Button2.Disabled = true;
                         Button3.Disabled = true;
                         Button4.Disabled = false;
+                        
                     }
                     else
                     {

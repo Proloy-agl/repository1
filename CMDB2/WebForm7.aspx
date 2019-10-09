@@ -87,7 +87,7 @@
         <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Request_ID" DataValueField="Request_ID"></asp:DropDownList>
         
        
-         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1111 %>" SelectCommand="SELECT [Request_ID] FROM [CHG_Infrastructure_Change]"></asp:SqlDataSource>
+         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1111 %>" SelectCommand="SELECT [Site] FROM [SIT_Site_Alias_Company_LookUp]"></asp:SqlDataSource>
         
        
          </div>

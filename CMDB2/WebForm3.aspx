@@ -221,7 +221,7 @@
                                 <p class="text-label"><asp:Label  ID="Label29" runat="server" Text="Please select the appropriate nature for the decommission associated with your CR"></asp:Label></p>
                                 <asp:RadioButtonList ID="DecomCBOX" runat="server">
                                     <asp:ListItem>Decommission Of Infrastructure</asp:ListItem>
-                                    <asp:ListItem>Decommission Of Application</asp:ListItem>
+                                  <%--  <asp:ListItem>Decommission Of Application</asp:ListItem>--%>
                                     <%--<asp:ListItem>Decommission of Application and Infrastructure</asp:ListItem>--%>
                                 </asp:RadioButtonList>
                                 

@@ -16,6 +16,36 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet" />
     <link href="style.css" rel="stylesheet"/>
    
+    <style>
+#myModal321 .new-box {
+    min-height: 225px !important;
+}
+
+#myModal321 .new-box-container{
+    min-height: 139px !important;
+}
+
+#myModal321 .big-btn  {
+    color: white;
+    background-image: linear-gradient(#0075CC, #00DFED);
+    padding: 0px 25px;
+    font-size: 21px;
+    height: 53px;
+    margin: 0;
+    border: 1px solid #9c9c9c;
+    border-radius: 0;
+    height: 80px;
+    margin-left: 20px;
+    min-width: 40%;
+    float:left;
+}
+
+    #myModal321 .big-btn:hover {
+        color: white;
+        background-image: none;
+        background-color: #0075CC;
+    }
+    </style>
    
     <script>
         $(document).ready(function () {
@@ -1581,6 +1611,8 @@
 
         </div>
         </div>      
+
+        
           <!-- Modal -->
         <div class="modal fade" id="myModal321" data-keyboard="false" data-backdrop="static" role="dialog">
             <div class="modal-dialog">
@@ -1609,6 +1641,8 @@
 
         </div>
         </div>
+
+         
            <!-- Modal -->
         <div class="modal fade" id="myModal1to2" data-keyboard="false" data-backdrop="static" role="dialog" >
             <div class="modal-dialog">

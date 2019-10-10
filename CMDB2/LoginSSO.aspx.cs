@@ -14,6 +14,11 @@ namespace CMDB2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Context.GetOwinContext().Authentication.SignOut(
+              OpenIdConnectAuthenticationDefaults.AuthenticationType,
+              CookieAuthenticationDefaults.AuthenticationType);
+
+
             if (Request.IsAuthenticated)
             {
                 Label1.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;

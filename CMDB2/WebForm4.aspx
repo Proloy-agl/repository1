@@ -451,7 +451,7 @@
     .modal-header .close {
     color: white;
     opacity: 1;
-     margin-top: -2px;
+     margin-top:4px;
   background:none;
 }
     .newbutton {
@@ -469,7 +469,18 @@
 
     .newbutton1
     {
-        right:200px;
+        right:180px;
+    }
+    .modal-backdrop {
+    opacity: 0.8 !important;
+}
+    .oops{
+        font-size:16px;
+        margin-bottom:10px;
+    }
+    .pls
+    {
+        padding:10xp;
     }
 
     </style>
@@ -708,10 +719,12 @@ DeleteCommand="DELETE FROM [Audit_Decomission] where [Transaction_ID]=@Transacti
 
           <div class="new-box">
 
-              <p>Oops! Look like you haven’t filled up all the information.<br />
-            On analyzing the information, you have just provided, we found:</p>
-            <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
- infra CI dont have any attributes associated with them in Magneto. Please select your action
+              <p class="oops">Oops! Look like you haven’t filled up all the information.</p>
+            <div>On analyzing the information, you have just provided, we found:</div>
+
+            <asp:Label ID="Label5" runat="server" Text="Label"><b></b></asp:Label>
+ infra CI dont have any attributes associated with them in Magneto. 
+              <div class="pls">Please select your action</div>
 
           </div>
          

@@ -1067,7 +1067,8 @@
                                      </div>
 
                             </li>
-                        
+            <asp:updatepanel runat="server" id="UpdatePanel" UpdateMode="Conditional">
+                <contenttemplate>            
                          <li>
 
                                 <div>
@@ -1086,6 +1087,7 @@
                                     <asp:Label ID="Label12" runat="server" Text="Site"></asp:Label>
                                 </div>
                                 <div>
+
                                      <asp:DropDownList ID="Site" runat="server" OnSelectedIndexChanged="drop_date_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
                                     <%--<asp:DropDownList ID="Site" runat="server" DataSourceID="SqlDataSourceSite"  DataTextField="Site" DataValueField="Site"></asp:DropDownList>--%>
                                     <asp:SqlDataSource ID="SqlDataSourceSite" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1111 %>" SelectCommand="SELECT [Site] FROM [SIT_Site_Alias_Company_LookUp]"></asp:SqlDataSource>
@@ -1352,7 +1354,8 @@
                                      <asp:Label ID="Error15" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
 
-                            
+                        </contenttemplate>
+</asp:updatepanel>    
                           
 
                                 <li>

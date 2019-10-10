@@ -1052,6 +1052,8 @@ namespace CMDB2
             Site.Items.Insert(0, new ListItem("Select", "0"));
             conn.Close();
             da.Dispose();
+            UpdatePanel.Update();
+            
 
         }
 

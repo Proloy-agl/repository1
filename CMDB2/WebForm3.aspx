@@ -1054,7 +1054,20 @@
                                 </div>
                             </li>
                             
-                        <li>
+                       <li>
+
+                                <div>
+                                    <asp:Label ID="Label32" runat="server" Text="Region"></asp:Label>
+                                </div>
+                                <div>
+                                    <asp:DropDownList ID="DropDownList11" runat="server" DataSourceID="SqlDataSourceRegion"  DataTextField="Region" DataValueField="Region"></asp:DropDownList>
+                                    <asp:SqlDataSource ID="SqlDataSourceRegion" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1111 %>" SelectCommand="SELECT DISTINCT [Region] FROM [SIT_Site_Alias_Company_LookUp]"></asp:SqlDataSource>
+                      
+                                     </div>
+
+                            </li>
+                        
+                         <li>
 
                                 <div>
                                     <asp:Label ID="Label30" runat="server" Text="Site Group"></asp:Label>
@@ -1339,7 +1352,7 @@
 
                             
 
-                            <li>
+<%--                            <li>
 
                                 <div>
                                     <asp:Label ID="Label31" runat="server" Text="Country"></asp:Label>
@@ -1349,20 +1362,9 @@
                                     <asp:SqlDataSource ID="SqlDataSourceCountry" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1111 %>" SelectCommand="SELECT DISTINCT [Country] FROM [SIT_Site_Alias_Company_LookUp]"></asp:SqlDataSource>
                       
                                      </div>
-                            </li>
+                            </li>--%>
 
-                                <li>
-
-                                <div>
-                                    <asp:Label ID="Label32" runat="server" Text="Region"></asp:Label>
-                                </div>
-                                <div>
-                                    <asp:DropDownList ID="DropDownList11" runat="server" DataSourceID="SqlDataSourceRegion"  DataTextField="Region" DataValueField="Region"></asp:DropDownList>
-                                    <asp:SqlDataSource ID="SqlDataSourceRegion" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1111 %>" SelectCommand="SELECT DISTINCT [Region] FROM [SIT_Site_Alias_Company_LookUp]"></asp:SqlDataSource>
-                      
-                                     </div>
-
-                            </li>
+                                
                                 
 
                                 <li>

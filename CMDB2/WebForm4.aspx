@@ -420,7 +420,7 @@
     border: 1px solid #737070;
     z-index: 9;
     top: 49px;
-    height: 355px;
+    height:278px;
     border-top: 0;
     color:#fff;
 }
@@ -440,7 +440,7 @@
     /* margin-bottom: 30px; */
     padding: 20px 18px 7px 22px;
     opacity: 0.3;
-    min-height: 245px;
+    min-height:166px;
 }
 
     .modal-content {
@@ -464,7 +464,7 @@
     font-weight: normal;
     border: 0;
     float: right;
-    margin-right: 8px;
+        margin: 1px 17px 0 0;
 }
 
     .newbutton1
@@ -475,12 +475,14 @@
     opacity: 0.8 !important;
 }
     .oops{
-        font-size:16px;
-        margin-bottom:10px;
+            font-size: 16px;
+    margin-bottom: 10px;
+    color: #00deec;
     }
     .pls
     {
-        padding:10xp;
+        font-size: 18px;
+    padding: 14px 0;
     }
 
     </style>

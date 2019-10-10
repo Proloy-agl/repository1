@@ -35,8 +35,8 @@ namespace CMDB2
             //}
             string ChoiceF;
 
-   // string CR= Session["CR_Num"].ToString();
-  string CR = "CRQ000000087819";
+  string CR= Session["CR_Num"].ToString();
+  //string CR = "CRQ000000087819";
 
             varA = Convert.ToInt16(Session["value11"]);
             varB = Convert.ToInt16(Session["valueR"]);

@@ -1086,7 +1086,8 @@
                                     <asp:Label ID="Label12" runat="server" Text="Site"></asp:Label>
                                 </div>
                                 <div>
-                                    <asp:DropDownList ID="Site" runat="server" DataSourceID="SqlDataSourceSite"  DataTextField="Site" DataValueField="Site"></asp:DropDownList>
+                                     <asp:DropDownList ID="Site" runat="server" OnSelectedIndexChanged="drop_date_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
+                                    <%--<asp:DropDownList ID="Site" runat="server" DataSourceID="SqlDataSourceSite"  DataTextField="Site" DataValueField="Site"></asp:DropDownList>--%>
                                     <asp:SqlDataSource ID="SqlDataSourceSite" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1111 %>" SelectCommand="SELECT [Site] FROM [SIT_Site_Alias_Company_LookUp]"></asp:SqlDataSource>
                         <%--Hardcoded sites commented --%>
                                    <%-- <asp:DropDownList ID="Site" runat="server">

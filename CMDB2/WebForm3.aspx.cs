@@ -1030,6 +1030,31 @@ namespace CMDB2
 
         }
 
+        protected void drop_date_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataSet ds = new DataSet();
+                     
+
+            string connString = @"Server=10.208.24.6,52676;Database=Arsystem1;Integrated Security=False;User Id=test;Password=test;MultipleActiveResultSets=true";
+            string query = "SELECT  [Site]  FROM [dbo].[SIT_Site_Alias_Company_LookUp] Where[Site_Group] = '" +DropDownList9.SelectedValue+"'";
+
+            SqlConnection conn = new SqlConnection(connString);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+
+            // create data adapter
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            // this will query your database and return the result to your datatable
+            da.Fill(ds);
+            Site.DataSource = ds;
+            Site.DataValueField = Convert.ToString( ds.Site);
+            Site.DataBind();
+            Site.Items.Insert(0, new ListItem("Select", "0"));
+            conn.Close();
+            da.Dispose();
+
+        }
+
         protected void Test1(object sender, EventArgs e)
         {
 

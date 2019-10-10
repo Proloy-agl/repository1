@@ -435,7 +435,6 @@ namespace CMDB2
             a12 = DateTime.Now;
             a13 = "I";
             aS = DropDownList9.SelectedValue;
-            aC = DropDownList10.SelectedValue;
             aR = DropDownList11.SelectedValue;
             string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
             SqlConnection conn = null;
@@ -462,7 +461,7 @@ namespace CMDB2
                     cmd.Parameters.AddWithValue("@var12", a12);
                     cmd.Parameters.AddWithValue("@var13", a13);
                     cmd.Parameters.AddWithValue("@var14", aS);
-                    cmd.Parameters.AddWithValue("@var15", aC);
+                    cmd.Parameters.AddWithValue("@var15", aR);
                     cmd.Parameters.AddWithValue("@var16", aR);
                     int rowsAffected = cmd.ExecuteNonQuery();
                     int test = rowsAffected;

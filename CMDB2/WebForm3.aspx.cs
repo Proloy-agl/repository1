@@ -414,7 +414,7 @@ namespace CMDB2
         protected void Infra_SumbitBtn_Click(object sender, EventArgs e)
         {
             
-            string a1, a2, a3, a4, a5, a6, a7, a8, a9;
+            string a1, a2, a3, a4, a5, a6, a7, a8, a9,aS,aC,aR;
             int a10, a11;
             DateTime a12;
             System_Environment.Text = DropDownList5.SelectedValue;
@@ -434,6 +434,9 @@ namespace CMDB2
             a11 = 1;
             a12 = DateTime.Now;
             a13 = "I";
+            aS = DropDownList9.SelectedValue;
+            aC = DropDownList10.SelectedValue;
+            aR = DropDownList11.SelectedValue;
             string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
             SqlConnection conn = null;
 
@@ -446,7 +449,7 @@ namespace CMDB2
                 {
                     cmd.Connection = conn;
                     cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "insert into [Audit_Infrastructure_CI](CR_Number,CI_Name,System_Environment,Primary_Capability,Owner,Supported_By,System_Role,Site,OEM_Supported,Transaction_Timestamp,Transaction_Status) values (@var9,@var1,@var2,@var3,@var4,@var5,@var6,@var7,@var8,@var12,@var13)";
+                    cmd.CommandText = "insert into [Audit_Infrastructure_CI](CR_Number,CI_Name,System_Environment,Primary_Capability,Owner,Supported_By,System_Role,Site,OEM_Supported,Transaction_Timestamp,Transaction_Status,Site_Group,Country,Region) values (@var9,@var1,@var2,@var3,@var4,@var5,@var6,@var7,@var8,@var12,@var13,@var14,@var15,@var16)";
                     cmd.Parameters.AddWithValue("@var9", a9);
                     cmd.Parameters.AddWithValue("@var1", a1);
                     cmd.Parameters.AddWithValue("@var2", a2);
@@ -458,6 +461,9 @@ namespace CMDB2
                     cmd.Parameters.AddWithValue("@var8", a8);
                     cmd.Parameters.AddWithValue("@var12", a12);
                     cmd.Parameters.AddWithValue("@var13", a13);
+                    cmd.Parameters.AddWithValue("@var14", aS);
+                    cmd.Parameters.AddWithValue("@var15", aC);
+                    cmd.Parameters.AddWithValue("@var16", aR);
                     int rowsAffected = cmd.ExecuteNonQuery();
                     int test = rowsAffected;
                     if (rowsAffected == 1)

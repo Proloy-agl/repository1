@@ -502,7 +502,7 @@
                         </fieldset>
    </div>
 
-                  <asp:Panel ID="Panel2" runat="server">
+                  <asp:Panel ID="Panel2" runat="server" Visible="false">
   <legend class="heading1">Count details for the CR </legend>
                       <fieldset class="form-content">
                       <asp:Label ID="Label3" runat="server" Text="Label">Infra count linked to CR in Remedy </asp:Label>

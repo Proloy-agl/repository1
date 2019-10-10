@@ -1352,17 +1352,6 @@
 
                             
 
-<%--                            <li>
-
-                                <div>
-                                    <asp:Label ID="Label31" runat="server" Text="Country"></asp:Label>
-                                </div>
-                                <div>
-                                    <asp:DropDownList ID="DropDownList10" runat="server" DataSourceID="SqlDataSourceCountry"  DataTextField="Country" DataValueField="Country"></asp:DropDownList>
-                                    <asp:SqlDataSource ID="SqlDataSourceCountry" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1111 %>" SelectCommand="SELECT DISTINCT [Country] FROM [SIT_Site_Alias_Company_LookUp]"></asp:SqlDataSource>
-                      
-                                     </div>
-                            </li>--%>
 
                                 
                                 

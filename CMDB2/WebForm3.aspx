@@ -1053,7 +1053,20 @@
                                      <asp:RequiredFieldValidator ID="RequiredFieldValidator8"  class="validate" ErrorMessage="*Required" ControlToValidate="System_Role" runat="server" ValidationGroup="InfSub" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </li>
-                            <li>
+                            
+                        <li>
+
+                                <div>
+                                    <asp:Label ID="Label30" runat="server" Text="Site Group"></asp:Label>
+                                </div>
+                                <div>
+                                    <asp:DropDownList ID="DropDownList9" runat="server" DataSourceID="SqlDataSourceSiteGroup"  DataTextField="Site_Group" DataValueField="Site_Group"></asp:DropDownList>
+                                    <asp:SqlDataSource ID="SqlDataSourceSiteGroup" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1111 %>" SelectCommand="SELECT DISTINCT [Site_Group] FROM [SIT_Site_Alias_Company_LookUp]"></asp:SqlDataSource>
+                      
+                                     </div>
+                       </li>
+
+                        <li>
 
                                 <div>
                                     <asp:Label ID="Label12" runat="server" Text="Site"></asp:Label>
@@ -1324,17 +1337,7 @@
                                      <asp:Label ID="Error15" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                 </div>
 
-                            <li>
-
-                                <div>
-                                    <asp:Label ID="Label30" runat="server" Text="Site Group"></asp:Label>
-                                </div>
-                                <div>
-                                    <asp:DropDownList ID="DropDownList9" runat="server" DataSourceID="SqlDataSourceSiteGroup"  DataTextField="Site_Group" DataValueField="Site_Group"></asp:DropDownList>
-                                    <asp:SqlDataSource ID="SqlDataSourceSiteGroup" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1111 %>" SelectCommand="SELECT DISTINCT [Site_Group] FROM [SIT_Site_Alias_Company_LookUp]"></asp:SqlDataSource>
-                      
-                                     </div>
-                            </li>
+                            
 
                             <li>
 

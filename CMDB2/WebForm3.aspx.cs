@@ -435,7 +435,8 @@ namespace CMDB2
             a12 = DateTime.Now;
             a13 = "I";
             aS = DropDownList9.SelectedValue;
-            aR = DropDownList11.SelectedValue;
+            aR = "Australia";
+            //aR = DropDownList11.SelectedValue;
             string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
             SqlConnection conn = null;
 

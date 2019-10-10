@@ -1062,9 +1062,11 @@
                                     <asp:Label ID="Label32" runat="server" Text="Region"></asp:Label>
                                 </div>
                                 <div>
-                                    <asp:DropDownList ID="DropDownList11" runat="server" DataSourceID="SqlDataSourceRegion"  DataTextField="Region" DataValueField="Region"></asp:DropDownList>
+                                    <asp:TextBox ID="TextBox3" runat="server" Text="Australia" ReadOnly="true"></asp:TextBox>
+                                    <%--<asp:DropDownList ID="DropDownList11" runat="server" DataSourceID="SqlDataSourceRegion"  DataTextField="Region" DataValueField="Region"></asp:DropDownList>
                                     <asp:SqlDataSource ID="SqlDataSourceRegion" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1111 %>" SelectCommand="SELECT DISTINCT [Region] FROM [SIT_Site_Alias_Company_LookUp]"></asp:SqlDataSource>
-                      
+                      --%>
+                                    <asp:Label ID="Label31" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                      </div>
 
                             </li>
@@ -1078,7 +1080,7 @@
                                 <div>
                                     <asp:DropDownList ID="DropDownList9" runat="server" DataSourceID="SqlDataSourceSiteGroup"  DataTextField="Site_Group" DataValueField="Site_Group"></asp:DropDownList>
                                     <asp:SqlDataSource ID="SqlDataSourceSiteGroup" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1111 %>" SelectCommand="SELECT DISTINCT [Site_Group] FROM [SIT_Site_Alias_Company_LookUp]"></asp:SqlDataSource>
-                      
+                      <asp:Label ID="Label33" runat="server" Text="*Cannot Be Empty" ForeColor="Red" Visible="false"></asp:Label>
                                      </div>
                        </li>
 

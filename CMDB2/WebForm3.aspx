@@ -198,6 +198,7 @@
 
 
             <form id="form1" runat="server">
+                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
                  <%--<asp:Panel ID="timeline" runat="server">
                                     <div class="timeline-container">
                                         <asp:Label ID="Label28" runat="server" CssClass="circle green-circle" ></asp:Label>

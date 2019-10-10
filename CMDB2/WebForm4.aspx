@@ -423,6 +423,7 @@
     height:278px;
     border-top: 0;
     color:#fff;
+    font-size: 14px;
 }
         .modal-body {
             position: relative;
@@ -475,7 +476,7 @@
     opacity: 0.8 !important;
 }
     .oops{
-            font-size: 16px;
+     font-size: 20px;
     margin-bottom: 10px;
     color: #00deec;
     }

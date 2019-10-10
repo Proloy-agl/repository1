@@ -19,6 +19,7 @@
     <style>
 #myModal321 .new-box {
     min-height: 225px !important;
+
 }
 
 #myModal321 .new-box-container{

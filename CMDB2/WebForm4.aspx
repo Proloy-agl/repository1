@@ -469,7 +469,7 @@
 
     .newbutton1
     {
-        right:140px;
+        right:200px;
     }
 
     </style>

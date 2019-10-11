@@ -22,8 +22,7 @@ namespace CMDB2
             {
                 Response.Redirect("LoginSSO.aspx");
             }
-            string Name3 = Session["Name1"].ToString();
-            Label4.Text = Name3;
+            
 
         }
 

@@ -740,7 +740,7 @@ namespace CMDB2
                     }
                     else
                     {
-                        Response.Redirect("Choice.aspx");
+                        Response.Redirect("WebForm3.aspx");
                     }
                 }
             }

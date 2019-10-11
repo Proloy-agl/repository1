@@ -22,9 +22,9 @@ namespace CMDB2
             {
                 Response.Redirect("LoginSSO.aspx");
             }
-            
-  //Label4.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
-           
+            string Name3 = Session["Name1"].ToString();
+            Label4.Text = Name3;
+
         }
 
         /*======================Magneto==========================================

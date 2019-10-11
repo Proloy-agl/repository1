@@ -47,7 +47,7 @@ namespace CMDB2
             ////////////////////////////////////////////////////////////////////////////
             CR = Convert.ToString(TBox1.Text);
             Session["CR_Num"] = CR;
-            Session["nameUser"]= System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
+           
             Button1.Visible = false;
             ////////////////////////////////////////////////////////////////////////////
             string status = "Scheduled";

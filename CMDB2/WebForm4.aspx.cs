@@ -197,6 +197,11 @@ namespace CMDB2
                 Button2.Visible = false;
 
             }
+            else
+            {
+                Button mybut1 = (Button)FindControl("buttonModal");
+                mybut1.Visible = false;
+            }
 
 
         }

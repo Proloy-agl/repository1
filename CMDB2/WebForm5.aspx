@@ -260,7 +260,7 @@ function off() {
             <div>
                <nav class="navBar">
                    <asp:Label ID="Label4" runat="server" ForeColor="White"></asp:Label>
-                  <asp:Image ID="Image3" runat="server" ImageUrl="~/Photos and Logos_ms/user-icon.png"  class="user"  />
+                 <%-- <asp:Image ID="Image3" runat="server" ImageUrl="~/Photos and Logos_ms/user-icon.png"  class="user"  />--%>
                    
                   <div class="clear"></div>
                </nav>

@@ -53,7 +53,7 @@ namespace CMDB2
                 ValD = Convert.ToInt32(ChoiceD = Session["value4"].ToString());
                 ValE = Convert.ToInt32(ChoiceE = Session["value5"].ToString());
                 ValF = 5;
-                CR = "CRQ000000087805";
+               // CR = "CRQ000000087805";
              CR = Session["CR_Num"].ToString();
                 //  CR_Num = Convert.ToInt32(CR = Session["CR_Num"].ToString());
                 I_CR_Num.Text = CR;
@@ -645,7 +645,7 @@ namespace CMDB2
 
                     int rowsAffected = cmd.ExecuteNonQuery();
                     int test = rowsAffected;
-                    if (rowsAffected == 1)
+                    if (rowsAffected > 0)
 
                     {
                         
@@ -667,6 +667,7 @@ namespace CMDB2
                     else
                     {
                         Response.Redirect("WebForm3.aspx");
+                        Label34.Text = Convert.ToString(test);
                     }
                 }
             }

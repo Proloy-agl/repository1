@@ -33,7 +33,7 @@ namespace CMDB2
             {
                 Response.Redirect("LoginSSO.aspx");
             }
-         Label4.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
+        
           
         }
         /*======================Magneto==========================================
@@ -44,10 +44,11 @@ namespace CMDB2
         =========================================================================*/
         protected void Button1_Click(object sender, EventArgs e)
         {
+            Label4.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
             ////////////////////////////////////////////////////////////////////////////
             CR = Convert.ToString(TBox1.Text);
             Session["CR_Num"] = CR;
-           Session["NameUser"] = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
+           
             Button1.Visible = false;
             ////////////////////////////////////////////////////////////////////////////
             string status = "Scheduled";

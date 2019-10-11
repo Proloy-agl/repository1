@@ -741,6 +741,7 @@ namespace CMDB2
                     else
                     {
                         Response.Redirect("WebForm3.aspx");
+                        Label34.Text = Convert.ToString(rowsAffected);
                     }
                 }
             }

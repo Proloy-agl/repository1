@@ -31,6 +31,15 @@ namespace CMDB2 {
         protected global::System.Web.UI.WebControls.Image Image16;
         
         /// <summary>
+        /// Label34 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label34;
+        
+        /// <summary>
         /// form1 control.
         /// </summary>
         /// <remarks>

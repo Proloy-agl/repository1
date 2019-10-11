@@ -186,7 +186,7 @@
         </div>
         <div>
             <nav class="navBar">
-                
+                <asp:Label ID="Label34" runat="server" Text="Label"></asp:Label>
             </nav>
         </div>
 

@@ -727,7 +727,7 @@ namespace CMDB2
                     int rowsAffected = cmd.ExecuteNonQuery();
                     Label34.Text = Convert.ToString(rowsAffected);
                     int test = rowsAffected;
-                    if (rowsAffected == 1)
+                    if (rowsAffected > 0)
 
                     {
                        

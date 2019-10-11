@@ -44,7 +44,7 @@ namespace CMDB2
         =========================================================================*/
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Label4.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
+           
             ////////////////////////////////////////////////////////////////////////////
             CR = Convert.ToString(TBox1.Text);
             
